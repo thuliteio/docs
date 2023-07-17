@@ -8,17 +8,14 @@ export default defineConfig({
   site: 'https://docs.gethyas.com',
   integrations: [starlight({
     title: 'Hyas Docs',
+    description: 'The all-in-one Hugo-npm framework. Fast, flexible, and easy-to-use.',
     logo: {
       light: './src/assets/light-logo.svg',
       dark: './src/assets/dark-logo.svg',
       replacesTitle: true,
     },
-    customCss: [
-      // Relative path to your custom CSS file
-      './src/styles/custom.css',
-    ],
-    social: {
-      github: 'https://github.com/gethyas'
+    editLink: {
+      baseUrl: 'https://github.com/gethyas/docs/edit/main/',
     },
     sidebar: [{
       label: 'Start Here',
@@ -42,7 +39,15 @@ export default defineConfig({
       autogenerate: {
         directory: 'reference'
       }
-    }]
+    }],
+    social: {
+      github: 'https://github.com/gethyas'
+    },
+    customCss: [
+      // Relative path to your custom CSS file
+      './src/styles/custom.css',
+    ],
+    lastUpdated: true
   }), sitemap({
       // configuration options
     })
