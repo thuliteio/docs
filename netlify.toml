@@ -1,0 +1,40 @@
+[build]
+  publish = "dist"
+  functions = "functions"
+
+[build.environment]
+  NODE_VERSION = "18.16.1"
+  NPM_VERSION = "9.5.1"
+
+[context.production]
+  command = "pnpm build"
+
+[context.deploy-preview]
+  command = "pnpm build -- -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "pnpm build -- -b $DEPLOY_PRIME_URL"
+
+# Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+[[redirects]]
+  from = "/"
+  to = "/start-here/getting-started/"
+  status = 301
+  force = true
+
+# Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    # Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin"
+    Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
+    Cache-Control= '''
+    public,
+    max-age=604800,
+    immutable'''
+    Access-Control-Allow-Origin = "*"

@@ -1,0 +1,12 @@
+.site-title img {
+  width: auto;
+  height: 22px;
+
+  @media (min-width: 50rem) {
+    height: 24px;
+  }
+}
+
+.right-sidebar nav {
+  z-index: var(--sl-z-index-navbar);
+}

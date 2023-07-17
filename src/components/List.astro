@@ -1,0 +1,35 @@
+---
+const { emoji } = Astro.props
+---
+
+<div class:list={["list-emoji", emoji || "star "]}>
+  <slot />
+</div>
+
+<style is:global>
+.list-emoji {
+  &.toolbox ul {
+    list-style-type: "🧰";
+  }
+
+  &.books ul {
+    list-style-type: "📚";
+  }
+
+  &.speech-balloon ul {
+    list-style-type: "💬";
+  }
+
+  &.package ul {
+    list-style-type: "📦";
+  }
+
+  &.star ul {
+    list-style-type: "⭐";
+  }
+
+  & li {
+    padding-left: 0.5rem;
+  }
+}
+</style>
