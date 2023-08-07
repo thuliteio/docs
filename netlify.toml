@@ -18,7 +18,7 @@
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
   from = "/"
-  to = "/start-here/getting-started/"
+  to = "/getting-started/"
   status = 301
   force = true
 

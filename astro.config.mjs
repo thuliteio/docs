@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://docs.gethyas.com',
+  site: 'https://docs.gethyas.com/',
   integrations: [starlight({
     title: 'Hyas Docs',
     description: 'The all-in-one Hugo-npm framework. Fast, flexible, and easy-to-use.',
@@ -21,10 +21,44 @@ export default defineConfig({
       label: 'Start Here',
       items: [{
         label: 'Getting Started',
-        link: '/start-here/getting-started/'
+        link: '/getting-started/'
       }, {
         label: 'Installation',
-        link: '/start-here/installation/'
+        link: '/install/auto/'
+      }, {
+        label: 'Editor Setup',
+        link: '/editor-setup/'
+      }, {
+        label: 'Upgrade to v2',
+        link: '/guides/upgrade-to/v2/'
+      }]
+    }, {
+      label: 'Core Concepts',
+      items: [
+      {
+        label: 'Why Hyas',
+        link: '/concepts/why-hyas/'
+      }]
+    }, {
+      label: 'Tutorials',
+      items: [
+      {
+        label: 'Build a blog',
+        link: '/tutorials/build-blog/'
+      }]
+    }, {
+      label: 'Basics',
+      items: [
+      {
+        label: 'Project Structure',
+        link: '/basics/project-structure/'
+      }]
+    }, {
+      label: 'Recipes',
+      items: [
+      {
+        label: 'Connect a CMS',
+        link: '/guides/cms/'
       }]
     }, {
       label: 'Guides',
