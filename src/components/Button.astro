@@ -97,6 +97,10 @@ const { variant = 'primary' } = Astro.props;
 		transition-duration: var(--duration);
 		transition-delay: var(--delay);
 		transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+
+		/* Fix for .right-sidebar nav */
+		--sl-z-index-button: -5;
+		z-index: var(--sl-z-index-button);
 	}
 	.link:hover,
 	.link:focus-within {
