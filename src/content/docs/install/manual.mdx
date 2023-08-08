@@ -6,10 +6,10 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import List from '../../../components/List.astro';
 import FileTree from '../../../components/file-tree.astro';
 
-This guide will walk you through the steps to manually install and configure a new Astro project if you prefer not to use the automatic CLI tool.
+This guide will walk you through the steps to manually install and configure a new Hyas project if you prefer not to use the [automatic CLI tool](/install/auto/).
 
 :::note[Prefer a quicker way to get started?]
-Try the [create astro CLI wizard](/install/auto/) instead.
+Try the [create hyas CLI wizard](/install/auto/) instead.
 :::
 
 ## Prerequisites
@@ -59,25 +59,23 @@ First, replace any placeholder “scripts” section of your package.json with t
     "dev": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache",
     "dev:drafts": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache --buildDrafts",
     "create": "exec-bin node_modules/.bin/hugo/hugo new",
-    "lint": "npm run lint:scripts && npm run lint:styles && npm run lint:markdown",
     "lint:scripts": "eslint --cache config",
     "lint:styles": "stylelint --cache \"assets/scss/**/*.{css,sass,scss}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "exec-bin node_modules/.bin/hugo/hugo --minify",
     "preview": "http-server --gzip --brotli --ext=html --cors",
-    "clean": "npm run clean:build && npm run clean:lint && npm run clean:install",
     "clean:build": "shx rm -rf public resources .hugo_build.lock",
     "clean:install": "shx rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml",
     "clean:lint": "shx rm -rf .eslintcache .stylelintcache",
     "preinfo": "npm version",
     "info": "npm list",
     "postinfo": "exec-bin node_modules/.bin/hugo/hugo version",
-    "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo"
+    "postinstall": "shx rm -rf node_modules/.bin/hugo && shx mkdir node_modules/.bin/hugo && shx cp node_modules/gethyas/node_modules/.bin/hugo/* node_modules/.bin/hugo"
   },
 ```
 
-You’ll use these scripts later in the guide to start Hyas and run its different commands.
+You'll use these scripts later in the guide to start Hyas and run its different commands.
 
 Then, add an `.npmrc` file to your project root with the following:
 
@@ -130,7 +128,7 @@ npm run create _index.md
   </TabItem>
   <TabItem label="pnpm">
 ```bash
-pnpm create _index.md
+pnpm run create _index.md
 ```
   </TabItem>
   <TabItem label="Yarn">
@@ -144,23 +142,30 @@ In the frontmatter set `draft: false` and add some content:
 
 ```md
 ---
-title: ""
-date: 2022-12-07T11:35:33+01:00
+title: "Hello, World!"
+date: 2023-08-08T11:42:29+02:00
 draft: false
 ---
 
 This line is from `content/_index.md` 🚀
+
 ```
 
 ### 4. Create your first static asset
 
-You will also want to create a `static/` directory to store your static assets. Hugo will always include these assets in your final build, so you can safely reference them from inside your layout templates.
+You will also want to create a `static` directory to store your static assets. Hugo will always include these assets in your final build, so you can safely reference them from inside your layout templates.
+
+In the root of your project, create an empty `static` directory, and then navigate into it.
+
+```bash
+mkdir static && cd static
+```
 
 In your text editor, create a new file in your directory at `static/robots.txt`. `robots.txt` is a simple file that most sites will include to tell search bots like Google how to treat your site.
 
 For this guide, copy-and-paste the following code snippet into your new file:
 
-```txt
+```ini
 # Example: Allow all bots to scan and index your site.
 # Full syntax: https://developers.google.com/search/docs/advanced/robots/create-robots-txt
 User-agent: *
@@ -197,7 +202,7 @@ Hyas follows Hugo's configuration setup.
 
 #### `config/_default` directory
 
-Create an empty `config/_default` directory, and then navigate into it.
+In the root of your project, create an empty `config/_default` directory, and then navigate into it.
 
 ```bash
 mkdir config/_default && cd config/_default
@@ -215,10 +220,8 @@ disableAliases = true
 disableHugoGeneratorInject = true
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
-enableGitInfo = false
 enableRobotsTXT = true
 languageCode = "en-US"
-paginate = 7
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
@@ -234,17 +237,6 @@ copyRight = "Copyright (c) 2023 Hyas"
   changefreq = "monthly"
   filename = "sitemap.xml"
   priority = 0.5
-
-[caches]
-  [caches.getjson]
-    dir = ":cacheDir/:project"
-    maxAge = "30m"
-
-[taxonomies]
-  category = "categories"
-
-[permalinks]
-  blog = "/:title/"
 
 [minify.tdewolff.html]
   keepWhitespace = false
@@ -365,27 +357,118 @@ module.exports = {
 }
 ```
 
+#### Project directory
+
+`cd` one level up.
+
+```bash
+cd ..
+```
+
+##### `.eslintrc.json`
+
+Add a `.eslintrc.json` file with the following:
+
+```js
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": 0,
+    "quotes": ["error", "single"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore"
+      }
+    ]
+  }
+}
+```
+
+##### `.stylelintrc.json`
+
+Add a `.stylelintrc.json` file with the following:
+
+```js
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "no-empty-source": null,
+    "scss/comment-no-empty": null,
+    "max-line-length": null,
+    "scss/at-extend-no-missing-placeholder": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "extend",
+          "at-root",
+          "debug",
+          "warn",
+          "error",
+          "if",
+          "else",
+          "for",
+          "each",
+          "while",
+          "mixin",
+          "include",
+          "content",
+          "return",
+          "function",
+          "tailwind",
+          "apply",
+          "responsive",
+          "variants",
+          "screen"
+        ]
+      }
+    ]
+  }
+}
+```
+
 ## Next steps
 
 If you have followed the steps above, your project directory should now look like this:
 
 <FileTree>
 
-- assets/
-  - scss/
-    - app.scss
-- config/
-  - _default/
+- assets/scss
+  - app.scss
+- config
+  - _default
     - hugo.toml
     - module.toml
     - params.toml
   - babel.config.js
   - postcss.config.js
-- content/
+- content
   - _index.md
 - node_modules/
-- static/
+- static
   - robots.txt
+- .eslintrc.json
+- .npmrc
+- .stylelintrc.json
 - package-lock.json # or yarn.lock, pnpm-lock.yaml, etc.
 - package.json
 
@@ -393,4 +476,4 @@ If you have followed the steps above, your project directory should now look lik
 
 Congratulations, you're now set up to use Hyas!
 
-If you followed this guide completely, you can jump directly to [Step 3: Start Hyas](/install/auto/#3-start-hyas) to continue and learn how to run Astro for the first time.
+If you followed this guide completely, you can jump directly to [Step 3: Start Hyas](/install/auto/#3-start-hyas) to continue and learn how to run Hyas for the first time.

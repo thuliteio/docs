@@ -27,7 +27,7 @@ Prefer to try Hyas in your browser? Visit [start.gethyas.com](https://start.geth
 
 ### 1. Run the Setup Wizard
 
-Run the following command in your terminal to start our handy install wizard, `create-hyas`.
+Run the following command in your terminal to start our handy install wizard:
 
 <Tabs>
   <TabItem label="npm">
@@ -102,7 +102,7 @@ yarn run dev
 
 If all goes well, Hyas should now be serving your project on [http://localhost:1313](http://localhost:1313/)!
 
-The Hugo server will listen for live file and configuration changes in your project directory, so you will not need to restart the server as you make changes during development.
+The Hugo server will listen for live file changes in your project directory, so you will not need to restart the server as you make changes during development.
 
 If you aren't able to open your project in the browser, go back to the terminal where you ran the `dev` command and look to see if an error occurred, or if your project is being served at a different URL than the one linked to above.
 
@@ -116,8 +116,8 @@ You can also start a new Hyas project based on an [official example](https://git
 # create a new project with an official example
 npm create hyas@latest -- --template <example-name>
 
-# create a new project based on a GitHub repository’s main branch
-npx degit <user/repo>
+# create a new project based on a GitHub repository's main branch
+npx degit <username/repo> [project-directory]
 ```
   </TabItem>
   <TabItem label="pnpm">
@@ -125,8 +125,8 @@ npx degit <user/repo>
 # create a new project with an official example
 pnpm create hyas@latest --template <example-name>
 
-# create a new project based on a GitHub repository’s main branch
-pnpm dlx degit <user/repo>
+# create a new project based on a GitHub repository's main branch
+pnpm dlx degit <username/repo> [project-directory]
 ```
   </TabItem>
   <TabItem label="Yarn">
@@ -134,8 +134,8 @@ pnpm dlx degit <user/repo>
 # create a new project with an official example
 yarn create hyas --template <example-name>
 
-# create a new project based on a GitHub repository’s main branch
-yarn dlx degit <user/repo>
+# create a new project based on a GitHub repository's main branch
+yarn dlx degit <username/repo> [project-directory]
 ```
   </TabItem>
 </Tabs>

@@ -20,5 +20,5 @@ In addition to local editors, Hyas also runs well on in-browser hosted editors, 
 - [Gitpod](https://gitpod.io/)
 
 :::note
-Hyas does *not* run on [StackBlitz](https://stackblitz.com/) because install scripts for dependencies are not supported.
+Hyas does *not* run on [StackBlitz](https://stackblitz.com/) because running the postinstall script is not supported.
 :::
