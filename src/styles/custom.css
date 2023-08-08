@@ -6,3 +6,12 @@
     height: 24px;
   }
 }
+
+.sidebar-pane {
+  --sl-z-index-pane: 7;
+  z-index: var(--sl-z-index-pane);
+}
+
+.right-sidebar nav {
+  z-index: var(--sl-z-index-menu);
+}
