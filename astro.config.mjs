@@ -5,6 +5,12 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  redirects: {
+    '/': {
+      status: 301,
+      destination: '/getting-started/',
+    },
+  },
   site: 'https://docs.gethyas.com/',
   integrations: [starlight({
     title: 'Hyas Docs',
@@ -38,13 +44,6 @@ export default defineConfig({
       {
         label: 'Why Hyas',
         link: '/concepts/why-hyas/'
-      }]
-    }, {
-      label: 'Tutorials',
-      items: [
-      {
-        label: 'Build a blog',
-        link: '/tutorials/build-blog/'
       }]
     }, {
       label: 'Basics',
