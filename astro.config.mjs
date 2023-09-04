@@ -1,8 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-import sitemap from "@astrojs/sitemap";
-
 // https://astro.build/config
 export default defineConfig({
   redirects: {
@@ -81,9 +79,7 @@ export default defineConfig({
       './src/styles/custom.css',
     ],
     lastUpdated: true
-  }), sitemap({
-      // configuration options
-    })
+  })
   ],
   // Process images with sharp: https://docs.astro.build/en/guides/assets/#using-sharp
   image: {
