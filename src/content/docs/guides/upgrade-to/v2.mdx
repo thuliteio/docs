@@ -2,5 +2,106 @@
 title: Upgrade to Hyas v2
 description: A guide in my new Starlight docs site.
 ---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 This guide will help you migrate from Hyas v1 to Hyas v2.
+
+## Upgrading
+
+You can upgrade your project by following the guide below.
+
+### 1. Clean current install
+
+Clean current dependencies installed to avoid conflicts.
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+npm run clean:install
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm run clean:install
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn run clean:install
+```
+  </TabItem>
+</Tabs>
+
+### 2. Upgrade Hyas
+
+First, replace the "scripts" section of your package.json with the following:
+
+```json
+  "scripts": {
+    "dev": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache",
+    "dev:drafts": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache --buildDrafts",
+    "create": "exec-bin node_modules/.bin/hugo/hugo new",
+    "lint:scripts": "eslint --cache config",
+    "lint:styles": "stylelint --cache \"assets/scss/**/*.{css,sass,scss}\"",
+    "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "exec-bin node_modules/.bin/hugo/hugo --minify",
+    "preview": "http-server --gzip --brotli --ext=html --cors",
+    "clean:build": "shx rm -rf public resources .hugo_build.lock",
+    "clean:install": "shx rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml",
+    "clean:lint": "shx rm -rf .eslintcache .stylelintcache",
+    "preinfo": "npm version",
+    "info": "npm list",
+    "postinfo": "exec-bin node_modules/.bin/hugo/hugo version",
+    "postinstall": "shx rm -rf node_modules/.bin/hugo && shx mkdir node_modules/.bin/hugo && shx cp node_modules/gethyas/node_modules/.bin/hugo/* node_modules/.bin/hugo"
+  },
+```
+
+Then, add an `.npmrc` file to your project root with the following:
+
+```ini
+enable-pre-post-scripts = true
+auto-install-peers = true
+node-linker = hoisted
+prefer-symlinked-executables = false
+```
+
+Next, install the Hyas project dependencies inside your project.
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+# Upgrade to Hyas v2.x
+npm install gethyas@latest
+
+# Example: add Bootstrap, SEO, and Images integrations
+npm install @hyas/bootstrap@latest @hyas/seo@latest @hyas/images@latest
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# Upgrade to Hyas v2.x
+pnpm install gethyas@latest
+
+# Example: add Bootstrap, SEO, and Images integrations
+pnpm install @hyas/bootstrap@latest @hyas/seo@latest @hyas/images@latest
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# Upgrade to Hyas v2.x
+yarn add gethyas@latest
+
+# Example: add Bootstrap, SEO, and Images integrations
+yarn add @hyas/bootstrap@latest @hyas/seo@latest @hyas/images@latest
+```
+  </TabItem>
+</Tabs>
+
+### 3. Update configuration
+
+:::note[Need to continue?]
+After upgrading Hyas to the latest version, you may not need to make any changes to your project at all!
+
+But, if you notice errors or unexpected behavior, please check below for what has changed that might need updating in your project.
+:::

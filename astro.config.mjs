@@ -22,6 +22,9 @@ export default defineConfig({
       baseUrl: 'https://github.com/gethyas/docs/edit/main/',
     },
     sidebar: [{
+      label: '← gethyas.com',
+      link: 'https://gethyas.com/'
+    }, {
       label: 'Start Here',
       items: [{
         label: 'Getting Started',
@@ -72,7 +75,8 @@ export default defineConfig({
       }
     }],
     social: {
-      github: 'https://github.com/gethyas'
+      github: 'https://github.com/gethyas',
+      twitter: 'https://twitter.com/gethyas'
     },
     customCss: [
       // Relative path to your custom CSS file
