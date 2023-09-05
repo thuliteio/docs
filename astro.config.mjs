@@ -28,37 +28,40 @@ export default defineConfig({
       label: 'Start Here',
       items: [{
         label: 'Getting Started',
-        link: '/getting-started/'
+        link: '/getting-started'
       }, {
         label: 'Installation',
-        link: '/install/auto/'
+        link: '/install/auto'
       }, {
         label: 'Editor Setup',
-        link: '/editor-setup/'
+        link: '/editor-setup'
       }, {
         label: 'Upgrade to v2',
-        link: '/guides/upgrade-to/v2/'
+        link: '/guides/upgrade-to/v2'
       }]
     }, {
       label: 'Core Concepts',
       items: [
       {
         label: 'Why Hyas',
-        link: '/concepts/why-hyas/'
+        link: '/concepts/why-hyas'
       }]
     }, {
       label: 'Basics',
       items: [
       {
         label: 'Project Structure',
-        link: '/basics/project-structure/'
+        link: '/basics/project-structure'
       }]
     }, {
       label: 'Recipes',
       items: [
       {
         label: 'Connect a CMS',
-        link: '/guides/cms/'
+        link: '/guides/cms'
+      }, {
+        label: 'Add integrations',
+        link: '/guides/integrations'
       }]
     }, {
       label: 'Guides',
@@ -66,7 +69,7 @@ export default defineConfig({
       // Each item here is one entry in the navigation menu.
       {
         label: 'Example Guide',
-        link: '/guides/example/'
+        link: '/guides/example'
       }]
     }, {
       label: 'Reference',

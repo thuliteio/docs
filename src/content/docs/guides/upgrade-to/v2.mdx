@@ -4,15 +4,16 @@ description: A guide in my new Starlight docs site.
 ---
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-This guide will help you migrate from Hyas v1 to Hyas v2.
+This guide will walk you through the steps to manually migrate from Hyas v1 to Hyas v2.
+
 
 ## Upgrading
 
-You can upgrade your project by following the guide below.
+You can upgrade your project by following the steps below.
 
-### 1. Clean current install
+### 1. Clean dependencies
 
-Clean current dependencies installed to avoid conflicts.
+Clean dependencies currently installed to avoid conflicts.
 
 <Tabs>
   <TabItem label="npm">
@@ -32,21 +33,28 @@ yarn run clean:install
   </TabItem>
 </Tabs>
 
-### 2. Upgrade Hyas
+### 2. Update `package.json`
 
-First, replace the "scripts" section of your package.json with the following:
+Replace the contents of your project's `package.json` with the following:
 
 ```json
+{
+  "name": "hyas",
+  "version": "0.0.0",
+  "author": "Hyas",
+  "license": "MIT",
   "scripts": {
     "dev": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache",
     "dev:drafts": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache --buildDrafts",
     "create": "exec-bin node_modules/.bin/hugo/hugo new",
+    "lint": "npm run lint:scripts && npm run lint:styles && npm run lint:markdown",
     "lint:scripts": "eslint --cache config",
     "lint:styles": "stylelint --cache \"assets/scss/**/*.{css,sass,scss}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "exec-bin node_modules/.bin/hugo/hugo --minify",
     "preview": "http-server --gzip --brotli --ext=html --cors",
+    "clean": "npm run clean:build && npm run clean:lint && npm run clean:install",
     "clean:build": "shx rm -rf public resources .hugo_build.lock",
     "clean:install": "shx rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml",
     "clean:lint": "shx rm -rf .eslintcache .stylelintcache",
@@ -55,9 +63,15 @@ First, replace the "scripts" section of your package.json with the following:
     "postinfo": "exec-bin node_modules/.bin/hugo/hugo version",
     "postinstall": "shx rm -rf node_modules/.bin/hugo && shx mkdir node_modules/.bin/hugo && shx cp node_modules/gethyas/node_modules/.bin/hugo/* node_modules/.bin/hugo"
   },
+  "engines": {
+    "node": ">=16.12.0"
+  }
+}
 ```
 
-Then, add an `.npmrc` file to your project root with the following:
+### 3. Install Hyas and integrations
+
+First, add an `.npmrc` file to your project root with the following:
 
 ```ini
 enable-pre-post-scripts = true
@@ -66,42 +80,72 @@ node-linker = hoisted
 prefer-symlinked-executables = false
 ```
 
-Next, install the Hyas project dependencies inside your project.
+Next, install the latest version of Hyas and integrations of choice in your project.
 
 <Tabs>
   <TabItem label="npm">
 ```bash
-# Upgrade to Hyas v2.x
+# Install Hyas v2.x
 npm install gethyas@latest
 
-# Example: add Bootstrap, SEO, and Images integrations
-npm install @hyas/bootstrap@latest @hyas/seo@latest @hyas/images@latest
+# Example: install Bootstrap, Images, and SEO integrations
+npm install @hyas/bootstrap@latest @hyas/images@latest @hyas/seo@latest
 ```
   </TabItem>
   <TabItem label="pnpm">
 ```bash
-# Upgrade to Hyas v2.x
+# Install Hyas v2.x
 pnpm install gethyas@latest
 
-# Example: add Bootstrap, SEO, and Images integrations
-pnpm install @hyas/bootstrap@latest @hyas/seo@latest @hyas/images@latest
+# Example: install Bootstrap, Images, and SEO integrations
+pnpm install @hyas/bootstrap@latest @hyas/images@latest @hyas/seo@latest
 ```
   </TabItem>
   <TabItem label="Yarn">
 ```bash
-# Upgrade to Hyas v2.x
+# Install Hyas v2.x
 yarn add gethyas@latest
 
-# Example: add Bootstrap, SEO, and Images integrations
-yarn add @hyas/bootstrap@latest @hyas/seo@latest @hyas/images@latest
+# Example: install Bootstrap, Images, and SEO integrations
+yarn add @hyas/bootstrap@latest @hyas/images@latest @hyas/seo@latest
 ```
   </TabItem>
 </Tabs>
-
-### 3. Update configuration
 
 :::note[Need to continue?]
 After upgrading Hyas to the latest version, you may not need to make any changes to your project at all!
 
 But, if you notice errors or unexpected behavior, please check below for what has changed that might need updating in your project.
 :::
+
+## Configuration
+
+Update your configuration files for the following integrations:
+
+- [Bootstrap](https://github.com/gethyas/bootstrap/blob/main/README.md)
+- [Images](https://github.com/gethyas/images/blob/main/README.md)
+- [SEO](https://github.com/gethyas/seo/blob/main/README.md)
+
+## Know Issues
+
+### ENOENT
+
+When you get an `ENOENT` error message, run the following command:
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+npm run clean:install && npm install
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm run clean:install && pnpm install
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn run clean:install && yarn install
+```
+  </TabItem>
+</Tabs>
