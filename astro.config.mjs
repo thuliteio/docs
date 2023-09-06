@@ -52,6 +52,10 @@ export default defineConfig({
       {
         label: 'Project Structure',
         link: '/basics/project-structure'
+      },
+      {
+        label: 'Pages',
+        link: '/basics/pages'
       }]
     }, {
       label: 'Recipes',
@@ -62,6 +66,9 @@ export default defineConfig({
       }, {
         label: 'Add integrations',
         link: '/guides/integrations'
+      }, {
+        label: 'Deploy your site',
+        link: '/guides/deploy'
       }]
     }, {
       label: 'Guides',
