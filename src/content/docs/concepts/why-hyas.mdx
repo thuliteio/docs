@@ -18,23 +18,23 @@ Why choose Hyas over another web framework? Here are five core design principles
 
 ### Hugo powered
 
-**Hyas uses Hugo for it's fast website build times and flexible project organization.** Hyas installs Hugo locally in your project and mounts Hyas integrations and Hyas themes into Hugo's virtual filesystem.
+**Hyas uses Hugo for it's fast website build times and flexible project organization.** Hyas installs Hugo *locally* in your project and mounts Hyas integrations and Hyas themes into Hugo's virtual filesystem.
 
-Hugo recommends to install it's binary [globally](https://gohugo.io/installation/). However, doing so, your project users could be using *different* Hugo versions ("It does not work for me?"). Hyas installs Hugo *locally* in your project making sure your project users will always use the *same* Hugo version ("It works for me!"). A local install also guarantees that you and your project users will always use a Hugo version that *works* with (is tested for) a specific version of Hyas.
+Hugo recommends to install it's binary [globally](https://gohugo.io/installation/). But, by doing so, your project users could be using *different* Hugo versions ("It does not work for me?"). That's why Hyas installs Hugo locally in your project making sure your project users will always use the *same* Hugo version ("It also works for me!"). A local install also guarantees that you and your project users will *always* use a Hugo version that works with (is tested for) a specific version of Hyas.
 
 :::note[How Hyas installs Hugo locally]
 Hyas uses [Hugo Installer](https://github.com/dominique-mueller/hugo-installer) to install Hugo locally in your project. 
 :::
 
-Hyas integrations and Hyas themes (your projects' dependencies — including Hugo itself) are installed as npm modules in the `node_modules` directory of your project. Hyas [mounts](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts) the relevant `node_modules` directories to one of Hugo's corresponding [component folders](https://gohugo.io/getting-started/directory-structure/#directory-structure-explained), so that they're available to Hugo for processing.
+Hyas integrations and Hyas themes (your projects' dependencies — including Hugo itself) are installed as npm modules in the `node_modules` directory of your project. Hyas [mounts](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts) the relevant `node_modules` directories to one of Hugo's corresponding [component folders](https://gohugo.io/getting-started/directory-structure/#directories), so that they're available to Hugo for processing.
 
 ### npm managed
 
-**Hyas was designed to make managing dependencies straightforward and easy**. With Hyas you can manage all your projects' dependencies in a single declaration file with npm.
+**Hyas was designed to make managing dependencies straightforward and easy**. With Hyas you can manage *all* your projects' dependencies in a *single* declaration file with npm.
 
-Hugo's way of managing dependencies is [Hugo Modules](https://gohugo.io/hugo-modules/use-modules/) (requiring [Go](https://go.dev/dl/)) with (experimental) [support for npm](https://gohugo.io/commands/hugo_mod_npm_pack/). However, using the latter introduces a second method (next to the former) and a second dependencies declaration file. JavaScript web frameworks use [npm](https://docs.npmjs.com/about-nm#use-npm-to---) (or [pnpm](https://pnpm.io/motivation), or [Yarn](https://yarnpkg.com/)) which is a single method with a single dependencies declaration file. Unfortunately, Hugo's (experimental) support for npm does not play nicely with npm (e.g. scripts are not supported).
+Hugo's way of managing dependencies is [Hugo Modules](https://gohugo.io/hugo-modules/use-modules/) (requiring [Go](https://go.dev/dl/)) with (experimental) [support for npm](https://gohugo.io/commands/hugo_mod_npm_pack/). But, using the latter introduces a *second* method (next to the former) and a *second* dependencies declaration file. JavaScript web frameworks usually use [npm](https://docs.npmjs.com/about-nm#use-npm-to---) (or [pnpm](https://pnpm.io/motivation), or [Yarn](https://yarnpkg.com/)) which is a *single* method with a *single* dependencies declaration file. Also — more importantly — Hugo's (experimental) support for npm does *not* include support for the `scripts` section of a `package.json` file. And, that's what Hyas *needs*.
 
-Hyas uses npm so you can manage *all* your projects' dependencies (like e.g. linters or a code formatter) in a *single* declaration file, making managing dependencies straightforward and easy.
+Hyas uses npm solely so you can manage *all* your projects' dependencies (like e.g. linters or a code formatter) in a *single* declaration file, making managing dependencies straightforward and easy.
 
 :::note[Still want to use Hugo Modules?]
  Thats okay! Hyas works in combination with [Hugo Modules](https://gohugo.io/hugo-modules/) (but without it's npm support).
