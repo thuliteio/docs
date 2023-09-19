@@ -1,0 +1,29 @@
+---
+title: Dependencies
+description: A guide in my new Starlight docs site.
+---
+import List from '../../../components/List.astro';
+
+Hyas is a Node.js web framework (not a Hugo framework) that makes use of **npm** to explicitly declare and isolate dependencies — including Hugo. 
+
+## Explicit declaration and isolation
+
+Hyas adheres as much as possible to [The Twelve-Factor App](https://12factor.net/) methodology. A twelve-factor app never relies on implicit existence of system-wide packages. It declares all dependencies, completely and exactly, via a dependency declaration manifest.
+
+## npm
+
+In the world of Node.js, the *dependency declaration manifest* is a `package.json` file in the root of your project. At its core it's just a JSON file that lists out all your dependencies and their versions.
+
+One benefit of explicit dependency declaration is that it simplifies setup for developers new to the app. The new developer can check out the app's codebase onto their development machine, requiring only the language runtime and dependency manager installed as prerequisites.
+
+Once again in the world of Node.js, this means that after a developer has checked out/cloned your codebase, they only need to run `npm install`. This simplifies developer on boarding time and makes for faster collaboration.
+
+Hyas uses [npm](https://www.npmjs.com/) to explicitly declare and isolate [dependencies](https://12factor.net/dependencies) — including Hugo.
+
+## Hugo Modules
+
+Hugo's way of managing dependencies is [Hugo Modules](https://gohugo.io/hugo-modules/use-modules/) (requiring [Go](https://go.dev/dl/)) — using `go.mod` as a *dependency declaration manifest*. In addition, Hugo comes with (experimental) [support for npm](https://gohugo.io/commands/hugo_mod_npm_pack/) — but without support for the `scripts` section of a `package.json` file (which Hyas needs). Note that, the latter also introduces a *second* dependency declaration manifest.
+
+:::note[Still want to use Hugo Modules?]
+ Thats okay! Hyas works in combination with [Hugo Modules](https://gohugo.io/hugo-modules/) (but without it's npm support).
+:::

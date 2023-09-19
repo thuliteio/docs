@@ -4,51 +4,57 @@ description: A guide in my new Starlight docs site.
 ---
 import List from '../../../components/List.astro';
 
-Hyas is an **all-in-one web framework** for building **fast, security-focused** websites.
+Hyas is a **Node.js web framework** for building **fast, security-focused** websites.
 
 Why choose Hyas over another web framework? Here are five core design principles to help explain why we built Hyas, the problems that it exists to solve, and why Hyas may be the best choice for your project or team.
 
 ## Hyas is...
 
-- [Hugo powered](#hugo-powered): Fast website build times and flexible project organization.
-- [npm managed](#npm-managed): Managing dependencies should be straightforward and easy.
-- [Ready for production](#ready-for-production): Your website is optimized for speed, SEO, and security.
+- [Fast by default](#fast-by-default): It should be impossible to build a slow website with Hyas.
+- [Security focused](#security-focused): Your website should keep up with the latest in web security standards.
+- [Robust and reliable](#robust-and-reliable): Your website should follow best practices for building web apps.
 - [Easy to use](#easy-to-use): You don't need to be an expert to build something with Hyas.
 - [Fully-featured, but flexible](#fully-featured-but-flexible): A growing number of Hyas integrations to choose from.
 
-### Hugo powered
+### Fast by default
 
-**Hyas uses Hugo for it's fast website build times and flexible project organization.** Hyas installs Hugo *locally* in your project and mounts Hyas integrations and Hyas themes into Hugo's virtual filesystem.
+Good performance is always important, but it is *especially* critical for content-focused websites. It has been well-proven that poor performance loses you engagement, conversions, and money. For example:
 
-Hugo recommends to install it's binary [globally](https://gohugo.io/installation/). But, by doing so, your project users could be using *different* Hugo versions ("It does not work for me?"). That's why Hyas installs Hugo locally in your project making sure your project users will always use the *same* Hugo version ("It also works for me!"). A local install also guarantees that you and your project users will *always* use a Hugo version that works with (is tested for) a specific version of Hyas.
+- Every 100ms faster → 1% more conversions ([Mobify](https://web.dev/why-speed-matters/), earning +$380,000/yr)
+- 50% faster → 12% more sales ([AutoAnything](https://www.digitalcommerce360.com/2010/08/19/web-accelerator-revs-conversion-and-sales-autoanything/))
+- 20% faster → 10% more conversions ([Furniture Village](https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/furniture-village-and-greenlight-slash-page-load-times-boosting-user-experience/))
+- 40% faster → 15% more sign-ups ([Pinterest](https://medium.com/pinterest-engineering/driving-user-growth-with-performance-improvements-cfc50dafadd7))
+- 850ms faster → 7% more conversions ([COOK](https://web.dev/why-speed-matters/))
+- Every 1 second slower → 10% fewer users ([BBC](https://www.creativebloq.com/features/how-the-bbc-builds-websites-that-scale))
 
-:::note[How Hyas installs Hugo locally]
-Hyas uses [Hugo Installer](https://github.com/dominique-mueller/hugo-installer) to install Hugo locally in your project. 
-:::
+In many web frameworks, it is easy to build a website that looks great during development only to load painfully slow once deployed. JavaScript is often the culprit, since users' phones and lower-powered devices rarely match the speed of a developer's laptop.
 
-Hyas integrations and Hyas themes (your projects' dependencies — including Hugo itself) are installed as npm modules in the `node_modules` directory of your project. Hyas [mounts](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts) the relevant `node_modules` directories to one of Hugo's corresponding [component folders](https://gohugo.io/getting-started/directory-structure/#directories), so that they're available to Hugo for processing.
+Hyas' magic is in how it combines Hugo's build speed with optimizations for production builds. The result is amazing web performance for every website, out of the box. Our goal: **It should be nearly impossible to build a slow website with Hyas**.
 
-### npm managed
+### Security focused
 
-**Hyas was designed to make managing dependencies straightforward and easy**. With Hyas you can manage *all* your projects' dependencies in a *single* declaration file with npm.
+With great regularity, we hear about websites becoming unavailable due to denial of service attacks, or displaying modified (and often damaging) information on their homepages. In other high-profile cases, millions of passwords, email addresses, and credit card details have been leaked into the public domain, exposing website users to both personal embarrassment and financial risk.
 
-Hugo's way of managing dependencies is [Hugo Modules](https://gohugo.io/hugo-modules/use-modules/) (requiring [Go](https://go.dev/dl/)) with (experimental) [support for npm](https://gohugo.io/commands/hugo_mod_npm_pack/). But, using the latter introduces a *second* method (next to the former) and a *second* dependencies declaration file. JavaScript web frameworks usually use [npm](https://docs.npmjs.com/about-nm#use-npm-to---) (or [pnpm](https://pnpm.io/motivation), or [Yarn](https://yarnpkg.com/)) which is a *single* method with a *single* dependencies declaration file. Also — more importantly — Hugo's (experimental) support for npm does *not* include support for the `scripts` section of a `package.json` file. And, that's what Hyas *needs*.
+The purpose of website security is to prevent these (or any) sorts of attacks. The more formal definition of website security is *the act/practice of protecting websites from unauthorized access, use, modification, destruction, or disruption*.
 
-Hyas uses npm solely so you can manage *all* your projects' dependencies (like e.g. linters or a code formatter) in a *single* declaration file, making managing dependencies straightforward and easy.
+Effective website security requires design effort across the whole of the website: in your web application, the configuration of the web server, your policies for creating and renewing passwords, and the client-side code.
 
-:::note[Still want to use Hugo Modules?]
- Thats okay! Hyas works in combination with [Hugo Modules](https://gohugo.io/hugo-modules/) (but without it's npm support).
-:::
+Hyas adheres as much as possible to [MDN's web security guidelines](https://infosec.mozilla.org/guidelines/web_security#web-security-cheat-sheet), and uses e.g. [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) and sensible defaults for Security Headers like [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy). Our goal: **Your website should keep up with the latest in web security standards.**.
 
-### Ready for production
+### Robust and reliable
 
-- **Production-ready**: Optimized for speed, SEO, and security.
+[The Twelve-Factor App](https://12factor.net/) is a set of principles that describes a way of making software that, when followed, enables companies to create code that can be released reliably, scaled quickly, and maintained in a consistent and predictable manner.
+
+Hyas adheres as much as possible to The Twelve-Factor App methodology, and uses e.g. npm to explicitly declare and isolate [dependencies](https://12factor.net/dependencies). Our goal: **Your website should follow best practices for building web apps**.
 
 ### Easy to use
 
-- **Development tools:** Find and fix problems in scripts, styles, and markdown.
-- **Deploy anywhere:** Deployment guides to different deployment services.
+**Hyas' goal is to be accessible to every web developer**. Hyas was designed to feel familiar and approachable regardless of skill level or past experience with web development.
+
+We designed Hyas to remove as much "required complexity" as possible from the developer experience, especially as you onboard for the first time. You can build a "Hello World" example website in Hyas with just HTML and CSS. Then, when you need to build something more powerful, you can incrementally reach for new features and APIs as you go.
 
 ### Fully-featured, but flexible
 
-- **Customizable:** Tailwind, Images, and other integrations to choose from.
+**Hyas comes with everything you need to build a website.** Hyas includes file-based routing, asset handling, a build process, bundling, optimizations, data-fetching, and more. You can build great websites without ever reaching outside of Hyas' core feature set.
+
+If you need more control, you can extend Hyas with a growing number of [integrations](https://gethyas.com/integrations/) like [SEO](https://github.com/gethyas/seo), [Images](https://github.com/gethyas/images), [Inline SVG](https://github.com/gethyas/inline-svg), [Tailwind CSS](https://github.com/gethyas/tailwindcss), [Bootstrap](https://github.com/gethyas/bootstrap), and more. [Connect your favorite CMS](/guides/cms/) or [deploy to your favorite host](/guides/deploy/) with just a single command.

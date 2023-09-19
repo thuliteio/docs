@@ -45,6 +45,12 @@ export default defineConfig({
       {
         label: 'Why Hyas',
         link: '/concepts/why-hyas'
+      }, {
+        label: 'Site Generator',
+        link: '/concepts/site-generator'
+      }, {
+        label: 'Dependencies',
+        link: '/concepts/dependencies'
       }]
     }, {
       label: 'Basics',
