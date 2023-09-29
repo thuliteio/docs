@@ -22,9 +22,6 @@ export default defineConfig({
       baseUrl: 'https://github.com/gethyas/docs/edit/main/',
     },
     sidebar: [{
-      label: '← gethyas.com',
-      link: 'https://gethyas.com/'
-    }, {
       label: 'Start Here',
       items: [{
         label: 'Getting Started',
@@ -86,13 +83,18 @@ export default defineConfig({
       }]
     }, {
       label: 'Reference',
+      collapsed: true,
       autogenerate: {
         directory: 'reference'
       }
+    }, {
+      label: 'Hyas',
+      link: 'https://gethyas.com/'
     }],
     social: {
       github: 'https://github.com/gethyas',
-      twitter: 'https://twitter.com/gethyas'
+      twitter: 'https://twitter.com/gethyas',
+      mastodon: 'https://fosstodon.org/@hyas'
     },
     customCss: [
       // Relative path to your custom CSS file
