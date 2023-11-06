@@ -1,6 +1,7 @@
 ---
 title: Hyas CLI
 description: A reference page in my new Starlight docs site.
+next: false
 ---
 
 Reference pages are ideal for outlining how things work in terse and clear terms.

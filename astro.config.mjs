@@ -12,7 +12,7 @@ export default defineConfig({
   site: 'https://docs.gethyas.com/',
   integrations: [starlight({
     title: 'Hyas Docs',
-    description: 'The all-in-one Hugo-npm framework. Fast, flexible, and easy-to-use.',
+    description: 'Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm.',
     logo: {
       light: './src/assets/light-logo.svg',
       dark: './src/assets/dark-logo.svg',
@@ -93,14 +93,16 @@ export default defineConfig({
     }],
     social: {
       github: 'https://github.com/gethyas',
-      twitter: 'https://twitter.com/gethyas',
+      'x.com': 'https://x.com/gethyas',
       mastodon: 'https://fosstodon.org/@hyas'
     },
     customCss: [
       // Relative path to your custom CSS file
       './src/styles/custom.css',
     ],
-    lastUpdated: true
+    lastUpdated: true,
+    favicon: '/favicon.svg',
+    titleDelimiter: '—',
   })
   ],
   // Process images with sharp: https://docs.astro.build/en/guides/assets/#using-sharp

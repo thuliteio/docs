@@ -19,6 +19,7 @@ In addition to local editors, Hyas also runs well on in-browser hosted editors, 
 - [GitHub.dev](https://github.dev/)
 - [Gitpod](https://gitpod.io/)
 
-:::note
-[StackBlitz](https://stackblitz.com/) does *not* support [running the postinstall script](https://developer.stackblitz.com/platform/webcontainers/turbo-package-manager#install-scripts) to make Hugo locally available.
+:::note[StackBlitz support]
+Hyas does not (yet) run on
+[StackBlitz](https://stackblitz.com/) — [check current status](https://stackblitz.com/edit/stackblitz-starters-dxgsjr?file=index.js).
 :::
