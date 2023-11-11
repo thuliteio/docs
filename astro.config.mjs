@@ -80,6 +80,12 @@ export default defineConfig({
       {
         label: 'Example Guide',
         link: '/guides/example'
+      },
+      {
+        label: 'Images',
+        link: 'https://images.gethyas.com/',
+        attrs: { target: '_blank' },
+        badge: 'New'
       }]
     }, {
       label: 'Reference',
@@ -88,8 +94,20 @@ export default defineConfig({
         directory: 'reference'
       }
     }, {
-      label: 'Hyas',
-      link: 'https://gethyas.com/'
+      label: 'Websites',
+      collapsed: true,
+      items: [
+      // Each item here is one entry in the navigation menu.
+      {
+        label: 'Hyas',
+        link: 'https://gethyas.com/',
+        attrs: { target: '_blank' }
+      },
+      {
+        label: 'Doks',
+        link: 'https://getdoks.org/',
+        attrs: { target: '_blank' }
+      }]
     }],
     social: {
       github: 'https://github.com/gethyas',
