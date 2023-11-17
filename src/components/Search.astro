@@ -1,0 +1,36 @@
+---
+// Source: https://blog.otterlord.dev/posts/starlight-algolia/
+
+import '@docsearch/css'
+---
+
+<div id="docsearch"></div>
+
+<script>
+  import docsearch from '@docsearch/js'
+
+  docsearch({
+    container: '#docsearch',
+    appId: 'AHKXAT87MO',
+    indexName: 'gethyas',
+    apiKey: 'fbb7c4284e4c7843cccdb9edfa6ad729',
+    insights: true,
+  })
+</script>
+
+<style>
+  div {
+    display: contents;
+  }
+
+  div[data-open-modal] {
+    width: 100%;
+  }
+
+  @media (min-width: 50rem) {
+    :global(.DocSearch-Button) {
+      width: 100%;
+      max-width: 22rem;
+    }
+  }
+</style>
