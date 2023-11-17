@@ -17,6 +17,12 @@
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
+  from = "https://docs.gethyas.com/*"
+  to = "https://gethyas.com/docs/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/"
   to = "/getting-started/"
   status = 301
