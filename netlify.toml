@@ -24,7 +24,7 @@
 
 [[redirects]]
   from = "/"
-  to = "/getting-started/"
+  to = "/docs/getting-started/"
   status = 301
   force = true
 
