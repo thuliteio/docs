@@ -97,21 +97,6 @@ export default defineConfig({
       autogenerate: {
         directory: 'reference'
       }
-    }, {
-      label: 'Websites',
-      collapsed: true,
-      items: [
-      // Each item here is one entry in the navigation menu.
-      {
-        label: 'Hyas',
-        link: 'https://gethyas.com/',
-        attrs: { target: '_blank' }
-      },
-      {
-        label: 'Doks',
-        link: 'https://getdoks.org/',
-        attrs: { target: '_blank' }
-      }]
     }],
     social: {
       github: 'https://github.com/gethyas',
