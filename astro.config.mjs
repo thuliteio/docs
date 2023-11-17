@@ -15,7 +15,7 @@ export default defineConfig({
     description: 'Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm.',
     components: {
       // Override the default `Search` component.
-      // Search: './src/components/Search.astro'
+      Search: './src/components/Search.astro'
     },
     logo: {
       light: './src/assets/light-logo.svg',
