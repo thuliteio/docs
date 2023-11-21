@@ -1,0 +1,90 @@
+---
+title: "Plausible"
+description: Plausible guide for Hyas
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+This guide will help you add [Plausible Analytics](https://plausible.io/) to your Hyas site.
+
+## Set up Plausible
+
+To follow this guide, you'll need an existing [Hyas](https://gethyas.com/) site and a [Plausible](https://plausible.io/) project.
+
+:::note
+If a file does not exist in your projects' root, copy the file over from `node_modules/@hyas/core/`. Make sure to use the same directory structure in your root.
+:::
+
+### Add parameters
+
+Add the following parameters to `config/_default/params.toml` and update with your `plausibleDomain`:
+
+```toml
+# Add-ons
+[add_ons]
+  plausibleDomain = "example.com" # "example.com" (default)
+```
+
+### Install dependencies
+
+We're going to use the [Plausible Analytics Tracker](https://github.com/plausible/plausible-tracker) — a frontend library to interact with Plausible Analytics:
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+npm install plausible-tracker
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm install plausible-tracker
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn add plausible-tracker
+```
+  </TabItem>
+</Tabs>
+
+This will install the required dependencies.
+
+### Add script
+
+#### Create script
+
+Add the following to `assets/js/plausible.js`:
+
+```js
+import Plausible from 'plausible-tracker'
+
+import * as params from '@params';
+const plausibleDomain = params.plausibleDomain;
+
+const { trackPageview, trackEvent } = Plausible({
+  domain: plausibleDomain,
+})
+```
+
+#### Import script
+
+Add to `assets/js/app.js`:
+
+```js
+// Import plausible.js
+import 'js/plausible.js';
+```
+
+#### Load script
+
+Update `layouts/partials/footer/script-footer.html`:
+
+```html
+{{ $plausibleDomain := site.Params.add_ons.plausibleDomain -}}
+{{ partial "footer/esbuild" (dict "src" "js/app.js" "targetPath" "main.js" "load" "async" "transpile" false "params" (dict "plausibleDomain" $plausibleDomain)) -}}
+```
+
+## Next Steps
+
+- [Content Security Policy](https://github.com/plausible/docs/issues/20)
+- [Usage](https://github.com/plausible/plausible-tracker#usage)
+- [Plausible Analytics Docs](https://plausible.io/docs/)

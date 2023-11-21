@@ -32,8 +32,13 @@ export default defineConfig({
         link: '/getting-started'
       }, {
         label: 'Installation',
-        link: '/install/auto'
-      }, {
+        link: '/installation'
+      }, 
+      {
+        label: 'Manual Setup',
+        link: '/manual-setup'
+      },
+      {
         label: 'Editor Setup',
         link: '/editor-setup'
       }, {
@@ -42,6 +47,7 @@ export default defineConfig({
       }]
     }, {
       label: 'Core Concepts',
+      collapsed: true,
       items: [
       {
         label: 'Why Hyas',
@@ -87,10 +93,14 @@ export default defineConfig({
       },
       {
         label: 'Images',
-        link: 'https://images.gethyas.com/',
-        attrs: { target: '_blank' },
-        badge: 'New'
+        link: '/guides/images'
       }]
+    }, {
+      label: 'Services',
+      collapsed: true,
+      autogenerate: {
+        directory: 'services'
+      }
     }, {
       label: 'Reference',
       collapsed: true,
