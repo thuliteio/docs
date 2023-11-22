@@ -38,6 +38,7 @@ yarn run clean:install
 Replace the contents of your project's `package.json` with the following:
 
 ```json
+// package.json
 {
   "name": "hyas",
   "version": "0.0.0",
@@ -74,39 +75,52 @@ Replace the contents of your project's `package.json` with the following:
 First, add an `.npmrc` file to your project root with the following:
 
 ```ini
+// .npmrc
 enable-pre-post-scripts = true
 auto-install-peers = true
 node-linker = hoisted
 prefer-symlinked-executables = false
 ```
 
-Next, install the latest version of Hyas and the recommended integrations in your project.
+#### Install Hyas
+
+Next, install the latest version of Hyas:
 
 <Tabs>
   <TabItem label="npm">
 ```bash
-# Install Hyas v2.x
 npm install gethyas@latest
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm install gethyas@latest
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn add gethyas@latest
+```
+  </TabItem>
+</Tabs>
 
-# Recommended: install Bootstrap, Images, and SEO integrations
+#### Install integrations
+
+Optionally, install the the recommended integrations in your project:
+
+<Tabs>
+  <TabItem label="npm">
+```bash
 npm install @hyas/bootstrap@latest @hyas/images@latest @hyas/seo@latest
 ```
   </TabItem>
   <TabItem label="pnpm">
 ```bash
-# Install Hyas v2.x
-pnpm install gethyas@latest
-
-# Recommended: install Bootstrap, Images, and SEO integrations
 pnpm install @hyas/bootstrap@latest @hyas/images@latest @hyas/seo@latest
 ```
   </TabItem>
   <TabItem label="Yarn">
 ```bash
-# Install Hyas v2.x
-yarn add gethyas@latest
-
-# Recommended: install Bootstrap, Images, and SEO integrations
 yarn add @hyas/bootstrap@latest @hyas/images@latest @hyas/seo@latest
 ```
   </TabItem>

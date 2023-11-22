@@ -32,19 +32,16 @@ Run the following command in your terminal to start our handy install wizard:
 <Tabs>
   <TabItem label="npm">
 ```bash
-# create a new project with npm
 npm create hyas@latest
 ```
   </TabItem>
   <TabItem label="pnpm">
 ```bash
-# create a new project with pnpm
 pnpm create hyas@latest
 ```
   </TabItem>
   <TabItem label="Yarn">
 ```bash
-# create a new project with yarn
 yarn create hyas
 ```
   </TabItem>
@@ -110,32 +107,52 @@ If you aren't able to open your project in the browser, go back to the terminal 
 
 You can also start a new Hyas project based on an [official example](https://github.com/gethyas/create-hyas#templates) by passing a `--template` argument to the `create hyas` command or by using a tool like [degit](https://github.com/Rich-Harris/degit) to scaffold your project with the `main` branch of any GitHub repository.
 
+### Official
+
+Create a new project with an official example — for example with Doks:
+
 <Tabs>
   <TabItem label="npm">
 ```bash
-# create a new project with an official example
-npm create hyas@latest -- --template <example-name>
-
-# create a new project based on a GitHub repository's main branch
-npx degit <username/repo> [project-directory]
+# Syntax: npm create hyas@latest -- --template <example-name>
+npm create hyas@latest -- --template doks
 ```
   </TabItem>
   <TabItem label="pnpm">
 ```bash
-# create a new project with an official example
-pnpm create hyas@latest --template <example-name>
-
-# create a new project based on a GitHub repository's main branch
-pnpm dlx degit <username/repo> [project-directory]
+# Syntax: pnpm create hyas@latest --template <example-name>
+pnpm create hyas@latest -- --template doks
 ```
   </TabItem>
   <TabItem label="Yarn">
 ```bash
-# create a new project with an official example
-yarn create hyas --template <example-name>
+# Syntax: yarn create hyas --template <example-name>
+yarn create hyas@latest -- --template doks
+```
+  </TabItem>
+</Tabs>
 
-# create a new project based on a GitHub repository's main branch
-yarn dlx degit <username/repo> [project-directory]
+### Community
+
+Create a new project based on a GitHub repository's main branch
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+# Syntax: npx degit <user/repo> [project-directory]
+npx degit <user/repo>
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# Syntax: pnpm dlx degit <user/repo> [project-directory]
+pnpm dlx degit <user/repo>
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# Syntax: yarn dlx degit <user/repo> [project-directory]
+yarn dlx degit <user/repo>
 ```
   </TabItem>
 </Tabs>
