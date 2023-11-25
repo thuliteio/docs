@@ -11,6 +11,16 @@ export default defineConfig({
   },
   site: 'https://docs.gethyas.com/',
   integrations: [starlight({
+    head: [
+      {
+        tag: 'script',
+        attrs: {
+          src: 'https://plausible.io/js/script.js',
+          'data-domain': 'docs.gethyas.com',
+          defer: true,
+        },
+      },
+    ],
     title: 'Hyas Docs',
     description: 'Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm.',
     components: {
