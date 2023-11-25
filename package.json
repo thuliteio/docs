@@ -16,7 +16,7 @@
     "@astrojs/starlight": "^0.13.0",
     "@docsearch/css": "^3.5.2",
     "@docsearch/js": "^3.5.2",
-    "astro": "^3.5.7",
+    "astro": "^3.6.0",
     "sharp": "^0.32.6"
   },
   "devDependencies": {
