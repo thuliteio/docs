@@ -106,10 +106,10 @@ export default defineConfig({
         link: '/guides/images'
       }]
     }, {
-      label: 'Services',
+      label: 'Add-ons',
       collapsed: true,
       autogenerate: {
-        directory: 'services'
+        directory: 'add-ons'
       }
     }, {
       label: 'Reference',
