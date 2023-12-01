@@ -39,93 +39,67 @@ export default defineConfig({
     editLink: {
       baseUrl: 'https://github.com/gethyas/docs/edit/main/',
     },
-    sidebar: [{
-      label: 'Start Here',
-      items: [{
-        label: 'Getting Started',
-        link: '/getting-started'
-      }, {
-        label: 'Installation',
-        link: '/installation'
-      }, 
+    sidebar: [
       {
-        label: 'Manual Setup',
-        link: '/manual-setup'
+        label: 'Start Here',
+        items: [
+          { label: 'Getting Started', link: '/getting-started/' },
+          { label: 'Installation', link: '/installation/' },
+          { label: 'Manual Setup', link: '/manual-setup/' },
+          { label: 'Editor Setup', link: '/editor-setup/' },
+          { label: 'Upgrade to v2', link: '/guides/upgrade-to/v2/' },
+        ]
       },
       {
-        label: 'Editor Setup',
-        link: '/editor-setup'
-      }, {
-        label: 'Upgrade to v2',
-        link: '/guides/upgrade-to/v2'
-      }]
-    }, {
-      label: 'Core Concepts',
-      collapsed: true,
-      items: [
-      {
-        label: 'Why Hyas',
-        link: '/concepts/why-hyas'
-      }, {
-        label: 'Site Generator',
-        link: '/concepts/site-generator'
-      }, {
-        label: 'Dependencies',
-        link: '/concepts/dependencies'
-      }]
-    }, {
-      label: 'Basics',
-      items: [
-      {
-        label: 'Project Structure',
-        link: '/basics/project-structure'
+        label: 'Core Concepts',
+        collapsed: true,
+        items: [
+          { label: 'Why Hyas', link: '/concepts/why-hyas/' },
+          { label: 'Site Generator', link: '/concepts/site-generator/' },
+          { label: 'Dependencies', link: '/concepts/dependencies/' },
+        ]
       },
       {
-        label: 'Pages',
-        link: '/basics/pages'
-      }]
-    }, {
-      label: 'Recipes',
-      items: [
-      {
-        label: 'Connect a CMS',
-        link: '/guides/cms'
-      }, {
-        label: 'Add integrations',
-        link: '/guides/integrations'
-      }, {
-        label: 'Deploy your site',
-        link: '/guides/deploy'
-      }]
-    }, {
-      label: 'Guides',
-      items: [
-      // Each item here is one entry in the navigation menu.
-      {
-        label: 'Example Guide',
-        link: '/guides/example'
+        label: 'Basics',
+        autogenerate: { directory: 'basics' },
       },
       {
-        label: 'Images',
-        link: '/guides/images'
-      }]
-    }, {
-      label: 'Add-ons',
-      collapsed: true,
-      autogenerate: {
-        directory: 'add-ons'
-      }
-    }, {
-      label: 'Reference',
-      collapsed: true,
-      autogenerate: {
-        directory: 'reference'
-      }
-    }],
+        label: 'Guides',
+        items: [
+          { label: 'Markdown', link: '/guides/markdown/' },
+          { label: 'Internationalization', link: '/guides/internationalization/' },
+          {
+            label: 'Deployment',
+            collapsed: true,
+            autogenerate: { directory: 'guides/deployment' },
+          },
+          { label: 'Versioning', link: '/guides/versioning/' },
+        ]
+      },
+      {
+        label: 'Add-ons',
+        collapsed: true,
+        items: [
+          {
+            label: 'Integrations',
+            collapsed: true,
+            autogenerate: { directory: 'add-ons/integrations' },
+          },
+          { label: 'Plausible Analytics', link: '/add-ons/plausible/' },
+        ]
+      },
+      {
+        label: 'Reference',
+        collapsed: true,
+        autogenerate: {
+          directory: 'reference'
+        },
+      },
+    ],
     social: {
       github: 'https://github.com/gethyas',
       'x.com': 'https://x.com/gethyas',
-      mastodon: 'https://fosstodon.org/@hyas'
+      mastodon: 'https://fosstodon.org/@hyas',
     },
     customCss: [
       // Relative path to your custom CSS file

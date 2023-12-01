@@ -1,6 +1,8 @@
 ---
 title: Pages
 description: A reference page in my new Starlight docs site.
+sidebar:
+  order: 2
 ---
 
 Reference pages are ideal for outlining how things work in terse and clear terms.

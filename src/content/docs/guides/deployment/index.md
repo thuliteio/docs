@@ -1,6 +1,8 @@
 ---
-title: Use a CMS with Hyas
+title: Deploy your Hyas site
 description: A guide in my new Starlight docs site.
+sidebar:
+  label: Overview
 ---
 
 Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
