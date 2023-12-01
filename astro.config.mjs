@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightDocSearch from '@astrojs/starlight-docsearch';
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,10 +24,13 @@ export default defineConfig({
     ],
     title: 'Hyas Docs',
     description: 'Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm.',
-    components: {
-      // Override the default `Search` component.
-      Search: './src/components/Search.astro'
-    },
+    plugins: [
+      starlightDocSearch({
+        appId: 'AHKXAT87MO',
+        apiKey: '72b68c153feda29c6ff4623a9f8b6073',
+        indexName: 'gethyas',
+      }),
+    ],
     logo: {
       light: './src/assets/light-logo.svg',
       dark: './src/assets/dark-logo.svg',

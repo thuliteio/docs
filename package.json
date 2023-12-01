@@ -13,11 +13,10 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/starlight": "^0.13.0",
-    "@docsearch/css": "^3.5.2",
-    "@docsearch/js": "^3.5.2",
-    "astro": "^3.6.1",
-    "sharp": "^0.32.6"
+    "@astrojs/starlight": "^0.14.0",
+    "@astrojs/starlight-docsearch": "^0.1.0",
+    "astro": "^3.6.4",
+    "sharp": "^0.33.0"
   },
   "devDependencies": {
     "auto-changelog": "^2.4.0",
