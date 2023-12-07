@@ -1,0 +1,95 @@
+---
+title: Deploy your Hyas Site to Netlify
+description: How to deploy your Hyas site to the web on Netlify.
+type: deploy
+stub: false
+service: Netlify
+---
+import List from '~/components/List.astro';
+
+[Netlify](https://netlify.com) offers hosting and serverless backend services for web applications and static websites. Any Hyas site can be hosted on Netlify!
+
+This guide includes instructions for deploying to Netlify through the website UI or Netlify's CLI.
+
+## How to deploy
+
+You can deploy to Netlify through the website UI or using Netlify's CLI (command line interface).
+
+### Website UI Deployment
+
+If your project is stored in GitHub, GitLab, BitBucket, or Azure DevOps, you can use the Netlify website UI to deploy your Hyas site.
+
+1. Click <kbd>Add a new site</kbd> in your [Netlify dashboard](https://app.netlify.com/)
+
+2. Choose <kbd>Import an existing project</kbd>
+
+    When you import your Hyas repository from your Git provider, Netlify should automatically detect and pre-fill the correct configuration settings for you.
+
+3. Make sure that the following settings are entered, then press the <kbd>Deploy</kbd> button:
+
+    - **Build Command:** `hyas build` or `npm run build`
+    - **Publish directory:** `public`
+
+ After deploying, you will be redirected to the site overview page. There, you can edit the details of your site.
+
+Any future changes to your source repository will trigger preview and production deploys based on your deployment configuration.
+
+#### `netlify.toml` file
+
+You can optionally create a new `netlify.toml` file at the top level of your project repository to configure your build command and publish directory, as well as other project settings including environment variables and redirects. Netlify will read this file and automatically configure your deployment.
+
+To configure the default settings, create a `netlify.toml` file with the following contents:
+
+```toml
+[build]
+  command = "npm run build"
+  publish = "public"
+```
+
+<List emoji="books">
+- More info at ["Deploy with git"](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git) on Netlify's docs
+</List>
+
+### CLI Deployment
+
+You can also create a new site on Netlify and link up your Git repository by installing and using the [Netlify CLI](https://cli.netlify.com/).
+
+
+1. Install Netlify's CLI globally
+
+    ```bash
+    npm install --global netlify-cli
+    ```
+
+2. Run `netlify login` and follow the instructions to log in and authorize Netlify
+3. Run `netlify init` and follow the instructions
+4. Confirm your build command (`hyas build` or `npm run build`)
+
+    The CLI will automatically detect the build settings (`hyas build` or `npm run build`) and deploy directory (`public`), and will offer to automatically generate a [`netlify.toml` file](#netlifytoml-file) with those settings.
+
+5. Build and deploy by pushing to Git
+
+    The CLI will add a deploy key to the repository, which means your site will be automatically rebuilt on Netlify every time you `git push`.
+
+<List emoji="books">
+- More details from Netlify on [Netlify CLI](https://docs.netlify.com/site-deploys/create-deploys/#netlify-cli)
+</List>
+
+### Set a Node.js Version
+
+If you are using a legacy [build image](https://docs.netlify.com/configure-builds/get-started/#build-image-selection) (Xenial) on Netlify, make sure that your Node.js version is set. Hyas requires `v18.14.1` or higher.
+
+You can [specify your Node.js version in Netlify](https://docs.netlify.com/configure-builds/manage-dependencies/#node-js-and-javascript) using:
+- a [`.nvmrc`](https://github.com/nvm-sh/nvm#nvmrc) file in your base directory.
+- a `NODE_VERSION` environment variable in your site's settings using the Netlify project dashboard.
+- a `NODE_VERSION` environment variable in your site's `netlify.toml`, for example:
+
+    ```toml
+    [build.environment]
+      NODE_VERSION = "20.10.0"
+      NPM_VERSION = "10.2.3"
+    ```
+
+## Using Netlify Functions
+
+No special configuration is required to use Netlify Functions with Hyas. Add a `netlify/functions` directory to your project root and follow [the Netlify Functions documentation](https://docs.netlify.com/functions/overview/) to get started!

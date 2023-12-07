@@ -1,6 +1,9 @@
 ---
 title: Configuration Reference
 description: A reference page in my new Starlight docs site.
+sidebar:
+  label: Configuration
+  order: 1
 ---
 
 Reference pages are ideal for outlining how things work in terse and clear terms.

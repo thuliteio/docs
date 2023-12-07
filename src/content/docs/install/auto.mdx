@@ -1,0 +1,172 @@
+---
+title: Install Hyas with the Automatic CLI
+description: A reference page in my new Starlight docs site.
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import List from '~/components/List.astro';
+
+Ready to install Hyas? Follow this guide to using the `create hyas` CLI to get started.
+
+:::note[Prefer to install Hyas manually?]
+Read our [step-by-step manual installation guide](/install/manual/) instead.
+:::
+
+## Prerequisites
+
+- **Node.js** - `v16.17.0` or higher.
+- **Text editor** - We recommend [VS Code](https://code.visualstudio.com/) with the [Hugo Language and Syntax Support](https://marketplace.visualstudio.com/items?itemName=budparr.language-hugo-vscode) extension.
+- **Terminal** - Hyas is accessed through its command-line interface (CLI).
+
+## Installation
+
+`create-hyas` is the fastest way to start a new Hyas project from scratch. It will walk you through every step of setting up your new Hyas project. It allows you to choose from a few different official starter templates.
+
+:::tip[Online previews]
+Prefer to try Hyas in your browser? Visit [start.gethyas.com](https://start.gethyas.com/) and spin up a new Hyas project without ever leaving your browser.
+:::
+
+### 1. Run the Setup Wizard
+
+Run the following command in your terminal to start our handy install wizard:
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+npm create hyas@latest
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm create hyas@latest
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn create hyas
+```
+  </TabItem>
+</Tabs>
+
+You can run `create-hyas` anywhere on your machine, so there’s no need to create a new empty directory for your project before you begin. If you don’t have an empty directory yet for your new project, the wizard will help create one for you automatically.
+
+If all goes well, you should see a "Done" message followed by some "Next steps".
+
+### 2. Install dependencies
+
+`cd` into your new project directory and install your dependencies before continuing.
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+npm install
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm install
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn install
+```
+  </TabItem>
+</Tabs>
+
+### 3. Start Hyas ✨
+
+Hyas uses the Hugo development server that has everything you need for project development. The `dev` command will start the local development server so that you can see your new website in action for the very first time.
+
+Use your favorite package manager to run this command and start the Hugo development server.
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+npm run dev
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm run dev
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn run dev
+```
+  </TabItem>
+</Tabs>
+
+If all goes well, Hyas should now be serving your project on [http://localhost:1313](http://localhost:1313/)!
+
+The Hugo server will listen for live file changes in your project directory, so you will not need to restart the server as you make changes during development.
+
+If you aren't able to open your project in the browser, go back to the terminal where you ran the `dev` command and look to see if an error occurred, or if your project is being served at a different URL than the one linked to above.
+
+## Starter Templates
+
+You can also start a new Hyas project based on an [official example](https://github.com/gethyas/create-hyas#templates) by passing a `--template` argument to the `create hyas` command or by using a tool like [degit](https://github.com/Rich-Harris/degit) to scaffold your project with the `main` branch of any GitHub repository.
+
+### Official
+
+Create a new project with an official example — for example with Doks:
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+# Syntax: npm create hyas@latest -- --template <example-name>
+npm create hyas@latest -- --template doks
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# Syntax: pnpm create hyas@latest --template <example-name>
+pnpm create hyas@latest --template doks
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# Syntax: yarn create hyas --template <example-name>
+yarn create hyas@latest --template doks
+```
+  </TabItem>
+</Tabs>
+
+### Community
+
+Create a new project based on a GitHub repository's main branch
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+# Syntax: npx degit <user/repo> [project-directory]
+npx degit h-enk/simply-cyan my-hyas-project
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# Syntax: pnpm dlx degit <user/repo> [project-directory]
+pnpm dlx degit h-enk/simply-cyan my-hyas-project
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# Syntax: yarn dlx degit <user/repo> [project-directory]
+yarn dlx degit h-enk/simply-cyan my-hyas-project
+```
+  </TabItem>
+</Tabs>
+
+Explore our [themes and starters showcase](https://gethyas.com/themes/) where you can browse themes for blogs, portfolios, documentation, landing pages, and more! Or, [search on GitHub](https://github.com/search?o=desc&q=hyas+starter&s=stars&type=repositories) for even more starter projects.
+
+## Next Steps
+
+Success! You are now ready to start building with Hyas! 🥳
+
+Here are a few topics that we recommend exploring next. You can read them in any order. You can even leave our documentation for a bit and go play in your new Hyas project codebase, coming back here whenever you run into trouble or have a question.
+
+<List emoji="books">
+- __Add a framework__: Learn how to extend Hyas with support for React, Svelte, Tailwind and more in our [Integrations guide](/).
+- __Deploy your site__: Learn how to build and deploy a Hyas project to the web in our [Deployment guide](/).
+- __Understand your codebase__: Learn more about Hyas' project structure in our [Project Structure guide](/).
+</List>

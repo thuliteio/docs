@@ -1,6 +1,9 @@
 ---
-title: Hyas CLI
+title: Hyas CLI Commands
 description: A reference page in my new Starlight docs site.
+sidebar:
+  label: The Hyas CLI
+  order: 3
 next: false
 ---
 

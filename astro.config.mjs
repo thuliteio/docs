@@ -24,6 +24,10 @@ export default defineConfig({
     ],
     title: 'Hyas Docs',
     description: 'Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm.',
+    components: {
+      MarkdownContent: './src/components/starlight/MarkdownContent.astro',
+      Sidebar: './src/components/starlight/Sidebar.astro',
+    },
     plugins: [
       starlightDocSearch({
         appId: 'AHKXAT87MO',
@@ -34,6 +38,7 @@ export default defineConfig({
     logo: {
       light: './src/assets/light-logo.svg',
       dark: './src/assets/dark-logo.svg',
+      alt: 'Hyas Docs',
       replacesTitle: true,
     },
     editLink: {
@@ -44,14 +49,13 @@ export default defineConfig({
         label: 'Start Here',
         items: [
           { label: 'Getting Started', link: '/getting-started/' },
-          { label: 'Installation', link: '/installation/' },
-          { label: 'Manual Setup', link: '/manual-setup/' },
+          { label: 'Installation', link: '/install/auto/' },
           { label: 'Editor Setup', link: '/editor-setup/' },
           { label: 'Upgrade to v2', link: '/guides/upgrade-to/v2/' },
         ]
       },
       {
-        label: 'Core Concepts',
+        label: 'Concepts',
         collapsed: true,
         items: [
           { label: 'Why Hyas', link: '/concepts/why-hyas/' },
@@ -64,28 +68,29 @@ export default defineConfig({
         autogenerate: { directory: 'basics' },
       },
       {
-        label: 'Guides',
+        label: 'Add-ons',
         items: [
-          { label: 'Markdown', link: '/guides/markdown/' },
-          { label: 'Internationalization', link: '/guides/internationalization/' },
-          {
-            label: 'Deployment',
-            collapsed: true,
-            autogenerate: { directory: 'guides/deployment' },
-          },
-          { label: 'Versioning', link: '/guides/versioning/' },
+          { label: 'Add integrations', link: '/guides/integrations/' },
+          { label: 'Add a theme', link: '/guides/themes/' },
         ]
       },
       {
-        label: 'Add-ons',
-        collapsed: true,
+        label: 'Recipes',
         items: [
-          {
-            label: 'Integrations',
-            collapsed: true,
-            autogenerate: { directory: 'add-ons/integrations' },
-          },
-          { label: 'Plausible Analytics', link: '/add-ons/plausible/' },
+          { label: 'Add analytics', link: '/guides/analytics/' },
+          { label: 'Connect a CMS', link: '/guides/cms/' },
+          { label: 'Versioning', link: '/guides/versioning/' },
+          { label: 'Deploy your site', link: '/guides/deploy/' },
+        ]
+      },
+      {
+        label: 'Guides',
+        items: [
+          { label: 'Markdown', link: '/guides/markdown/' },
+          { label: 'Styles', link: '/guides/styles/' },
+          { label: 'Scripts', link: '/guides/scripts/' },
+          { label: 'Fonts', link: '/guides/fonts/' },
+          { label: 'Internationalization', link: '/guides/internationalization/' },
         ]
       },
       {
