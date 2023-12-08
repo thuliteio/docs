@@ -10,7 +10,7 @@ const lang = getLanguageFromURL(Astro.url.pathname);
 // const enPages = englishPages.filter(isCmsEntry);
 
 /** Array of services we have good content for and want to show first in the list. */
-const showFirst = ['Tina CMS'];
+const showFirst = ['Tina CMS', 'Decap CMS'];
 // Reverse the array to make our logic simpler later.
 showFirst.reverse();
 
@@ -41,5 +41,6 @@ const links = cmsPages
 <style>
 	.cms-nav > :global(*) {
 		margin-top: -2rem;
+		margin-bottom: -2rem;
 	}
 </style>
