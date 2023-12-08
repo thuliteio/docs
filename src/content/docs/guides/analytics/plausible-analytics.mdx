@@ -1,12 +1,13 @@
 ---
-title: "Plausible Analytics"
-description: Plausible guide for Hyas
+title: "Add Plausible Analytics to your Hyas Site"
+description: How to add ananlytics to your Hyas site using Plausible Analytics.
 type: analytics
 stub: false
 service: Plausible
 ---
+import List from '~/components/List.astro';
 
-This guide will help you add [Plausible Analytics](https://plausible.io/) to your Hyas site.
+[Plausible Analytics](https://plausible.io/) ia an easy to use and privacy-friendly Google Analytics alternative.
 
 ## Set up Plausible
 
@@ -31,7 +32,9 @@ Add to `layouts/partials/head/script-header.html`:
 <script defer data-domain="{{ $plausibleDomain }}" src="https://plausible.io/js/script.js"></script>
 ```
 
-## Next Steps
+## Official Resources
 
+<List emoji="books">
 - [Content Security Policy](https://github.com/plausible/docs/issues/20)
 - [Plausible Analytics Docs](https://plausible.io/docs/)
+</List>
