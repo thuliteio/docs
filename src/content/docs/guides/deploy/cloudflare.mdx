@@ -1,0 +1,105 @@
+---
+title: Deploy your Hyas Site to Cloudflare Pages
+description: How to deploy your Hyas site to the web using Cloudflare Pages.
+type: deploy
+stub: false
+service: Cloudflare Pages
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+You can deploy your Hyas project on [Cloudflare Pages](https://pages.cloudflare.com/), a JAMstack platform for frontend developers to collaborate and deploy websites.
+
+This guide includes:
+
+- [How to deploy through the Cloudflare Pages Dashboard](#how-to-deploy-a-site-with-git)
+- [How to deploy using Wrangler, the Cloudflare CLI](#how-to-deploy-a-site-using-wrangler)
+
+## Prerequisites
+
+To get started, you will need:
+
+- A Cloudflare account. If you don't already have one, you can create a free Cloudflare account during the process.
+- Your app code pushed to a [GitHub](https://github.com/) or a [GitLab](https://about.gitlab.com/) repository.
+
+## How to deploy a site with Git
+
+1. Set up a new project on Cloudflare Pages.
+2. Push your code to your git repository (GitHub, GitLab).
+3. Log in to the Cloudflare dashboard and select your account in **Account Home** > **Pages**.
+4. Select **Create a new Project** and the **Connect Git** option.
+5. Select the git project you want to deploy and click **Begin setup**
+6. Use the following build settings:
+
+    - **Framework preset**: `exit 0`
+    - **Build command:** `npm run build`
+    - **Build output directory:** `public`
+
+7. Click the **Save and Deploy** button.
+
+## How to deploy a site using Wrangler
+
+1. Install the [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/get-started/) in your project:
+
+    <Tabs>
+      <TabItem label="npm">
+    ```bash
+    npm install wrangler --save-dev
+    ```
+      </TabItem>
+      <TabItem label="pnpm">
+    ```bash
+    pnpm add wrangler  --save-dev
+    ```
+      </TabItem>
+      <TabItem label="Yarn">
+    ```bash
+    yarn add --dev wrangler
+    ```
+      </TabItem>
+    </Tabs>
+
+2. Authorize Wrangler with your Cloudflare account using OAuth:
+
+    ```bash
+    wrangler login
+    ```
+
+3. Run your build command:
+
+    <Tabs>
+      <TabItem label="npm">
+    ```bash
+    npm run build
+    ```
+      </TabItem>
+      <TabItem label="pnpm">
+    ```bash
+    pnpm run build
+    ```
+      </TabItem>
+      <TabItem label="Yarn">
+    ```bash
+    yarn run build
+    ```
+      </TabItem>
+    </Tabs>
+
+4. Deploy the build output directory as a Pages deployment:
+
+    ```bash
+    wrangler pages deploy public
+    ```
+
+After your assets are uploaded, Wrangler will give you a preview URL to inspect your site. When you log into the Cloudflare Pages dashboard, you will see your new project.
+
+### Enabling Preview locally with Wrangler
+
+Update the preview script to run `wrangler` instead of Hyas' built-in preview command:
+
+```json title="package.json"
+"preview": "wrangler pages dev ./public"
+```
+
+## Troubleshooting
+
+If you're encountering errors, check whether the `node` version you're using locally (`node -v`) matches the `NODE_VERSION` environment variable under **Settings**.
