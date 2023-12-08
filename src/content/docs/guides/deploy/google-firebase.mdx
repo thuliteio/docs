@@ -1,0 +1,63 @@
+---
+title: Deploy your Hyas Site to Google's Firebase Hosting
+description: How to deploy your Hyas site to the web using Google's Firebase Hosting.
+type: deploy
+stub: false
+service: Firebase Hosting
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+[Firebase Hosting](https://firebase.google.com/products/hosting) is a service provided by Google's [Firebase](https://firebase.google.com/) app development platform, which can be used to deploy a Hyas site. 
+
+## Prerequisites
+
+To follow this guide, you will need to have [firebase-tools](https://github.com/firebase/firebase-tools) installed.
+
+## How to deploy
+
+1. Create `firebase.json` at the root of your project with the following content:
+
+   ```json title="firebase.json"
+   {
+     "hosting": {
+       "public": "public",
+       "ignore": []
+     }
+   }
+   ```
+
+2. Create `.firebaserc` at the root of your project with the following content:
+
+   ```json title= ".firebaserc"
+   {
+     "projects": {
+       "default": "<YOUR_FIREBASE_ID>"
+     }
+   }
+   ```
+
+3. Run your build command:
+
+    <Tabs>
+      <TabItem label="npm">
+    ```bash
+    npm run build
+    ```
+      </TabItem>
+      <TabItem label="pnpm">
+    ```bash
+    pnpm run build
+    ```
+      </TabItem>
+      <TabItem label="Yarn">
+    ```bash
+    yarn run build
+    ```
+      </TabItem>
+    </Tabs>
+
+4. Deploy using the command:
+
+    ```bash
+    firebase deploy
+    ```
