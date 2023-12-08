@@ -79,7 +79,6 @@ export default defineConfig({
         items: [
           { label: 'Add analytics', link: '/guides/analytics/' },
           { label: 'Connect a CMS', link: '/guides/cms/' },
-          { label: 'Versioning', link: '/guides/versioning/' },
           { label: 'Deploy your site', link: '/guides/deploy/' },
         ]
       },

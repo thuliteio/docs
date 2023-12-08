@@ -3,16 +3,109 @@ title: Add Integrations
 description: A guide in my new Starlight docs site.s
 ---
 import IntegrationsNav from '~/components/IntegrationsNav.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-**Hyas integrations** add new functionality and behaviors for your project with only a few lines of code. You can write a custom integration yourself, use an official integration, or use integrations built by the community.
+**Hyas integrations** add new functionality and behaviors for your project. You can write a custom integration yourself, use an official integration, or use integrations built by the community.
 
 Integrations can…
 
-- Unlock React, Vue, Svelte, Solid, and other popular UI frameworks.
-- Integrate tools like Tailwind, and Partytown with a few lines of code.
-- Add new features to your project, like automatic sitemap generation.
-- Write custom code that hooks into the build process, dev server, and more.
+- Unlock Tailwind CSS, Bootstrap, and other popular CSS frameworks.
+- Add new features to your project, like Images and SEO.
+- Integrate themes like Doks or Bolt.
 
 ## Official Integrations
 
 <IntegrationsNav />
+
+## Setting up an Integration
+
+### Adding an Integration
+
+Add an integration to your site by running the following command in your project's root directory:
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+  # Example: add Images
+  npm install @hyas/images@latest
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+  # Example: add Images
+  pnpm add @hyas/images@latest
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+  # Example: add Images
+  yarn add @hyas/images@latest
+```
+  </TabItem>
+</Tabs>
+
+### Configuring an Integration
+
+You'll most likely have to update the mounts configuration, add parameters, add some CSS/JavaScript, and update the PostCSS settings.
+
+## Upgrading an Integration
+
+To upgrade an integration, use the appropriate command for your package manager.
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+  # Example: upgrade Images
+  npm install @hyas/images@latest
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+  # Example: upgrade Images
+  pnpm add @hyas/images@latest
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+  # Example: upgrade Images
+  yarn add @hyas/images@latest
+```
+  </TabItem>
+</Tabs>
+
+## Removing an Integration
+
+To remove an integration, uninstall the integration from your project.
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+  # Example: remove Images
+  npm uninstall @hyas/images
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+  # Example: remove Images
+  pnpm uninstall @hyas/images
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+  # Example: remove Images
+  yarn remove @hyas/images
+```
+  </TabItem>
+</Tabs>
+
+Optionally, remove the configuration settings.
+
+## Finding More Integrations
+
+You can find integrations developed by the community in the [Hyas Integrations Directory](https://gethyas.com/integrations/). Follow links there for detailed usage and configuration instructions.
+
+## Building Your Own Integration
+
+Hyas' Integrations are inspired by npm and Hugo, and designed to feel familiar to anyone who has written an npm package or Hugo Module before.
+
+Check out the [Build a Hyas Integration](/guides/integrations/) guide to learn what integrations can do and how to write one yourself.
