@@ -28,8 +28,8 @@
     "unist-util-visit": "^5.0.0"
   },
   "engines": {
-    "node": ">=16.17.0",
-    "pnpm": ">=8.6.5"
+    "node": ">=18.14.1",
+    "pnpm": ">=8.10.0"
   },
-  "packageManager": "pnpm@8.6.5"
+  "packageManager": "pnpm@8.12.0"
 }
