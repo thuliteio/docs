@@ -1,0 +1,29 @@
+---
+title: "Add Cabin Analytics to your Hyas Site"
+description: How to add ananlytics to your Hyas site using Cabin Analytics.
+type: analytics
+stub: false
+service: Cabin
+---
+import List from '~/components/List.astro';
+
+[Cabin Analytics](https://withcabin.com/) is a privacy-first, carbon conscious web analytics service.
+
+## Set up Cabin
+
+To follow this guide, you'll need an existing [Hyas](https://gethyas.com/) site and a [Cabin](https://withcabin.com/settings/domains) project.
+
+### Add script
+
+Add to `layouts/partials/head/script-header.html`:
+
+```html
+<script async defer src="https://scripts.withcabin.com/hello.js"></script>
+```
+
+## Official Resources
+
+<List emoji="books">
+- [Using Cabin](https://docs.withcabin.com/using.html)
+- [Privacy law compliance](https://docs.withcabin.com/privacy.html)
+</List>

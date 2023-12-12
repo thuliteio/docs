@@ -25,6 +25,7 @@ export const logos = LogoCheck({
 	bootstrap: { file: 'bootstrap.svg', padding: '.1875em' },
 	bolt: { file: 'hyas.svg', padding: '.2125em' },
 	doks: { file: 'doks.svg', padding: '.2125em' },
+	'cabin-analytics': { file: 'cabin.svg', padding: '.25em' },
 	'fathom-analytics': { file: 'fathom-analytics.svg', padding: '.2125em' },
 	'google-analytics': { file: 'google-analytics.svg', padding: '.1875em' },
 	'plausible-analytics': { file: 'plausible.svg', padding: '.1875em' },
