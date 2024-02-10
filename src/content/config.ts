@@ -52,8 +52,15 @@ export const themeSchema = baseSchema.extend({
 
 export const integrationSchema = baseSchema.extend({
 	type: z.literal('integration'),
+	title: z
+	.string()
+	.refine(
+		(title) => title.startsWith('@hyas/'),
+		'"title" must start with "@hyas/" for integration docs.'
+	),
 	stub: z.boolean().default(false),
 	service: z.string(),
+	category: z.enum(['renderer', 'theme', 'other']),
 });
 
 export const migrationSchema = baseSchema.extend({
@@ -115,7 +122,7 @@ export type TutorialEntry = DocsEntry<'tutorial'>;
 
 export type RecipeEntry = DocsEntry<'recipe'>;
 
-// export type IntegrationCategory = z.infer<typeof integrationSchema>['category'];
+export type IntegrationCategory = z.infer<typeof integrationSchema>['category'];
 
 export const isBackendEntry = createIsDocsEntry('backend');
 

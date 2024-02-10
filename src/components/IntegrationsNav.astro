@@ -1,46 +1,60 @@
 ---
-// import { englishPages } from '~/content';
 import { integrationPages } from '~/content';
-// import { isCmsEntry } from '~/content/config';
+import {
+	type IntegrationCategory,
+	type IntegrationEntry,
+} from '~/content/config';
 import { isLogoKey } from '~/data/logos';
+import { useTranslations } from '~/i18n/util';
 import { getLanguageFromURL } from '~/util';
 import CardsNav from './NavGrid/CardsNav.astro';
 
+interface Props {
+	category?: IntegrationCategory;
+}
+
 const lang = getLanguageFromURL(Astro.url.pathname);
-// const enPages = englishPages.filter(isCmsEntry);
 
-/** Array of services we have good content for and want to show first in the list. */
-const showFirst = ['@hyas/images', '@hyas/inline-svg', '@hyas/seo'];
-// Reverse the array to make our logic simpler later.
-showFirst.reverse();
+function categoryLinksFromPages(pages: IntegrationEntry[], category: IntegrationCategory) {
+	return pages
+		.filter((page) => page.data.category === category)
+		.map((page) => {
+			const { service } = page.data;
+			const pageUrl = '/' + page.slug.replace('en/', `${lang}/`) + '/';
+			return {
+				title: service,
+				href: pageUrl,
+				logo: isLogoKey(page.slug.split('/').pop()),
+			};
+		});
+}
 
-const links = integrationPages
-	.sort((a, b) => {
-		// Sort services in the `showFirst` array first.
-		const aPriority = showFirst.indexOf(a.data.service);
-		const bPriority = showFirst.indexOf(b.data.service);
-		if (aPriority !== -1 || bPriority !== -1) return aPriority > bPriority ? -1 : 1;
-		// Sort full guides before stubs.
-		if (a.data.stub && !b.data.stub) return 1;
-		if (!a.data.stub && b.data.stub) return -1;
-		// If they’re both stubs, or neither stubs, sort alphabetically.
-		return a.data.service.toLowerCase() > b.data.service.toLowerCase() ? 1 : -1;
-	})
-	.map((page) => {
-		const { service } = page.data;
-		const pageUrl = '/' + page.slug.replace('en/', `${lang}/`) + '/';
-		const logo = isLogoKey(page.slug.split('/').pop());
-		return { title: service, href: pageUrl, logo };
-	});
+const t = useTranslations(Astro);
+
+const allCategories = {
+	renderer: {
+		title: t('integrations.renderers'),
+		links: categoryLinksFromPages(integrationPages, 'renderer'),
+	},
+	theme: { title: t('integrations.themes'), links: categoryLinksFromPages(integrationPages, 'theme') },
+	other: { title: t('integrations.others'), links: categoryLinksFromPages(integrationPages, 'other') },
+};
+const category = allCategories[Astro.props.category!];
+
+const categories = category ? [category] : allCategories;
 ---
 
-<section class="cms-nav">
-	<CardsNav minimal links={links} />
-</section>
+{
+	Object.values(categories).map((category) => (
+		<>
+			<h3>{category.title}</h3>
+			<CardsNav minimal links={category.links} class="integrations-nav" />
+		</>
+	))
+}
 
 <style>
-	.cms-nav > :global(*) {
-		margin-top: -2rem;
-		margin-bottom: -2rem;
+	.integrations-nav > :global(*) {
+		margin-top: 2rem;
 	}
 </style>

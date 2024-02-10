@@ -82,9 +82,10 @@ export default {
 	'integrations.changelog': 'Changelog',
 	'integrations.footerTitle': 'More Integrations',
 	'integrations.renderers': 'UI Frameworks',
+	'integrations.themes': 'Themes',
 	'integrations.adapters': 'SSR Adapters',
-	'integrations.others': 'Others',
-	'integrations.navTitle': 'More Official Integrations',
+	'integrations.others': 'Other integrations',
+	'integrations.navTitle': 'More integrations',
 	// Checklist component
 	'checklist.or': 'or',
 	// Multiple Choice component
