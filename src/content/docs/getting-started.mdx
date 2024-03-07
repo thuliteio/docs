@@ -1,10 +1,14 @@
 ---
-title: Getting Started
+title: Hyas Docs
 description: A reference page in my new Starlight docs site.
+tableOfContents: false
 ---
 import Button from '~/components/Button.astro'
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import List from '~/components/List.astro';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+Guides, resources, and references to help you build with Doks.
 
 :::tip[Hyas version 2 is here!]
 - What’s new in Hyas v2? [Find out in the announcement blog post](https://gethyas.com/blog/hyas-2/).
@@ -91,5 +95,36 @@ Join us in [Hyas Discussions](https://github.com/orgs/gethyas/discussions) to sh
 
 ## What's new?
 
-- [Hyas Blog](https://gethyas.com/blog/)
-- [Hyas Releases](https://github.com/gethyas/hyas/releases)
+<CardGrid>
+  <LinkCard
+    title="Hyas Blog"
+    description="Get all the latest news from Hyas."
+    href="https://gethyas.com/blog/"
+    target="_blank" />
+  <LinkCard
+    title="Doks Blog"
+    description="Get all the latest news from Doks."
+    href="https://getdoks.org/blog/"
+    target="_blank" />
+  <LinkCard
+    title="Roadmap 2024"
+    description= "Get an overview of what's coming."
+    href="https://github.com/orgs/gethyas/discussions/462"
+    target="_blank" />
+</CardGrid>
+
+## Resources
+
+<CardGrid>
+  <LinkCard
+    title="Doks documentation"
+    description="Get started with Doks."
+    href="https://getdoks.org/"
+    target="_blank" />
+  <LinkCard
+    title="Images documentation"
+    description="Get started with Images."
+    href="https://images.gethyas.com/"
+    target="_blank" />
+</CardGrid>
+

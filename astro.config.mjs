@@ -48,7 +48,7 @@ export default defineConfig({
       {
         label: 'Start Here',
         items: [
-          { label: 'Getting Started', link: '/getting-started/' },
+          { label: 'Getting Started', link: '/getting-started/'},
           { label: 'Installation', link: '/install/auto/' },
           { label: 'Editor Setup', link: '/editor-setup/' },
           { label: 'Upgrade to v2', link: '/guides/upgrade-to/v2/' },
