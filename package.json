@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.1.1",
-    "@astrojs/starlight": "^0.21.0",
+    "@astrojs/starlight": "^0.21.1",
     "@astrojs/starlight-docsearch": "^0.1.0",
-    "astro": "^4.4.8",
+    "astro": "^4.4.15",
     "sharp": "^0.33.2"
   },
   "devDependencies": {

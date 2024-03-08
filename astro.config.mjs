@@ -59,8 +59,8 @@ export default defineConfig({
         collapsed: true,
         items: [
           { label: 'Why Hyas', link: '/concepts/why-hyas/' },
-          { label: 'Site Generator', link: '/concepts/site-generator/' },
           { label: 'Dependencies', link: '/concepts/dependencies/' },
+          { label: 'Site Generator', link: '/concepts/site-generator/' },
         ]
       },
       {

@@ -5,10 +5,10 @@ description: A reference page in my new Starlight docs site.
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import FileTree from '~/components/FileTree.astro';
 
-This guide will walk you through the steps to manually install and configure a new Hyas project if you prefer not to use the [automatic CLI tool](/install/auto/).
+This guide will walk you through the steps to manually install and configure a new Hyas project.
 
-:::note[Prefer a quicker way to get started?]
-Try the [create hyas CLI wizard](/install/auto/) instead.
+:::tip[Prefer a quicker way to get started?]
+Follow the [create hyas CLI wizard](/install/auto/) instead.
 :::
 
 ## Prerequisites
@@ -173,7 +173,7 @@ User-agent: *
 Allow: /
 ```
 
-### 6. Create `app.scss`
+### 5. Create `app.scss`
 
 In the root of your project, create an empty `assets/scss` directory, and then navigate into it.
 
@@ -251,25 +251,19 @@ Add a `module.toml` file with the following:
 
 ```toml
 //module.toml
+# assets
 [[mounts]]
   source = "node_modules/@hyas/core/assets"
   target = "assets"
 
 [[mounts]]
-  source = "node_modules/@hyas/core/layouts"
-  target = "layouts"
-
-[[mounts]]
-  source = "themes/my-basic-theme/assets"
-  target = "assets"
-
-[[mounts]]
-  source = "themes/my-basic-theme/layouts"
-  target = "layouts"
-
-[[mounts]]
   source = "assets"
   target = "assets"
+
+# layouts
+[[mounts]]
+  source = "node_modules/@hyas/core/layouts"
+  target = "layouts"
 
 [[mounts]]
   source = "layouts"
@@ -339,7 +333,6 @@ module.exports = {
     purgecss({
       content: [
         './node_modules/@hyas/*/layouts/**/*.html',
-        './themes/my-basic-theme/layouts/**/*.html',
         './content/**/*.html',
         './content/**/*.md',
       ],

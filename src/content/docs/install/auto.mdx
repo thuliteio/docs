@@ -3,7 +3,7 @@ title: Install Hyas with the Automatic CLI
 description: A reference page in my new Starlight docs site.
 ---
 import { Tabs, TabItem } from '@astrojs/starlight/components';
-import List from '~/components/List.astro';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
 Ready to install Hyas? Follow this guide to using the `create hyas` CLI to get started.
 
@@ -22,7 +22,7 @@ Read our [step-by-step manual installation guide](/install/manual/) instead.
 `create-hyas` is the fastest way to start a new Hyas project from scratch. It will walk you through every step of setting up your new Hyas project. It allows you to choose from a few different official starter templates.
 
 :::tip[Online previews]
-Prefer to try Hyas in your browser? Visit [start.gethyas.com](https://start.gethyas.com/) and spin up a new Hyas project without ever leaving your browser.
+Prefer to try Hyas in your browser? Visit [new.gethyas.com](https://new.gethyas.com/) to browse our starter templates and spin up a new Hyas project without ever leaving your browser.
 :::
 
 ### 1. Run the Setup Wizard
@@ -165,8 +165,17 @@ Success! You are now ready to start building with Hyas! 🥳
 
 Here are a few topics that we recommend exploring next. You can read them in any order. You can even leave our documentation for a bit and go play in your new Hyas project codebase, coming back here whenever you run into trouble or have a question.
 
-<List emoji="books">
-- __Add a framework__: Learn how to extend Hyas with support for React, Svelte, Tailwind and more in our [Integrations guide](/).
-- __Deploy your site__: Learn how to build and deploy a Hyas project to the web in our [Deployment guide](/).
-- __Understand your codebase__: Learn more about Hyas' project structure in our [Project Structure guide](/).
-</List>
+<CardGrid>
+  <LinkCard
+    title="Understand your codebase"
+    description="Learn more about Hyas' file structure in our Project Structure guide."
+    href="/basics/project-structure/" />
+  <LinkCard
+    title="Add a framework"
+    description="Extend Hyas with support for React, Svelte, Tailwind and more in our Integrations guide."
+    href="/guides/integrations/" />
+  <LinkCard
+    title="Deploy your site"
+    description="Learn how to build and deploy a Hyas project to the web in our Deployment guide."
+    href="/guides/deploy/" />
+</CardGrid>
