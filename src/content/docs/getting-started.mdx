@@ -1,45 +1,14 @@
 ---
-title: Hyas Docs
-description: A reference page in my new Starlight docs site.
-tableOfContents: false
+title: Getting Started
+description: This guide will help you get started with a new Hyas project.
 ---
 import Button from '~/components/Button.astro'
 import { Tabs, TabItem } from '@astrojs/starlight/components';
-import List from '~/components/List.astro';
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
-Guides, resources, and references to help you build with Doks.
+Hyas is a web framework designed for speed, security, and SEO — all powered by Hugo and npm. This guide will help you get started with a new project.
 
-:::tip[Hyas version 2 is here!]
-- What’s new in Hyas v2? [Find out in the announcement blog post](https://gethyas.com/blog/hyas-2/).
-- Ready to upgrade? [Follow our upgrade guide](/guides/upgrade-to/v2/).
-:::
-
-## What is Hyas?
-
-Hyas is a **Node.js web framework** for building **fast, security-focused** websites.
-
-## Key features
-
-- **Hugo powered:** Fast website build times and flexible project organization.
-- **Fully npm managed**: Straightforward and easy dependency management.
-- **Production-ready**: Optimized for speed, SEO, and security.
-- **Customizable:** Tailwind, Images, and other integrations to choose from.
-- **Development tools:** Find and fix problems in scripts, styles, and markdown.
-- **Deploy anywhere:** Deployment guides to different deployment services.
-
-Check out our detailed [Why Hyas](/concepts/why-hyas/) breakdown to learn more about what makes Hyas special. ✨
-
-## Try Hyas in your browser
-
-Visit [start.gethyas.com](https://start.gethyas.com/) and choose from a variety of templates to get started. Play around with a full, working version of Hyas right in your browser!
-
-<div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-  <Button href="https://gitpod.io/#https://github.com/gethyas/basic-starter">Launch basic template</Button>
-  <Button variant="outline" href="https://start.gethyas.com/">View all templates →</Button>
-</div>
-
-## Start your first project
+## Quick Start
 
 Get a new Hyas project up and running locally with our helpful `create-hyas` CLI wizard!
 
@@ -63,35 +32,63 @@ yarn create hyas
 
 Our [Installation Guide](/install/auto/) has full, step-by-step instructions for installing Hyas using our CLI wizard, creating a new project from an existing Hyas GitHub repository, and for installing Hyas manually.
 
-## Learn Hyas
+{/*
+## Try Hyas in your browser
 
-See examples of some of the key concepts and patterns of a Hyas site!
+Visit [new.gethyas.com](https://new.gethyas.com/) and choose from a variety of templates to get started. Play around with a full, working version of Hyas right in your browser!
 
-<List emoji="books">
-- [Add your first page](/) to your site.
-- Read more about Hyas' [project structure](/}).
-- Learn about Hyas' [project configuration](/).
-</List>
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+  <Button href="https://gitpod.io/#https://github.com/gethyas/basic-starter">Launch basic template</Button>
+  <Button variant="outline" href="https://new.gethyas.com/">View all templates →</Button>
+</div>
+*/}
 
-## Extend Hyas
+## Learn
 
-<List emoji="toolbox">
-- Start your next project with a [prebuilt theme](https://gethyas.com/themes/).
-- Customize your site with official and community [plugins and components](https://gethyas.com/integrations/).
-- Get inspired by visiting our [site showcase](https://gethyas.com/showcase/).
-</List>
+<CardGrid>
+  <LinkCard
+    title="Main Features"
+    description="Learn about Hyas' main features."
+    href="/concepts/why-hyas/" />
+  <LinkCard
+    title="Project Structure"
+    description="How a Hyas project is organized."
+    href="/basics/project-structure/" />
+  <LinkCard
+    title="Configuration"
+    description="How to configure your Hyas project."
+    href="/basics/configuration/" />
+</CardGrid>
 
-*… see our [guide to using integrations](/)*.
+## Extend
 
-## Join our community
+<CardGrid>
+  <LinkCard
+    title="Themes"
+    description="Jumpstart with a theme."
+    href="https://gethyas.com/themes/"
+    target="_blank" />
+  <LinkCard
+    title="Integrations"
+    description="Add new functionality and behaviors."
+    href="/guides/integrations/" />
+  <LinkCard
+    title="Analytics"
+    description="Add Analytics to Hyas."
+    href="/guides/analytics/" />
+  <LinkCard
+    title="CMS"
+    description="Use a CMS with Hyas."
+    href="/guides/cms/" />
+</CardGrid>
 
-Join us in [Hyas Discussions](https://github.com/orgs/gethyas/discussions) to share with and get help from an active, friendly community!
+## Community
 
-<List emoji="speech-balloon">
-- Say hi in [Introductions](https://github.com/orgs/gethyas/discussions/categories/introductions)!
-- Ask a question in [Q&A](https://github.com/orgs/gethyas/discussions/categories/q-a)!
-- Share what you’ve been working on in [Showcase](https://github.com/orgs/gethyas/discussions/categories/showcase)!
-</List>
+<LinkCard
+  title="Hyas Discussions"
+  description="Have a question or want to get involved?"
+  href="https://github.com/orgs/gethyas/discussions"
+  target="_blank" />
 
 ## What's new?
 
@@ -100,11 +97,6 @@ Join us in [Hyas Discussions](https://github.com/orgs/gethyas/discussions) to sh
     title="Hyas Blog"
     description="Get all the latest news from Hyas."
     href="https://gethyas.com/blog/"
-    target="_blank" />
-  <LinkCard
-    title="Doks Blog"
-    description="Get all the latest news from Doks."
-    href="https://getdoks.org/blog/"
     target="_blank" />
   <LinkCard
     title="Roadmap 2024"
@@ -127,4 +119,3 @@ Join us in [Hyas Discussions](https://github.com/orgs/gethyas/discussions) to sh
     href="https://images.gethyas.com/"
     target="_blank" />
 </CardGrid>
-
