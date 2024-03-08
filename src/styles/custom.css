@@ -16,3 +16,12 @@
 .right-sidebar nav {
   z-index: var(--sl-z-index-menu);
 }
+
+.sl-markdown-content :is(img, picture, video, canvas, svg, iframe):not(:where(.not-content *)).svg-baseline {
+  display: inline-flex;
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+  top: .125em;
+  position: relative;
+}
