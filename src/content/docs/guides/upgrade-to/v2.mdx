@@ -39,37 +39,25 @@ Replace the contents of your project's `package.json` with the following:
 ```json
 // package.json
 {
-  "name": "hyas",
+  "name": "hyas-project",
   "version": "0.0.0",
+  "description": "Hyas",
   "author": "Hyas",
   "license": "MIT",
   "scripts": {
-    "dev": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache",
-    "dev:drafts": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache --buildDrafts",
-    "create": "exec-bin node_modules/.bin/hugo/hugo new",
-    "lint": "npm run lint:scripts && npm run lint:styles && npm run lint:markdown",
-    "lint:scripts": "eslint --cache config",
-    "lint:styles": "stylelint --cache \"assets/scss/**/*.{css,sass,scss}\"",
-    "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "exec-bin node_modules/.bin/hugo/hugo --minify",
-    "preview": "http-server --gzip --brotli --ext=html --cors",
-    "clean": "npm run clean:build && npm run clean:lint && npm run clean:install",
-    "clean:build": "shx rm -rf public resources .hugo_build.lock",
-    "clean:install": "shx rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml",
-    "clean:lint": "shx rm -rf .eslintcache .stylelintcache",
-    "preinfo": "npm version",
-    "info": "npm list",
-    "postinfo": "exec-bin node_modules/.bin/hugo/hugo version",
-    "postinstall": "shx rm -rf node_modules/.bin/hugo && shx mkdir node_modules/.bin/hugo && shx cp node_modules/gethyas/node_modules/.bin/hugo/* node_modules/.bin/hugo"
+    "create": "hugo new",
+    "dev": "hugo server --disableFastRender --noHTTPCache",
+    "format": "prettier **/** -w -c",
+    "build": "hugo --minify --gc",
+    "preview": "vite preview --outDir public"
   },
   "engines": {
-    "node": ">=16.12.0"
+    "node": ">=20.11.0"
   }
 }
 ```
 
-### 3. Install Hyas and integrations
+### 3. Install Hyas, Prettier, and Vite
 
 First, add an `.npmrc` file to your project root with the following:
 
@@ -103,24 +91,46 @@ yarn add gethyas@latest
   </TabItem>
 </Tabs>
 
-#### Install integrations
+#### Install Prettier and Vite
+
+Then, install the latest version of Prettier and Vite — as `devDependencies`:
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+npm install -D prettier@latest vite@latest
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm install -D prettier@latest vite@latest
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn add -D prettier@latest vite@latest
+```
+  </TabItem>
+</Tabs>
+
+### 4. Install integrations
 
 Optionally, install the the recommended integrations in your project:
 
 <Tabs>
   <TabItem label="npm">
 ```bash
-npm install @hyas/bootstrap@latest @hyas/images@latest @hyas/seo@latest
+npm install @hyas/images@latest @hyas/seo@latest
 ```
   </TabItem>
   <TabItem label="pnpm">
 ```bash
-pnpm install @hyas/bootstrap@latest @hyas/images@latest @hyas/seo@latest
+pnpm install @hyas/images@latest @hyas/seo@latest
 ```
   </TabItem>
   <TabItem label="Yarn">
 ```bash
-yarn add @hyas/bootstrap@latest @hyas/images@latest @hyas/seo@latest
+yarn add @hyas/images@latest @hyas/seo@latest
 ```
   </TabItem>
 </Tabs>
@@ -135,9 +145,8 @@ But, if you notice errors or unexpected behavior, please check below for what ha
 
 Update your configuration files for the recommended integrations:
 
-- [Bootstrap](https://github.com/gethyas/bootstrap/blob/main/README.md)
-- [Images](https://github.com/gethyas/images/blob/main/README.md)
-- [SEO](https://github.com/gethyas/seo/blob/main/README.md)
+- [Images](https://images.gethyas.com/docs/start-here/manual-setup/)
+- [SEO](https://seo.gethyas.com/docs/start-here/manual-setup/)
 
 ## Know Issues
 
