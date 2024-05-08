@@ -1,12 +1,13 @@
 ---
 title: Getting Started
 description: This guide will help you get started with a new Hyas project.
+tableOfContents: true
 ---
 import Button from '~/components/Button.astro'
 import { Tabs, TabItem } from '@astrojs/starlight/components';
-import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
-**Hyas** is a web framework designed for **speed, security, and SEO** — all powered by **Hugo and npm**. This guide will help you get started with your new Hyas project.
+[Hyas](https://gethyas.com/) is a web framework designed for speed, security, and SEO — all powered by Hugo and npm. Guides, resources, and references to help you build with Hyas.
 
 ## Quick Start
 
@@ -33,7 +34,7 @@ yarn create hyas
 Our [Installation Guide](/install/auto/) has full, step-by-step instructions for installing Hyas using our CLI wizard, creating a new project from an existing Hyas GitHub repository, and for installing Hyas manually.
 
 {/*
-## Try Hyas in your browser
+## Quick Try
 
 Visit [new.gethyas.com](https://new.gethyas.com/) and choose from a variety of templates to get started. Play around with a full, working version of Hyas right in your browser!
 
@@ -43,79 +44,28 @@ Visit [new.gethyas.com](https://new.gethyas.com/) and choose from a variety of t
 </div>
 */}
 
-## Learn
+## Quick Links
 
 <CardGrid>
-  <LinkCard
-    title="Main Features"
-    description="Learn about Hyas' main features."
-    href="/concepts/why-hyas/" />
-  <LinkCard
-    title="Project Structure"
-    description="How your Hyas project is organized."
-    href="/basics/project-structure/" />
-  <LinkCard
-    title="Configuration"
-    description="How to configure your Hyas project."
-    href="/basics/configuration/" />
-</CardGrid>
-
-## Extend
-
-<CardGrid>
-  <LinkCard
-    title="Themes"
-    description="Jumpstart with a theme."
-    href="https://gethyas.com/themes/"
-    target="_blank" />
-  <LinkCard
-    title="Integrations"
-    description="Add new functionality and behaviors."
-    href="/guides/integrations/" />
-  <LinkCard
-    title="Analytics"
-    description="Add Analytics to Hyas."
-    href="/guides/analytics/" />
-  <LinkCard
-    title="CMS"
-    description="Use a CMS with Hyas."
-    href="/guides/cms/" />
-</CardGrid>
-
-## Community
-
-<LinkCard
-  title="Hyas Discussions"
-  description="Have a question or want to get involved?"
-  href="https://github.com/orgs/gethyas/discussions"
-  target="_blank" />
-
-## What's new?
-
-<CardGrid>
-  <LinkCard
-    title="Hyas Blog"
-    description="Get all the latest news from Hyas."
-    href="https://gethyas.com/blog/"
-    target="_blank" />
-  <LinkCard
-    title="Roadmap 2024"
-    description= "Get an overview of what's coming."
-    href="https://github.com/orgs/gethyas/discussions/462"
-    target="_blank" />
-</CardGrid>
-
-## Resources
-
-<CardGrid>
-  <LinkCard
-    title="Doks documentation"
-    description="Get started with Doks."
-    href="https://getdoks.org/"
-    target="_blank" />
-  <LinkCard
-    title="Images documentation"
-    description="Get started with Images."
-    href="https://images.gethyas.com/"
-    target="_blank" />
+  <Card title="Learn Hyas" icon="open-book">
+    - [Main features](/concepts/why-hyas/)
+    - [Project structure](/basics/project-structure/)
+    - [Configuration](/basics/configuration/)
+  </Card>
+  <Card title="Extend Hyas" icon="puzzle">
+    - [Themes](/guides/themes/)
+    - [Integrations](/guides/integrations/)
+    - [Analytics](/guides/analytics/)
+    - [CMS](/guides/cms/)
+  </Card>
+  <Card title="What's going on?" icon="information">
+    - [Roadmap 2024](https://github.com/orgs/gethyas/discussions/462)
+    - [Discussions](https://github.com/orgs/gethyas/discussions)
+    - [Blog](https://gethyas.com/blog/)
+  </Card>
+  <Card title="Other docs" icon="document">
+    - [Doks](https://getdoks.org/)
+    - [Images](https://images.gethyas.com/)
+    - [SEO](https://seo.gethyas.com/)
+  </Card>
 </CardGrid>
