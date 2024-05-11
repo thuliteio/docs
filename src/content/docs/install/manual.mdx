@@ -13,9 +13,10 @@ Follow the [create hyas CLI wizard](/install/auto/) instead.
 
 ## Prerequisites
 
-- __Node.js__ - `v16.17.0` or higher.
+- __Node.js__ - `v20.11.0` or higher.
+- __Hugo extended__ - `v0.125.0` or higher. 
 - __Text editor__ - We recommend [VS Code](https://code.visualstudio.com/) with the [Hugo Language and Syntax Support](https://marketplace.visualstudio.com/items?itemName=budparr.language-hugo-vscode) extension.
-- Terminal - Hyas is accessed through its command-line interface (CLI).
+- __Terminal__ - Hyas is accessed through its command-line interface (CLI).
 
 ## Installation
 
@@ -53,25 +54,14 @@ yarn init --yes
 
 First, replace any placeholder “scripts” section of your `package.json` with the following:
 
-```json
-// package.json
+```json title="package.json" del={2} ins={3-7}
   "scripts": {
-    "dev": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache",
-    "dev:drafts": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache --buildDrafts",
-    "create": "exec-bin node_modules/.bin/hugo/hugo new",
-    "lint:scripts": "eslint --cache config",
-    "lint:styles": "stylelint --cache \"assets/scss/**/*.{css,sass,scss}\"",
-    "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "exec-bin node_modules/.bin/hugo/hugo --minify",
-    "preview": "http-server --gzip --brotli --ext=html --cors",
-    "clean:build": "shx rm -rf public resources .hugo_build.lock",
-    "clean:install": "shx rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml",
-    "clean:lint": "shx rm -rf .eslintcache .stylelintcache",
-    "preinfo": "npm version",
-    "info": "npm list",
-    "postinfo": "exec-bin node_modules/.bin/hugo/hugo version",
-    "postinstall": "shx rm -rf node_modules/.bin/hugo && shx mkdir node_modules/.bin/hugo && shx cp node_modules/gethyas/node_modules/.bin/hugo/* node_modules/.bin/hugo"
+    "create": "hugo new",
+    "dev": "hugo server --disableFastRender --noHTTPCache",
+    "format": "prettier **/** -w -c",
+    "build": "hugo --minify --gc",
+    "preview": "vite preview --outDir public"
   },
 ```
 

@@ -13,13 +13,14 @@ Read our [step-by-step manual installation guide](/install/manual/) instead.
 
 ## Prerequisites
 
-- **Node.js** - `v16.17.0` or higher.
-- **Text editor** - We recommend [VS Code](https://code.visualstudio.com/) with the [Hugo Language and Syntax Support](https://marketplace.visualstudio.com/items?itemName=budparr.language-hugo-vscode) extension.
-- **Terminal** - Hyas is accessed through its command-line interface (CLI).
+- __Node.js__ - `v20.11.0` or higher.
+- __Hugo extended__ - `v0.125.0` or higher. 
+- __Text editor__ - We recommend [VS Code](https://code.visualstudio.com/) with the [Hugo Language and Syntax Support](https://marketplace.visualstudio.com/items?itemName=budparr.language-hugo-vscode) extension.
+- __Terminal__ - Hyas is accessed through its command-line interface (CLI).
 
 ## Installation
 
-`create-hyas` is the fastest way to start a new Hyas project from scratch. It will walk you through every step of setting up your new Hyas project. It allows you to choose from a few different official starter templates. Next to that, you can also [use any existing project on GitHub with the `degit` command](http://localhost:4321/install/auto/#community).
+`create-hyas` is the fastest way to start a new Hyas project from scratch. It will walk you through every step of setting up your new Hyas project. It allows you to choose from a few different official starter templates. Or, you can [use any existing project on GitHub with the `degit` command](http://localhost:4321/install/auto/#community).
 
 :::tip[Online previews]
 Prefer to try Hyas in your browser? Visit [new.gethyas.com](https://new.gethyas.com/) to browse our starter templates and spin up a new Hyas project without ever leaving your browser.
@@ -47,13 +48,13 @@ yarn create hyas
   </TabItem>
 </Tabs>
 
-You can run `create-hyas` anywhere on your machine, so there’s no need to create a new empty directory for your project before you begin. If you don’t have an empty directory yet for your new project, the wizard will help create one for you automatically.
+You can run `create-hyas` anywhere on your machine, so there's no need to create a new empty directory for your project before you begin. If you don’t have an empty directory yet for your new project, the wizard will help create one for you automatically.
 
-If all goes well, you should see a "Done" message followed by some "Next steps".
+If all goes well, you should see a "Done" message followed by the next steps.
 
 ### 2. Install dependencies
 
-`cd` into your new project directory and install your dependencies before continuing.
+`cd` into your new project directory and install your projects' dependencies before continuing.
 
 <Tabs>
   <TabItem label="npm">
@@ -105,7 +106,7 @@ If you aren't able to open your project in the browser, go back to the terminal 
 
 ## Starter Templates
 
-You can also start a new Hyas project based on an [official example](https://github.com/gethyas/create-hyas#templates) by passing a `--template` argument to the `create hyas` command or by using a tool like [degit](https://github.com/Rich-Harris/degit) to scaffold your project with the `main` branch of any GitHub repository.
+You can also start a new Hyas project based on an [official example](https://github.com/gethyas/create-hyas#templates) by passing a `--template` argument to the `create hyas` command. Or, by using a tool like [degit](https://github.com/Rich-Harris/degit) to scaffold your project with the `main` branch of any GitHub repository.
 
 ### Official
 
@@ -172,7 +173,7 @@ Here are a few topics that we recommend exploring next. You can read them in any
     href="/basics/project-structure/" />
   <LinkCard
     title="Add a framework"
-    description="Extend Hyas with support for React, Svelte, Tailwind and more in our Integrations guide."
+    description="Extend Hyas with support for Bootstrap, Tailwind CSS, and more in our Integrations guide."
     href="/guides/integrations/" />
   <LinkCard
     title="Deploy your site"
