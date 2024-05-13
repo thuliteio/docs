@@ -13,14 +13,14 @@ Follow the [create hyas CLI wizard](/install/auto/) instead.
 
 ## Prerequisites
 
-- __Node.js__ - `v20.11.0` or higher.
-- __Hugo extended__ - `v0.125.0` or higher. 
+- __Node.js__ - `v20.11.0` or higher — run `node -v` to check
+- __Hugo extended__ - `v0.125.0` or higher — run `hugo version` to check
 - __Text editor__ - We recommend [VS Code](https://code.visualstudio.com/) with the [Hugo Language and Syntax Support](https://marketplace.visualstudio.com/items?itemName=budparr.language-hugo-vscode) extension.
 - __Terminal__ - Hyas is accessed through its command-line interface (CLI).
 
 ## Installation
 
-If you prefer not to use our automatic `create hyas` CLI tool, you can set up your project yourself by following the guide below.
+If you prefer _not_ to use our automatic `create hyas` CLI tool, you can set up your project yourself by following the guide below.
 
 ### 1. Create your directory
 
@@ -50,34 +50,9 @@ yarn init --yes
   </TabItem>
 </Tabs>
 
-### 2. Install Hyas
+### 2. Install Hyas, Prettier and Vite
 
-First, replace any placeholder “scripts” section of your `package.json` with the following:
-
-```json title="package.json" del={2} ins={3-7}
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "create": "hugo new",
-    "dev": "hugo server --disableFastRender --noHTTPCache",
-    "format": "prettier **/** -w -c",
-    "build": "hugo --minify --gc",
-    "preview": "vite preview --outDir public"
-  },
-```
-
-You'll use these scripts later in the guide to start Hyas and run its different commands.
-
-Then, add an `.npmrc` file to your project root with the following:
-
-```ini
-// .npmrc
-enable-pre-post-scripts = true
-auto-install-peers = true
-node-linker = hoisted
-prefer-symlinked-executables = false
-```
-
-Next, install the Hyas project dependencies inside your project.
+First, install the Hyas project dependency in your project.
 
 :::note[Important]
 Hyas must be installed locally, not globally. Make sure you are *not* running `npm install -g gethyas`, `pnpm add -g gethyas`, or `yarn add global gethyas`.
@@ -100,6 +75,41 @@ yarn add gethyas
 ```
   </TabItem>
 </Tabs>
+
+Then, install Prettier and Vite — as `devDependencies`:
+
+<Tabs>
+  <TabItem label="npm">
+```bash
+npm install -D prettier vite
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm install -D prettier vite
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn add -D prettier vite
+```
+  </TabItem>
+</Tabs>
+
+Next, replace any placeholder “scripts” section of your `package.json` with the following:
+
+```json title="package.json" del={2} ins={3-7}
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "hugo new",
+    "dev": "hugo server --disableFastRender --noHTTPCache",
+    "format": "prettier **/** -w -c",
+    "build": "hugo --minify --gc",
+    "preview": "vite preview --outDir public"
+  },
+```
+
+You'll use these scripts later in the guide to start Hyas and run its different commands.
 
 ### 3. Create your first page
 
@@ -133,8 +143,8 @@ In the frontmatter set `draft: false` and add some content:
 
 ```md
 ---
-title: "Hello, World!"
-date: 2023-08-08T11:42:29+02:00
+title: "Hello, World"
+date: 2024-05-13T11:22:40+02:00
 draft: false
 ---
 
@@ -168,7 +178,7 @@ Allow: /
 In the root of your project, create an empty `assets/scss` directory, and then navigate into it.
 
 ```bash
-mkdir assets/scss && cd assets/scss
+mkdir -p assets/scss && cd assets/scss
 ```
 
 Add an `app.scss` file with the following:
@@ -197,7 +207,7 @@ Hyas follows Hugo's configuration setup.
 In the root of your project, create an empty `config/_default` directory, and then navigate into it.
 
 ```bash
-mkdir config/_default && cd config/_default
+mkdir -p config/_default && cd config/_default
 ```
 
 ##### `hugo.toml`
@@ -207,32 +217,30 @@ Add a `hugo.toml` file with the following:
 ```toml
 // hugo.toml
 title = "Hyas"
-baseurl = "/"
+baseurl = "http://localhost/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
+enableGitInfo = false
 enableRobotsTXT = true
 languageCode = "en-US"
+paginate = 7
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
-copyRight = "Copyright (c) 2023 Hyas"
+copyRight = "Copyright (c) 2020-2024 Hyas"
 
-[social]
-  twitter = "gethyas"
+[build.buildStats]
+  enable = true
 
 [outputs]
   home = ["HTML"]
 
-[sitemap]
-  changefreq = "monthly"
-  filename = "sitemap.xml"
-  priority = 0.5
-
 [minify.tdewolff.html]
   keepWhitespace = false
+
 ```
 
 ##### `module.toml`
@@ -241,7 +249,13 @@ Add a `module.toml` file with the following:
 
 ```toml
 //module.toml
-# assets
+# mounts
+## archetypes
+[[mounts]]
+  source = "archetypes"
+  target = "archetypes"
+
+## assets
 [[mounts]]
   source = "node_modules/@hyas/core/assets"
   target = "assets"
@@ -250,7 +264,22 @@ Add a `module.toml` file with the following:
   source = "assets"
   target = "assets"
 
-# layouts
+## content
+[[mounts]]
+  source = "content"
+  target = "content"
+
+## data
+[[mounts]]
+  source = "data"
+  target = "data"
+
+## i18n
+[[mounts]]
+  source = "i18n"
+  target = "i18n"
+
+## layouts
 [[mounts]]
   source = "node_modules/@hyas/core/layouts"
   target = "layouts"
@@ -258,6 +287,11 @@ Add a `module.toml` file with the following:
 [[mounts]]
   source = "layouts"
   target = "layouts"
+
+## static
+[[mounts]]
+  source = "static"
+  target = "static"
 ```
 
 ##### `params.toml`
@@ -266,12 +300,13 @@ Add a `params.toml` file with the following:
 
 ```toml
 // params.toml
-# Meta Data for SEO
+# Hugo
+title = "My Hyas site"
+description = "Congrats on setting up a new Hyas project!"
+images = ["cover.png"]
 
-## Homepage
-title = "Hyas"
-titleSeparator = "-"
-titleAddition = "The all-in-one Hugo-npm framework"
+[social]
+  twitter = "gethyas"
 ```
 
 #### `config` directory
@@ -321,25 +356,32 @@ module.exports = {
   plugins: [
     autoprefixer(),
     purgecss({
-      content: [
-        './node_modules/@hyas/*/layouts/**/*.html',
-        './content/**/*.html',
-        './content/**/*.md',
+      content: [ './hugo_stats.json' ],
+      extractors: [
+        {
+          extractor: (content) => {
+            const els = JSON.parse(content).htmlElements;
+            return els.tags.concat(els.classes, els.ids);
+          },
+          extensions: ['json'],
+        },
+      ],
+      dynamicAttributes: [
+        'aria-expanded',
+        'id',
+        'size',
+        'type',
       ],
       safelist: [
+        'active',
+        'disabled',
+        'hidden',
+        'show',
+        'img-fluid',
+        'blur-up',
         'lazyloaded',
-        'table',
-        'thead',
-        'tbody',
-        'tr',
-        'th',
-        'td',
-        'h1',
-        'h2',
-        'h3',
-        'alert-link',
         ...whitelister([
-          './node_modules/@hyas/core/assets/scss/app.scss',
+          './assets/scss/**/*.scss',
         ]),
       ],
     }),
@@ -355,87 +397,53 @@ module.exports = {
 cd ..
 ```
 
-##### `.eslintrc.json`
+##### `.prettierignore`
 
-Add a `.eslintrc.json` file with the following:
+Add a `.prettierignore` file with the following:
 
-```js
-// .eslintrc.json
-{
-  "env": {
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "node": true
-  },
-  "extends": "eslint:recommended",
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
-  "rules": {
-    "no-console": 0,
-    "quotes": ["error", "single"],
-    "comma-dangle": [
-      "error",
-      {
-        "arrays": "always-multiline",
-        "objects": "always-multiline",
-        "imports": "always-multiline",
-        "exports": "always-multiline",
-        "functions": "ignore"
-      }
-    ]
-  }
-}
+```txt
+// .prettierignore
+*.html
+*.ico
+*.png
+*.jp*g
+*.toml
+*.*ignore
+*.svg
+*.xml
+LICENSE
+.npmrc
+.gitkeep
+*.woff*
+*.txt
+*.map
 ```
 
-##### `.stylelintrc.json`
+##### `.prettierrc.yaml`
 
-Add a `.stylelintrc.json` file with the following:
+Add a `.prettierrc.yaml` file with the following:
 
-```js
-// .stylelintrc.json
-{
-  "extends": "stylelint-config-standard-scss",
-  "rules": {
-    "no-empty-source": null,
-    "scss/comment-no-empty": null,
-    "max-line-length": null,
-    "scss/at-extend-no-missing-placeholder": null,
-    "at-rule-no-unknown": [
-      true,
-      {
-        "ignoreAtRules": [
-          "extend",
-          "at-root",
-          "debug",
-          "warn",
-          "error",
-          "if",
-          "else",
-          "for",
-          "each",
-          "while",
-          "mixin",
-          "include",
-          "content",
-          "return",
-          "function",
-          "tailwind",
-          "apply",
-          "responsive",
-          "variants",
-          "screen"
-        ]
-      }
-    ]
-  }
-}
+```yaml
+// .prettierrc.yaml
+# Default config
+tabWidth: 4
+endOfLine: crlf
+singleQuote: true
+printWidth: 100000
+trailingComma: none
+bracketSameLine: true
+quoteProps: consistent
+experimentalTernaries: true
+
+# Overrided config
+overrides:
+  - files: ["*.md", "*.json", "*.yaml"]
+    options:
+      tabWidth: 2
+      singleQuote: false
+  - files: ["*.scss"]
+    options:
+      singleQuote: false
 ```
 
 ## Next steps
@@ -458,9 +466,8 @@ If you have followed the steps above, your project directory should now look lik
 - node_modules/
 - static
   - robots.txt
-- .eslintrc.json
-- .npmrc
-- .stylelintrc.json
+- .prettierignore
+- .prettierrc.yaml
 - package-lock.json # or yarn.lock, pnpm-lock.yaml, etc.
 - package.json
 
