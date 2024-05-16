@@ -21,8 +21,8 @@ Follow the instructions below to deploy your Hyas site to GitHub pages.
 1. Create a new file in your project at `.github/workflows/deploy.yml` and paste in the YAML below.
 
     ```yaml title="deploy.yml"
-    # Deploy your Hyas site to GitHub Pages
-    name: GitHub Pages
+    # Sample workflow for building and deploying a Hyas site to GitHub Pages
+    name: Deploy Hyas site to Pages
 
     on:
       # Runs on pushes targeting the default branch
@@ -54,13 +54,24 @@ Follow the instructions below to deploy your Hyas site to GitHub pages.
       # Build job
       build:
         runs-on: ubuntu-latest
+        env:
+          HUGO_VERSION: 0.126.0
         steps:
+          - name: Install Hugo CLI
+            run: |
+              wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+              && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+          - name: Install Dart Sass
+            run: sudo snap install dart-sass
           - name: Checkout
             uses: actions/checkout@v4
+            with:
+              submodules: recursive
+              fetch-depth: 0
           - name: Setup Node.js
             uses: actions/setup-node@v4
             with:
-              node-version: '18'
+              node-version: '20'
               cache: 'npm'
           - name: Setup Pages
             id: pages
@@ -72,14 +83,13 @@ Follow the instructions below to deploy your Hyas site to GitHub pages.
               # For maximum backward compatibility with Hugo modules
               HUGO_ENVIRONMENT: production
               HUGO_ENV: production
+              TZ: America/Los_Angeles
             run: |
               npm run build \
                 -- \
-                --gc \
-                --minify \
-                --baseURL "${{ steps.pages.outputs.base_url }}/" 
+                --baseURL "${{ steps.pages.outputs.base_url }}/"
           - name: Upload artifact
-            uses: actions/upload-pages-artifact@v2
+            uses: actions/upload-pages-artifact@v3
             with:
               path: ./public
 
@@ -93,7 +103,8 @@ Follow the instructions below to deploy your Hyas site to GitHub pages.
         steps:
           - name: Deploy to GitHub Pages
             id: deployment
-            uses: actions/deploy-pages@v3
+            uses: actions/deploy-pages@v4
+
     ```
 
 2. On GitHub, go to your repository's **Settings** tab and find the **Pages** section of the settings.
