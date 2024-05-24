@@ -32,7 +32,7 @@ mkdir my-hyas-project && cd my-hyas-project
 
 Once you are in your new directory, create your project `package.json` file. This is how you will manage your project dependencies, including Hyas. If you aren’t familiar with this file format, run the following command to create one.
 
-<Tabs>
+<Tabs syncKey="package-manager">
   <TabItem label="npm">
 ```bash
 npm init --yes
@@ -58,7 +58,7 @@ First, install the Hyas project dependencies inside your project.
 Hyas must be installed locally, not globally. Make sure you are *not* running `npm install -g gethyas`, `pnpm add -g gethyas`, or `yarn add global gethyas`.
 :::
 
-<Tabs>
+<Tabs syncKey="package-manager">
   <TabItem label="npm">
 ```bash
 npm install gethyas
@@ -78,7 +78,7 @@ yarn add gethyas
 
 Then, install Prettier and Vite — as `devDependencies`:
 
-<Tabs>
+<Tabs syncKey="package-manager">
   <TabItem label="npm">
 ```bash
 npm install -D prettier vite
@@ -121,7 +121,7 @@ mkdir content && cd content
 
 Next, create your new homepage:
 
-<Tabs>
+<Tabs syncKey="package-manager">
   <TabItem label="npm">
 ```bash
 npm run create _index.md
