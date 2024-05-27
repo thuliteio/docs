@@ -60,7 +60,6 @@ export default defineConfig({
         items: [
           { label: 'Why Hyas', link: '/concepts/why-hyas/' },
           { label: 'Dependencies', link: '/concepts/dependencies/' },
-          { label: 'Site Generator', link: '/concepts/site-generator/' },
         ]
       },
       {
