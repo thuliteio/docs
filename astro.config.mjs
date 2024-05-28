@@ -26,7 +26,6 @@ export default defineConfig({
     description: 'Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm.',
     components: {
       MarkdownContent: './src/components/starlight/MarkdownContent.astro',
-      Sidebar: './src/components/starlight/Sidebar.astro',
       TableOfContents: './src/components/TableOfContents.astro',
     },
     plugins: [
