@@ -1,0 +1,45 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/TableOfContents.astro'
+import EthicalAds from './EthicalAds.astro';
+---
+<Default {...Astro.props}><slot /></Default>
+
+<h2 class="contribute">Contribute</h2>
+<ul>
+  <li>
+    <a href="https://github.com/gethyas/hyas/issues/new/choose">Create an issue</a>
+  </li>
+  <li>
+    <a href="https://github.com/orgs/gethyas/discussions/new?category=ideas">Share an idea</a>
+  </li>
+  <li>
+    <a href="https://github.com/orgs/gethyas/discussions/new?category=support">Ask a question</a>
+  </li>
+  <li>
+    <a href="https://github.com/sponsors/gethyas">Sponsor Hyas</a>
+  </li>
+</ul>
+
+<EthicalAds />
+
+<style>
+	.contribute {
+		margin-top: 1.5rem;
+	}
+
+  ul {
+		padding: 0;
+    margin-left: 0.5rem;
+		list-style: none;
+	}
+
+  a {
+    --pad-inline: 0.5rem;
+    display: block;
+    border-radius: 0.25rem;
+    padding-block: 0.25rem;
+    padding-inline: calc(1rem* var(--depth) + var(--pad-inline)) var(--pad-inline);
+    line-height: 1.25;
+  }
+</style>

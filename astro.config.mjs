@@ -27,6 +27,7 @@ export default defineConfig({
     components: {
       MarkdownContent: './src/components/starlight/MarkdownContent.astro',
       Sidebar: './src/components/starlight/Sidebar.astro',
+      TableOfContents: './src/components/TableOfContents.astro',
     },
     plugins: [
       starlightDocSearch({
