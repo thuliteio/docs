@@ -1,4 +1,4 @@
 ---
-title: "Internationalization"
+title: "Static"
 description: A reference page in my new Starlight docs site.
 ---

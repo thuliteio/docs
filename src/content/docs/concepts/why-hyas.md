@@ -1,6 +1,8 @@
 ---
 title: Why Hyas?
 description: A guide in my new Starlight docs site.
+sidebar:
+  order: 0
 ---
 
 __Hyas__ is a web framework designed for __speed__, __security__, and __SEO__ — all powered by Hugo and npm. With Hyas, it’s super easy to build content-driven websites — like blogs, marketing, and e-commerce — that are production-ready out of the box. If you need a website that loads fast, is max secure, and has great SEO, then Hyas is for you.

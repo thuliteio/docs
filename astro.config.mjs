@@ -52,26 +52,32 @@ export default defineConfig({
           { label: 'Installation', link: '/install/auto/' },
           { label: 'Editor Setup', link: '/editor-setup/' },
           { label: 'Upgrade Hyas', link: '/upgrade-hyas/' },
-        ]
+        ],
       },
       {
         label: 'Concepts',
-        collapsed: true,
-        items: [
-          { label: 'Why Hyas', link: '/concepts/why-hyas/' },
-          { label: 'Dependencies', link: '/concepts/dependencies/' },
-        ]
+        autogenerate: { directory: 'concepts' },
       },
       {
         label: 'Basics',
         autogenerate: { directory: 'basics' },
       },
       {
+        label: 'Built-ins',
+        collapsed: true,
+        items: [
+          { label: 'Archetypes', link: '/guides/archetypes/' },
+          { label: 'Data', link: '/guides/data/' },
+          { label: 'Internationalization', link: '/guides/internationalization/' },
+          { label: 'Static', link: '/guides/static/' },
+        ],
+      },
+      {
         label: 'Add-ons',
         items: [
           { label: 'Add integrations', link: '/guides/integrations/' },
           { label: 'Add a theme', link: '/guides/themes/' },
-        ]
+        ],
       },
       {
         label: 'Recipes',
@@ -79,17 +85,17 @@ export default defineConfig({
           { label: 'Add analytics', link: '/guides/analytics/' },
           { label: 'Connect a CMS', link: '/guides/cms/' },
           { label: 'Deploy your site', link: '/guides/deploy/' },
-        ]
+        ],
       },
       {
         label: 'Guides',
         items: [
           { label: 'Markdown', link: '/guides/markdown/' },
-          { label: 'Styles', link: '/guides/styles/' },
-          { label: 'Scripts', link: '/guides/scripts/' },
+          { label: 'CSS & Styling', link: '/guides/styles/' },
+          { label: 'JavaScript', link: '/guides/scripts/' },
+          { label: 'Images', link: '/guides/images/' },
           { label: 'Fonts', link: '/guides/fonts/' },
-          { label: 'Internationalization', link: '/guides/internationalization/' },
-        ]
+        ],
       },
       {
         label: 'Reference',

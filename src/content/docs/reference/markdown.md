@@ -1,8 +1,8 @@
 ---
-title: Hyas CLI Commands
+title: Markdown Reference
 description: A reference page in my new Starlight docs site.
 sidebar:
-  label: The Hyas CLI
+  label: Markdown
   order: 3
 next: false
 ---

@@ -1,6 +1,8 @@
 ---
 title: Dependencies
 description: A guide in my new Starlight docs site.
+sidebar:
+  order: 1
 ---
 
 Hyas helps you [build scalable and maintainable websites](/concepts/why-hyas/#solid-architecture) and __leverages npm to [explicitly declare and isolate dependencies](https://12factor.net/dependencies)__.

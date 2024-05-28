@@ -3,7 +3,7 @@ title: Frontmatter Reference
 description: A reference page in my new Starlight docs site.
 sidebar:
   label: Frontmatter
-  order: 2
+  order: 1
 ---
 
 Reference pages are ideal for outlining how things work in terse and clear terms.

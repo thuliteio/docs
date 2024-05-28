@@ -2,7 +2,7 @@
 title: Project Structure
 description: A reference page in my new Starlight docs site.
 sidebar:
-  order: 1
+  order: 0
 ---
 import FileTree from '~/components/FileTree.astro';
 
@@ -12,10 +12,10 @@ Here's how an Hyas project is organized, and some files you will find in your ne
 
 ## Directories and Files
 
-Hyas leverages an opinionated, Hugo-based folder layout for your project. Every Hyas project root should include the following directories and files:
+Hyas leverages the Hugo [directory structure](https://gohugo.io/getting-started/directory-structure/) for your project. Every Hyas project root should include the following directories and files:
 
 - `assets` - Your project assets (scripts, styles, images, etc.)
-- `config` - Configuration files (Hyas, Hugo, PostCSS, etc.)
+- `config` - Your project's configuration files (Hyas, Hugo, PostCSS, etc.)
 - `content` - Your project content (pages, posts, etc.)
 - `layouts` - Your project layouts (partials, shortcodes, etc.)
 - `static` - Your non-code, unprocessed assets (fonts, icons, etc.)
@@ -56,13 +56,13 @@ The `app.scss` file is used to specify the CSS or Sass files to import (or use).
 
 ### `config/_default/`
 
-The `hugo.toml` file includes Hugo configuration options for your Hyas project. Here you can specify taxonomies to use, build options, server options, and more.
+The `hugo.toml` file includes [Hugo configuration](https://gohugo.io/getting-started/configuration/) options for your Hyas project. Here you can specify taxonomies to use, build options, server options, and more.
 
-The `module.toml` file specifies the Hugo mounts, logically linking `node_modules` directories to component folders (ex: `assets`, `layouts`) — making Hyas Integrations available in your Hyas project.
+The `module.toml` file specifies the [Hugo mounts](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts), logically linking `node_modules` directories to component folders (ex: `assets`, `layouts`) — making Hyas Integrations available in your Hyas project.
 
 The `params.toml` file is where you set Hyas configuration options like e.g. options for themes and integrations. 
 
-See the [Configuring Hyas Guide](/guides/configuring-hyas/) for details on setting configurations.
+See the [Configuration](/basics/configuration/) guide for details on setting configurations.
 
 ### `content/`
 
