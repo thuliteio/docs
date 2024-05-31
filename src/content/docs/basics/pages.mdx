@@ -1,0 +1,83 @@
+---
+title: Pages
+description: A reference page in my new Starlight docs site.
+sidebar:
+  order: 1
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+__Pages__ are files that live in the `content` subdirectory of your Hyas project. They are responsible for handling routing, data loading, and overall page layout for every page in your website.
+
+## Create new content
+
+You can create new content by running the [`create` command](/basics/commands/#create) in your terminal.
+
+### Examples
+
+For example, create an about page using a [leaf bundle](https://gohugo.io/content-management/page-bundles/#leaf-bundles):
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+npm run create about/index.md
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm run create about/index.md
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn run create about/index.md
+```
+  </TabItem>
+</Tabs>
+
+Or, create a home page using a [branch bundle](https://gohugo.io/content-management/page-bundles/#branch-bundles):
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+npm run create _index.md
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm run create _index.md
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn run create _index.md
+```
+  </TabItem>
+</Tabs>
+
+## Hugo documentation
+
+Hyas leverages Hugo's [content management](https://gohugo.io/content-management/). Here are some relevant topics:
+
+<CardGrid>
+  <LinkCard
+    title="Content organization"
+    description="Organize your content in a manner that reflects the rendered website."
+    href="https://gohugo.io/content-management/organization/"
+    target="_blank" />
+  <LinkCard
+    title="Page bundles"
+    description="Use page bundles to logically associate one or more resources with content."
+    href="https://gohugo.io/content-management/page-bundles/"
+    target="_blank" />
+  <LinkCard
+    title="Content formats"
+    description="Create your content using multiple content formats."
+    href="https://gohugo.io/content-management/formats/"
+    target="_blank" />
+  <LinkCard
+    title="Front matter"
+    description="Use front matter to add metadata to your content."
+    href="https://gohugo.io/content-management/front-matter/"
+    target="_blank" />
+</CardGrid>
