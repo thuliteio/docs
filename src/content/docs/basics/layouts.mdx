@@ -1,0 +1,66 @@
+---
+title: Layouts
+description: A reference page in my new Starlight docs site.
+sidebar:
+  order: 2
+---
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+__Layouts__ are files that live in the `layouts` directory of your Hyas project. They are used to provide a reusable UI structure, such as a page template.
+
+## Examples
+
+For example, the default Hyas [base template](https://gohugo.io/templates/base/#define-the-base-template) looks like this:
+
+```html title="baseof.html"
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+  {{ partial "head/head.html" . }}
+  {{ partial "head/body-class.html" . }}
+  <body class="{{ delimit (.Scratch.Get "class") " " }}">
+    {{ block "main" . }}{{ end }}
+    {{ if templates.Exists "partials/footer/script-footer.html" -}}
+      {{ partial "footer/script-footer.html" . }}
+    {{ else -}}
+      {{ partial "footer/script-footer-core.html" . }}
+    {{ end -}}
+  </body>
+</html>
+```
+
+## Hugo documentation
+
+Hyas leverages Hugo's [templates](https://gohugo.io/templates/). Here are some relevant topics:
+
+<CardGrid>
+  <LinkCard
+    title="Introduction to templating"
+    description="Create templates to render your content, resources, and data."
+    href="https://gohugo.io/templates/introduction/"
+    target="_blank" />
+  <LinkCard
+    title="Template lookup order"
+    description="Hugo uses a template for a given page, starting from the most specific."
+    href="https://gohugo.io/templates/lookup-order/"
+    target="_blank" />
+  <LinkCard
+    title="Base templates and blocks"
+    description="Base and block constructs define the outer shell of your master templates."
+    href="https://gohugo.io/templates/base/"
+    target="_blank" />
+  <LinkCard
+    title="Single page templates"
+    description="Single page templates are the primary view of content in Hugo."
+    href="https://gohugo.io/templates/single-page-templates/"
+    target="_blank" />
+  <LinkCard
+    title="List page templates"
+    description="List page templates render multiple pieces of content in a HTML page."
+    href="https://gohugo.io/templates/lists/"
+    target="_blank" />
+  <LinkCard
+    title="Partial templates"
+    description="Partials are context-aware components in your list and page templates."
+    href="https://gohugo.io/templates/partials/"
+    target="_blank" />
+</CardGrid>
