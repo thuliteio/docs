@@ -1,0 +1,101 @@
+---
+title: Configuration
+description: A reference page in my new Starlight docs site.
+sidebar:
+  order: 4
+---
+import FileTree from '~/components/FileTree.astro';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+Here's how a Hyas project configuration is organized, and the configuration files you will find in your new project.
+
+## Example Project Configuration Tree
+
+A common Hyas project configuration directory might look like this:
+
+<FileTree>
+
+- config
+  - _default
+    - hugo.toml
+    - markup.toml
+    - menus.toml
+    - module.toml
+    - params.toml
+  - next
+    - hugo.toml
+    - params.toml
+  - production
+    - hugo.toml
+    - params.toml
+- babel.config.js
+- postcss.config.js
+
+</FileTree>
+
+### `config/_default/hugo.toml`
+
+The `hugo.toml` file includes [Hugo configuration](https://gohugo.io/getting-started/configuration/) options for your Hyas project. Here you can specify taxonomies to use, build options, server options, and more.
+
+### `config/_default/markup.toml`
+
+The `markup.toml` file is where you [configure rendering](https://gohugo.io/getting-started/configuration-markup/) of markup to HTML.
+
+### `config/_default/menus.toml`
+
+The `menus.toml` file is where you [define menu entries](https://gohugo.io/content-management/menus/).
+
+### `config/_default/module.toml`
+
+The `module.toml` file specifies the [Hugo mounts](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts), logically linking `node_modules` directories to component folders (ex: `assets`, `layouts`) — making Hyas Integrations available in your Hyas project.
+
+### `config/_default/params.toml`
+
+The `params.toml` file is where you set [Hyas configuration](/reference/configuration/) options like e.g. options for themes and integrations. 
+
+### `config/next/`
+
+Overrides for your next environment.
+
+### `config/production/`
+
+Overrides for your production environment.
+
+:::tip
+Set `baseurl` in `hugo.toml` to the absolute URL (protocol, host, path, and trailing slash) of your published site (e.g., https://www.example.org/docs/).
+:::
+
+### `babel.config.js`
+
+The `babel.config.js` file is where you configure [Babel](https://babeljs.io/). Hyas supports processing JavaScript files with Babel.
+
+### `postcss.config.js`
+
+The `postcss.config.js` file is where you configure [PostCSS](https://postcss.org/). Hyas uses PostCSS to add vendor prefixes to CSS rules using [Autoprefixer](https://github.com/postcss/autoprefixer) and to remove unused CSS from your project using [PurgeCSS](https://purgecss.com/).
+
+## Hugo documentation
+
+Hyas leverages Hugo's [configuration](https://gohugo.io/getting-started/configuration/). Here are some relevant topics:
+
+<CardGrid>
+  <LinkCard
+    title="Configure Hugo"
+    description="How to configure your Hugo site."
+    href="https://gohugo.io/getting-started/configuration/"
+    target="_blank" />
+  <LinkCard
+    title="Babel"
+    description="Hugo Pipes can process JavaScript files with Babel."
+    href="https://gohugo.io/hugo-pipes/babel/"
+    target="_blank" />
+  <LinkCard
+    title="PostCSS"
+    description="Process CSS files with PostCSS, using any of the available plugins."
+    href="https://gohugo.io/hugo-pipes/postcss/"
+    target="_blank" />
+  <LinkCard
+    title="CSS purging with PostCSS"
+    description="There are several ways to set up CSS purging with PostCSS in Hugo."
+    href="https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss"
+    target="_blank" />
+</CardGrid>
