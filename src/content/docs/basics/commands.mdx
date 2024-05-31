@@ -1,0 +1,212 @@
+---
+title: Commands
+description: A reference page in my new Starlight docs site.
+sidebar:
+  order: 5
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+You can use the `scripts` in `package.json` to create new content and develop, format, build, and preview your project from a terminal window.
+
+## `package.json` scripts
+
+The following scripts for the most common commands (`create`, `dev`, `format`, `build`, and `preview`) are added for you automatically when you create a project using [the `create hyas` wizard](/install/auto/#1-run-the-setup-wizard).
+
+When you follow the instructions to [install Hyas manually](/install/manual/#2-install-hyas-prettier-and-vite), you are instructed to add these scripts yourself. You can also add more scripts to this list manually for any commands you use frequently.
+
+```json title="package.json"
+{
+  "scripts": {
+    "create": "hugo new",
+    "dev": "hugo server --disableFastRender --noHTTPCache",
+    "format": "prettier **/** -w -c",
+    "build": "hugo --minify --gc",
+    "preview": "vite preview --outDir public"
+  }
+}
+```
+
+You will often use these commands, or the scripts that run them, without any flags. Add flags to the command when you want to customize the command’s behavior. For example, you may wish to start the development server on a different port, or build your site with verbose logs for debugging.
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+# Run the dev server on port 3000 using the `dev` script in `package.json`
+npm run dev -- --port 3000
+
+# Build your site with verbose logs using the `build` script in `package.json`
+npm run build -- --verbose
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# run the dev server on port 3000 using the `dev` script in `package.json`
+pnpm dev --port 3000
+
+# build your site with verbose logs using the `build` script in `package.json`
+pnpm build --verbose
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# run the dev server on port 3000 using the `dev` script in `package.json`
+yarn dev --port 3000
+
+# build your site with verbose logs using the `build` script in `package.json`
+yarn build --verbose
+```
+  </TabItem>
+</Tabs>
+
+:::note
+The extra `--` before any flag is necessary for `npm` to pass your flags to the script.
+:::
+
+:::note
+You can find the available flags for each command on the below command's linked page.
+:::
+
+### `create`
+
+Run the following command in your terminal to [create new content](https://gohugo.io/commands/hugo_new/):
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+# npm run create [path] [flags]
+npm run create
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# pnpm run create [path] [flags]
+pnpm run create
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# yarn run create [path] [flags]
+yarn run create
+```
+  </TabItem>
+</Tabs>
+
+For example, create an "About" page in the `content` directory of your project:
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+npm run create about.md
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm run create about.md
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn run create about.md
+```
+  </TabItem>
+</Tabs>
+
+### `dev`
+
+Run the following command in your terminal to start the [Hugo development server](https://gohugo.io/commands/hugo_server/):
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+# npm run dev [flags]
+npm run dev
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# pnpm dev [flags]
+pnpm dev
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# yarn dev [flags]
+yarn dev
+```
+  </TabItem>
+</Tabs>
+
+### `format`
+
+Run the following command in your terminal to run the [Prettier code formatter](https://prettier.io/docs/en/cli):
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+# npm run format [flags]
+npm run format
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# pnpm format [flags]
+pnpm format
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# yarn format [flags]
+yarn format
+```
+  </TabItem>
+</Tabs>
+
+### `build`
+
+Run the following command in your terminal to [create a production build](https://gohugo.io/commands/hugo/):
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+# npm run build [flags]
+npm run build
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# pnpm build [flags]
+pnpm build
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# yarn build [flags]
+yarn build
+```
+  </TabItem>
+</Tabs>
+
+### `preview`
+
+Run the following command in your terminal to [locally preview the production build](https://vitejs.dev/guide/cli.html#vite-preview):
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+# npm run preview [flags]
+npm run preview
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# pnpm preview [flags]
+pnpm preview
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# yarn preview [flags]
+yarn preview
+```
+  </TabItem>
+</Tabs>
