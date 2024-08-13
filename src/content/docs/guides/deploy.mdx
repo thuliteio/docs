@@ -1,11 +1,11 @@
 ---
-title: Deploy your Hyas site
+title: Deploy your Thulite site
 description: A guide in my new Starlight docs site.
 ---
 import DeployGuidesNav from '~/components/DeployGuidesNav.astro';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-**Ready to build and deploy your Hyas site?** Follow one of our guides to different deployment services or scroll down for general guidance about deploying a Hyas site.
+**Ready to build and deploy your Thulite site?** Follow one of our guides to different deployment services or scroll down for general guidance about deploying a Thulite site.
 
 ## Deployment Guides
 
@@ -13,19 +13,19 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Quick Deploy Options
 
-You can build and deploy a Hyas site to a number of hosts quickly using either their website's dashboard UI or a CLI.
+You can build and deploy a Thulite site to a number of hosts quickly using either their website's dashboard UI or a CLI.
 
 ### Website UI
 
-A quick way to deploy your website is to connect your Hyas project's online Git repository (e.g. GitHub, GitLab, Bitbucket) to a host provider and take advantage of continuous deployment using Git.
+A quick way to deploy your website is to connect your Thulite project's online Git repository (e.g. GitHub, GitLab, Bitbucket) to a host provider and take advantage of continuous deployment using Git.
 
-These host platforms automatically detect pushes to your Hyas project's source repository, build your site and deploy it to the web at a custom URL or your personal domain. Often, setting up a deployment on these platforms will follow steps something like the following:
+These host platforms automatically detect pushes to your Thulite project's source repository, build your site and deploy it to the web at a custom URL or your personal domain. Often, setting up a deployment on these platforms will follow steps something like the following:
 
 1. Add your repository to an online Git provider (e.g. in GitHub, GitLab, Bitbucket)
 
 2. Choose a host that supports **continuous deployment** (e.g. [Netlify](/guides/deploy/netlify/) or [Vercel](/guides/deploy/vercel/)) and import your Git repository as a new site/project.
 
-    Many common hosts will recognize your project as a Hyas site, and should choose the appropriate configuration settings to build and deploy your site as shown below. (If not, these settings can be changed.)
+    Many common hosts will recognize your project as a Thulite site, and should choose the appropriate configuration settings to build and deploy your site as shown below. (If not, these settings can be changed.)
 
     :::note[Deploy settings]
     - **Build Command:** `hyas build` or `npm run build`
@@ -64,7 +64,7 @@ Some hosts will have their own command line interface (CLI) you can install glob
 
 3. Build your site and deploy to your host
 
-    Many common hosts will build and deploy your site for you. They will usually recognize your project as a Hyas site, and should choose the appropriate configuration settings to build and deploy as shown below. (If not, these settings can be changed.)
+    Many common hosts will build and deploy your site for you. They will usually recognize your project as a Thulite site, and should choose the appropriate configuration settings to build and deploy as shown below. (If not, these settings can be changed.)
 
     :::note[Deploy settings]
     - **Build Command:** `hyas build` or `npm run build`
@@ -80,7 +80,7 @@ Many hosts like Netlify and Vercel will build your site for you and then publish
 
 You may also wish to build locally to [preview your site](#previewing-your-site-locally), or to catch any potential errors and warnings in your own environment.
 
-Run the command `npm run build` to build your Hyas site.
+Run the command `npm run build` to build your Thulite site.
 
 <Tabs>
   <TabItem label="npm">
@@ -104,9 +104,9 @@ By default, the build output will be placed at `public/`. This location can be c
 
 ## Previewing Your Site Locally
 
-Next to Hugo's built-in development server, Hyas ships with [http-server](https://github.com/http-party/http-server), a simple, zero-configuration command-line static HTTP server.
+Next to Hugo's built-in development server, Thulite ships with [http-server](https://github.com/http-party/http-server), a simple, zero-configuration command-line static HTTP server.
 
-Run the command `npm run preview` to preview your Hyas site.
+Run the command `npm run preview` to preview your Thulite site.
 
 <Tabs>
   <TabItem label="npm">

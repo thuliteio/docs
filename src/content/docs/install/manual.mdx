@@ -1,11 +1,11 @@
 ---
-title: Install Hyas manually
+title: Install Thulite manually
 description: A reference page in my new Starlight docs site.
 ---
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import FileTree from '~/components/FileTree.astro';
 
-This guide will walk you through the steps to manually install and configure a new Hyas project.
+This guide will walk you through the steps to manually install and configure a new Thulite project.
 
 :::tip[Prefer a quicker way to get started?]
 Follow the [create hyas CLI wizard](/install/auto/) instead.
@@ -16,7 +16,7 @@ Follow the [create hyas CLI wizard](/install/auto/) instead.
 - __Node.js__ - `v20.11.0` or higher — run `node -v` to check.
 - __Hugo extended__ - `v0.125.0` or higher — run `hugo version` to check.
 - __Text editor__ - We recommend [VS Code](https://code.visualstudio.com/) — see also [Editor Setup](/editor-setup/).
-- __Terminal__ - Hyas is accessed through its command-line interface (CLI).
+- __Terminal__ - Thulite is accessed through its command-line interface (CLI).
 
 ## Installation
 
@@ -27,10 +27,10 @@ If you prefer _not_ to use our automatic `create hyas` CLI tool, you can set up 
 Create an empty directory with the name of your project, and then navigate into it.
 
 ```bash
-mkdir my-hyas-project && cd my-hyas-project
+mkdir my-thulite-project && cd my-thulite-project
 ```
 
-Once you are in your new directory, create your project `package.json` file. This is how you will manage your project dependencies, including Hyas. If you aren’t familiar with this file format, run the following command to create one.
+Once you are in your new directory, create your project `package.json` file. This is how you will manage your project dependencies, including Thulite. If you aren’t familiar with this file format, run the following command to create one.
 
 <Tabs syncKey="package-manager">
   <TabItem label="npm">
@@ -50,12 +50,12 @@ yarn init --yes
   </TabItem>
 </Tabs>
 
-### 2. Install Hyas, Prettier and Vite
+### 2. Install Thulite, Prettier and Vite
 
-First, install the Hyas project dependencies inside your project.
+First, install the Thulite project dependencies inside your project.
 
 :::note[Important]
-Hyas must be installed locally, not globally. Make sure you are *not* running `npm install -g gethyas`, `pnpm add -g gethyas`, or `yarn add global gethyas`.
+Thulite must be installed locally, not globally. Make sure you are *not* running `npm install -g gethyas`, `pnpm add -g gethyas`, or `yarn add global gethyas`.
 :::
 
 <Tabs syncKey="package-manager">
@@ -109,11 +109,11 @@ Next, replace any placeholder “scripts” section of your `package.json` with 
   },
 ```
 
-You'll use these scripts later in the guide to start Hyas and run its different commands.
+You'll use these scripts later in the guide to start Thulite and run its different commands.
 
 ### 3. Create your first page
 
-Hyas follows the Hugo content structure. In the root of your project, create an empty `content` directory, and then navigate into it.
+Thulite follows the Hugo content structure. In the root of your project, create an empty `content` directory, and then navigate into it.
 
 ```bash
 mkdir content && cd content
@@ -200,7 +200,7 @@ body {
 
 ### 6. Create configuration files
 
-Hyas follows Hugo's configuration setup.
+Thulite follows Hugo's configuration setup.
 
 #### `config/_default` directory
 
@@ -216,7 +216,7 @@ Add a `hugo.toml` file with the following:
 
 ```toml
 // hugo.toml
-title = "Hyas"
+title = "Thulite"
 baseurl = "http://localhost/"
 canonifyURLs = false
 disableAliases = true
@@ -230,7 +230,7 @@ paginate = 7
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
-copyRight = "Copyright (c) 2020-2024 Hyas"
+copyRight = "Copyright (c) 2020-2024 Thulite"
 
 [build.buildStats]
   enable = true
@@ -301,8 +301,8 @@ Add a `params.toml` file with the following:
 ```toml
 // params.toml
 # Hugo
-title = "My Hyas site"
-description = "Congrats on setting up a new Hyas project!"
+title = "My Thulite site"
+description = "Congrats on setting up a new Thulite project!"
 images = ["cover.png"]
 
 [social]
@@ -473,6 +473,6 @@ If you have followed the steps above, your project directory should now look lik
 
 </FileTree>
 
-Congratulations, you're now set up to use Hyas!
+Congratulations, you're now set up to use Thulite!
 
-If you followed this guide completely, you can jump directly to [Step 3: Start Hyas](/install/auto/#3-start-hyas) to continue and learn how to run Hyas for the first time.
+If you followed this guide completely, you can jump directly to [Step 3: Start Thulite](/install/auto/#3-start-hyas) to continue and learn how to run Thulite for the first time.

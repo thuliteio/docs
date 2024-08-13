@@ -1,12 +1,12 @@
 ---
-title: Deploy your Hyas Site to GitHub Pages
-description: How to deploy your Hyas site to the web using GitHub Pages.
+title: Deploy your Thulite Site to GitHub Pages
+description: How to deploy your Thulite site to the web using GitHub Pages.
 type: deploy
 stub: false
 service: GitHub Pages
 ---
 
-You can use [GitHub Pages](https://pages.github.com/) to host a Hyas website directly from a repository on [GitHub.com](https://github.com/).
+You can use [GitHub Pages](https://pages.github.com/) to host a Thulite website directly from a repository on [GitHub.com](https://github.com/).
 
 :::tip[Looking for an example?]
 Check out the [official GitHub Pages Doks example project](https://github.com/gethyas/doks-gh-pages)!
@@ -14,15 +14,15 @@ Check out the [official GitHub Pages Doks example project](https://github.com/ge
 
 ## How to deploy
 
-You can deploy a Hyas site to GitHub Pages by using [GitHub Actions](https://github.com/features/actions) to automatically build and deploy your site. To do this, your source code must be hosted on GitHub.
+You can deploy a Thulite site to GitHub Pages by using [GitHub Actions](https://github.com/features/actions) to automatically build and deploy your site. To do this, your source code must be hosted on GitHub.
 
-Follow the instructions below to deploy your Hyas site to GitHub pages.
+Follow the instructions below to deploy your Thulite site to GitHub pages.
 
 1. Create a new file in your project at `.github/workflows/deploy.yml` and paste in the YAML below.
 
     ```yaml title="deploy.yml"
-    # Sample workflow for building and deploying a Hyas site to GitHub Pages
-    name: Deploy Hyas site to Pages
+    # Sample workflow for building and deploying a Thulite site to GitHub Pages
+    name: Deploy Thulite site to Pages
 
     on:
       # Runs on pushes targeting the default branch
@@ -117,7 +117,7 @@ Follow the instructions below to deploy your Hyas site to GitHub pages.
 
 7. Push the changes to GitHub and wait for the action to finish succesfully (after approximately 30 seconds).
 
-That's it. After a minute or so, you site is avaliable at the **Your site is published at** URL. When you push changes to your Hyas project's repository, the GitHub Action will automatically deploy them for you.
+That's it. After a minute or so, you site is avaliable at the **Your site is published at** URL. When you push changes to your Thulite project's repository, the GitHub Action will automatically deploy them for you.
 
 :::tip[Set up a custom domain]
 You can optionally set up a custom domain by adding the following `./public/CNAME` file to your project: 

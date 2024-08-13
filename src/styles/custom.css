@@ -1,10 +1,10 @@
 /** Custom Styles **/
 .site-title img {
   width: auto;
-  height: 22px;
+  height: 20px;
 
   @media (min-width: 50rem) {
-    height: 24px;
+    height: 22px;
   }
 }
 
