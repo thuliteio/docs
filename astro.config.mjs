@@ -45,6 +45,9 @@ export default defineConfig({
       baseUrl: 'https://github.com/gethyas/docs/edit/main/',
     },
     sidebar: [
+      { label: 'thulite.io',
+        link: 'https://thulite.io/',
+      },
       {
         label: 'Start Here',
         items: [
