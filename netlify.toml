@@ -28,6 +28,12 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "https://docs.gethyas.com/*"
+  to = "https://docs.thulite.io/:splat"
+  status = 301
+  force = true
+
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
   for = "/*"
