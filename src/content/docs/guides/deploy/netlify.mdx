@@ -1,13 +1,13 @@
 ---
-title: Deploy your Hyas Site to Netlify
-description: How to deploy your Hyas site to the web on Netlify.
+title: Deploy your Thulite Site to Netlify
+description: How to deploy your Thulite site to the web on Netlify.
 type: deploy
 stub: false
 service: Netlify
 ---
 import List from '~/components/List.astro';
 
-[Netlify](https://netlify.com) offers hosting and serverless backend services for web applications and static websites. Any Hyas site can be hosted on Netlify!
+[Netlify](https://netlify.com) offers hosting and serverless backend services for web applications and static websites. Any Thulite site can be hosted on Netlify!
 
 This guide includes instructions for deploying to Netlify through the website UI or Netlify's CLI.
 
@@ -17,13 +17,13 @@ You can deploy to Netlify through the website UI or using Netlify's CLI (command
 
 ### Website UI Deployment
 
-If your project is stored in GitHub, GitLab, BitBucket, or Azure DevOps, you can use the Netlify website UI to deploy your Hyas site.
+If your project is stored in GitHub, GitLab, BitBucket, or Azure DevOps, you can use the Netlify website UI to deploy your Thulite site.
 
 1. Click <kbd>Add a new site</kbd> in your [Netlify dashboard](https://app.netlify.com/)
 
 2. Choose <kbd>Import an existing project</kbd>
 
-    When you import your Hyas repository from your Git provider, Netlify should automatically detect and pre-fill the correct configuration settings for you.
+    When you import your Thulite repository from your Git provider, Netlify should automatically detect and pre-fill the correct configuration settings for you.
 
 3. Make sure that the following settings are entered, then press the <kbd>Deploy</kbd> button:
 
@@ -77,7 +77,7 @@ You can also create a new site on Netlify and link up your Git repository by ins
 
 ### Set a Node.js Version
 
-If you are using a legacy [build image](https://docs.netlify.com/configure-builds/get-started/#build-image-selection) (Xenial) on Netlify, make sure that your Node.js version is set. Hyas requires `v18.14.1` or higher.
+If you are using a legacy [build image](https://docs.netlify.com/configure-builds/get-started/#build-image-selection) (Xenial) on Netlify, make sure that your Node.js version is set. Thulite requires `v18.14.1` or higher.
 
 You can [specify your Node.js version in Netlify](https://docs.netlify.com/configure-builds/manage-dependencies/#node-js-and-javascript) using:
 - a [`.nvmrc`](https://github.com/nvm-sh/nvm#nvmrc) file in your base directory.
@@ -92,4 +92,4 @@ You can [specify your Node.js version in Netlify](https://docs.netlify.com/confi
 
 ## Using Netlify Functions
 
-No special configuration is required to use Netlify Functions with Hyas. Add a `netlify/functions` directory to your project root and follow [the Netlify Functions documentation](https://docs.netlify.com/functions/overview/) to get started!
+No special configuration is required to use Netlify Functions with Thulite. Add a `netlify/functions` directory to your project root and follow [the Netlify Functions documentation](https://docs.netlify.com/functions/overview/) to get started!

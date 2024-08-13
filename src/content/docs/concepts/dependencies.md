@@ -5,7 +5,7 @@ sidebar:
   order: 1
 ---
 
-Hyas helps you [build scalable and maintainable websites](/concepts/why-hyas/#solid-architecture) and __leverages npm to [explicitly declare and isolate dependencies](https://12factor.net/dependencies)__.
+Thulite helps you [build scalable and maintainable websites](/concepts/why-hyas/#solid-architecture) and __leverages npm to [explicitly declare and isolate dependencies](https://12factor.net/dependencies)__.
 
 ## Explicit declaration and isolation
 
@@ -15,9 +15,9 @@ The ["Dependencies"](https://12factor.net/dependencies) section of the Twelve-Fa
 
 For a JavaScript project following the Twelve-Factor App methodology, dependencies should be explicitly declared in a `package.json` file. This file acts as the dependency declaration manifest, listing all necessary packages. Isolation is achieved by using a tool like [npm](https://www.npmjs.com/), which installs dependencies in a `node_modules` directory within the project. This ensures that the app does not rely on system-wide packages, maintaining consistency across different environments. Additionally, any required scripts or tools should be included as npm scripts to avoid system tool dependencies.
 
-### Hyas
+### Thulite
 
-Hyas' [integrations](/guides/integrations/) and [themes](/guides/themes/) are npm packages explicitly declared in your project's `package.json` and installed in the `node_modules` directory of your project. Hyas uses Hugo's [module configuration](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts) to mount the Hyas dependencies' `node_modules` directories to one of Hugo's corresponding [component folders](https://gohugo.io/getting-started/directory-structure/#directories), making them available to Hugo for processing.
+Thulite' [integrations](/guides/integrations/) and [themes](/guides/themes/) are npm packages explicitly declared in your project's `package.json` and installed in the `node_modules` directory of your project. Thulite uses Hugo's [module configuration](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts) to mount the Thulite dependencies' `node_modules` directories to one of Hugo's corresponding [component folders](https://gohugo.io/getting-started/directory-structure/#directories), making them available to Hugo for processing.
 
 ### Pros
 
@@ -50,5 +50,5 @@ Additionally, Hugo provides the [`hugo mod npm pack`](https://gohugo.io/commands
 - Hugo's integrated JavaScript support is _limited_. For example, the `scripts` section of a `package.json` is not supported.
 
 :::note[Still want to use Hugo Modules?]
- Thats okay! Hyas works in combination with [Hugo Modules](https://gohugo.io/hugo-modules/) (but without it's npm support).
+ Thats okay! Thulite works in combination with [Hugo Modules](https://gohugo.io/hugo-modules/) (but without it's npm support).
 :::

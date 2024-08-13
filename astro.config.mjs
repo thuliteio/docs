@@ -10,19 +10,19 @@ export default defineConfig({
       destination: '/getting-started/',
     },
   },
-  site: 'https://docs.gethyas.com/',
+  site: 'https://docs.thulite.io/',
   integrations: [starlight({
     head: [
       {
         tag: 'script',
         attrs: {
           src: 'https://plausible.io/js/script.js',
-          'data-domain': 'docs.gethyas.com',
+          'data-domain': 'docs.thulite.io',
           defer: true,
         },
       },
     ],
-    title: 'Hyas Docs',
+    title: 'Thulite Docs',
     description: 'Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm.',
     components: {
       MarkdownContent: './src/components/starlight/MarkdownContent.astro',
@@ -38,7 +38,7 @@ export default defineConfig({
     logo: {
       light: './src/assets/light-logo.svg',
       dark: './src/assets/dark-logo.svg',
-      alt: 'Hyas Docs',
+      alt: 'Thulite',
       replacesTitle: true,
     },
     editLink: {
@@ -51,7 +51,7 @@ export default defineConfig({
           { label: 'Getting Started', link: '/getting-started/'},
           { label: 'Installation', link: '/install/auto/' },
           { label: 'Editor Setup', link: '/editor-setup/' },
-          { label: 'Upgrade Hyas', link: '/upgrade-hyas/' },
+          { label: 'Upgrade Thulite', link: '/upgrade-hyas/' },
         ],
       },
       {

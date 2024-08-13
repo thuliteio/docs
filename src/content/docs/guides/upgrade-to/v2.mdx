@@ -1,17 +1,17 @@
 ---
-title: Upgrade to Hyas v2
+title: Upgrade to Thulite v2
 description: A guide in my new Starlight docs site.
 ---
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-This guide will help you migrate from Hyas v1 to Hyas v2.
+This guide will help you migrate from Thulite v1 to Thulite v2.
 
 ## Prerequisites
 
 - __Node.js__ - `v20.11.0` or higher — run `node -v` to check.
 - __Hugo extended__ - `v0.125.0` or higher — run `hugo version` to check.
 - __Text editor__ - We recommend [VS Code](https://code.visualstudio.com/) — see also [Editor Setup](/editor-setup/).
-- __Terminal__ - Hyas is accessed through its command-line interface (CLI).
+- __Terminal__ - Thulite is accessed through its command-line interface (CLI).
 
 ## Upgrading
 
@@ -48,8 +48,8 @@ Replace the contents of your project's `package.json` with the following:
 {
   "name": "hyas-project",
   "version": "0.0.0",
-  "description": "Hyas",
-  "author": "Hyas",
+  "description": "Thulite",
+  "author": "Thulite",
   "license": "MIT",
   "scripts": {
     "create": "hugo new",
@@ -64,9 +64,9 @@ Replace the contents of your project's `package.json` with the following:
 }
 ```
 
-### 3. Install Hyas
+### 3. Install Thulite
 
-Install the latest Hyas project dependencies inside your project:
+Install the latest Thulite project dependencies inside your project:
 
 <Tabs syncKey="package-manager">
   <TabItem label="npm">
@@ -131,14 +131,14 @@ yarn add @hyas/images@latest @hyas/seo@latest
 </Tabs>
 
 :::note[Need to continue?]
-After upgrading Hyas to the latest version, you may not need to make any changes to your project at all!
+After upgrading Thulite to the latest version, you may not need to make any changes to your project at all!
 
 But, if you notice errors or unexpected behavior, please check below for what has changed that might need updating in your project.
 :::
 
 ## Configuration
 
-Check your project's configuration for Hyas and the recommended integrations:
+Check your project's configuration for Thulite and the recommended integrations:
 
 - [Create configuration files](/install/manual/#6-create-configuration-files)
 - [Images](https://images.gethyas.com/docs/start-here/manual-setup/)

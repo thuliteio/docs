@@ -7,11 +7,11 @@ sidebar:
 import FileTree from '~/components/FileTree.astro';
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
-Here's how a Hyas project configuration is organized, and the configuration files you will find in your new project.
+Here's how a Thulite project configuration is organized, and the configuration files you will find in your new project.
 
 ## Example Project Configuration Tree
 
-A common Hyas project configuration directory might look like this:
+A common Thulite project configuration directory might look like this:
 
 <FileTree>
 
@@ -35,7 +35,7 @@ A common Hyas project configuration directory might look like this:
 
 ### `config/_default/hugo.toml`
 
-The `hugo.toml` file includes [Hugo configuration](https://gohugo.io/getting-started/configuration/) options for your Hyas project. Here you can specify taxonomies to use, build options, server options, and more.
+The `hugo.toml` file includes [Hugo configuration](https://gohugo.io/getting-started/configuration/) options for your Thulite project. Here you can specify taxonomies to use, build options, server options, and more.
 
 ### `config/_default/markup.toml`
 
@@ -47,11 +47,11 @@ The `menus.toml` file is where you [define menu entries](https://gohugo.io/conte
 
 ### `config/_default/module.toml`
 
-The `module.toml` file specifies the [Hugo mounts](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts), logically linking `node_modules` directories to component folders (ex: `assets`, `layouts`) — making Hyas Integrations available in your Hyas project.
+The `module.toml` file specifies the [Hugo mounts](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts), logically linking `node_modules` directories to component folders (ex: `assets`, `layouts`) — making Thulite Integrations available in your Thulite project.
 
 ### `config/_default/params.toml`
 
-The `params.toml` file is where you set [Hyas configuration](/reference/configuration/) options like e.g. options for themes and integrations. 
+The `params.toml` file is where you set [Thulite configuration](/reference/configuration/) options like e.g. options for themes and integrations. 
 
 ### `config/next/`
 
@@ -67,15 +67,15 @@ Set `baseurl` in `hugo.toml` to the absolute URL (protocol, host, path, and trai
 
 ### `babel.config.js`
 
-The `babel.config.js` file is where you configure [Babel](https://babeljs.io/). Hyas supports processing JavaScript files with Babel.
+The `babel.config.js` file is where you configure [Babel](https://babeljs.io/). Thulite supports processing JavaScript files with Babel.
 
 ### `postcss.config.js`
 
-The `postcss.config.js` file is where you configure [PostCSS](https://postcss.org/). Hyas uses PostCSS to add vendor prefixes to CSS rules using [Autoprefixer](https://github.com/postcss/autoprefixer) and to remove unused CSS from your project using [PurgeCSS](https://purgecss.com/).
+The `postcss.config.js` file is where you configure [PostCSS](https://postcss.org/). Thulite uses PostCSS to add vendor prefixes to CSS rules using [Autoprefixer](https://github.com/postcss/autoprefixer) and to remove unused CSS from your project using [PurgeCSS](https://purgecss.com/).
 
 ## Hugo documentation
 
-Hyas leverages Hugo's [configuration](https://gohugo.io/getting-started/configuration/). Here are some relevant topics:
+Thulite leverages Hugo's [configuration](https://gohugo.io/getting-started/configuration/). Here are some relevant topics:
 
 <CardGrid>
   <LinkCard

@@ -1,2 +1,2 @@
 # docs
-Hyas documentation
+Thulite documentation
