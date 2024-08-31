@@ -45,9 +45,6 @@ export default defineConfig({
       baseUrl: 'https://github.com/thuliteio/docs/edit/main/',
     },
     sidebar: [
-      { label: 'thulite.io',
-        link: 'https://thulite.io/',
-      },
       {
         label: 'Start Here',
         items: [
@@ -107,11 +104,11 @@ export default defineConfig({
           { label: 'Configuration', link: '/reference/configuration/' },
           { label: 'Frontmatter', link: '/reference/frontmatter/' },
           { label: 'Markdown', link: '/reference/markdown/' },
-          { label: 'Contribute', link: '/contribute/' },
         ],
       },
     ],
     social: {
+      openCollective: 'https://opencollective.com/thulite',
       github: 'https://github.com/thuliteio',
       'x.com': 'https://x.com/thuliteio',
       mastodon: 'https://fosstodon.org/@thulite',
