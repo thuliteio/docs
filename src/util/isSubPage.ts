@@ -6,7 +6,7 @@ import { getPageCategory } from './getPageCategory';
 export function removeSubPageSegment(path: string) {
 	// Include new pages with sub-pages as part of this regex.
 	const regex =
-		/(?:install|deploy|integrations|tutorial|migrate-to-hyas|recipes|cms|analytics|themes|backend)\//;
+		/(?:install|deploy|integrations|tutorial|migrate-to-thulite|recipes|cms|analytics|themes|backend)\//;
 	const matches = regex.exec(path);
 
 	if (matches) {

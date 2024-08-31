@@ -42,7 +42,7 @@ export default defineConfig({
       replacesTitle: true,
     },
     editLink: {
-      baseUrl: 'https://github.com/gethyas/docs/edit/main/',
+      baseUrl: 'https://github.com/thuliteio/docs/edit/main/',
     },
     sidebar: [
       { label: 'thulite.io',
@@ -54,7 +54,7 @@ export default defineConfig({
           { label: 'Getting Started', link: '/getting-started/'},
           { label: 'Installation', link: '/install/auto/' },
           { label: 'Editor Setup', link: '/editor-setup/' },
-          { label: 'Upgrade Thulite', link: '/upgrade-hyas/' },
+          { label: 'Upgrade Thulite', link: '/upgrade-thulite/' },
         ],
       },
       {
@@ -103,15 +103,18 @@ export default defineConfig({
       {
         label: 'Reference',
         collapsed: true,
-        autogenerate: {
-          directory: 'reference'
-        },
+        items: [
+          { label: 'Configuration', link: '/reference/configuration/' },
+          { label: 'Frontmatter', link: '/reference/frontmatter/' },
+          { label: 'Markdown', link: '/reference/markdown/' },
+          { label: 'Contribute', link: '/contribute/' },
+        ],
       },
     ],
     social: {
-      github: 'https://github.com/gethyas',
-      'x.com': 'https://x.com/gethyas',
-      mastodon: 'https://fosstodon.org/@hyas',
+      github: 'https://github.com/thuliteio',
+      'x.com': 'https://x.com/thuliteio',
+      mastodon: 'https://fosstodon.org/@thulite',
     },
     customCss: [
       // Relative path to your custom CSS file

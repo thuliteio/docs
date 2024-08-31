@@ -7,7 +7,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gethyas/docs.git"
+    "url": "https://github.com/thuliteio/docs.git"
   },
   "scripts": {
     "dev": "astro dev",
@@ -18,15 +18,15 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/starlight": "^0.25.4",
+    "@astrojs/starlight": "^0.26.1",
     "@astrojs/starlight-docsearch": "^0.1.1",
-    "astro": "^4.13.3",
-    "sharp": "^0.33.4"
+    "astro": "^4.15.1",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.7",
-    "hast-util-from-html": "^2.0.1",
+    "hast-util-from-html": "^2.0.2",
     "hast-util-to-string": "^3.0.0",
     "hastscript": "^9.0.0",
     "rehype": "^13.0.1",
