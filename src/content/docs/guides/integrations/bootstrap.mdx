@@ -1,10 +1,10 @@
 ---
-title: "@hyas/bootstrap"
+title: "@thulite/bootstrap"
 description: Bootstrap integration for Thulite
-editUrl: https://github.com/gethyas/bootstrap/blob/main/README.md
+editUrl: https://github.com/thuliteio/bootstrap/blob/main/README.md
 type: integration
 stub: false
-service: "@hyas/bootstrap"
+service: "Bootstrap"
 category: renderer
 ---
 import { LinkCard } from '@astrojs/starlight/components';
@@ -15,12 +15,12 @@ Official Bootstrap integration for Thulite.
 
 ## Status
 
-[![npm (scoped)](https://img.shields.io/npm/v/@hyas/bootstrap?style=flat-square)](https://www.npmjs.com/package/@hyas/bootstrap)
+[![npm (scoped)](https://img.shields.io/npm/v/@thulite/bootstrap?style=flat-square)](https://www.npmjs.com/package/@thulite/bootstrap)
 
 ## Installation
 
 ```bash
-npm i -D @hyas/bootstrap
+npm i -D @thulite/bootstrap
 ```
 
 ## Setup
@@ -29,11 +29,11 @@ Add mounts to `./config/_default/module.toml`:
 
 ```toml
 [[mounts]]
-  source = "node_modules/@hyas/bootstrap/assets"
+  source = "node_modules/@thulite/bootstrap/assets"
   target = "assets"
 
 [[mounts]]
-  source = "node_modules/@hyas/bootstrap/layouts"
+  source = "node_modules/@thulite/bootstrap/layouts"
   target = "layouts"
 
 [[mounts]]

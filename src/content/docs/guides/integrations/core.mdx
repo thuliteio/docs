@@ -1,9 +1,9 @@
 ---
-title: "@hyas/core"
+title: "@thulite/core"
 description: Core integration for Thulite
 type: integration
 stub: false
-service: "@hyas/core"
+service: "Core"
 category: other
 ---
 
@@ -13,12 +13,12 @@ Official core integration for Thulite.
 
 ## Official Resources
 
-- [GitHub Repository](https://github.com/gethyas/core)
+- [GitHub Repository](https://github.com/thuliteio/core)
 
 ## Installation
 
 ```bash
-npm i @hyas/core
+npm i @thulite/core
 ```
 
 ## Setup
@@ -27,11 +27,11 @@ Add mounts to `./config/_default/module.toml`:
 
 ```toml
 [[mounts]]
-  source = "node_modules/@hyas/core/assets"
+  source = "node_modules/@thulite/core/assets"
   target = "assets"
 
 [[mounts]]
-  source = "node_modules/@hyas/core/layouts"
+  source = "node_modules/@thulite/core/layouts"
   target = "layouts"
 
 [[mounts]]
@@ -46,7 +46,7 @@ Add mounts to `./config/_default/module.toml`:
 Add to `./config/_default/hugo.toml`:
 
 ```toml
-baseurl = "https://hyas.netlify.app/"
+baseurl = "http://localhost/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true

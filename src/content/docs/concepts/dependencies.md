@@ -5,7 +5,7 @@ sidebar:
   order: 1
 ---
 
-Thulite helps you [build scalable and maintainable websites](/concepts/why-hyas/#solid-architecture) and __leverages npm to [explicitly declare and isolate dependencies](https://12factor.net/dependencies)__.
+Thulite helps you [build scalable and maintainable websites](/concepts/why-thulite/#solid-architecture) and __leverages npm to [explicitly declare and isolate dependencies](https://12factor.net/dependencies)__.
 
 ## Explicit declaration and isolation
 

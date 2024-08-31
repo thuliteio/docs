@@ -27,7 +27,7 @@ If your project is stored in GitHub, GitLab, BitBucket, or Azure DevOps, you can
 
 3. Make sure that the following settings are entered, then press the <kbd>Deploy</kbd> button:
 
-    - **Build Command:** `hyas build` or `npm run build`
+    - **Build Command:** `npm run build`
     - **Publish directory:** `public`
 
  After deploying, you will be redirected to the site overview page. There, you can edit the details of your site.
@@ -63,9 +63,9 @@ You can also create a new site on Netlify and link up your Git repository by ins
 
 2. Run `netlify login` and follow the instructions to log in and authorize Netlify
 3. Run `netlify init` and follow the instructions
-4. Confirm your build command (`hyas build` or `npm run build`)
+4. Confirm your build command (`npm run build`)
 
-    The CLI will automatically detect the build settings (`hyas build` or `npm run build`) and deploy directory (`public`), and will offer to automatically generate a [`netlify.toml` file](#netlifytoml-file) with those settings.
+    The CLI will automatically detect the build settings (`npm run build`) and deploy directory (`public`), and will offer to automatically generate a [`netlify.toml` file](#netlifytoml-file) with those settings.
 
 5. Build and deploy by pushing to Git
 

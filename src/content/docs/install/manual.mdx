@@ -8,7 +8,7 @@ import FileTree from '~/components/FileTree.astro';
 This guide will walk you through the steps to manually install and configure a new Thulite project.
 
 :::tip[Prefer a quicker way to get started?]
-Follow the [create hyas CLI wizard](/install/auto/) instead.
+Follow the [create thulite CLI wizard](/install/auto/) instead.
 :::
 
 ## Prerequisites
@@ -20,7 +20,7 @@ Follow the [create hyas CLI wizard](/install/auto/) instead.
 
 ## Installation
 
-If you prefer _not_ to use our automatic `create hyas` CLI tool, you can set up your project yourself by following the guide below.
+If you prefer _not_ to use our automatic `create thulite` CLI tool, you can set up your project yourself by following the guide below.
 
 ### 1. Create your directory
 
@@ -55,23 +55,23 @@ yarn init --yes
 First, install the Thulite project dependencies inside your project.
 
 :::note[Important]
-Thulite must be installed locally, not globally. Make sure you are *not* running `npm install -g gethyas`, `pnpm add -g gethyas`, or `yarn add global gethyas`.
+Thulite must be installed locally, not globally. Make sure you are *not* running `npm install -g thulite`, `pnpm add -g thulite`, or `yarn add global thulite`.
 :::
 
 <Tabs syncKey="package-manager">
   <TabItem label="npm">
 ```bash
-npm install gethyas
+npm install thulite
 ```
   </TabItem>
   <TabItem label="pnpm">
 ```bash
-pnpm install gethyas
+pnpm install thulite
 ```
   </TabItem>
   <TabItem label="Yarn">
 ```bash
-yarn add gethyas
+yarn add thulite
 ```
   </TabItem>
 </Tabs>
@@ -257,7 +257,7 @@ Add a `module.toml` file with the following:
 
 ## assets
 [[mounts]]
-  source = "node_modules/@hyas/core/assets"
+  source = "node_modules/@thulite/core/assets"
   target = "assets"
 
 [[mounts]]
@@ -281,7 +281,7 @@ Add a `module.toml` file with the following:
 
 ## layouts
 [[mounts]]
-  source = "node_modules/@hyas/core/layouts"
+  source = "node_modules/@thulite/core/layouts"
   target = "layouts"
 
 [[mounts]]
@@ -306,7 +306,7 @@ description = "Congrats on setting up a new Thulite project!"
 images = ["cover.png"]
 
 [social]
-  twitter = "gethyas"
+  twitter = "thulite"
 ```
 
 #### `config` directory
@@ -475,4 +475,4 @@ If you have followed the steps above, your project directory should now look lik
 
 Congratulations, you're now set up to use Thulite!
 
-If you followed this guide completely, you can jump directly to [Step 3: Start Thulite](/install/auto/#3-start-hyas) to continue and learn how to run Thulite for the first time.
+If you followed this guide completely, you can jump directly to [Step 3: Start Thulite](/install/auto/#3-start-thulite) to continue and learn how to run Thulite for the first time.

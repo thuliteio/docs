@@ -55,8 +55,8 @@ export const integrationSchema = baseSchema.extend({
 	title: z
 	.string()
 	.refine(
-		(title) => title.startsWith('@hyas/'),
-		'"title" must start with "@hyas/" for integration docs.'
+		(title) => title.startsWith('@thulite/'),
+		'"title" must start with "@thulite/" for integration docs.'
 	),
 	stub: z.boolean().default(false),
 	service: z.string(),

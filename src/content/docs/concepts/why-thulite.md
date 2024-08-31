@@ -49,7 +49,7 @@ Good performance is always important, but it is *especially* critical for conten
 
 In many web frameworks, it is easy to build a website that looks great during development only to load painfully slow once deployed. JavaScript is often the culprit, since users' phones and lower-powered devices rarely match the speed of a developer's laptop.
 
-Thulite’ magic is in how it combines the solid architecture described above with optimizations for production builds and tools like [Quicklink](https://getquick.link/). The result is amazing web performance for every website, out of the box. Our goal: __It should be nearly impossible to build a slow website with Hyas__.
+Thulite’ magic is in how it combines the solid architecture described above with optimizations for production builds and tools like [Quicklink](https://getquick.link/). The result is amazing web performance for every website, out of the box. Our goal: __It should be nearly impossible to build a slow website with Thulite__.
 
 ### Maximum secure
 
@@ -73,6 +73,6 @@ We strongly believe that Thulite is only a successful project if people love usi
 
 Thulite invests in developer tools like a great CLI experience from the moment you open your terminal and documentation actively maintained by community contributors.
 
-Our welcoming, respectful, inclusive community on Discussions is ready to provide support, motivation, and encouragement. Open a [Support](https://github.com/orgs/gethyas/discussions/categories/support) thread to get help with your project. Visit our dedicated [Showcase](https://github.com/orgs/gethyas/discussions/categories/showcase) category for sharing your Thulite sites, blog posts, videos, and even work-in-progress for safe feedback and constructive criticism.
+Our welcoming, respectful, inclusive community on Discussions is ready to provide support, motivation, and encouragement. Open a [Support](https://github.com/orgs/thuliteio/discussions/categories/support) thread to get help with your project. Visit our dedicated [Showcase](https://github.com/orgs/thuliteio/discussions/categories/showcase) category for sharing your Thulite sites, blog posts, videos, and even work-in-progress for safe feedback and constructive criticism.
 
 As an open-source project, we welcome contributions of all types and sizes from community members of all experience levels. You are invited to join in roadmap discussions to shape the future of Thulite, and we hope you’ll contribute fixes and features to the core codebase, docs, and other projects.
