@@ -33,14 +33,54 @@ To follow this guide, you will need:
 The GitHub Action will deploy your app (you can see its progress in your repo's Actions tab on GitHub). When successfully completed, you can view your app at the address shown in the SWA Extension's progress window by clicking the **Browse Website** button (this will appear after the GitHub Action has run).
 
 ## Known Issues
-The GitHub action yaml that is created for you assumes the use of node 14. This means the Thulite build fails. To resolve this update your projects package.json file with this snippet.
 
-```
+The build fails because an old (no longer supported) Node version and/or Hugo version is used.
+
+### Node version
+
+To resolve this, update your projects `package.json` file with this snippet:
+
+```json
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.11.0"
   },
+```
+
+### Hugo version
+
+To resolve this, update your workflow file by providing a value for `HUGO_VERSION` in the `env` section:
+
+```yaml
+jobs:
+  build_and_deploy_job:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    runs-on: ubuntu-latest
+    name: Build and Deploy Job
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          lfs: false
+      - name: Build And Deploy
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_BUSH_0D736421E }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+          action: "upload"
+          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
+          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
+          app_location: "/" # App source code path
+          api_location: "api" # Api source code path - optional
+          output_location: "public" # Built app content directory - optional
+          ###### End of Repository/Build Configurations ######
+        env:
+          HUGO_VERSION: 0.131.0
+
 ```
 
 ## Official Resources
 
+- [Deploy a Hugo site to Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo)
+- [Custom Hugo version](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo#custom-hugo-version)
 - [Microsoft Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/)
