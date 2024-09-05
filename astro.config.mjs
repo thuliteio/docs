@@ -30,9 +30,9 @@ export default defineConfig({
     },
     plugins: [
       starlightDocSearch({
-        appId: 'AHKXAT87MO',
-        apiKey: '72b68c153feda29c6ff4623a9f8b6073',
-        indexName: 'gethyas',
+        appId: '70H5139H21',
+        apiKey: '401f8b545478ebe52faeeeb6cf77cefc',
+        indexName: 'thulite',
       }),
     ],
     logo: {
