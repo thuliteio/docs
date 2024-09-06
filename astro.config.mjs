@@ -14,6 +14,20 @@ export default defineConfig({
   integrations: [starlight({
     head: [
       {
+        tag: 'meta',
+        attrs: {
+          property: 'og:image',
+          content: 'https://docs.thulite.io/cover-docs.png',
+        },
+      },
+      {
+        tag: 'meta',
+        attrs: {
+          name: 'twitter:image',
+          content: 'https://docs.thulite.io/cover-docs.png',
+        },
+      },
+      {
         tag: 'script',
         attrs: {
           src: 'https://plausible.io/js/script.js',
