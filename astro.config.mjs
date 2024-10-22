@@ -91,6 +91,7 @@ export default defineConfig({
         items: [
           { label: 'Add integrations', link: '/guides/integrations/' },
           { label: 'Add a theme', link: '/guides/themes/' },
+          { label: 'Email obfuscation', link: '/guides/email-obfuscation/' },
         ],
       },
       {

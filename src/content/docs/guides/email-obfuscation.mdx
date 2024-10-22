@@ -1,0 +1,81 @@
+---
+title: Email obfuscation
+description: How use email obfuscation in Thulite
+---
+import { Steps } from '@astrojs/starlight/components';
+
+This guide helps you to obfuscate email addresses with a simple, effective CSS technique.
+
+## Background
+
+The article [Email Obfuscation: What Works in 2024](https://spencermortensen.com/articles/email-obfuscation/) by Spencer Mortensen discusses various techniques to hide email addresses from spam bots while keeping them accessible to users. It evaluates methods like plain text, HTML entities, CSS display properties, JavaScript techniques, and others, testing their effectiveness in blocking spam.
+
+Some methods, such as CSS `display: none` and certain JavaScript techniques, are found to be highly effective, while others like HTML comments and symbol substitution offer little protection.
+
+## Setup
+
+<Steps>
+
+1. Add a default (fallback) email address to `config/_default/params.toml`:
+
+    ```toml title="params.toml"
+    # defaultEmail
+    defaultEmail = "email@example.com"
+    ```
+
+2. Add the following CSS to `assets/scss/common/_custom.scss`:
+
+    ```scss title="_custom.scss"
+    span.email b {
+      display: none;
+    }
+    ```
+
+3. Create shortcode file `layouts/shortcodes/email.html` with the following content:
+
+    ```html title="email.html"
+    {{- /* Set defaults and get args. */}}
+    {{- $address := index .Params 0 | default site.Params.defaultEmail }}
+
+    {{- /* Get parts. */}}
+    {{- $addressParts := split $address "@" }}
+    {{- $userName := (index $addressParts 0) }}
+    {{- $rootDomain := (index $addressParts 1) }}
+    {{- $rootDomainParts := split $rootDomain "." }}
+    {{- $domainName := (index $rootDomainParts 0) }}
+    {{- $topLevelDomain := (index $rootDomainParts 1) }}
+
+    {{- /* Render. */}}
+    <span class="email">
+      {{- printf "%s@%s<b>.%s</b>.%s" $userName $domainName $domainName $topLevelDomain | safeHTML -}}
+    </span>
+    ```
+
+    The shortcode gets the email address you provided — using the default email address if you didn’t specify one. Next, it splits the email address in parts — `userName`, `domainName`, and `topLevelDomain` — and renders the HTML.
+
+</Steps>
+
+## Usage
+
+Now, you can use the shortcode in Markdown — using `defaultEmail`:
+
+```md
+{{< email >}}
+```
+
+Rendering:
+
+```html
+<span class="email">email@example<b>.example</b>.com</span>
+```
+
+Or, by specifying an email address:
+
+```md
+{{< email "team@example.com" >}}
+```
+Rendering:
+
+```html
+<span class="email">team@example<b>.example</b>.com</span>
+```

@@ -3,17 +3,20 @@
   functions = "functions"
 
 [build.environment]
-  NODE_VERSION = "20.11.0"
-  NPM_VERSION = "10.2.4"
+  NODE_VERSION = "20.18.0"
+  NPM_VERSION = "10.8.2"
 
 [context.production]
-  command = "pnpm build"
+  command = "bun run build"
 
 [context.deploy-preview]
-  command = "pnpm build"
+  command = "bun run build"
 
 [context.branch-deploy]
-  command = "pnpm build"
+  command = "bun run build"
+
+[context.next]
+  command = "bun run build"
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
