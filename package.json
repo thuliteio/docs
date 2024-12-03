@@ -17,15 +17,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/starlight": "^0.28.3",
-    "@astrojs/starlight-docsearch": "^0.2.0",
-    "astro": "^4.15.1",
+    "@astrojs/sitemap": "3.2.1",
+    "@astrojs/starlight": "^0.29.2",
+    "@astrojs/starlight-docsearch": "^0.3.0",
+    "astro": "^4.16.16",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
-    "@changesets/cli": "^2.27.7",
+    "@changesets/cli": "^2.27.10",
     "hast-util-from-html": "^2.0.2",
     "hast-util-to-string": "^3.0.0",
     "hastscript": "^9.0.0",
