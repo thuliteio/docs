@@ -1,11 +1,10 @@
 ---
 title: Dependencies
-description: A guide in my new Starlight docs site.
+description: Thulite leverages npm to explicitly declare and isolate dependencies and uses Hugo's module configuration to mount the dependencies' directories, making them available for processing.
 sidebar:
   order: 1
 ---
-
-Thulite helps you [build scalable and maintainable websites](/concepts/why-thulite/#solid-architecture) and __leverages npm to [explicitly declare and isolate dependencies](https://12factor.net/dependencies)__.
+Thulite leverages npm to explicitly declare and isolate dependencies and uses Hugo's module configuration to mount the dependencies' directories, making them available for processing.
 
 ## Explicit declaration and isolation
 
@@ -13,17 +12,12 @@ The ["Dependencies"](https://12factor.net/dependencies) section of the Twelve-Fa
 
 ## JavaScript
 
-For a JavaScript project following the Twelve-Factor App methodology, dependencies should be explicitly declared in a `package.json` file. This file acts as the dependency declaration manifest, listing all necessary packages. Isolation is achieved by using a tool like [npm](https://www.npmjs.com/), which installs dependencies in a `node_modules` directory within the project. This ensures that the app does not rely on system-wide packages, maintaining consistency across different environments. Additionally, any required scripts or tools should be included as npm scripts to avoid system tool dependencies.
-
-### Thulite
-
-Thulite' [integrations](/guides/integrations/) and [themes](/guides/themes/) are npm packages explicitly declared in your project's `package.json` and installed in the `node_modules` directory of your project. Thulite uses Hugo's [module configuration](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts) to mount the Thulite dependencies' `node_modules` directories to one of Hugo's corresponding [component folders](https://gohugo.io/getting-started/directory-structure/#directories), making them available to Hugo for processing.
+For a JavaScript project following the Twelve-Factor App methodology, dependencies are explicitly declared in a `package.json` file. This file acts as the dependency declaration manifest, listing all necessary packages. Isolation is achieved by using a tool like [npm](https://www.npmjs.com/), which installs dependencies in a `node_modules` directory within the project. This ensures that the app does not rely on system-wide packages, maintaining consistency across different environments. Additionally, any required scripts or tools should be included as npm scripts to avoid system tool dependencies.
 
 ### Pros
 
 - Centralizes all dependencies (JavaScript and other assets) in one place (`package.json`).
 - Common for JavaScript developers, leveraging npm's ecosystem and tools.
-
 
 ### Cons
 
@@ -48,6 +42,10 @@ Additionally, Hugo provides the [`hugo mod npm pack`](https://gohugo.io/commands
 - Using npm next to Hugo Modules introduces _two_ sets of dependencies.
 - Hugo's integrated JavaScript support is _experimental_.
 - Hugo's integrated JavaScript support is _limited_. For example, the `scripts` section of a `package.json` is not supported.
+
+## Thulite
+
+Thulite leverages npm to explicitly declare and isolate dependencies. Thulite's [integrations](/guides/integrations/) (including themes) are npm packages explicitly declared in your project's `package.json` and installed in the `node_modules` directory of your project. Thulite uses Hugo's [module configuration](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts) to mount the Thulite dependencies' `node_modules` directories to one of Hugo's corresponding [component folders](https://gohugo.io/getting-started/directory-structure/#directories), making them available to Hugo for processing.
 
 :::note[Still want to use Hugo Modules?]
  Thats okay! Thulite works in combination with [Hugo Modules](https://gohugo.io/hugo-modules/) (but without it's npm support).

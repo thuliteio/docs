@@ -1,11 +1,11 @@
 ---
 title: Why Thulite?
-description: A guide in my new Starlight docs site.
+description: Thulite is the web framework designed for speed, security, and SEO. Learn why Thulite might be a good choice for your next website.
 sidebar:
   order: 0
 ---
 
-__Thulite__ is a web framework designed for __speed__, __security__, and __SEO__ — all powered by Hugo and npm. With Thulite, it’s super easy to build content-driven websites — like blogs, marketing, and e-commerce — that are production-ready out of the box. If you need a website that loads fast, is max secure, and has great SEO, then Thulite is for you.
+__Thulite__ is the web framework designed for __speed__, __security__, and __SEO__ — all powered by Hugo and npm. With Thulite, it's super easy to build content-driven websites — like blogs, marketing, and e-commerce — that are production-ready out of the box. If you need a website that loads fast, is max secure, and has great SEO, then Thulite is for you.
 
 ## Features
 
@@ -16,7 +16,7 @@ Some highlights include:
 - [Site generator](https://gohugo.io/): Leverage the speed and flexibility of Hugo.
 - [Dependencies](/concepts/dependencies/): Explicitly declare and isolate dependencies with npm.
 - [Customizable](/guides/integrations/): Tailwind, Images, and a growing number of integrations to choose from.
-- [Themable](/guides/themes/): Themes for blogs, portfolios, documentation, landing pages, and more.
+- [Themable](/guides/themes/overview/): Themes for blogs, portfolios, documentation, landing pages, and more.
 
 ## Design Principles
 
@@ -49,7 +49,7 @@ Good performance is always important, but it is *especially* critical for conten
 
 In many web frameworks, it is easy to build a website that looks great during development only to load painfully slow once deployed. JavaScript is often the culprit, since users' phones and lower-powered devices rarely match the speed of a developer's laptop.
 
-Thulite’ magic is in how it combines the solid architecture described above with optimizations for production builds and tools like [Quicklink](https://getquick.link/). The result is amazing web performance for every website, out of the box. Our goal: __It should be nearly impossible to build a slow website with Thulite__.
+Thulite's magic is in how it combines the solid architecture described above with optimizations for production builds and tools like [Quicklink](https://getquick.link/). The result is amazing web performance for every website, out of the box. Our goal: __It should be nearly impossible to build a slow website with Thulite__.
 
 ### Maximum secure
 
@@ -63,9 +63,9 @@ Thulite helps you build a maximum secure website by combining [MDN's web securit
 
 ### Easy to use
 
-__Thulites goal is to be accessible to every web developer__. Thulite was designed to feel familiar and approachable regardless of skill level or past experience with web development.
+__Thulite's goal is to be accessible to every web developer__. Thulite was designed to feel familiar and approachable regardless of skill level or past experience with web development.
 
-We designed Thulite to remove as much "required complexity" as possible from the developer experience, especially as you onboard for the first time. You can build a "Hello World" example website in Thulite with just HTML and CSS. Then, when you need to build something more powerful, you can incrementally reach for new features as you go.
+One of our favorite sayings is: **opt in to complexity**. We designed Thulite to remove as much "required complexity" as possible from the developer experience, especially as you onboard for the first time. You can build a "Hello World" example website in Thulite with just HTML and CSS. Then, when you need to build something more powerful, you can incrementally reach for new features as you go.
 
 ### Developer-focused
 

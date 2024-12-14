@@ -1,8 +1,6 @@
 ---
 title: Getting Started
-description: This guide will help you get started with a new Thulite project.
-tableOfContents: true
-prev: false
+description: Guides, resources, and references to help you build with Thulite — the web framework designed for speed, security, and SEO.
 ---
 import Button from '~/components/Button.astro'
 import { Tabs, TabItem } from '@astrojs/starlight/components';
@@ -30,6 +28,11 @@ pnpm create thulite@latest
 yarn create thulite
 ```
   </TabItem>
+  <TabItem label="bun">
+```bash
+bun create thulite@latest
+```
+  </TabItem>
 </Tabs>
 
 Our [Installation Guide](/install/auto/) has step-by-step instructions for installing Thulite using our CLI wizard, creating a new project from an existing Thulite GitHub repository, and for installing Thulite manually.
@@ -51,14 +54,14 @@ Visit [new.thulite.io](https://new.thulite.io/) and choose from a variety of tem
   <Card title="Learn Thulite" icon="open-book">
     - [Main features](/concepts/why-thulite/)
     - [Project structure](/basics/project-structure/)
+    - [Workflow](/basics/commands/)
     - [Configuration](/basics/configuration/)
-    - [Commands](/basics/commands/)
   </Card>
   <Card title="Extend Thulite" icon="puzzle">
-    - [Themes](/guides/themes/)
-    - [Integrations](/guides/integrations/)
-    - [Analytics](/guides/analytics/)
-    - [CMS](/guides/cms/)
+    - [Add a theme](/guides/themes/overview/)
+    - [Add integrations](/guides/integrations/)
+    - [Add analytics](/guides/analytics/overview/)
+    - [Use a CMS](/guides/cms/overview/)
   </Card>
   <Card title="What's going on?" icon="information">
     - [Roadmap 2024](https://github.com/orgs/thuliteio/discussions/462)

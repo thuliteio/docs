@@ -1,5 +1,6 @@
-import { docsSchema } from '@astrojs/starlight/schema';
 import { defineCollection, z, type CollectionEntry } from 'astro:content';
+import { docsSchema } from '@astrojs/starlight/schema';
+// import { topicSchema } from 'starlight-sidebar-topics/schema';
 
 export const baseSchema = z.object({
 	type: z.literal('base').optional().default('base'),
@@ -151,4 +152,6 @@ export const isKoreanEntry = createIsLangEntry('ko');
 
 export const collections = {
 	docs: defineCollection({ schema: docsSchema({ extend: docsCollectionSchema }) }),
+	// docs: defineCollection({ loader: docsLoader(), schema: docsSchema({ extend: topicSchema }) }),
+	// docs: defineCollection({ loader: docsLoader(), schema: docsSchema({ extend: [docsCollectionSchema, topicSchema] }) }),
 };

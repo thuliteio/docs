@@ -1,0 +1,629 @@
+---
+title: Install Thulite
+description: A reference page in my new Starlight docs site.
+sidebar:
+  label: Installation
+---
+import { Tabs, TabItem, FileTree, CardGrid, LinkCard, Steps } from '@astrojs/starlight/components';
+import ReadMore from '~/components/ReadMore.astro';
+
+The [`create thulite` CLI command](#install-from-the-cli-wizard) is the fastest way to start a new Thulite project from scratch. It will walk you through every step of setting up your new Thulite project and allow you to choose from a few different official starter templates.
+
+You can also run the CLI command with the `template` flag to begin your project using any existing theme or starter template. Explore our [themes and starters showcase](https://thulite.io/themes/) where you can browse themes for blogs, portfolios, documentation sites, landing pages, and more!
+
+You can use any existing project on GitHub with the [`degit` CLI command](#use-any-existing-project-on-github).
+
+To install Thulite manually, see our [step-by-step manual installation guide](#manual-setup).
+
+:::tip[Online previews]
+Prefer to try Thulite in your browser? Visit [new.thulite.io](https://new.thulite.io/) to browse our starter templates and spin up a new Thulite project without ever leaving your browser.
+:::
+
+## Prerequisites
+
+- __Node.js__ - `v20.18.0` or higher — run `node -v` to check.
+- __Hugo extended__ - `v0.136.4` or higher — run `hugo version` to check.
+- __Text editor__ - We recommend [VS Code](https://code.visualstudio.com/) — see also [Editor Setup](/editor-setup/).
+- __Terminal__ - Thulite is accessed through its command-line interface (CLI).
+
+## Install from the CLI wizard
+
+You can run `create thulite` anywhere on your machine, so there's no need to create a new empty directory for your project before you begin. If you don't have an empty directory yet for your new project, the wizard will help create one for you automatically.
+
+<Steps>
+
+1. Run the following command in your terminal to start the install wizard:
+
+    <Tabs syncKey="package-manager">
+      <TabItem label="npm">
+    ```bash
+    npm create thulite@latest
+    ```
+      </TabItem>
+      <TabItem label="pnpm">
+    ```bash
+    pnpm create thulite@latest
+    ```
+      </TabItem>
+      <TabItem label="Yarn">
+    ```bash
+    yarn create thulite
+    ```
+      </TabItem>
+      <TabItem label="bun">
+    ```bash
+    bun create thulite@latest
+    ```
+      </TabItem>
+    </Tabs>
+
+    If all goes well, you will see a success message followed by some recommended next steps.
+
+2. Now that your project has been created, you can `cd` into your new project directory to begin using Thulite.
+
+3. Install your projects' dependencies before continuing.
+
+    <Tabs syncKey="package-manager">
+      <TabItem label="npm">
+    ```bash
+    npm install
+    ```
+      </TabItem>
+      <TabItem label="pnpm">
+    ```bash
+    pnpm install
+    ```
+      </TabItem>
+      <TabItem label="Yarn">
+    ```bash
+    yarn install
+    ```
+      </TabItem>
+      <TabItem label="bun">
+    ```bash
+    bun install
+    ```
+      </TabItem>
+    </Tabs>
+
+4. You can now [start the Hugo dev server](/basics/commands#dev) and see a live preview of your project while you build!
+
+</Steps>
+
+
+## CLI installation flags
+
+You can run the `create thulite` command with additional flags to customize your new project (e.g. specify the project name and the template you want to use).
+
+<ReadMore>See [all the available `create thulite` command flags](https://github.com/thuliteio/create-thulite/blob/main/README.md)</ReadMore>
+
+### Example
+
+You can start a new Thulite project based on an [official example](https://github.com/thuliteio/create-thulite/blob/main/README.md#templates) by passing a `--template` argument to the `create thulite` command.
+
+For example, create a new project with the Doks theme:
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+# Syntax: npm create thulite@latest -- --template <example-name>
+npm create thulite@latest -- --template doks
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# Syntax: pnpm create thulite@latest --template <example-name>
+pnpm create thulite@latest --template doks
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# Syntax: yarn create thulite --template <example-name>
+yarn create thulite@latest --template doks
+```
+  </TabItem>
+  <TabItem label="bun">
+```bash
+# Syntax: bun create thulite@latest -- --template <example-name>
+bun create thulite@latest --template doks
+```
+  </TabItem>
+</Tabs>
+
+## Use any existing project on GitHub
+
+You can start a new Thulite project based on any GitHub repository by using the [`degit`](https://github.com/Rich-Harris/degit) CLI command.
+
+For example, create a new project with the Simply Cyan theme:
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+# Syntax: npx degit <user/repo> [project-directory]
+npx degit h-enk/simply-cyan my-thulite-project
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+# Syntax: pnpm dlx degit <user/repo> [project-directory]
+pnpm dlx degit h-enk/simply-cyan my-thulite-project
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+# Syntax: yarn dlx degit <user/repo> [project-directory]
+yarn dlx degit h-enk/simply-cyan my-thulite-project
+```
+  </TabItem>
+  <TabItem label="bun">
+```bash
+# Syntax: bunx degit <user/repo> [project-directory]
+bunx degit h-enk/simply-cyan my-thulite-project
+```
+  </TabItem>
+</Tabs>
+
+By default, this command will use the template repository's `main` branch. To use a different branch, pass the branch name as part of the `<user/repo>` argument: `<user/repo>#<branch>`.
+
+## Manual setup
+
+This guide will walk you through the steps to manually install and configure a new Thulite project.
+
+If you prefer not to use our automatic `create thulite` CLI tool, you can set up your project yourself by following the guide below.
+
+<Steps>
+
+1. Create your directory
+
+    Create an empty directory with the name of your project, and then navigate into it.
+
+    ```bash
+    mkdir my-thulite-project && cd my-thulite-project
+    ```
+
+    Once you are in your new directory, create your project `package.json` file. This is how you will manage your project dependencies, including Thulite. If you aren’t familiar with this file format, run the following command to create one.
+
+    <Tabs syncKey="package-manager">
+      <TabItem label="npm">
+    ```bash
+    npm init --yes
+    ```
+      </TabItem>
+      <TabItem label="pnpm">
+    ```bash
+    pnpm init
+    ```
+      </TabItem>
+      <TabItem label="Yarn">
+    ```bash
+    yarn init --yes
+    ```
+      </TabItem>
+      <TabItem label="bun">
+    ```bash
+    bun init -y
+    ```
+      </TabItem>
+    </Tabs>
+
+2. Install Thulite
+
+    First, install the Thulite project dependencies inside your project.
+
+    :::note[Important]
+    Thulite must be installed locally, not globally. Make sure you are *not* running `npm install -g thulite`, `pnpm add -g thulite`, `yarn add global thulite`, or `bun install -g thulite`.
+    :::
+
+    <Tabs syncKey="package-manager">
+      <TabItem label="npm">
+    ```bash
+    npm install thulite
+    ```
+      </TabItem>
+      <TabItem label="pnpm">
+    ```bash
+    pnpm install thulite
+    ```
+      </TabItem>
+      <TabItem label="Yarn">
+    ```bash
+    yarn add thulite
+    ```
+      </TabItem>
+      <TabItem label="bun">
+    ```bash
+    bun install thulite
+    ```
+      </TabItem>
+    </Tabs>
+
+    Then, install Prettier and Vite — as `devDependencies`:
+
+    <Tabs syncKey="package-manager">
+      <TabItem label="npm">
+    ```bash
+    npm install -D prettier vite
+    ```
+      </TabItem>
+      <TabItem label="pnpm">
+    ```bash
+    pnpm install -D prettier vite
+    ```
+      </TabItem>
+      <TabItem label="Yarn">
+    ```bash
+    yarn add -D prettier vite
+    ```
+      </TabItem>
+      <TabItem label="bun">
+    ```bash
+    bun install -D prettier vite
+    ```
+      </TabItem>
+    </Tabs>
+
+    Next, replace any placeholder “scripts” section of your `package.json` with the following:
+
+    ```json title="package.json" del={2} ins={3-7}
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "create": "hugo new",
+        "dev": "hugo server --disableFastRender --noHTTPCache",
+        "format": "prettier **/** -w -c",
+        "build": "hugo --minify --gc",
+        "preview": "vite preview --outDir public"
+      },
+    ```
+
+    You'll use these scripts later in the guide to start Thulite and run its different commands.
+
+3. Create your first page
+
+    Thulite follows the Hugo content structure. In the root of your project, create an empty `content` directory, and then navigate into it.
+
+    ```bash
+    mkdir content && cd content
+    ```
+
+    Next, create your new homepage:
+
+    <Tabs syncKey="package-manager">
+      <TabItem label="npm">
+    ```bash
+    npm run create _index.md
+    ```
+      </TabItem>
+      <TabItem label="pnpm">
+    ```bash
+    pnpm run create _index.md
+    ```
+      </TabItem>
+      <TabItem label="Yarn">
+    ```bash
+    yarn run create _index.md
+    ```
+      </TabItem>
+      <TabItem label="bun">
+    ```bash
+    bun run create _index.md
+    ```
+      </TabItem>
+    </Tabs>
+
+    In the frontmatter set `draft: false` and add some content:
+
+    ```md
+    ---
+    title: "Hello, World"
+    date: 2024-05-13T11:22:40+02:00
+    draft: false
+    ---
+
+    This line is from `content/_index.md` 🚀
+
+    ```
+
+4. Create your first static asset
+
+    You will also want to create a `static` directory to store your static assets. Hugo will always include these assets in your final build, so you can safely reference them from inside your layout templates.
+
+    In the root of your project, create an empty `static` directory, and then navigate into it.
+
+    ```bash
+    mkdir static && cd static
+    ```
+
+    In your text editor, create a new file in your directory at `static/robots.txt`. `robots.txt` is a simple file that most sites will include to tell search bots like Google how to treat your site.
+
+    For this guide, copy-and-paste the following code snippet into your new file:
+
+    ```ini
+    # Example: Allow all bots to scan and index your site.
+    # Full syntax: https://developers.google.com/search/docs/advanced/robots/create-robots-txt
+    User-agent: *
+    Allow: /
+    ```
+
+5. Create `app.scss`
+
+    In the root of your project, create an empty `assets/scss` directory, and then navigate into it.
+
+    ```bash
+    mkdir -p assets/scss && cd assets/scss
+    ```
+
+    Add an `app.scss` file with the following:
+
+    ```scss
+    // app.scss
+    /** Import modern-css-reset */
+    @import "modern-css-reset/src/reset";
+
+    :root {
+      --main-bg-color: yellowgreen;
+    }
+
+    body {
+      background-color: var(--main-bg-color);
+      text-align: center;
+    }
+    ```
+
+6. Create configuration files
+
+    Thulite follows Hugo's configuration setup.
+
+    In the root of your project, create an empty `config/_default` directory, and then navigate into it.
+
+    ```bash
+    mkdir -p config/_default && cd config/_default
+    ```
+
+    Add a `hugo.toml` file with the following:
+
+    ```toml collapse={6-22}
+    // hugo.toml
+    title = "Thulite"
+    baseurl = "http://localhost/"
+    canonifyURLs = false
+    disableAliases = true
+    disableHugoGeneratorInject = true
+    disableKinds = ["taxonomy", "term"]
+    enableEmoji = true
+    enableGitInfo = false
+    enableRobotsTXT = true
+    languageCode = "en-US"
+    paginate = 7
+    rssLimit = 10
+    summarylength = 20 # 70 (default)
+
+    copyRight = "Copyright (c) 2020-2024 Thulite"
+
+    [build.buildStats]
+      enable = true
+
+    [outputs]
+      home = ["HTML"]
+
+    [minify.tdewolff.html]
+      keepWhitespace = false
+
+    ```
+
+    Add a `module.toml` file with the following:
+
+    ```toml
+    //module.toml
+    # mounts
+    ## archetypes
+    [[mounts]]
+      source = "archetypes"
+      target = "archetypes"
+
+    ## assets
+    [[mounts]]
+      source = "node_modules/@thulite/core/assets"
+      target = "assets"
+
+    [[mounts]]
+      source = "assets"
+      target = "assets"
+
+    ## content
+    [[mounts]]
+      source = "content"
+      target = "content"
+
+    ## data
+    [[mounts]]
+      source = "data"
+      target = "data"
+
+    ## i18n
+    [[mounts]]
+      source = "i18n"
+      target = "i18n"
+
+    ## layouts
+    [[mounts]]
+      source = "node_modules/@thulite/core/layouts"
+      target = "layouts"
+
+    [[mounts]]
+      source = "layouts"
+      target = "layouts"
+
+    ## static
+    [[mounts]]
+      source = "static"
+      target = "static"
+    ```
+
+    Add a `params.toml` file with the following:
+
+    ```toml
+    // params.toml
+    # Hugo
+    title = "My Thulite site"
+    description = "Congrats on setting up a new Thulite project!"
+    images = ["cover.png"]
+
+    [social]
+      twitter = "thulite"
+    ```
+
+    `cd` one level up.
+
+    ```bash
+    cd ..
+    ```
+
+    Add a `babel.config.js` file with the following:
+
+    ```js
+    // babel.config.js
+    module.exports = {
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            targets: {
+              browsers: [
+                // Best practice: https://github.com/babel/babel/issues/7789
+                '>=1%',
+                'not ie 11',
+                'not op_mini all',
+              ],
+            },
+          },
+        ],
+      ],
+    };
+    ```
+
+    Add a `postcss.config.js` file with the following:
+
+    ```js
+    // postcss.config.js
+    const autoprefixer = require('autoprefixer');
+    const purgecss = require('@fullhuman/postcss-purgecss');
+    const whitelister = require('purgecss-whitelister');
+
+    module.exports = {
+      plugins: [
+        autoprefixer(),
+        purgecss({
+          content: [ './hugo_stats.json' ],
+          extractors: [
+            {
+              extractor: (content) => {
+                const els = JSON.parse(content).htmlElements;
+                return els.tags.concat(els.classes, els.ids);
+              },
+              extensions: ['json'],
+            },
+          ],
+          dynamicAttributes: [
+            'aria-expanded',
+            'id',
+            'size',
+            'type',
+          ],
+          safelist: [
+            'active',
+            'disabled',
+            'hidden',
+            'show',
+            'img-fluid',
+            'blur-up',
+            'lazyloaded',
+            ...whitelister([
+              './assets/scss/**/*.scss',
+            ]),
+          ],
+        }),
+      ],
+    }
+    ```
+
+    `cd` one level up.
+
+    ```bash
+    cd ..
+    ```
+
+    Add a `.prettierignore` file with the following:
+
+    ```txt
+    // .prettierignore
+    *.html
+    *.ico
+    *.png
+    *.jp*g
+    *.toml
+    *.*ignore
+    *.svg
+    *.xml
+    LICENSE
+    .npmrc
+    .gitkeep
+    *.woff*
+    *.txt
+    *.map
+    ```
+
+    Add a `.prettierrc.yaml` file with the following:
+
+    ```yaml
+    // .prettierrc.yaml
+    # Default config
+    tabWidth: 4
+    endOfLine: crlf
+    singleQuote: true
+    printWidth: 100000
+    trailingComma: none
+    bracketSameLine: true
+    quoteProps: consistent
+    experimentalTernaries: true
+
+    # Overrided config
+    overrides:
+      - files: ["*.md", "*.json", "*.yaml"]
+        options:
+          tabWidth: 2
+          singleQuote: false
+      - files: ["*.scss"]
+        options:
+          singleQuote: false
+    ```
+
+7. Next Steps
+
+    If you have followed the steps above, your project directory should now look like this:
+
+    <FileTree>
+
+    - assets/scss
+      - app.scss
+    - config
+      - _default
+        - hugo.toml
+        - module.toml
+        - params.toml
+      - babel.config.js
+      - postcss.config.js
+    - content
+      - _index.md
+    - node_modules/
+    - static
+      - robots.txt
+    - .prettierignore
+    - .prettierrc.yaml
+    - package-lock.json # or pnpm-lock.yaml, yarn.lock, bun.lockb
+    - package.json
+
+    </FileTree>
+
+8. You can now [start the Hugo dev server](/basics/commands#dev) and see a live preview of your project while you build!
+
+</Steps>
