@@ -1,11 +1,11 @@
 ---
 title: Why Thulite?
-description: Thulite is the web framework designed for speed, security, and SEO. Learn why Thulite might be a good choice for your next website.
+description: Thulite is a web framework designed for speed, security, and SEO. Learn why Thulite might be a good choice for your next website.
 sidebar:
   order: 0
 ---
 
-__Thulite__ is the web framework designed for __speed__, __security__, and __SEO__ — all powered by Hugo and npm. With Thulite, it's super easy to build content-driven websites — like blogs, marketing, and e-commerce — that are production-ready out of the box. If you need a website that loads fast, is max secure, and has great SEO, then Thulite is for you.
+__Thulite__ is a web framework designed for __speed__, __security__, and __SEO__ — all powered by Hugo and npm. With Thulite, it's super easy to build content-driven websites — like blogs, marketing, and e-commerce — that are production-ready out of the box. If you need a website that loads fast, is max secure, and has great SEO, then Thulite is for you.
 
 ## Features
 

@@ -15,6 +15,7 @@ export default defineConfig({
     },
   },
   site: 'https://docs.thulite.io/',
+  trailingSlash: "always",
   integrations: [starlight({
     head: [
       {
@@ -69,7 +70,7 @@ export default defineConfig({
               items: [
                 'install-and-setup',
                 'basics/project-structure',
-                'basics/commands',
+                'develop-and-build',
               ],
             },
             {
@@ -144,6 +145,7 @@ export default defineConfig({
           id: 'reference',
           items: [
             { label: 'Configuration', link: 'reference/configuration' },
+            { label: 'CLI commands', link: 'reference/cli-commands' },
             { label: 'Frontmatter', link: 'reference/frontmatter' },
             { label: 'Markdown', link: 'reference/markdown' },
           ],
