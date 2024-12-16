@@ -1,0 +1,121 @@
+---
+title: Develop and build
+description: How to start working on a new project.
+---
+import { Tabs, TabItem, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import ReadMore from '~/components/ReadMore.astro';
+
+Once you have a Thulite project, now you're ready to build with Thulite! 🚀
+
+## Edit your project
+
+To make changes to your project, open your project folder in your code editor. Working in development mode with the dev server running allows you to see updates to your site as you edit the code.
+
+You can also customize aspects of your development environment such as configuring TypeScript or installing the official Astro editor extensions.
+
+### Start the Hugo dev server
+
+Thulite utilizes the Hugo development server that has everything you need for project development. The `hugo server` CLI command will start the local development server so that you can see your new website in action for the very first time.
+
+Every starter template comes with a pre-configured script that will run `hugo server` for you. After navigating into your project directory, use your favorite package manager to run this command and start the Hugo development server.
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+npm run dev
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm dev
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn dev
+```
+  </TabItem>
+  <TabItem label="bun">
+```bash
+bun dev
+```
+  </TabItem>
+</Tabs>
+
+If all goes well, Thulite should now be serving your project on [http://localhost:1313/](http://localhost:1313/). Visit that link in your browser and see your new site!
+
+### Work in development mode
+
+Hugo will listen for live file changes in your project directory and update your site preview as you build, so you will not need to restart the server as you make changes during development. You will always be able to see an up-to-date version of your site in your browser when the dev server is running.
+
+If you aren't able to open your project in the browser after starting the dev server, go back to the terminal where you ran the `dev` command and check the message displayed. It should tell you if an error occurred, or if your project is being served at a different URL than [http://localhost:1313/](http://localhost:1313/).
+
+## Build and preview your site
+
+To check the version of your site that will be created at build time, quit the dev server (<kbd>Ctrl</kbd> + <kbd>C</kbd>) and run the appropriate build command for your package manager in your terminal:
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+npm run build
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm build
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn run build
+```
+  </TabItem>
+  <TabItem label="bun">
+```bash
+bun run build
+```
+  </TabItem>
+</Tabs>
+
+Hugo will build a deploy-ready version of your site in a separate folder (`public/` by default) and you can watch its progress in the terminal. This will alert you to any build errors in your project before you deploy to production.
+
+When the build is finished, run the appropriate `preview` command (e.g. `npm run preview`) in your terminal and you can view the built version of your site locally in the same browser preview window.
+
+<Tabs syncKey="package-manager">
+  <TabItem label="npm">
+```bash
+npm run preview
+```
+  </TabItem>
+  <TabItem label="pnpm">
+```bash
+pnpm preview
+```
+  </TabItem>
+  <TabItem label="Yarn">
+```bash
+yarn run preview
+```
+  </TabItem>
+  <TabItem label="bun">
+```bash
+bun run preview
+```
+  </TabItem>
+</Tabs>
+
+Note that this previews your code as it existed when the build command was last run. This is meant to give you a preview of how your site will look when it is deployed to the web. Any later changes you make to your code after building will **not** be reflected while you preview your site until you run the build command again.
+
+Use (<kbd>Ctrl</kbd> + <kbd>C</kbd>) to quit the preview and run another terminal command, such as restarting the dev server to go back to [working in development mode](#work-in-development-mode) which does update as you edit to show a live preview of your code changes.
+
+<ReadMore>Read more about [the Hugo CLI](/reference/cli-commands/) and the terminal commands you will use as you build with Thulite.</ReadMore>
+
+:::tip
+You may wish to [deploy your new site right away](/guides/deploy/overview/), before you begin to add or change too much code. This is helpful to get a minimal, working version of your site published and can save you extra time and effort troubleshooting your deployment later.
+:::
+
+## Next steps
+
+Success! You are now ready to start building with Thulite! 🥳
+
+Here are a few topics that we recommend exploring next. You can read them in any order. You can even leave our documentation for a bit and go play in your new Thulite project codebase, coming back here whenever you run into trouble or have a question.

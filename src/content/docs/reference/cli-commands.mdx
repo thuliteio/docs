@@ -1,8 +1,6 @@
 ---
-title: Commands
+title: CLI commands
 description: A reference page in my new Starlight docs site.
-sidebar:
-  order: 5
 ---
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
@@ -112,6 +110,16 @@ yarn run create about.md
 </Tabs>
 
 ### `dev`
+
+Thulite uses the Hugo development server that has everything you need for project development. The `dev` command will start the local development server so that you can see your new website in action for the very first time.
+
+Use your favorite package manager to run this command and start the Hugo development server.
+
+If all goes well, Thulite should now be serving your project on [http://localhost:1313](http://localhost:1313/)!
+
+The Hugo server will listen for live file changes in your project directory, so you will not need to restart the server as you make changes during development.
+
+If you aren't able to open your project in the browser, go back to the terminal where you ran the `dev` command and look to see if an error occurred, or if your project is being served at a different URL than the one linked to above.
 
 Run the following command in your terminal to start the [Hugo development server](https://gohugo.io/commands/hugo_server/):
 

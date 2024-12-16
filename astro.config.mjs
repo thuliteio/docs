@@ -1,9 +1,13 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightDocSearch from '@astrojs/starlight-docsearch';
+import starlightSidebarTopics from 'starlight-sidebar-topics'
 
 // https://astro.build/config
 export default defineConfig({
+  legacy: {
+    collections: true
+  },
   redirects: {
     '/': {
       status: 301,
@@ -11,6 +15,7 @@ export default defineConfig({
     },
   },
   site: 'https://docs.thulite.io/',
+  trailingSlash: "always",
   integrations: [starlight({
     head: [
       {
@@ -48,6 +53,148 @@ export default defineConfig({
         apiKey: '401f8b545478ebe52faeeeb6cf77cefc',
         indexName: 'thulite',
       }),
+      starlightSidebarTopics([
+        {
+          label: 'Start',
+          link: 'getting-started',
+          icon: 'rocket',
+          id: 'start',
+          items: [
+            { label: 'Getting started', link: 'getting-started'},
+            {
+              label: 'Welcome world!',
+              autogenerate: { directory: 'concepts' },
+            },
+            {
+              label: 'Start a new project',
+              items: [
+                'install-and-setup',
+                'basics/project-structure',
+                'develop-and-build',
+              ],
+            },
+            {
+              label: 'Configuration',
+              items: [
+                'basics/configuration',
+                'editor-setup',
+                'environment-variables',
+              ],
+            },
+            { label: 'Migrate to Thulite', link: 'migrate-to-thulite'},
+          ],
+        },
+        {
+          label: 'Guides',
+          link: 'basics/pages',
+          icon: 'open-book',
+          id: 'guides',
+          items: [
+            {
+              label: 'Routing and navigation',
+              items: [
+                'basics/menus',
+                'guides/internationalization',
+              ],
+            },
+            {
+              label: 'Build your UI',
+              items: [
+                'guides/shortcodes',
+                'basics/layouts',
+                'guides/styles',
+                'guides/scripts',
+                'guides/fonts',
+              ],
+            },
+            {
+              label: 'Add content',
+              items: [
+                'guides/archetypes',
+                'basics/pages',
+                'guides/markdown',
+                'guides/images',
+              ],
+            },
+            {
+              label: 'Add a theme',
+              autogenerate: { directory: 'guides/themes' },
+            },
+            {
+              label: 'Upgrade Thulite',
+              items: [
+                'upgrade-thulite',
+                'guides/upgrade-to/v2',
+              ],
+            },
+            {
+              label: 'Other guides',
+              collapsed: true,
+              items: [
+                'guides/data',
+                'guides/email-obfuscation',
+              ],
+            },
+            { label: 'Contribute', link: 'contribute'},
+          ],
+        },
+        {
+          label: 'Reference',
+          link: 'reference/configuration',
+          icon: 'information',
+          id: 'reference',
+          items: [
+            { label: 'Configuration', link: 'reference/configuration' },
+            { label: 'CLI commands', link: 'reference/cli-commands' },
+            { label: 'Frontmatter', link: 'reference/frontmatter' },
+            { label: 'Markdown', link: 'reference/markdown' },
+          ],
+        },
+        {
+          label: 'Integrations',
+          link: '/guides/integrations/',
+          icon: 'puzzle',
+          id: 'integrations',
+          items: [
+            { label: 'Overview', link: 'guides/integrations' },
+            {
+              label: 'UI frameworks',
+              items: [
+                'guides/integrations/bootstrap',
+                'guides/integrations/tailwind',
+              ],
+            },
+            {
+              label: 'Themes',
+              items: [
+                'guides/integrations/bolt-core',
+                'guides/integrations/doks-core',
+              ],
+            },
+            {
+              label: 'Other integrations',
+              items: [
+                'guides/integrations/core',
+                'guides/integrations/images',
+                'guides/integrations/inline-svg',
+                'guides/integrations/seo',
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Third-party services',
+          link: '/guides/third-party-services',
+          icon: 'setting',
+          id: 'third-party-services',
+          items: [
+            { label: 'Overview', link: 'guides/third-party-services' },
+            { label: 'Deployment', autogenerate: { directory: 'guides/deploy' } },
+            { label: 'Content management', autogenerate: { directory: 'guides/cms' } },
+            { label: 'Web analytics', autogenerate: { directory: 'guides/analytics' } },
+          ],
+        },
+      ]),
     ],
     logo: {
       light: './src/assets/light-logo.svg',
@@ -58,6 +205,7 @@ export default defineConfig({
     editLink: {
       baseUrl: 'https://github.com/thuliteio/docs/edit/main/',
     },
+    /*
     sidebar: [
       {
         label: 'Start Here',
@@ -122,6 +270,7 @@ export default defineConfig({
         ],
       },
     ],
+    */
     social: {
       openCollective: 'https://opencollective.com/thulite',
       github: 'https://github.com/thuliteio',
