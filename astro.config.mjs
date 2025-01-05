@@ -5,9 +5,6 @@ import starlightSidebarTopics from 'starlight-sidebar-topics'
 
 // https://astro.build/config
 export default defineConfig({
-  legacy: {
-    collections: true
-  },
   redirects: {
     '/': {
       status: 301,
@@ -46,6 +43,7 @@ export default defineConfig({
     components: {
       MarkdownContent: './src/components/starlight/MarkdownContent.astro',
       TableOfContents: './src/components/TableOfContents.astro',
+      SiteTitle: './src/starlightOverrides/SiteTitle.astro',
     },
     plugins: [
       starlightDocSearch({

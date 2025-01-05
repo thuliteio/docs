@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "text": "Home",
+    "link": "https://thulite.io/"
+  },
+  {
+    "id": 2,
+    "text": "Doks",
+    "link": "https://getdoks.org/"
+  }
+]
