@@ -12,3 +12,29 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
+```bash
+npm create thulite@latest
+
+> npx
+> create-thulite
+
+│
+◇  Project name:
+│  thulite-project
+│
+◇  Select a template:
+│  Doks theme
+│
+◇  Select a variant:
+│  With recommended integrations (SEO and Images)
+│
+◇  Install with npm and start now?
+│  Yes
+│
+◇  Scaffolding project in /home/h-enk/thulite-project...
+│
+◇  Installing dependencies with npm...
+│
+◇  Starting dev server...
+```
