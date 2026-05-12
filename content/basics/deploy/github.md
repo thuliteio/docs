@@ -1,0 +1,138 @@
+---
+title: "Github"
+description: "You can use GitHub Pages to host a Thulite website directly from a repository on GitHub.com."
+summary: "You can use GitHub Pages to host a Thulite website directly from a repository on GitHub.com."
+date: 2026-03-24T08:10:51+01:00
+lastmod: 2026-03-24T08:10:51+01:00
+draft: false
+weight: 500
+params:
+  toc: true
+  seo:
+    title: "" # custom title (optional)
+    description: "" # custom description (recommended)
+    canonical: "" # custom canonical URL (optional)
+    robots: "" # custom robot tags (optional)
+---
+You can use [GitHub Pages](https://pages.github.com/) to host a Thulite website directly from a repository on [GitHub.com](https://github.com/).
+
+:::tip[Looking for an example?]
+Check out the [official GitHub Pages Doks example project](https://github.com/thuliteio/doks-gh-pages)!
+:::
+
+## How to deploy
+
+You can deploy a Thulite site to GitHub Pages by using [GitHub Actions](https://github.com/features/actions) to automatically build and deploy your site. To do this, your source code must be hosted on GitHub.
+
+Follow the instructions below to deploy your Thulite site to GitHub pages.
+
+1. Create a new file in your project at `.github/workflows/deploy.yml` and paste in the YAML below.
+
+    ```yaml title="deploy.yml"
+    # Sample workflow for building and deploying a Thulite site to GitHub Pages
+    name: Deploy Thulite site to Pages
+
+    on:
+      # Runs on pushes targeting the default branch
+      push:
+        branches:
+          - main
+
+      # Allows you to run this workflow manually from the Actions tab
+      workflow_dispatch:
+
+    # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+    # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+
+    # Default to bash
+    defaults:
+      run:
+        shell: bash
+
+    jobs:
+      # Build job
+      build:
+        runs-on: ubuntu-latest
+        env:
+          HUGO_VERSION: 0.126.0
+        steps:
+          - name: Install Hugo CLI
+            run: |
+              wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+              && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+          - name: Install Dart Sass
+            run: sudo snap install dart-sass
+          - name: Checkout
+            uses: actions/checkout@v4
+            with:
+              submodules: recursive
+              fetch-depth: 0
+          - name: Setup Node.js
+            uses: actions/setup-node@v4
+            with:
+              node-version: '20'
+              cache: 'npm'
+          - name: Setup Pages
+            id: pages
+            uses: actions/configure-pages@v4
+          - name: Install dependencies
+            run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+          - name: Build production website
+            env:
+              # For maximum backward compatibility with Hugo modules
+              HUGO_ENVIRONMENT: production
+              HUGO_ENV: production
+              TZ: America/Los_Angeles
+            run: |
+              npm run build \
+                -- \
+                --baseURL "${{ steps.pages.outputs.base_url }}/"
+          - name: Upload artifact
+            uses: actions/upload-pages-artifact@v3
+            with:
+              path: ./public
+
+      # Deployment job
+      deploy:
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+          - name: Deploy to GitHub Pages
+            id: deployment
+            uses: actions/deploy-pages@v4
+
+    ```
+
+2. On GitHub, go to your repository's **Settings** tab and find the **Pages** section of the settings.
+
+3. Choose **GitHub Actions** as the **Source** of your site.
+
+4. Commit the new workflow file and push it to GitHub.
+
+5. Copy the **Your site is published at** URL and paste it as `baseurl` in `./config/production/hugo.toml`.
+
+7. Push the changes to GitHub and wait for the action to finish succesfully (after approximately 30 seconds).
+
+That's it. After a minute or so, you site is avaliable at the **Your site is published at** URL. When you push changes to your Thulite project's repository, the GitHub Action will automatically deploy them for you.
+
+:::tip[Set up a custom domain]
+You can optionally set up a custom domain by adding the following `./public/CNAME` file to your project:
+
+```js title="public/CNAME"
+sub.mydomain.com
+```
+
+This will deploy your site at your custom domain instead of `user.github.io`. Don't forget to also [configure DNS for your domain provider](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain).
+:::

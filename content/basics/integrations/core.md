@@ -1,0 +1,101 @@
+---
+title: "Thulite core"
+description: "Official core integration for Thulite."
+summary: "Official core integration for Thulite."
+date: 2026-03-24T08:10:51+01:00
+lastmod: 2026-03-24T08:10:51+01:00
+draft: false
+weight: 500
+params:
+  toc: true
+  seo:
+    title: "" # custom title (optional)
+    description: "" # custom description (recommended)
+    canonical: "" # custom canonical URL (optional)
+    robots: "" # custom robot tags (optional)
+---
+# Thulite core
+
+Official core integration for Thulite.
+
+## Official Resources
+
+- [GitHub Repository](https://github.com/thuliteio/core)
+
+## Installation
+
+```bash
+npm i @thulite/core
+```
+
+## Setup
+
+Add mounts to `./config/_default/module.toml`:
+
+```toml
+[[mounts]]
+  source = "node_modules/@thulite/core/assets"
+  target = "assets"
+
+[[mounts]]
+  source = "node_modules/@thulite/core/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "assets"
+  target = "assets"
+
+[[mounts]]
+  source = "layouts"
+  target = "layouts"
+```
+
+Add to `./config/_default/hugo.toml`:
+
+```toml
+baseurl = "http://localhost/"
+canonifyURLs = false
+disableAliases = true
+disableHugoGeneratorInject = true
+disableKinds = ["taxonomy", "term"]
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+languageCode = "en-US"
+paginate = 7
+rssLimit = 10
+
+[outputs]
+  home = ["HTML"]
+
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = -1
+  [caches.getcsv]
+    dir = ":cacheDir/:project"
+    maxAge = -1
+  [caches.images]
+    dir = ":cacheDir/images"
+    maxAge = "1440h"
+  [caches.assets]
+    dir = ":cacheDir/:project"
+    maxAge = -1
+  [caches.getresource]
+    dir = ":cacheDir/:project"
+    maxage = '1h'
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[minify.tdewolff.html]
+  keepWhitespace = false
+```
+
+## Credits
+
+This npm package is based on:
+
+- [Really getting started with Hugo](https://www.brycewray.com/posts/2022/07/really-getting-started-hugo/)

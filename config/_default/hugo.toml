@@ -1,8 +1,8 @@
-title = "Thulite"
+title = "Thulite Docs"
 baseurl = "http://localhost/"
 disableAliases = true
 disableHugoGeneratorInject = true
-# disableKinds = ["taxonomy", "term"]
+disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true

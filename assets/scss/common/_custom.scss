@@ -231,3 +231,130 @@
   text-underline-offset: 0.25em;
   backface-visibility: hidden;
 }
+
+@include media-breakpoint-up(sm) {
+  .card.w-100.w-50 {
+    width: calc(50% - 0.5rem) !important;
+  }
+}
+
+.dropdown-menu {
+    border: 1px solid var(--sl-color-gray-6) !important;
+    box-shadow: none !important;
+    margin-left: 0.75rem;
+    padding: 0 0.25rem;
+
+    .dropdown-item {
+        margin: 0.25rem 0;
+        padding-left: 0.625rem;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--sl-color-gray-7);
+            border-radius: 0.25rem;
+            color: inherit;
+        }
+
+        &.active {
+            background-color: var(--sl-color-gray-7);
+        }
+    }
+}
+
+@include color-mode(dark) {
+  .dropdown-menu {
+      border: 1px solid var(--sl-color-gray-6) !important;
+      box-shadow: none !important;
+      margin-left: 0.75rem;
+      padding: 0 0.25rem;
+      background-color: var(--sl-color-black);
+
+      .dropdown-item {
+          margin: 0.25rem 0;
+          padding-left: 0.625rem;
+
+          &:hover,
+          &:focus,
+          &:active {
+              background-color: var(--sl-color-gray-6);
+              border-radius: 0.25rem;
+              color: inherit;
+          }
+
+          &.active {
+              background-color: var(--sl-color-gray-6);
+          }
+      }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .dropdown-menu {
+    margin-left: 0 !important;
+    padding: 0 0.25rem !important;
+
+  }
+
+  .dropdown:not(#ai-dropdown) .dropdown-menu {
+        border-radius: 0.25rem !important;
+  }
+}
+
+.nav-link-name-post {
+  margin-left: 0.125rem;
+}
+
+.nav-link-name-pre {
+  margin-right: 0.375rem;
+}
+
+.preview-content svg {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem !important;
+}
+
+h2 code {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+h3 code {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+.card h5 {
+  font-family: $font-family-base;
+}
+
+.preview {
+  table,
+  .expressive-code,
+  dl,
+  dt,
+  dd {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  blockquote,
+  ol,
+  ul {
+    margin-bottom: 0;
+  }
+
+  h3#custom-id {
+    margin-top: 0;
+  }
+
+  dt {
+    margin-top: 0 !important;
+  }
+
+  dd {
+    margin-bottom: 0 !important;
+  }
+}

@@ -4,7 +4,7 @@ description = "Congrats on setting up a new Doks project!"
 images = ["cover.png"]
 
 # mainSections
-mainSections = ["docs"]
+mainSections = ["start-here", "basics", "advanced", "reference"]
 
 # Enable mathematical rendering on every page (unless you set the `math` parameter to `false` in front matter)
 math = false # false (default) or true
@@ -48,8 +48,8 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
   bootstrapJavascript = false # false (default) or true
 
   # Nav
-  sectionSwitcher = false # true or false (default)
-  sectionNav = ["docs"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
+  sectionSwitcher = true # true or false (default)
+  sectionNav = ["start-here", "basics", "advanced", "reference"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
   toTopButton = false # false (default) or true
   breadcrumbTrail = false # false (default) or true
   headlineHash = true # true (default) or false
@@ -122,7 +122,7 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
 # Inline SVG (@thulite/inline-svg)
 [inline_svg]
   iconSetDir = "tabler-icons" # tabler-icons (default)
-  iconSetVariant = "outline" # outline (default) or filled
+  iconSetVariant = "" # outline (default) or filled
 
 # SEO (@thulite/seo)
 [seo]

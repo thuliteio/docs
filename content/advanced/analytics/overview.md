@@ -1,0 +1,30 @@
+---
+title: "Analytics Overview"
+linkTitle: "Overview"
+description: "Choose an analytics guide below to add a service to your Thulite project."
+summary: "Choose an analytics guide below to add a service to your Thulite project."
+date: 2026-03-24T08:10:51+01:00
+lastmod: 2026-03-24T08:10:51+01:00
+draft: false
+weight: 321
+params:
+  toc: true
+  seo:
+    title: "" # custom title (optional)
+    description: "" # custom description (recommended)
+    canonical: "" # custom canonical URL (optional)
+    robots: "" # custom robot tags (optional)
+---
+Choose an analytics guide below to add your preferred service to a Thulite project.
+
+## Analytics Guides
+
+{{< card-grid >}}
+{{< link-card src="svgs/cabin.svg" title="Cabin Analytics" href="/advanced/analytics/cabin-analytics/" >}}
+{{< link-card src="svgs/simple-icons/fathom.svg" title="Fathom Analytics" href="/advanced/analytics/fathom-analytics/" >}}
+{{< /card-grid >}}
+
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/googleanalytics.svg" title="Google Analytics" href="/advanced/analytics/google-analytics/" >}}
+{{< link-card src="svgs/simple-icons/plausibleanalytics.svg" title="Plausible Analytics" href="/advanced/analytics/plausible-analytics/" >}}
+{{< /card-grid >}}
