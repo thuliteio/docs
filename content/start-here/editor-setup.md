@@ -28,6 +28,7 @@ If you use VS Code, install these extensions:
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+- [Hugo Shortcodes](https://marketplace.visualstudio.com/items?itemName=thuliteio.hugo-shortcodes)
 
 ## Formatting
 

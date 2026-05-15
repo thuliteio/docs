@@ -13,7 +13,10 @@
     "dev": "hugo server --disableFastRender --noHTTPCache",
     "format": "prettier **/** -w -c",
     "build": "hugo --minify --gc",
-    "preview": "vite preview --outDir public"
+    "preview": "vite preview --outDir public",
+    "changeset": "changeset",
+    "changeset:status": "changeset status --verbose",
+    "changeset:version": "changeset version"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.2.8",
