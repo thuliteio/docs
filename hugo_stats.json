@@ -58,6 +58,7 @@
       "summary",
       "sup",
       "svg",
+      "symbol",
       "table",
       "tbody",
       "td",
@@ -67,7 +68,8 @@
       "time",
       "title",
       "tr",
-      "ul"
+      "ul",
+      "use"
     ],
     "classes": [
       "/box",
@@ -109,7 +111,6 @@
       "callout-title",
       "card",
       "card-body",
-      "card-list",
       "card-nav",
       "card-text",
       "card-title",
@@ -441,6 +442,7 @@
       "hugo-documentation",
       "hugo-version",
       "hugotoml",
+      "icon-arrow-right",
       "image",
       "inspect-generated-html",
       "inspect-generated-site-output",

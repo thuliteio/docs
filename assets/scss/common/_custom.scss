@@ -232,8 +232,12 @@
   backface-visibility: hidden;
 }
 
+.card.w-50 {
+  width: 100% !important;
+}
+
 @include media-breakpoint-up(sm) {
-  .card.w-100.w-50 {
+  .card.w-50 {
     width: calc(50% - 0.5rem) !important;
   }
 }
