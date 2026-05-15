@@ -7,6 +7,7 @@ lastmod: 2026-05-12T12:44:14+02:00
 draft: false
 weight: 433
 params:
+  toc: true
   seo:
     title: "" # custom title (optional)
     description: "" # custom description (recommended)

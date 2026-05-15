@@ -116,7 +116,7 @@ It is a common convention to store your CSS or Sass files in a `assets/scss` dir
 
 The `app.scss` file is used to specify the CSS or Sass files to import (or use). Put your custom (S)CSS variables in `common/variables-custom` and custom (S)CSS code in `common/_custom.scss`.
 
-### `config/_default/`
+### `config/_default`
 
 The `hugo.toml` file includes [Hugo configuration](https://gohugo.io/getting-started/configuration/) options for your Thulite project. Here you can specify taxonomies to use, build options, server options, and more.
 
@@ -124,15 +124,15 @@ The `module.toml` file specifies the [Hugo mounts](https://gohugo.io/hugo-module
 
 The `params.toml` file is where you set [Thulite configuration](/reference/configuration/) options like e.g. options for themes and integrations.
 
-### `content/`
+### `content`
 
 The `content/` directory is where you store [pages](/basics/pages/), organized in sections or page bundles (leaf bundles or branch bundles) and can contain page resources.
 
-### `layouts/`
+### `layouts`
 
 [Layouts](/basics/layouts/) are Thulite templates that define the UI structure shared by one or more pages.
 
-### `static/`
+### `static`
 
 The `static/` directory is for files and assets that do not need to be processed during Thulite' build process. These files will be copied into the build folder untouched.
 

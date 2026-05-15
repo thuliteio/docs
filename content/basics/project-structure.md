@@ -1,7 +1,7 @@
 ---
 title: "Project Structure"
-description: "Your new Thulite project generated from the `create thulite` CLI wizard already includes some files and folders. Others, you will create yourself and add to Thulite' e..."
-summary: "Your new Thulite project generated from the `create thulite` CLI wizard already includes some files and folders. Others, you will create yourself and add to Thulite' e..."
+description: "Understand the Thulite project structure and where to place content, templates, and assets."
+summary: "A concise guide to the key directories and files in a Thulite project."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
@@ -14,86 +14,43 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-This guide.
+Your project created with `create thulite` comes with a practical default structure.
+This page explains what each top-level directory is for and where to put your files.
 
-## Example
+## At a glance
 
-Thulite basic starter (with recommended integrations):
+Thulite follows the Hugo [directory structure](https://gohugo.io/getting-started/directory-structure/).
+Most projects include these key directories and files:
 
-```bash
-.
-├── LICENSE
-├── archetypes
-│   └── default.md
-├── assets
-│   ├── favicon.png
-│   ├── favicon.svg
-│   ├── images
-│   │   └── paul-pascale-FI9QMIVMdCM-unsplash.jpg
-│   └── scss
-│       ├── app.scss
-│       └── common
-│           ├── _custom.scss
-│           └── _variables-custom.scss
-├── config
-│   ├── _default
-│   │   ├── hugo.toml
-│   │   ├── markup.toml
-│   │   ├── menus.toml
-│   │   ├── module.toml
-│   │   └── params.toml
-│   ├── babel.config.js
-│   ├── next
-│   │   └── hugo.toml
-│   ├── postcss.config.js
-│   └── production
-│       └── hugo.toml
-├── content
-│   └── _index.md
-├── layouts
-│   ├── home.html
-│   └── single.html
-├── netlify.toml
-├── package.json
-└── static
-    ├── apple-touch-icon.png
-    ├── cover.png
-    ├── favicon.ico
-    └── icon.svg
+- `assets` - processed assets (styles, scripts, images)
+- `config` - Hugo/Thulite configuration
+- `content` - pages and section content
+- `layouts` - templates, partials, and shortcodes
+- `static` - files copied as-is to output
+- `package.json` - npm dependencies and scripts
 
-13 directories, 26 files
-```
+## Example tree
 
+{{< callout context="note" icon="info-circle" >}}
 
----
+For complete details, see the [Project Structure reference](/reference/project-structure/).
 
+{{< /callout >}}
 
-Your new Thulite project generated from the `create thulite` CLI wizard already includes some files and folders. Others, you will create yourself and add to Thulite' existing file structure.
-
-Here's how a Thulite project is organized, and some files you will find in your new project.
-
-## Directories and Files
-
-Thulite leverages the Hugo [directory structure](https://gohugo.io/getting-started/directory-structure/) for your project. Every Thulite project root should include the following directories and files:
-
-- `assets` - Your project assets (scripts, styles, images, etc.)
-- `config` - Your project's configuration files (Thulite, Hugo, PostCSS, etc.)
-- `content` - Your project content (pages, posts, etc.)
-- `layouts` - Your project layouts (partials, shortcodes, etc.)
-- `static` - Your non-code, unprocessed assets (fonts, icons, etc.)
-- `package.json` - A project manifest.
-
-## Example Project Tree
-
-A common Thulite project directory might look like this:
+Typical starter structure:
 
 {{< tree >}}
 
-- {folder} assets/scss
-  - {folder} common
-    - {brand-sass} _custom.scss
-    - {brand-sass} _variables-custom.scss
-  - {brand-sass} app.scss
+- {folder} archetypes
+  - {markdown} default.md
+- {folder} assets
+  - {folder} scss
+    - {folder} common
+      - {brand-sass} _custom.scss
+      - {brand-sass} _variables-custom.scss
+    - {brand-sass} app.scss
+  - {png} favicon.png
+  - {svg} favicon.svg
 - {folder} config
   - {folder} _default
     - {toml} hugo.toml
@@ -102,53 +59,63 @@ A common Thulite project directory might look like this:
 - {folder} content
   - {markdown} _index.md
 - {folder} layouts
-  - {html} index.html
+  - {html} home.html
 - {folder} static
-  - {svg} favicon.svg
+  - {png} cover.png
 - {json} package.json
 
 {{< /tree >}}
 
+### `archetypes`
 
-### `assets/scss`
+`default.md`
 
-It is a common convention to store your CSS or Sass files in a `assets/scss` directory, but this is not required. As long as your styles live somewhere in the `assets/` directory and are imported correctly, Thulite will handle and optimize them.
+Template used when creating new content files.
 
-The `app.scss` file is used to specify the CSS or Sass files to import (or use). Put your custom (S)CSS variables in `common/variables-custom` and custom (S)CSS code in `common/_custom.scss`.
+### `assets`
 
-### `config/_default/`
+`favicon.png`, `favicon.svg`
 
-The `hugo.toml` file includes [Hugo configuration](https://gohugo.io/getting-started/configuration/) options for your Thulite project. Here you can specify taxonomies to use, build options, server options, and more.
+Use `assets/` for files that should be bundled, transformed, or optimized.
 
-The `module.toml` file specifies the [Hugo mounts](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts), logically linking `node_modules` directories to component folders (ex: `assets`, `layouts`) — making Thulite Integrations available in your Thulite project.
+#### `scss`
 
-The `params.toml` file is where you set [Thulite configuration](/reference/configuration/) options like e.g. options for themes and integrations.
+Storing styles in `assets/scss/` is conventional, but not required. Any stylesheet in `assets/` can be processed when imported correctly.
 
-### `content/`
+Use `app.scss` as your entrypoint. Put custom variables in `common/_variables-custom.scss` and custom styles in `common/_custom.scss`.
 
-The `content/` directory is where you store [pages](/basics/pages/), organized in sections or page bundles (leaf bundles or branch bundles) and can contain page resources.
+### `config`
 
-### `layouts/`
+#### `_default`
 
-[Layouts](/basics/layouts/) are Thulite templates that define the UI structure shared by one or more pages.
+- `hugo.toml`: core [Hugo configuration](https://gohugo.io/configuration/all/)
+- `module.toml`: [Hugo mounts](https://gohugo.io/configuration/module/#mounts), including links from `node_modules` to project directories
+- `params.toml`: site-level [Thulite settings](/start-here/configuration/#update-parameters), including theme and integration options
 
-### `static/`
+### `content`
 
-The `static/` directory is for files and assets that do not need to be processed during Thulite' build process. These files will be copied into the build folder untouched.
+Use `content/` for [pages](/basics/pages/), sections, and page bundles (including page resources).
 
-This behavior makes `static/` ideal for common assets like images and fonts, or special files such as `robots.txt` and `manifest.webmanifest`.
+### `layouts`
 
-You can place CSS and JavaScript in your `static/` directory, but be aware that those files will not be bundled or optimized in your final build.
+[Layouts](/basics/layouts/) define shared page structure and rendering templates.
 
-:::tip
-As a general rule, any CSS or JavaScript that you write yourself should live in your `assets/` directory.
-:::
+### `static`
 
+Files in `static/` are copied to the output unchanged.
+
+This is ideal for assets like fonts or icons, and special files like `robots.txt` and `manifest.webmanifest`.
+
+You can place CSS and JavaScript here, but they will not be bundled or optimized.
+
+{{< callout context="tip" icon="bulb" >}}
+
+As a rule, keep your own CSS and JavaScript in `assets/`.
+
+{{< /callout >}}
 
 ### `package.json`
 
-This is a file used by JavaScript package managers to manage your dependencies. It also defines the scripts that are commonly used to run Thulite (ex: `npm run dev`, `npm run build`).
+`package.json` defines dependencies and scripts such as `npm run dev` and `npm run build`.
 
-There are [two kinds of dependencies](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file) you can specify in a `package.json`: `dependencies` and `devDependencies`. In most cases, these work the same: Thulite needs all dependencies at build time, and your package manager will install both. We recommend putting all of your dependencies in `dependencies` to start, and only use `devDependencies` if you find a specific need to do so.
-
-For help creating a new `package.json` file for your project, check out the [manual setup](/install/manual/) instructions.
+You can use [dependencies and devDependencies](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file). For most Thulite projects, placing packages in `dependencies` is a practical default.

@@ -1,17 +1,15 @@
 ---
-title: "Doks"
-description: "Doks"
-summary: "Doks"
-date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+title: "Shortcodes"
+description: ""
+summary: ""
+date: 2026-05-15T16:27:08+02:00
+lastmod: 2026-05-15T16:27:08+02:00
 draft: false
-weight: 320
+weight: 215
 params:
-  toc: true
   seo:
     title: "" # custom title (optional)
     description: "" # custom description (recommended)
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-

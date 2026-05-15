@@ -120,7 +120,7 @@ Scaffolding project
 {{< /step >}}
 {{< /steps >}}
 
-You'll now have a new [project directory](/reference/project-structure/) with all the necessary files and configurations for your site.
+You'll now have a new [project directory](/basics/project-structure/) with all the necessary files and configurations for your site.
 {.mt-3}
 
 ## Configure Thulite

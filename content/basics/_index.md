@@ -15,5 +15,5 @@ params:
   section:
     title: "Basics"
     iconName: "box"
-    startUrl: "/basics/markdown/"
+    startUrl: "/basics/project-structure/"
 ---

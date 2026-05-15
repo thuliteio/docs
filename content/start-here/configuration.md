@@ -7,6 +7,7 @@ lastmod: 2026-04-27T12:46:23+02:00
 draft: false
 weight: 115
 params:
+  toc: true
   seo:
     title: "" # custom title (optional)
     description: "" # custom description (recommended)
@@ -14,7 +15,6 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 This page covers the main configuration tasks for a Thulite project.
-
 
 ## Update settings
 
@@ -104,7 +104,6 @@ lastmod: 2026-04-28T17:01:52+02:00
 draft: false
 ---
 ```
-
 
 ## Integrations
 

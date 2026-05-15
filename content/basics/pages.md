@@ -5,7 +5,7 @@ summary: "__Pages__ are files that live in the `content` directory of your Thuli
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 310
+weight: 205
 params:
   toc: true
   seo:
@@ -14,7 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-__Pages__ are files that live in the `content` directory of your Thulite project. They are responsible for handling routing, data loading, and overall page layout for every page in your website.
+Pages are files that live in the `content` directory of your Thulite project. They are responsible for handling routing, data loading, and overall page layout for every page in your website.
 
 ## Create new content
 
