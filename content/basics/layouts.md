@@ -41,10 +41,16 @@ For example, the default Thulite [base template](https://gohugo.io/templates/bas
 Thulite leverages Hugo's [templates](https://gohugo.io/templates/). Here are some relevant topics:
 
 {{< card-grid >}}
-  {{< link-card title="Introduction to templating" description="Create templates to render your content, resources, and data." href="https://gohugo.io/templates/introduction/" target="_blank" >}}
-  {{< link-card title="Template lookup order" description="Hugo uses a template for a given page, starting from the most specific." href="https://gohugo.io/templates/lookup-order/" target="_blank" >}}
-  {{< link-card title="Base templates and blocks" description="Base and block constructs define the outer shell of your master templates." href="https://gohugo.io/templates/base/" target="_blank" >}}
-  {{< link-card title="Single page templates" description="Single page templates are the primary view of content in Hugo." href="https://gohugo.io/templates/single-page-templates/" target="_blank" >}}
-  {{< link-card title="List page templates" description="List page templates render multiple pieces of content in a HTML page." href="https://gohugo.io/templates/lists/" target="_blank" >}}
-  {{< link-card title="Partial templates" description="Partials are context-aware components in your list and page templates." href="https://gohugo.io/templates/partials/" target="_blank" >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Introduction to templating" description="Create templates to render your content, resources, and data." href="https://gohugo.io/templates/introduction/" target="_blank" >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Template lookup order" description="Hugo uses a template for a given page, starting from the most specific." href="https://gohugo.io/templates/lookup-order/" target="_blank" >}}
+{{< /card-grid >}}
+
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Base templates and blocks" description="Base and block constructs define the outer shell of your master templates." href="https://gohugo.io/templates/base/" target="_blank" >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Single page templates" description="Single page templates are the primary view of content in Hugo." href="https://gohugo.io/templates/single-page-templates/" target="_blank" >}}
+{{< /card-grid >}}
+
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="List page templates" description="List page templates render multiple pieces of content in a HTML page." href="https://gohugo.io/templates/lists/" target="_blank" >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Partial templates" description="Partials are context-aware components in your list and page templates." href="https://gohugo.io/templates/partials/" target="_blank" >}}
 {{< /card-grid >}}
