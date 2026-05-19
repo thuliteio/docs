@@ -5,7 +5,7 @@ summary: "Decap CMS (formerly Netlify CMS) is an open-source, Git-based content 
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 335
+weight: 813
 params:
   toc: true
   seo:

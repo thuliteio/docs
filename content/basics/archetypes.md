@@ -8,6 +8,7 @@ draft: false
 weight: 220
 toc: true
 params:
+  toc: true
   seo:
     title: "" # custom title (optional)
     description: "" # custom description (recommended)

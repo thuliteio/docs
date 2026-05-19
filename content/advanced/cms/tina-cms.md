@@ -5,7 +5,7 @@ summary: "Tina CMS is a Git-backed headless content management system."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 337
+weight: 815
 params:
   toc: true
   seo:

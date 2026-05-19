@@ -5,9 +5,10 @@ summary: "Obfuscate email addresses in Thulite with a simple, effective CSS tech
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 310
+weight: 515
 toc: true
 params:
+  toc: true
   seo:
     title: "" # custom title (optional)
     description: "" # custom description (recommended)

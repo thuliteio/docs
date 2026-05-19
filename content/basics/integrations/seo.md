@@ -1,11 +1,11 @@
 ---
 title: "SEO"
-description: "SEO is the official SEO integration for the Thulite framework."
-summary: "SEO is the official SEO integration for the Thulite framework."
+description: "Official SEO integration for Thulite."
+summary: "Official SEO integration for Thulite."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 500
+weight: 423
 params:
   toc: true
   seo:
@@ -14,10 +14,9 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-[SEO](https://seo.thulite.io/) is the official SEO integration for the Thulite framework.
+SEO is the official SEO integration for Thulite, simplifying metadata management for improved search visibility and content discoverability.
 
-## Official Resources
+## Links
 
-
-- [Getting Started](https://seo.thulite.io/docs/start-here/getting-started/)
-- [GitHub repository](https://github.com/thuliteio/seo)
+- [View repository](https://github.com/thuliteio/seo)
+- [View documentation](https://seo.thulite.io/)

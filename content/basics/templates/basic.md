@@ -1,0 +1,22 @@
+---
+title: "Basic"
+description: "Minimal Thulite starter for simple sites and quick customization."
+summary: "Minimal Thulite starter for simple sites and quick customization."
+date: 2026-05-18T15:01:27+02:00
+lastmod: 2026-05-18T15:01:27+02:00
+draft: false
+weight: 315
+params:
+  toc: true
+  seo:
+    title: "" # custom title (optional)
+    description: "" # custom description (recommended)
+    canonical: "" # custom canonical URL (optional)
+    robots: "" # custom robot tags (optional)
+---
+Basic is a minimal Thulite starter built for simplicity and speed. It gives you a clean foundation for straightforward sites and quick customization.
+
+## Links
+
+- [View repository](https://github.com/thuliteio/basic-starter)
+- [View demo](https://basic-rec.thulite.io/)

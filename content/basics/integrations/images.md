@@ -1,11 +1,11 @@
 ---
 title: "Images"
-description: "Images is the official Images integration for the Thulite framework."
-summary: "Images is the official Images integration for the Thulite framework."
+description: "Official image optimization integration for Thulite."
+summary: "Official image optimization integration for Thulite."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 500
+weight: 419
 params:
   toc: true
   seo:
@@ -14,10 +14,9 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-[Images](https://images.thulite.io/) is the official Images integration for the Thulite framework.
+Images is the official image optimization integration for Thulite, streamlining asset management and enabling responsive image delivery.
 
-## Official Resources
+## Links
 
-
-- [Getting Started](https://images.thulite.io/docs/start-here/getting-started/)
-- [GitHub repository](https://github.com/thuliteio/images)
+- [View repository](https://github.com/thuliteio/images)
+- [View documentation](https://images.thulite.io/)

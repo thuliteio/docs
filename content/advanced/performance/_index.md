@@ -1,13 +1,15 @@
 ---
-title: "Shortcodes"
+title: "Performance"
 description: ""
 summary: ""
-date: 2026-05-15T16:27:08+02:00
-lastmod: 2026-05-15T16:27:08+02:00
+date: 2026-05-18T08:09:49+02:00
+lastmod: 2026-05-18T08:09:49+02:00
 draft: false
-weight: 215
+weight: 400
 params:
   toc: true
+  sidebar:
+    collapsed: false
   seo:
     title: "" # custom title (optional)
     description: "" # custom description (recommended)

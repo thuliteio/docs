@@ -5,7 +5,7 @@ summary: "Netlify offers hosting and serverless backend services for web applica
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 500
+weight: 521
 params:
   toc: true
   seo:

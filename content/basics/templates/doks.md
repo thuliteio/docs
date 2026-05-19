@@ -1,11 +1,11 @@
 ---
 title: "Doks"
-description: "Doks"
-summary: "Doks"
+description: "Modern Thulite documentation theme with search, i18n, and versioning support."
+summary: "Modern Thulite documentation theme with search, i18n, and versioning support."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 320
+weight: 330
 params:
   toc: true
   seo:
@@ -14,4 +14,10 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+Doks is a modern documentation theme for Thulite built for clarity, speed, and ease of use. Its clean layout and strong readability make it ideal for technical docs, knowledge bases, and project wikis. It includes configurable search, code highlighting, and built-in support for internationalization and versioning.
 
+## Links
+
+- [View repository](https://github.com/thuliteio/doks)
+- [View demo](https://doks.thulite.io/)
+- [View documentation](https://getdoks.org/)

@@ -5,7 +5,7 @@ summary: "You can use Vercel to deploy a Thulite site to their global edge netwo
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 500
+weight: 525
 params:
   toc: true
   seo:

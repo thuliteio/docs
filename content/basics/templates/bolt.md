@@ -1,11 +1,11 @@
 ---
 title: "Bolt"
-description: "Bolt"
-summary: "Bolt"
+description: "Lightweight Thulite blog theme focused on readability and performance."
+summary: "Lightweight Thulite blog theme focused on readability and performance."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 330
+weight: 320
 params:
   toc: true
   seo:
@@ -14,4 +14,9 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+Bolt is a minimal, elegant blog theme for Thulite built for fast, distraction-free reading. Its lightweight footprint and clean HTML styling make it a strong fit for writers who value simplicity and performance. It also includes dark/light mode, tag support, reading time estimates, and related posts.
 
+## Links
+
+- [View repository](https://github.com/thuliteio/bolt)
+- [View demo](https://bolt.thulite.io/)

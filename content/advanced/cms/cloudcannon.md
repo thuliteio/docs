@@ -5,7 +5,7 @@ summary: "CloudCannon is a Git-based content management system that provides a v
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 333
+weight: 811
 params:
   toc: true
   seo:

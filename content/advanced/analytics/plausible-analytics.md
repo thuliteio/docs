@@ -5,7 +5,7 @@ summary: "Plausible Analytics ia an easy to use and privacy-friendly Google Anal
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 329
+weight: 717
 params:
   toc: true
   seo:

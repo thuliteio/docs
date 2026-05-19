@@ -1,11 +1,11 @@
 ---
 title: "Inline SVG"
-description: "Inline SVG is the official Inline SVG integration for the Thulite framework."
-summary: "Inline SVG is the official Inline SVG integration for the Thulite framework."
+description: "Official inline SVG integration for Thulite."
+summary: "Official inline SVG integration for Thulite."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 500
+weight: 421
 params:
   toc: true
   seo:
@@ -14,10 +14,9 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-[Inline SVG](https://svg.thulite.io/) is the official Inline SVG integration for the Thulite framework.
+Inline SVG is the official SVG integration for Thulite, enabling embedded SVG graphics with dynamic and interactive support.
 
-## Official Resources
+## Links
 
-
-- [Getting Started](https://svg.thulite.io/docs/start-here/getting-started/)
-- [GitHub repository](https://github.com/thuliteio/inline-svg)
+- [View repository](https://github.com/thuliteio/inline-svg)
+- [View documentation](https://svg.thulite.io/)

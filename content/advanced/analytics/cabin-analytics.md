@@ -5,7 +5,7 @@ summary: "Cabin Analytics is a privacy-first, carbon conscious web analytics ser
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 323
+weight: 711
 params:
   toc: true
   seo:

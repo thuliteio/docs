@@ -6,7 +6,7 @@ summary: "Choose a CMS guide below to connect a headless CMS to your Thulite pro
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 331
+weight: 810
 params:
   toc: true
   seo:

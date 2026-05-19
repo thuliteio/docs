@@ -5,7 +5,7 @@ summary: "Fathom Analytics is a Google Analytics alternative that doesn't compro
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 325
+weight: 713
 params:
   toc: true
   seo:
