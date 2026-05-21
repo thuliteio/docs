@@ -1,4 +1,41 @@
 // Put your custom SCSS code here
+
+/*! purgecss start ignore */
+// @import "@docsearch/css/dist/_variables";
+@import "common/variables-docsearch";
+
+// @import "@docsearch/css/dist/button";
+@import "@docsearch/css/dist/modal";
+/*! purgecss end ignore */
+
+// DocSearch
+/*! purgecss start ignore */
+.DocSearch-Container {
+    z-index: 2000 !important;
+}
+
+.DocSearch-Hit-title {
+    overflow: hidden;
+}
+
+.DocSearch-Hit-icon {
+    display: flex;
+    align-items: center;
+}
+
+.DocSearch-Hits mark {
+    padding: 0;
+}
+
+/*
+@media (max-width: 768px) {
+    .DocSearch-Modal {
+        position: fixed !important;
+    }
+}
+*/
+/*! purgecss end ignore */
+
 .home .sticky-top {
   position: relative;
 }

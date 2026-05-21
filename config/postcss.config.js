@@ -9,6 +9,7 @@ const purgecss = purgeCSSPlugin({
     },
     dynamicAttributes: [
         'aria-expanded',
+        'aria-selected',
         'data-bs-popper',
         'data-bs-target',
         'data-bs-theme',

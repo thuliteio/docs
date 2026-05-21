@@ -1,3 +1,4 @@
+// Put your custom JS code here
 // Homepage FAQ accordion: keep only one <details> open at a time.
 document.addEventListener("DOMContentLoaded", () => {
 	const body = document.body;
