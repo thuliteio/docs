@@ -1,15 +1,14 @@
 // Put your custom SCSS code here
 
+// DocSearch
 /*! purgecss start ignore */
+
 // @import "@docsearch/css/dist/_variables";
 @import "common/variables-docsearch";
 
 // @import "@docsearch/css/dist/button";
 @import "@docsearch/css/dist/modal";
-/*! purgecss end ignore */
 
-// DocSearch
-/*! purgecss start ignore */
 .DocSearch-Container {
     z-index: 2000 !important;
 }
@@ -34,6 +33,7 @@
     }
 }
 */
+
 /*! purgecss end ignore */
 
 .home .sticky-top {
