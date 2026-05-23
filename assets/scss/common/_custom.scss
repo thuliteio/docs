@@ -117,12 +117,70 @@
   }
 }
 
+.section-logos {
+  padding: 1rem 0 3rem;
+}
+
+@keyframes logo-carousel-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-carousel {
+  --logo-gap: 2.5rem;
+  --logo-size: 40px;
+  --logo-scroll-duration: 15s;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 2.5rem auto 0;
+  width: 100%;
+  max-width: 720px;
+  padding: 0.25rem 0;
+  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%);
+}
+
+.logo-carousel-track {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: var(--logo-scroll-duration) linear 0s infinite normal none running logo-carousel-scroll;
+}
+
+.logo-carousel-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: max-content;
+  gap: var(--logo-gap);
+  padding-inline: calc(var(--logo-gap) / 2);
+}
+
+.logo-carousel-item {
+  width: var(--logo-size);
+  height: var(--logo-size);
+  flex-shrink: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-carousel-track {
+    animation: none;
+  }
+}
+
 .section-prefooter {
   padding: 3rem 0 5rem;
 }
 
 .section-footer {
-  padding: 1rem 0 3rem;
+  padding: 1rem 0 5rem;
 }
 
 .home .btn-lg {
@@ -139,7 +197,11 @@
   }
 
   .section-main {
-    padding: 3rem 0;
+    padding: 5rem 0 3rem;
+  }
+
+  .section-logos {
+    padding: 3rem 0 5rem;
   }
 
   .section-prefooter {
@@ -147,7 +209,7 @@
   }
 
   .section-footer {
-    padding: 3rem 0;
+    padding: 3rem 0 5rem;
   }
 
   .home .btn-lg {

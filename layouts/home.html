@@ -18,15 +18,47 @@
     </div>
   </section>
 
+  <section class="section-logos">
+    <div class="container">
+      <h2 class="fs-5 text-center mt-0">Deploy to any platform</h2>
+      <div class="logo-carousel" aria-label="Deploy providers">
+        <div class="logo-carousel-track">
+          <div class="logo-carousel-group">
+            {{ partial "inline-svg" (dict "src" "svgs/aws.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/cloudflarepages.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/github.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/gitlab.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/firebase.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/microsoft.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/netlify.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/render.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/vercel.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+          </div>
+          <div class="logo-carousel-group" aria-hidden="true">
+            {{ partial "inline-svg" (dict "src" "svgs/aws.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/cloudflarepages.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/github.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/gitlab.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/firebase.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/microsoft.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/netlify.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/render.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/vercel.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section-main">
     <div class="container">
-      <h2 class="text-center mt-lg-0">What's included</h2>
+      <h2 class="text-center mt-lg-0">What you get</h2>
       <div class="row justify-content-center g-4">
         <div class="col-lg-5">
           <div class="card">
             <div class="card-body">
               <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "file-text" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Structured content</h3>
-              <p class="text-muted fs-6">Write and manage content in Markdown with clear workflows.</p>
+              <p class="text-muted fs-6">Create and manage content in Markdown with clear workflows.</p>
             </div>
           </div>
         </div>
@@ -34,7 +66,7 @@
           <div class="card">
             <div class="card-body">
               <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "folder-root" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Simple project setup</h3>
-              <p class="text-muted fs-6">A clean, predictable structure that scales with your site.</p>
+              <p class="text-muted fs-6">Start with a clean, predictable structure that scales with your site.</p>
             </div>
           </div>
         </div>
@@ -42,7 +74,7 @@
           <div class="card">
             <div class="card-body">
               <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "stack-2" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Modern web stack</h3>
-              <p class="text-muted fs-6">Built on a fast, maintainable, and standards-compliant stack.</p>
+              <p class="text-muted fs-6">Build on a fast, maintainable, and standards-compliant stack.</p>
             </div>
           </div>
         </div>
@@ -50,7 +82,7 @@
           <div class="card">
             <div class="card-body">
               <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "gauge" "stroke-width" "1.5" "class" "text-muted me-2" ) }}SEO & Performance</h3>
-              <p class="text-muted fs-6">Optimized defaults for fast, search-friendly websites.</p>
+              <p class="text-muted fs-6">Ship optimized defaults for fast, search-friendly websites.</p>
             </div>
           </div>
         </div>
@@ -58,7 +90,15 @@
           <div class="card">
             <div class="card-body">
               <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "article" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Content sites</h3>
-              <p class="text-muted fs-6">Ideal for documentation, blogs, and other content-heavy sites.</p>
+              <p class="text-muted fs-6">Launch documentation, blogs, and other content-heavy sites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "shield-check" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Security hardening</h3>
+              <p class="text-muted fs-6">Apply practical protections with built-in guidance for CSP and headers.</p>
             </div>
           </div>
         </div>
@@ -96,6 +136,7 @@
     </div>
   </section>
 
+<!--
   <section class="section-prefooter">
     <div class="container">
       <div class="row justify-content-center">
@@ -111,5 +152,6 @@
       </div>
     </div>
   </section>
+-->
 
 {{ end }}
