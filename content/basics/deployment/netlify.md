@@ -14,89 +14,143 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-[Netlify](https://netlify.com) offers hosting and serverless backend services for web applications and static websites. Any Thulite site can be hosted on Netlify!
+[Netlify](https://netlify.com) provides hosting and serverless backend services for web apps and static sites. You can host any Thulite site on Netlify.
 
-This guide includes instructions for deploying to Netlify through the website UI or Netlify's CLI.
+This guide shows how to deploy with the Netlify web UI or Netlify CLI.
 
 ## How to deploy
 
-You can deploy to Netlify through the website UI or using Netlify's CLI (command line interface).
+Deploy to Netlify using the web UI or Netlify CLI.
 
 ### Website UI Deployment
 
-If your project is stored in GitHub, GitLab, BitBucket, or Azure DevOps, you can use the Netlify website UI to deploy your Thulite site.
+If your project is in GitHub, GitLab, Bitbucket, or Azure DevOps, you can deploy from the Netlify web UI.
 
-1. Click <kbd>Add a new site</kbd> in your [Netlify dashboard](https://app.netlify.com/)
+{{< steps >}}
+{{< step >}}
+Click Add a new site in your [Netlify dashboard](https://app.netlify.com/)
+{{< /step >}}
+{{< step >}}
+Choose Import an existing project
 
-2. Choose <kbd>Import an existing project</kbd>
+When you import your Thulite repository from your Git provider, Netlify should automatically detect and pre-fill the correct configuration settings for you.
+{{< /step >}}
+{{< step >}}
+Confirm these settings, then click Deploy:
 
-    When you import your Thulite repository from your Git provider, Netlify should automatically detect and pre-fill the correct configuration settings for you.
+- Build Command: `npm run build`
+- Publish directory: `public`
 
-3. Make sure that the following settings are entered, then press the <kbd>Deploy</kbd> button:
+{{< /step >}}
+{{< /steps >}}
 
-    - **Build Command:** `npm run build`
-    - **Publish directory:** `public`
+After deployment, you are redirected to the site overview page, where you can edit site details.
 
- After deploying, you will be redirected to the site overview page. There, you can edit the details of your site.
-
-Any future changes to your source repository will trigger preview and production deploys based on your deployment configuration.
+Future changes to your repository trigger preview and production deploys based on your configuration.
 
 #### `netlify.toml` file
 
-You can optionally create a new `netlify.toml` file at the top level of your project repository to configure your build command and publish directory, as well as other project settings including environment variables and redirects. Netlify will read this file and automatically configure your deployment.
+You can optionally add a `netlify.toml` file at the root of your repository to configure the build command, publish directory, and other settings such as environment variables and redirects. Netlify reads this file and applies the configuration automatically.
 
-To configure the default settings, create a `netlify.toml` file with the following contents:
+To configure default settings, create a `netlify.toml` file with the following content:
 
-```toml
+```toml {title="netlify.toml"}
 [build]
-  command = "npm run build"
   publish = "public"
+  command = """\
+  git config core.quotepath false && \
+  npm install && \
+  hugo build --gc --minify --baseURL "${URL}"
+  """
 ```
 
-
-- More info at ["Deploy with git"](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git) on Netlify's docs
-
+{{< callout context="tip" icon="bulb" >}}
+Learn more about [deploying with Git](https://docs.netlify.com/deploy/create-deploys/#deploy-with-git) in the Netlify docs.
+{{< /callout >}}
 
 ### CLI Deployment
 
-You can also create a new site on Netlify and link up your Git repository by installing and using the [Netlify CLI](https://cli.netlify.com/).
+You can also create a new Netlify site and link your Git repository with the [Netlify CLI](https://cli.netlify.com/).
 
+{{< steps >}}
+{{< step >}}
+Install Netlify's CLI globally
 
-1. Install Netlify's CLI globally
+{{< tabs "install-netlify-cli" >}}
+{{< tab "npm" >}}
 
-    ```bash
-    npm install --global netlify-cli
-    ```
+```bash
+npm install --global netlify-cli
+```
 
-2. Run `netlify login` and follow the instructions to log in and authorize Netlify
-3. Run `netlify init` and follow the instructions
-4. Confirm your build command (`npm run build`)
+{{< /tab >}}
+{{< tab "pnpm" >}}
 
-    The CLI will automatically detect the build settings (`npm run build`) and deploy directory (`public`), and will offer to automatically generate a [`netlify.toml` file](#netlifytoml-file) with those settings.
+```bash
+pnpm add --global netlify-cli
+```
 
-5. Build and deploy by pushing to Git
+{{< /tab >}}
+{{< tab "Yarn" >}}
 
-    The CLI will add a deploy key to the repository, which means your site will be automatically rebuilt on Netlify every time you `git push`.
+```bash
+yarn global add netlify-cli
+```
 
+{{< /tab >}}
+{{< tab "bun" >}}
 
-- More details from Netlify on [Netlify CLI](https://docs.netlify.com/site-deploys/create-deploys/#netlify-cli)
+```bash
+bun add --global netlify-cli
+```
 
+{{< /tab >}}
+{{< /tabs >}}
+
+{{< /step >}}
+{{< step >}}
+Run `netlify login`, then follow the prompts to authenticate.
+{{< /step >}}
+{{< step >}}
+Run `netlify init` and follow the prompts.
+{{< /step >}}
+{{< step >}}
+Confirm your build command (`npm run build`)
+
+The CLI detects the build command (`npm run build`) and publish directory (`public`), and offers to generate a [`netlify.toml` file](#netlifytoml-file) with those settings.
+{{< /step >}}
+{{< step >}}
+Build and deploy by pushing to Git
+
+The CLI adds a deploy key to your repository, so Netlify rebuilds your site automatically on each `git push`.
+
+{{< /step >}}
+{{< /steps >}}
+
+{{< callout context="tip" icon="bulb" >}}
+Learn more about the [Netlify CLI](https://docs.netlify.com/deploy/create-deploys/#netlify-cli) in the Netlify docs.
+{{< /callout >}}
 
 ### Set a Node.js Version
 
-If you are using a legacy [build image](https://docs.netlify.com/configure-builds/get-started/#build-image-selection) (Xenial) on Netlify, make sure that your Node.js version is set. Thulite requires `v18.14.1` or higher.
+If you use the legacy [build image](https://docs.netlify.com/build/configure-builds/overview/#build-image-selection) (Focal) on Netlify, make sure your Node.js version is set. Thulite requires `v24.0.4` or later.
 
-You can [specify your Node.js version in Netlify](https://docs.netlify.com/configure-builds/manage-dependencies/#node-js-and-javascript) using:
+You can [specify your Node.js version in Netlify](https://docs.netlify.com/build/configure-builds/manage-dependencies/#nodejs-and-javascript) using:
+
 - a [`.nvmrc`](https://github.com/nvm-sh/nvm#nvmrc) file in your base directory.
 - a `NODE_VERSION` environment variable in your site's settings using the Netlify project dashboard.
 - a `NODE_VERSION` environment variable in your site's `netlify.toml`, for example:
 
-    ```toml
-    [build.environment]
-      NODE_VERSION = "20.10.0"
-      NPM_VERSION = "10.2.3"
-    ```
+```toml {title="netlify.toml"}
+[build.environment]
+  DART_SASS_VERSION = "1.97.3"
+  GO_VERSION = "1.26.0"
+  HUGO_VERSION = "0.156.0"
+  NODE_VERSION = "24.13.1"
+  NPM_VERSION = "11.8.0"
+  TZ = "Europe/Amsterdam"
+```
 
 ## Using Netlify Functions
 
-No special configuration is required to use Netlify Functions with Thulite. Add a `netlify/functions` directory to your project root and follow [the Netlify Functions documentation](https://docs.netlify.com/functions/overview/) to get started!
+No special configuration is required to use Netlify Functions with Thulite. Add a `netlify/functions` directory to your project root, then follow [the Netlify Functions documentation](https://docs.netlify.com/build/functions/overview/) to get started.

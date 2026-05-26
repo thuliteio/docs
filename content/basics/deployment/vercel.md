@@ -14,43 +14,90 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-You can use [Vercel](http://vercel.com/) to deploy a Thulite site to their global edge network with zero configuration.
+Use [Vercel](http://vercel.com/) to deploy a Thulite site to its global edge network with minimal setup.
 
-This guide includes instructions for deploying to Vercel through the website UI or Vercel's CLI.
+This guide shows how to deploy with the Vercel web UI or Vercel CLI.
 
 ## How to deploy
 
-You can deploy to Vercel through the website UI or using Vercel’s CLI (command line interface).
+Deploy to Vercel using the web UI or Vercel CLI.
 
 ### Website UI Deployment
 
-1. Push your code to your online Git repository (GitHub, GitLab, BitBucket).
-2. [Import your project](https://vercel.com/new) into Vercel.
-3. Vercel will automatically detect Thulite and configure the right settings.
-4. Your application is deployed!
+{{< steps >}}
+{{< step >}}
+Push your code to a remote Git repository (GitHub, GitLab, or Bitbucket).
+{{< /step >}}
+{{< step >}}
+[Import your project](https://vercel.com/new) into Vercel.
+{{< /step >}}
+{{< step >}}
+Vercel automatically detects Thulite and configures the correct settings.
+{{< /step >}}
+{{< step >}}
+Your application is deployed!
+{{< /step >}}
+{{< /steps >}}
 
-After your project has been imported and deployed, all subsequent pushes to branches will generate [Preview Deployments](https://vercel.com/docs/concepts/deployments/preview-deployments), and all changes made to the Production Branch (commonly “main”) will result in a [Production Deployment](https://vercel.com/docs/concepts/deployments/environments#production).
+After your project is imported and deployed, subsequent branch pushes generate [Preview Deployments](https://vercel.com/docs/deployments/environments#preview-environment-pre-production), and changes to the production branch (commonly "main") trigger a [Production Deployment](https://vercel.com/docs/deployments/environments#production-environment).
 
-
-- Learn more about Vercel's [Git Integration](https://vercel.com/docs/concepts/git).
-
+{{< callout context="tip" icon="bulb" >}}
+Learn more about Vercel's [Git Integration](https://vercel.com/docs/git).
+{{< /callout >}}
 
 ### CLI Deployment
 
-1. Install the [Vercel CLI](https://vercel.com/cli) and run `vercel` to deploy.
+{{< steps >}}
+{{< step >}}
+Install the [Vercel CLI](https://vercel.com/docs/cli), then run `vercel` to deploy.
 
-    ```bash
-    npm install -g vercel && vercel
-    ```
+{{< tabs "install-vercel-cli" >}}
+{{< tab "npm" >}}
 
-2. Vercel will automatically detect Thulite and configure the right settings.
-3. When asked `Want to override the settings? [y/N]`, choose `N`.
-4. Your application is deployed!
+```bash
+npm install --global vercel && vercel
+```
 
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm add --global vercel && vercel
+```
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn global add vercel && vercel
+```
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun add --global vercel && vercel
+```
+
+{{< /tab >}}
+{{< /tabs >}}
+
+{{< /step >}}
+{{< step >}}
+Vercel automatically detects Thulite and configures the correct settings.
+{{< /step >}}
+{{< step >}}
+When asked `Want to override the settings? [y/N]`, choose `N`.
+{{< /step >}}
+{{< step >}}
+Your application is deployed!
+{{< /step >}}
+{{< /steps >}}
 
 ### Project config with vercel.json
 
-You can use `vercel.json` to override the default behavior of Vercel and to configure additional settings. For example, you may wish to attach headers to HTTP responses from your Deployments.
+Use `vercel.json` to override Vercel defaults and configure additional settings. For example, you can attach headers to HTTP responses from your deployments.
 
-
-- Learn more about [Vercel's project configuration](https://vercel.com/docs/project-configuration).
+{{< callout context="tip" icon="bulb" >}}
+Learn more about [Vercel's project configuration](https://vercel.com/docs/project-configuration).
+{{< /callout >}}

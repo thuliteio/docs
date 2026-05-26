@@ -14,15 +14,28 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-You can deploy your Thulite project to [Render](https://render.com/), a service to build websites with free TLS certificates, a global CDN, DDoS protection, private networks, and auto deploys from Git.
+Deploy your Thulite project to [Render](https://render.com/), a platform for building sites with free TLS certificates, a global CDN, DDoS protection, private networks, and auto-deploys from Git.
 
 ## How to deploy
 
-1. Create a [render.com account](https://dashboard.render.com/) and sign in
-2. Click the **New +** button from your dashboard and select **Static Site**
-3. Connect your [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/) repository or alternatively enter the public URL of a public repository
-4. Give your website a name, select the branch and specify the build command and publish directory
-   - **build command:** `npm run build`
-   - **publish directory:** `public`
-   - **Environment variables (advanced)**: By default, Render uses Node.js 14.17.0, but Thulite [requires a higher version](/install/auto/#prerequisites). Add an environment variable with a **Variable key** of `NODE_VERSION` and a **Value** of `18.14.1` or higher to tell Render to use a compatible Node.js version. Alternatively, add a [`.node-version`](https://render.com/docs/node-version) or [`.nvmrc`](https://render.com/docs/node-version) file to your project to specify a Node.js version.
-5. Click the **Create Static Site** button
+{{< steps >}}
+{{< step >}}
+Create a [render.com account](https://dashboard.render.com/register) and sign in
+{{< /step >}}
+{{< step >}}
+In your dashboard, click New+ and select Static Site.
+{{< /step >}}
+{{< step >}}
+Connect your [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/) repository, or enter the URL of a public repository.
+{{< /step >}}
+{{< step >}}
+Name your site, select the branch, and set the build command and publish directory:
+
+- build command: `npm run build`
+- publish directory: `public`
+- Environment variables (advanced): By default, Render uses Node.js 14.17.0, but Thulite [requires a higher version](/start-here/getting-started/#prerequisites). Add an environment variable with the key `NODE_VERSION` and a value of `24.0.4` or higher to use a compatible Node.js version. Alternatively, add a [`.node-version`](https://render.com/docs/node-version) or [`.nvmrc`](https://render.com/docs/node-version) file to specify a Node.js version.
+{{< /step >}}
+{{< step >}}
+Click Create Static Site.
+{{< /step >}}
+{{< /steps >}}
