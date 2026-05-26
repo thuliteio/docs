@@ -16,6 +16,16 @@ params:
 ---
 Tailwind CSS is a Thulite starter built for utility-first styling and rapid iteration. It provides a streamlined setup for customizing layout and design with [Tailwind CSS](https://tailwindcss.com/).
 
+{{< picture
+  src="images/tailwind-css-starter.jpg"
+  process="fill 1350x900"
+  lqip="18x webp q20"
+  decoding="async"
+  fetchpriority="auto"
+  loading="eager"
+  alt="Tailwind CSS Thulite starter homepage preview"
+>}}
+
 ## Links
 
 - [View repository](https://github.com/thuliteio/tailwindcss-starter)

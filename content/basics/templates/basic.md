@@ -16,6 +16,16 @@ params:
 ---
 Basic is a minimal Thulite starter built for simplicity and speed. It gives you a clean foundation for straightforward sites and quick customization.
 
+{{< picture
+  src="images/basic-starter.jpg"
+  process="fill 1350x900"
+  lqip="18x webp q20"
+  decoding="async"
+  fetchpriority="auto"
+  loading="eager"
+  alt="Basic Thulite starter homepage preview"
+>}}
+
 ## Links
 
 - [View repository](https://github.com/thuliteio/basic-starter)

@@ -16,6 +16,16 @@ params:
 ---
 Bootstrap is a Thulite starter built on [Bootstrap](https://getbootstrap.com/) for responsive, component-based development. It includes preconfigured styles and components so you can ship polished pages faster.
 
+{{< picture
+  src="images/bootstrap-starter.jpg"
+  process="fill 1350x900"
+  lqip="18x webp q20"
+  decoding="async"
+  fetchpriority="auto"
+  loading="eager"
+  alt="Bootstrap Thulite starter homepage preview"
+>}}
+
 ## Links
 
 - [View repository](https://github.com/thuliteio/bootstrap-starter)

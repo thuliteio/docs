@@ -16,6 +16,16 @@ params:
 ---
 Doks is a modern documentation theme for Thulite built for clarity, speed, and ease of use. Its clean layout and strong readability make it ideal for technical docs, knowledge bases, and project wikis. It includes configurable search, code highlighting, and built-in support for internationalization and versioning.
 
+{{< picture
+  src="images/doks-theme.jpg"
+  process="fill 1350x900"
+  lqip="18x webp q20"
+  decoding="async"
+  fetchpriority="auto"
+  loading="eager"
+  alt="Doks Thulite theme homepage preview"
+>}}
+
 ## Links
 
 - [View repository](https://github.com/thuliteio/doks)
