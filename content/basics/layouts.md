@@ -1,7 +1,7 @@
 ---
 title: "Layouts"
-description: "__Layouts__ are files that live in the `layouts` directory of your Thulite project. They are used to provide a reusable UI structure, such as a page template."
-summary: "__Layouts__ are files that live in the `layouts` directory of your Thulite project. They are used to provide a reusable UI structure, such as a page template."
+description: "Use layouts to control how pages and sections are rendered in Thulite."
+summary: "A concise guide to layout files, lookup flow, and common customization points."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
@@ -14,43 +14,59 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-__Layouts__ are files that live in the `layouts` directory of your Thulite project. They are used to provide a reusable UI structure, such as a page template.
+Layouts are templates in `layouts/` that control how your content is rendered.
+
+In Thulite, content comes from `content/` and layout logic comes from `layouts/`.
+
+## Core layout files
+
+This project uses three main layout entry points:
+
+- `layouts/home.html` for the home page
+- `layouts/list.html` for section and list pages
+- `layouts/single.html` for regular content pages
+
+Shared template pieces live in `layouts/_partials/`.
 
 ## Examples
 
-For example, the default Thulite [base template](https://gohugo.io/templates/base/#define-the-base-template) looks like this:
+`single.html` defines the main docs page structure and renders page content:
 
-```html title="baseof.html"
-<!doctype html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
-  {{ partial "head/head.html" . }}
-  {{ partial "head/body-class.html" . }}
-  <body class="{{ delimit (.Scratch.Get "class") " " }}">
-    {{ block "main" . }}{{ end }}
-    {{ if templates.Exists "partials/footer/script-footer.html" -}}
-      {{ partial "footer/script-footer.html" . }}
-    {{ else -}}
-      {{ partial "footer/script-footer-core.html" . }}
-    {{ end -}}
-  </body>
-</html>
+```html {title="layouts/single.html"}
+{{ define "main" }}
+  <div class="page-header d-flex flex-row justify-content-between align-items-start">
+    <div>
+      <h1>{{ .Title }}</h1>
+    </div>
+  </div>
+  {{ .Content }}
+{{ end }}
 ```
 
-## Hugo documentation
+## How layout selection works
+
+Hugo picks the most specific matching template for each page type.
+
+In practice:
+
+- Home page content uses `home.html`
+- Section pages use `list.html`
+- Regular pages use `single.html`
+
+Start by editing these files, then extract repeated UI into partials.
+
+## Learn more
 
 Thulite leverages Hugo's [templates](https://gohugo.io/templates/). Here are some relevant topics:
 
+<!-- markdownlint-disable MD034 -->
 {{< card-grid >}}
-{{< link-card src="svgs/simple-icons/hugo.svg" title="Introduction to templating" description="Create templates to render your content, resources, and data." href="https://gohugo.io/templates/introduction/" target="_blank" >}}
-{{< link-card src="svgs/simple-icons/hugo.svg" title="Template lookup order" description="Hugo uses a template for a given page, starting from the most specific." href="https://gohugo.io/templates/lookup-order/" target="_blank" >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Introduction to templating" description="Understand Hugo template fundamentals." href="https://gohugo.io/templates/introduction/" target="_blank" >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Template lookup order" description="See how Hugo selects a template for each page." href="https://gohugo.io/templates/lookup-order/" target="_blank" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card src="svgs/simple-icons/hugo.svg" title="Base templates and blocks" description="Base and block constructs define the outer shell of your master templates." href="https://gohugo.io/templates/base/" target="_blank" >}}
-{{< link-card src="svgs/simple-icons/hugo.svg" title="Single page templates" description="Single page templates are the primary view of content in Hugo." href="https://gohugo.io/templates/single-page-templates/" target="_blank" >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Template types" description="Reference for home, list, single, and more." href="https://gohugo.io/templates/types/" target="_blank" >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Partials" description="Build reusable template fragments." href="https://gohugo.io/templates/types/#partial" target="_blank" >}}
 {{< /card-grid >}}
-
-{{< card-grid >}}
-{{< link-card src="svgs/simple-icons/hugo.svg" title="List page templates" description="List page templates render multiple pieces of content in a HTML page." href="https://gohugo.io/templates/lists/" target="_blank" >}}
-{{< link-card src="svgs/simple-icons/hugo.svg" title="Partial templates" description="Partials are context-aware components in your list and page templates." href="https://gohugo.io/templates/partials/" target="_blank" >}}
-{{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->
