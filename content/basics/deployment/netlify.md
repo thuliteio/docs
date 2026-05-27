@@ -154,3 +154,11 @@ You can [specify your Node.js version in Netlify](https://docs.netlify.com/build
 ## Using Netlify Functions
 
 No special configuration is required to use Netlify Functions with Thulite. Add a `netlify/functions` directory to your project root, then follow [the Netlify Functions documentation](https://docs.netlify.com/build/functions/overview/) to get started.
+
+## Learn more
+
+<!-- markdownlint-disable MD034 -->
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Host on Netlify" description="Official Hugo guide for deploying sites on Netlify." href="https://gohugo.io/host-and-deploy/host-on-netlify/" target="_blank" >}}
+{{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->

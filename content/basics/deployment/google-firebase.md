@@ -95,3 +95,11 @@ firebase deploy
 
 {{< /step >}}
 {{< /steps >}}
+
+## Learn more
+
+<!-- markdownlint-disable MD034 -->
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Host on Firebase" description="Official Hugo guide for deploying sites on Firebase." href="https://gohugo.io/host-and-deploy/host-on-firebase/" target="_blank" >}}
+{{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->

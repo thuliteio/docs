@@ -39,3 +39,11 @@ Name your site, select the branch, and set the build command and publish directo
 Click Create Static Site.
 {{< /step >}}
 {{< /steps >}}
+
+## Learn more
+
+<!-- markdownlint-disable MD034 -->
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Host on Render" description="Official Hugo guide for deploying sites on Render." href="https://gohugo.io/host-and-deploy/host-on-render/" target="_blank" >}}
+{{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->

@@ -155,3 +155,11 @@ Update the preview script to run `wrangler` instead of Thulite's built-in previe
 ## Troubleshooting
 
 If you run into errors, check whether your local `node` version (`node -v`) matches the `NODE_VERSION` environment variable in Cloudflare Pages settings.
+
+## Learn more
+
+<!-- markdownlint-disable MD034 -->
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Host on Cloudflare" description="Official Hugo guide for deploying sites on Cloudflare Pages." href="https://gohugo.io/host-and-deploy/host-on-cloudflare/" target="_blank" >}}
+{{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->

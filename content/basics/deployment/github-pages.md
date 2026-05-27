@@ -152,3 +152,11 @@ sub.mydomain.com
 
 This will deploy your site at your custom domain instead of `user.github.io`. Don't forget to also [configure DNS for your domain provider](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain).
 {{< /callout >}}
+
+## Learn more
+
+<!-- markdownlint-disable MD034 -->
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Host on GitHub Pages" description="Official Hugo guide for deploying sites on GitHub Pages." href="https://gohugo.io/host-and-deploy/host-on-github-pages/" target="_blank" >}}
+{{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->

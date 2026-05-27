@@ -72,11 +72,27 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
+    env:
+      HUGO_VERSION: 0.157.0
     steps:
       - uses: actions/checkout@v3
         with:
           submodules: true
           lfs: false
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -86,17 +102,17 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
+          app_location: "public" # Pre-built app content directory
           api_location: "api" # Api source code path - optional
-          output_location: "public" # Built app content directory - optional
+          output_location: "" # Already built, no further build needed
+          skip_app_build: true
           ###### End of Repository/Build Configurations ######
-        env:
-          HUGO_VERSION: 0.161.1
-
 ```
 
-## Resources
+## Learn more
 
-- [Deploy a Hugo site to Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo)
-- [Custom Hugo version](https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo#custom-hugo-version)
-- [Microsoft Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/)
+<!-- markdownlint-disable MD034 -->
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Host on Azure Static Web Apps" description="Official Hugo guide for deploying sites on Azure Static Web Apps." href="https://gohugo.io/host-and-deploy/host-on-azure-static-web-apps/" target="_blank" >}}
+{{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->

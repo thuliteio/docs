@@ -101,3 +101,11 @@ Use `vercel.json` to override Vercel defaults and configure additional settings.
 {{< callout context="tip" icon="bulb" >}}
 Learn more about [Vercel's project configuration](https://vercel.com/docs/project-configuration).
 {{< /callout >}}
+
+## Learn more
+
+<!-- markdownlint-disable MD034 -->
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Host on Vercel" description="Official Hugo guide for deploying sites on Vercel." href="https://gohugo.io/host-and-deploy/host-on-vercel/" target="_blank" >}}
+{{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->
