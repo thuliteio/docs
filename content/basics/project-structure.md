@@ -31,12 +31,6 @@ Most projects include these key directories and files:
 
 ## Example tree
 
-{{< callout context="note" icon="info-circle" >}}
-
-For complete details, see the [Project Structure reference](/reference/project-structure/).
-
-{{< /callout >}}
-
 Typical starter structure:
 
 {{< tree >}}
