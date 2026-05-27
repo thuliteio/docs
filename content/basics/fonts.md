@@ -15,7 +15,7 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-Thulite recommends hosting fonts in your project with Fontsource.
+Thulite recommends hosting fonts in your project with [Fontsource](https://fontsource.org).
 
 This keeps font delivery local, predictable, and privacy-friendly.
 
