@@ -19,6 +19,10 @@ Shortcodes let you use reusable template snippets inside Markdown content.
 
 In Thulite, shortcode templates live in `layouts/_shortcodes/` and are called from page content with Hugo shortcode syntax.
 
+{{< callout context="tip" icon="bulb" >}}
+Install the VS Code extension for shortcode snippets and completions: [Hugo Shortcodes for VS Code](https://marketplace.visualstudio.com/items?itemName=thuliteio.hugo-shortcodes).
+{{< /callout >}}
+
 ## Use shortcodes in Markdown
 
 Examples used in this project:
