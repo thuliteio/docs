@@ -60,7 +60,9 @@ Keep shortcodes focused and reusable. If logic becomes complex, move it to a par
 
 ## Learn more
 
+<!-- markdownlint-disable MD034 -->
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Shortcodes" description="Write and use Hugo shortcodes in content files." href="https://gohugo.io/content-management/shortcodes/" target="_blank" >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Shortcode templates" description="Build shortcode templates and pass arguments." href="https://gohugo.io/templates/shortcode/" target="_blank" >}}
 {{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->
