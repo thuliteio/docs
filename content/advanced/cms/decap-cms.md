@@ -75,5 +75,5 @@ collections:
 
 ## Resources
 
-- [How to integrate Decap CMS with Hugo](https://decapcms.org/docs/hugo/).
+- [How to integrate Decap CMS with Hugo](https://decapcms.org/docs/hugo/)
 - [Hugo template with Decap CMS](https://github.com/decaporg/one-click-hugo-cms)

@@ -156,4 +156,4 @@ In production, Tina CMS can commit changes directly to your GitHub repository. F
 
 ## Resources
 
-- [Hugo + TinaCMS Setup Guide](https://tina.io/docs/frameworks/hugo/).
+- [Hugo + TinaCMS Setup Guide](https://tina.io/docs/frameworks/hugo)

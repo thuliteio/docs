@@ -19,8 +19,8 @@ Use this section to improve crawlability, metadata quality, and search visibilit
 
 ## SEO Guides
 
-{{< link-card
-  title="Thulite SEO"
-  description="Official documentation for SEO configuration, metadata, and validation in Thulite projects."
-  href="https://seo.thulite.io/"
->}}
+<!-- markdownlint-disable MD034 -->
+{{< card-grid >}}
+{{< link-card src="svgs/thulite.svg" title="Thulite SEO" description="Complete SEO docs for metadata, structured data, and search visibility." href="https://seo.thulite.io/" target="_blank" >}}
+{{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->

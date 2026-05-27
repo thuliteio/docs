@@ -18,5 +18,5 @@ params:
 
 ## Resources
 
-- [The Hugo CMS for visual page building](https://cloudcannon.com/hugo-cms/)
+- [The Hugo CMS for all your projects](https://cloudcannon.com/hugo-cms/)
 - [Hugo Support in CloudCannon](https://cloudcannon.com/blog/hugo-support-in-cloudcannon/)

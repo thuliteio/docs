@@ -41,5 +41,5 @@ Add to `layouts/partials/head/script-header.html`:
 
 ## Resources
 
-- [Content Security Policy](https://github.com/plausible/docs/issues/20)
+- [Improve CSP instructions](https://github.com/plausible/docs/issues/20)
 - [Plausible Analytics Docs](https://plausible.io/docs/)

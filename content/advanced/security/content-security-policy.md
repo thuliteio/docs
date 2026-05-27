@@ -52,8 +52,10 @@ In browser dev tools, confirm:
 - No unexpected external domains
 - No CSP violations on key pages
 
-## Related
+## Learn more
 
-- [Headers](/advanced/security/headers/)
-- [Optimization](/advanced/performance/optimization/)
-- [Caching](/advanced/performance/caching/)
+<!-- markdownlint-disable MD034 -->
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/mdnwebdocs.svg" title="Content Security Policy (CSP)" description="MDN guide for CSP directives, rollout strategy, and common pitfalls." href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP" target="_blank" >}}
+{{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->

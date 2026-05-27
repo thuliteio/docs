@@ -46,6 +46,6 @@ Add your tracking ID to `config/_default/hugo.toml`:
 
 ## Resources
 
-- [Set up Analytics for a website and/or app](https://support.google.com/analytics/answer/9304153?sjid=14124496534625981645-EU)
-- [The Google tag and Tag Manager](https://developers.google.com/analytics/devguides/collection/ga4/tag-options)
-- [Introduction to Google Analytics 4](https://developers.google.com/analytics/devguides/collection/ga4)
+- [Set up Analytics for a website and/or app](https://support.google.com/analytics/answer/9304153)
+- [Tagging for Google Analytics](https://developers.google.com/analytics/devguides/collection/ga4/tag-options)
+- [Google Analytics for developers](https://developers.google.com/analytics/devguides/collection/ga4)

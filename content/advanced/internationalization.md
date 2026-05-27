@@ -20,10 +20,20 @@ Internationalization (i18n) in Thulite is powered by Hugo's multilingual mode.
 
 ## Quick setup
 
-1. Define your languages in `config/_default/languages.toml`.
-2. Create language-specific content directories (for example, `content/en`, `content/de`, `content/nl`).
-3. Add translated pages with matching paths in each language directory.
-4. Add UI string translations in `i18n/*.toml`.
+{{< steps >}}
+{{< step >}}
+Define your languages in `config/_default/languages.toml`.
+{{< /step >}}
+{{< step >}}
+Create language-specific content directories (for example, `content/en`, `content/de`, `content/nl`).
+{{< /step >}}
+{{< step >}}
+Add translated pages with matching paths in each language directory.
+{{< /step >}}
+{{< step >}}
+Add UI string translations in `i18n/*.toml`.
+{{< /step >}}
+{{< /steps >}}
 
 ## Configure languages
 
@@ -69,6 +79,10 @@ other = "Read more"
 
 Use Hugo's `i18n` function in templates to render translated strings.
 
-## Resources
+## Learn more
 
-- [Multilingual mode](https://gohugo.io/content-management/multilingual/)
+<!-- markdownlint-disable MD034 -->
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Multilingual mode" description="Official Hugo guide to configure and manage multilingual sites." href="https://gohugo.io/content-management/multilingual/" target="_blank" >}}
+{{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->

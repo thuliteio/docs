@@ -540,6 +540,8 @@
       "svg-netlify",
       "svg-plausibleanalytics",
       "svg-png",
+      "svg-purgecss",
+      "svg-quicklink",
       "svg-render",
       "svg-rocket",
       "svg-sass",
