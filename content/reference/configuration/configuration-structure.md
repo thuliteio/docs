@@ -70,9 +70,11 @@ Overrides for your next environment.
 
 Overrides for your production environment.
 
+<!-- markdownlint-disable MD034 -->
 {{< callout context="tip" icon="rocket" >}}
 Set `baseurl` in `hugo.toml` to the absolute URL (protocol, host, path, and trailing slash) of your published site (e.g., https://www.example.org/docs/).
 {{< /callout >}}
+<!-- markdownlint-enable MD034 -->
 
 ## `babel.config.js`
 

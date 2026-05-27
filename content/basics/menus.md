@@ -16,7 +16,6 @@ params:
 ---
 Create menus by defining entries, localizing each entry, and rendering the resulting data structure.
 
-
 ## Examples
 
 For example, to define entries for the main menu:
