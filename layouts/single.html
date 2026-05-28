@@ -37,7 +37,11 @@
 			{{ end }}
 			<div class="page-header d-flex flex-row justify-content-between align-items-start">
 				<div>
-					<h1>{{ .Title }}</h1>
+					{{ $lvl0 := .FirstSection.Title }}
+					{{ if eq $lvl0 "Start Here" -}}
+						{{ $lvl0 = "Learn" }}
+					{{ end -}}
+					<h1 class="DocSearch-lvl0" id="{{ $lvl0 }}">{{ .Title }}</h1>
 					<!-- <p class="lead">{{ .Params.lead | safeHTML }}</p> -->
 				</div>
 				{{ if site.Params.doks.aiButtons -}}
@@ -72,5 +76,4 @@
 			</div>
 		{{ end }}
 	</div>
-	{{ partial "main/lvl0" . }}
 {{ end }}
