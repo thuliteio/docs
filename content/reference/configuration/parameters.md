@@ -55,7 +55,9 @@ Controls how image render hook issues are handled. A string — `ignore`, `warni
 
 ### link
 
+<!-- markdownlint-disable MD024 -->
 #### errorLevel
+<!-- markdownlint-enable MD024 -->
 
 Controls how link render hook issues are handled. A string — `ignore`, `warning`, or `error`.
 

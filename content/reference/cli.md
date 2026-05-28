@@ -32,14 +32,12 @@ npm create thulite@latest [DIRECTORY] [TEMPLATE] -- [OPTIONS]
 pnpm create thulite@latest [DIRECTORY] [TEMPLATE] [OPTIONS]
 ```
 
-
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
 yarn create thulite@latest [DIRECTORY] [TEMPLATE] [OPTIONS]
 ```
-
 
 {{< /tab >}}
 {{< tab "bun" >}}
@@ -74,7 +72,7 @@ The template to scaffold the project from. A string — must be one of the avail
 **Templates with recommended integrations (SEO and Images):**
 
 | Name | Description |
-|---|---|
+| --- | --- |
 | `doks` | Doks theme |
 | `bolt` | Bolt theme |
 | `tailwindcss-rec` | Tailwind CSS starter |
@@ -84,7 +82,7 @@ The template to scaffold the project from. A string — must be one of the avail
 **Templates without recommended integrations:**
 
 | Name | Description |
-|---|---|
+| --- | --- |
 | `tailwindcss` | Tailwind CSS starter |
 | `bootstrap` | Bootstrap starter |
 | `basic` | Basic starter |
@@ -109,7 +107,6 @@ pnpm create thulite@latest my-project -t tailwindcss-rec
 pnpm create thulite@latest my-project doks
 ```
 
-
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
@@ -118,7 +115,6 @@ yarn create thulite@latest my-project --template doks
 yarn create thulite@latest my-project -t tailwindcss-rec
 yarn create thulite@latest my-project doks
 ```
-
 
 {{< /tab >}}
 {{< tab "bun" >}}
@@ -161,7 +157,6 @@ pnpm create thulite@latest my-project --template basic-rec --immediate
 yarn create thulite@latest my-project --template basic-rec --immediate
 ```
 
-
 {{< /tab >}}
 {{< tab "bun" >}}
 
@@ -192,14 +187,12 @@ npm create thulite@latest my-project -- --overwrite
 pnpm create thulite@latest my-project --overwrite
 ```
 
-
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
 yarn create thulite@latest my-project --overwrite
 ```
-
 
 {{< /tab >}}
 {{< tab "bun" >}}
@@ -231,14 +224,12 @@ npm create thulite@latest my-project -- --template doks --no-interactive
 pnpm create thulite@latest my-project --template doks --no-interactive
 ```
 
-
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
 yarn create thulite@latest my-project --template doks --no-interactive
 ```
-
 
 {{< /tab >}}
 {{< tab "bun" >}}
@@ -272,14 +263,12 @@ npm create thulite@latest -- --help
 pnpm create thulite@latest --help
 ```
 
-
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
 yarn create thulite@latest --help
 ```
-
 
 {{< /tab >}}
 {{< tab "bun" >}}
