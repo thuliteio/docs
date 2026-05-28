@@ -38,6 +38,196 @@
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
+  from = "/basics/commands/"
+  to = "/reference/commands/"
+  status = 301
+
+[[redirects]]
+  from = "/basics/configuration/"
+  to = "/start-here/configuration/"
+  status = 301
+
+[[redirects]]
+  from = "/concepts/dependencies/"
+  to = "/start-here/concepts/"
+  status = 301
+
+[[redirects]]
+  from = "/concepts/why-thulite/"
+  to = "/start-here/concepts/"
+  status = 301
+
+[[redirects]]
+  from = "/contribute/"
+  to = "/start-here/"
+  status = 301
+
+[[redirects]]
+  from = "/editor-setup/"
+  to = "/start-here/editor-setup/"
+  status = 301
+
+[[redirects]]
+  from = "/getting-started/"
+  to = "/start-here/getting-started/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/analytics/"
+  to = "/advanced/analytics/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/analytics/*"
+  to = "/advanced/analytics/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/archetypes/"
+  to = "/basics/archetypes/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/cms/"
+  to = "/advanced/cms/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/cms/*"
+  to = "/advanced/cms/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/data/"
+  to = "/reference/configuration/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/cloudflare/"
+  to = "/basics/deployment/cloudflare-pages/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/github/"
+  to = "/basics/deployment/github-pages/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/gitlab/"
+  to = "/basics/deployment/gitlab-pages/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/"
+  to = "/basics/deployment/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/*"
+  to = "/basics/deployment/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/email-obfuscation/"
+  to = "/advanced/security/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/fonts/"
+  to = "/basics/fonts/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/images/"
+  to = "/basics/images/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/"
+  to = "/basics/integrations/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/tailwind"
+  to = "/basics/integrations/tailwindcss/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/tailwind/"
+  to = "/basics/integrations/tailwindcss/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/*"
+  to = "/basics/integrations/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/internationalization/"
+  to = "/advanced/internationalization/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/markdown/"
+  to = "/basics/markdown/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/scripts/"
+  to = "/basics/scripts/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/static/"
+  to = "/basics/project-structure/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/styles/"
+  to = "/basics/styles/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/themes/"
+  to = "/basics/templates/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/themes/bolt/"
+  to = "/basics/templates/bolt/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/themes/doks/"
+  to = "/basics/templates/doks/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/upgrade-to/v2/"
+  to = "/start-here/updating/"
+  status = 301
+
+[[redirects]]
+  from = "/install/auto/"
+  to = "/start-here/installation/"
+  status = 301
+
+[[redirects]]
+  from = "/install/manual/"
+  to = "/start-here/installation/"
+  status = 301
+
+[[redirects]]
+  from = "/reference/frontmatter/"
+  to = "/reference/markdown/overview/"
+  status = 301
+
+[[redirects]]
+  from = "/upgrade-thulite/"
+  to = "/start-here/updating/"
+  status = 301
+
+[[redirects]]
 	from = "/*"
 	to = "/404/"
 	status = 404
