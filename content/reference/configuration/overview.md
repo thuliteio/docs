@@ -1,8 +1,8 @@
 ---
 title: "Configuration Overview"
 linkTitle: "Overview"
-description: ""
-summary: ""
+description: "Quick navigation for the main Thulite configuration reference guides."
+summary: "Start here to find structure, settings, parameters, and front matter references."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
@@ -15,19 +15,20 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-.
+
+Use this section to find the core configuration references for your Thulite project.
 
 ## Configuration Guides
 
 {{< card-grid >}}
 {{< link-card
   title="Configuration Structure"
-  description=""
+  description="How configuration files are organized in a project."
   href="/reference/configuration/configuration-structure/"
 >}}
 {{< link-card
   title="Settings"
-  description=""
+  description="Main Hugo site settings from config/_default/hugo.toml."
   href="/reference/configuration/settings/"
 >}}
 {{< /card-grid >}}
@@ -35,12 +36,12 @@ params:
 {{< card-grid >}}
 {{< link-card
   title="Parameters"
-  description=""
+  description="Site parameter values from config/_default/params.toml."
   href="/reference/configuration/parameters/"
 >}}
 {{< link-card
   title="Page Frontmatter"
-  description=""
+  description="Page-level metadata fields used in content/*.md files."
   href="/reference/configuration/page-frontmatter/"
 >}}
 {{< /card-grid >}}

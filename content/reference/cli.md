@@ -18,9 +18,38 @@ This reference guide describes the `create-thulite` CLI and all of its options.
 
 ## Usage
 
+{{< tabs "usage" >}}
+{{< tab "npm" >}}
+
 ```bash
 npm create thulite@latest [DIRECTORY] [TEMPLATE] -- [OPTIONS]
 ```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm create thulite@latest [DIRECTORY] [TEMPLATE] [OPTIONS]
+```
+
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn create thulite@latest [DIRECTORY] [TEMPLATE] [OPTIONS]
+```
+
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun create thulite@latest [DIRECTORY] [TEMPLATE] [OPTIONS]
+```
+
+{{< /tab >}}
+{{< /tabs >}}
 
 The CLI creates a new Thulite project in the specified directory, using the specified template. When running in a TTY (interactive terminal), it starts in interactive mode and prompts for any missing information.
 
@@ -62,11 +91,46 @@ The template to scaffold the project from. A string — must be one of the avail
 
 **Examples:**
 
+{{< tabs "examples" >}}
+{{< tab "npm" >}}
+
 ```bash
 npm create thulite@latest my-project -- --template doks
 npm create thulite@latest my-project -- -t tailwindcss-rec
 npm create thulite@latest my-project doks
 ```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm create thulite@latest my-project --template doks
+pnpm create thulite@latest my-project -t tailwindcss-rec
+pnpm create thulite@latest my-project doks
+```
+
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn create thulite@latest my-project --template doks
+yarn create thulite@latest my-project -t tailwindcss-rec
+yarn create thulite@latest my-project doks
+```
+
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun create thulite@latest my-project --template doks
+bun create thulite@latest my-project -t tailwindcss-rec
+bun create thulite@latest my-project doks
+```
+
+{{< /tab >}}
+{{< /tabs >}}
 
 ### `--immediate`
 
@@ -76,9 +140,37 @@ A boolean flag. When set, the CLI will automatically install dependencies and st
 
 **Example:**
 
+{{< tabs "immediate" >}}
+{{< tab "npm" >}}
+
 ```bash
 npm create thulite@latest my-project -- --template basic-rec --immediate
 ```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm create thulite@latest my-project --template basic-rec --immediate
+```
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn create thulite@latest my-project --template basic-rec --immediate
+```
+
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun create thulite@latest my-project --template basic-rec --immediate
+```
+
+{{< /tab >}}
+{{< /tabs >}}
 
 ### `--overwrite`
 
@@ -86,9 +178,38 @@ A boolean flag. When set, any existing files in the target directory will be rem
 
 **Example:**
 
+{{< tabs "overwrite" >}}
+{{< tab "npm" >}}
+
 ```bash
 npm create thulite@latest my-project -- --overwrite
 ```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm create thulite@latest my-project --overwrite
+```
+
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn create thulite@latest my-project --overwrite
+```
+
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun create thulite@latest my-project --overwrite
+```
+
+{{< /tab >}}
+{{< /tabs >}}
 
 ### `--interactive` / `--no-interactive`
 
@@ -96,9 +217,38 @@ A boolean flag. Forces the CLI to run in interactive or non-interactive mode, ov
 
 **Example:**
 
+{{< tabs "no-interactive" >}}
+{{< tab "npm" >}}
+
 ```bash
 npm create thulite@latest my-project -- --template doks --no-interactive
 ```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm create thulite@latest my-project --template doks --no-interactive
+```
+
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn create thulite@latest my-project --template doks --no-interactive
+```
+
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun create thulite@latest my-project --template doks --no-interactive
+```
+
+{{< /tab >}}
+{{< /tabs >}}
 
 ### `--help`
 
@@ -108,6 +258,35 @@ A boolean flag. Prints the help message describing usage, available options, and
 
 **Example:**
 
+{{< tabs "help" >}}
+{{< tab "npm" >}}
+
 ```bash
 npm create thulite@latest -- --help
 ```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm create thulite@latest --help
+```
+
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn create thulite@latest --help
+```
+
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun create thulite@latest --help
+```
+
+{{< /tab >}}
+{{< /tabs >}}

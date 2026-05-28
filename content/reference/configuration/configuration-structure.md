@@ -89,6 +89,5 @@ The `postcss.config.js` file is where you configure [PostCSS](https://postcss.or
 <!-- markdownlint-disable MD034 -->
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Configuration" description="Overview of Hugo configuration concepts and file formats." href="https://gohugo.io/configuration/" target="_blank" >}}
-{{< link-card src="svgs/simple-icons/hugo.svg" title="All settings" description="Complete reference of Hugo configuration settings and defaults." href="https://gohugo.io/configuration/all/" target="_blank" >}}
 {{< /card-grid >}}
 <!-- markdownlint-enable MD034 -->

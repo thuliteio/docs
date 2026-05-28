@@ -21,6 +21,6 @@ Markdown is a lightweight markup language that lets you add formatting to plain 
 ## Markdown
 
 {{< card-grid >}}
-{{< link-card src="svgs/simple-icons/markdown.svg" title="Basic Syntax" href="/reference/markdown/basic-syntax/" >}}
-{{< link-card src="svgs/simple-icons/markdown.svg" title="Extended Syntax" href="/reference/markdown/extended-syntax/" >}}
+{{< link-card src="svgs/simple-icons/markdown.svg" title="Basic Syntax" description="Learn the core Markdown elements like headings, lists, links, images, and code blocks." href="/reference/markdown/basic-syntax/" >}}
+{{< link-card src="svgs/simple-icons/markdown.svg" title="Extended Syntax" description="Explore advanced Markdown features such as tables, footnotes, task lists, and definition lists." href="/reference/markdown/extended-syntax/" >}}
 {{< /card-grid >}}

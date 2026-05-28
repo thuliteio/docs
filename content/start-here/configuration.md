@@ -18,13 +18,13 @@ This page covers the main configuration tasks for a Thulite project.
 
 ## Update settings
 
-Update your [settings](/reference/settings/) in `./config/_default/hugo.toml`:
+Update your [settings](/reference/configuration/settings/) in `./config/_default/hugo.toml`:
 
 ```toml {title="hugo.toml"}
 title = "Thulite"
 baseurl = "http://localhost/"
 disableAliases = true
-disableHugoGeneratorInject = true
+disableHugoGeneratorInject = truehttp://localhost:3000/reference/configuration/settings/
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 enableGitInfo = false
@@ -73,7 +73,7 @@ copyRight = "Copyright (c) 2020-2026 Thulite"
 
 ## Update parameters
 
-Update your [parameters](/reference/parameters/) in `./config/_default/params.toml`:
+Update your [parameters](/reference/configuration/parameters/) in `./config/_default/params.toml`:
 
 ```toml {title="params.toml"}
 # Hugo
@@ -92,7 +92,7 @@ images = ["cover.png"]
 
 ## Update page frontmatter
 
-Update your [page frontmatter](/reference/page-frontmatter/) in `./content/*.md` files:
+Update your [page frontmatter](/reference/configuration/page-frontmatter/) in `./content/*.md` files:
 
 ```md {title="_index.md"}
 ---
