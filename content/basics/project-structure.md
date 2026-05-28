@@ -113,4 +113,4 @@ As a rule, keep your own CSS and JavaScript in `assets/`.
 
 `package.json` defines dependencies and scripts such as `npm run dev` and `npm run build`.
 
-You can use [dependencies and devDependencies](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file). For most Thulite projects, placing packages in `dependencies` is a practical default.
+You can use [dependencies and devDependencies](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file/). For most Thulite projects, placing packages in `dependencies` is a practical default.
