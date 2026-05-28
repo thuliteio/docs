@@ -15,7 +15,7 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-Use [Vercel](http://vercel.com/) to deploy a Thulite site to its global edge network with minimal setup.
+Use [Vercel](https://vercel.com/) to deploy a Thulite site to its global edge network with minimal setup.
 
 This guide shows how to deploy with the Vercel web UI or Vercel CLI.
 

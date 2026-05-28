@@ -15,7 +15,7 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-[Decap CMS](https://www.decapcms.org/) (formerly Netlify CMS) is an open-source, Git-based content management system.
+[Decap CMS](https://decapcms.org/) (formerly Netlify CMS) is an open-source, Git-based content management system.
 
 ## Example
 

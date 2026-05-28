@@ -43,4 +43,4 @@ Add to `layouts/partials/head/script-header.html`:
 ## Resources
 
 - [Improve CSP instructions](https://github.com/plausible/docs/issues/20)
-- [Plausible Analytics Docs](https://plausible.io/docs/)
+- [Plausible Analytics Docs](https://plausible.io/docs)

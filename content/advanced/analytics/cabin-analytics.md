@@ -19,7 +19,7 @@ params:
 
 ## Prerequisites
 
-To follow this guide, you'll need an existing [Thulite](https://thulite.io/) site and a [Cabin](https://withcabin.com/settings/domains) project.
+To follow this guide, you'll need an existing [Thulite](https://thulite.io/) site and a [Cabin](https://withcabin.com/signin) project.
 
 ## Add script
 
@@ -32,4 +32,4 @@ Add to `layouts/partials/head/script-header.html`:
 ## Resources
 
 - [Cabin Analytics Documentation](https://docs.withcabin.com/)
-- [Privacy law compliance](https://docs.withcabin.com/privacy.html)
+- [Privacy law compliance](https://docs.withcabin.com/privacy)

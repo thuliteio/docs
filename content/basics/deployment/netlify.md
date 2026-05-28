@@ -15,7 +15,7 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-[Netlify](https://netlify.com) provides hosting and serverless backend services for web apps and static sites. You can host any Thulite site on Netlify.
+[Netlify](https://www.netlify.com/) provides hosting and serverless backend services for web apps and static sites. You can host any Thulite site on Netlify.
 
 This guide shows how to deploy with the Netlify web UI or Netlify CLI.
 

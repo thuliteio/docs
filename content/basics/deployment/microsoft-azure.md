@@ -27,7 +27,7 @@ This guide shows how to deploy a Thulite site hosted on GitHub using Visual Stud
 
 To follow this guide, you need:
 
-- An Azure account and subscription key. You can create a [free Azure account here](https://azure.microsoft.com/free).
+- An Azure account and subscription key. You can create a [free Azure account here](https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account?icid=azurefreeaccount).
 - Your app code pushed to [GitHub](https://github.com/).
 - The [SWA Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps) in [Visual Studio Code](https://code.visualstudio.com/).
 

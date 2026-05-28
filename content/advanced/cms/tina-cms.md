@@ -149,11 +149,11 @@ export default defineConfig({
 });
 ```
 
-Learn more about collections in the [Tina docs](https://tina.io/docs/reference/collections/).
+Learn more about collections in the [Tina docs](https://tina.io/docs/reference/collections).
 {{< /step >}}
 {{< step >}}
 
-In production, Tina CMS can commit changes directly to your GitHub repository. For production setup, you can use [TinaCloud](https://tina.io/docs/tinacloud) or self-host the [Tina Data Layer](https://tina.io/docs/self-hosted/overview/).
+In production, Tina CMS can commit changes directly to your GitHub repository. For production setup, you can use [TinaCloud](https://tina.io/docs/tinacloud) or self-host the [Tina Data Layer](https://tina.io/docs/self-hosted/overview).
 
 {{< /step >}}
 {{< /steps >}}

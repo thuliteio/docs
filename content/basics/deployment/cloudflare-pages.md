@@ -58,7 +58,7 @@ Use the following build settings:
 
 {{< steps >}}
 {{< step >}}
-Install the [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/get-started/) in your project:
+Install the [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/) in your project:
 {{< tabs "install-wrangler" >}}
 {{< tab "npm" >}}
 

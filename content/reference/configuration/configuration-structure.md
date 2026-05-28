@@ -45,11 +45,11 @@ A common Thulite project configuration directory might look like this:
 
 ### `hugo.toml`
 
-The `hugo.toml` file includes [Hugo configuration](https://gohugo.io/getting-started/configuration/) options for your Thulite project. Here you can specify taxonomies to use, build options, server options, and more.
+The `hugo.toml` file includes [Hugo configuration](https://gohugo.io/configuration/all/) options for your Thulite project. Here you can specify taxonomies to use, build options, server options, and more.
 
 ### `markup.toml`
 
-The `markup.toml` file is where you [configure rendering](https://gohugo.io/getting-started/configuration-markup/) of markup to HTML.
+The `markup.toml` file is where you [configure rendering](https://gohugo.io/configuration/markup/) of markup to HTML.
 
 ### `menus.toml`
 
@@ -57,7 +57,7 @@ The `menus.toml` file is where you [define menu entries](https://gohugo.io/conte
 
 ### `module.toml`
 
-The `module.toml` file specifies the [Hugo mounts](https://gohugo.io/hugo-modules/configuration/#module-configuration-mounts), logically linking `node_modules` directories to component folders (ex: `assets`, `layouts`) — making Thulite Integrations available in your Thulite project.
+The `module.toml` file specifies the [Hugo mounts](https://gohugo.io/configuration/module/#mounts), logically linking `node_modules` directories to component folders (ex: `assets`, `layouts`) — making Thulite Integrations available in your Thulite project.
 
 ### `params.toml`
 

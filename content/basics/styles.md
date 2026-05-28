@@ -62,7 +62,7 @@ Keep custom styles scoped to specific components or sections.
 <!-- markdownlint-disable MD034 -->
 
 {{< card-grid >}}
-{{< link-card src="svgs/simple-icons/sass.svg" title="SCSS documentation" description="Learn the SCSS language features." href="https://sass-lang.com/documentation" target="_blank" class="w-50" >}}
+{{< link-card src="svgs/simple-icons/sass.svg" title="SCSS documentation" description="Learn the SCSS language features." href="https://sass-lang.com/documentation/" target="_blank" class="w-50" >}}
 {{< /card-grid >}}
 
 <!-- markdownlint-enable MD034 -->

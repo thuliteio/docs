@@ -54,8 +54,8 @@ Keep scripts focused and avoid blocking page load. Use `DOMContentLoaded` to ens
 <!-- markdownlint-disable MD034 -->
 
 {{< card-grid >}}
-{{< link-card src="svgs/simple-icons/mdnwebdocs.svg" title="Document Object Model" description="Learn about the DOM API and how to interact with HTML elements." href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank" class="w-50" >}}
-{{< link-card src="svgs/simple-icons/mdnwebdocs.svg" title="DOM events" description="Reference for all available DOM events and event handling." href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank" class="w-50" >}}
+{{< link-card src="svgs/simple-icons/mdnwebdocs.svg" title="Document Object Model" description="Learn about the DOM API and how to interact with HTML elements." href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank" class="w-50" >}}
+{{< link-card src="svgs/simple-icons/mdnwebdocs.svg" title="DOM events" description="Reference for all available DOM events and event handling." href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events" target="_blank" class="w-50" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
