@@ -135,6 +135,10 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
     suffix = "" # title hugo.toml (default)
   [seo.description]
     summaryFallback = "" # "" (default)
+  [seo.description.length]
+    errorlevel = "warning" # warning (default), error, or ignore
+    min = 110
+    max = 160
   [seo.favicons]
     icon = "favicon.png" # favicon.png (default)
     svgIcon = "favicon.svg" # favicon.svg (default)
@@ -146,5 +150,5 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
     images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections
     newsArticle = [] # NewsArticle sections
-    blogPosting = ["blog"] # BlogPosting sections
+    blogPosting = [] # BlogPosting sections
     product = [] # Product sections
