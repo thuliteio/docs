@@ -239,7 +239,7 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://analytics.ahrefs.com/api/event https://plausible.io https://*.algolia.net https://*.algolianet.com https://*.algolia.io; font-src 'self'; img-src 'self' data:; script-src 'self' https://analytics.ahrefs.com/analytics.js https://plausible.io 'sha256-d2naYp9C7LmEhG5Ym6TxSt+GauEaZC4Z+I9rATlQz1E='; style-src 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'"
+    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://analytics.ahrefs.com/api/event https://plausible.io https://*.algolia.net https://*.algolianet.com https://*.algolia.io; font-src 'self'; img-src 'self' data:; script-src 'self' https://analytics.ahrefs.com/analytics.js https://plausible.io/js https://cdn.jsdelivr.net/npm/search-insights https://alg.li/insights-autocomplete 'sha256-d2naYp9C7LmEhG5Ym6TxSt+GauEaZC4Z+I9rATlQz1E='; style-src 'self' 'sha256-lYPgVeO0CacLwwUB4DyR9jnHyogvo7NBwUv0zXx/qBY='; frame-ancestors 'none'; base-uri 'self'; object-src 'none'"
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin"
     Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
