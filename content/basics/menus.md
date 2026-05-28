@@ -1,7 +1,7 @@
 ---
 title: "Menus"
-description: "Create menus by defining entries, localizing each entry, and rendering the resulting data structure."
-summary: "Create menus by defining entries, localizing each entry, and rendering the resulting data structure."
+description: "Configure site navigation menus in Thulite."
+summary: "A short guide to main, social, and footer menus."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
@@ -14,29 +14,43 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
-Create menus by defining entries, localizing each entry, and rendering the resulting data structure.
 
-## Examples
+Define navigation in `config/_default/menus/`.
 
-For example, to define entries for the main menu:
+In this project:
 
-```toml title="config/_default/menus.toml"
+- `menus.en.toml` defines English menus
+- `menus.nl.toml` defines Dutch menus
+- Add `menus.<lang>.toml` for additional languages when needed
+
+## Common menu sections
+
+- `main`: top navigation
+- `social`: social/profile links
+- `footer`: footer links
+
+Entries are ordered by `weight` (lower first).
+
+## Example
+
+Add a top-level item and a child item in `menus.en.toml`:
+
+
+```toml {title="config/_default/menus/menus.en.toml"}
 [[main]]
-  name = 'Home'
-  pageRef = '/'
+  name = "Documentation"
+  url = "https://docs.thulite.io/"
   weight = 10
 
 [[main]]
-  name = 'Products'
-  pageRef = '/products'
-  weight = 20
-
-[[main]]
-  name = 'Services'
-  pageRef = '/services'
-  weight = 30
-
+  identifier = "thulite-docs"
+  name = "Thulite"
+  url = "https://docs.thulite.io/"
+  parent = "Documentation"
+  weight = 11
 ```
+
+Use `pageRef` for internal pages and `url` for external links.
 
 ## Learn more
 

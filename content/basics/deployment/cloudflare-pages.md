@@ -5,7 +5,7 @@ summary: "You can deploy your Thulite project on Cloudflare Pages, a JAMstack pl
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false
-weight: 511
+weight: 512
 params:
   toc: true
   seo:
