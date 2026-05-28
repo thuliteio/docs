@@ -6,7 +6,7 @@ docsearch({
     indexName: 'thulite',
     apiKey: '5c2d653189f5d57721370f43d0deba25',
     // askAi: 'YOUR_ALGOLIA_ASSISTANT_ID',
-    insights: true
+    insights: false
 });
 
 const onClick = function () {
