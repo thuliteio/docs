@@ -3,7 +3,7 @@ title: "Start Here"
 description: ""
 summary: ""
 date: 2026-03-25T10:58:25+01:00
-lastmod: 2026-03-25T10:58:25+01:00
+lastmod: 2026-05-28T11:16:22+02:00
 draft: false
 weight: 100
 params:

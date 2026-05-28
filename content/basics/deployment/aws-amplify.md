@@ -3,7 +3,7 @@ title: "AWS Amplify"
 description: "Deploy a Thulite site to AWS Amplify with continuous deployment from Git."
 summary: "Deploy a Thulite site to AWS Amplify with Git-based builds."
 date: 2026-05-28T08:24:49+02:00
-lastmod: 2026-05-28T08:24:49+02:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 511
 params:

@@ -3,7 +3,7 @@ title: "Optimization"
 description: "Optimize Thulite builds and delivery with a few high-impact defaults."
 summary: "Minify output, reduce CSS/JS payload, defer non-critical work, and verify results."
 date: 2026-05-18T08:11:22+02:00
-lastmod: 2026-05-18T08:11:22+02:00
+lastmod: 2026-05-28T11:21:22+02:00
 draft: false
 weight: 413
 params:

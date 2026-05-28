@@ -3,7 +3,7 @@ title: "Extended Syntax"
 description: ""
 summary: ""
 date: 2026-05-12T12:44:29+02:00
-lastmod: 2026-05-12T12:44:29+02:00
+lastmod: 2026-05-28T11:23:00+02:00
 draft: false
 weight: 435
 params:

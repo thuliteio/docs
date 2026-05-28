@@ -3,7 +3,7 @@ title: "Markdown"
 description: "Write content quickly with the Markdown syntax used in Thulite pages."
 summary: "A short guide to everyday Markdown in Thulite."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 210
 params:

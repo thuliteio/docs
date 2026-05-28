@@ -3,7 +3,7 @@ title: "Gitlab Pages"
 description: "You can use GitLab Pages to host a Thulite site for your GitLab projects, groups, or user account."
 summary: "You can use GitLab Pages to host a Thulite site for your GitLab projects, groups, or user account."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 515
 params:

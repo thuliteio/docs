@@ -3,7 +3,7 @@ title: "Troubleshooting"
 description: "Diagnose and fix common issues with your Thulite installation and setup."
 summary: "Diagnose and fix common issues with your Thulite installation and setup."
 date: 2026-04-27T12:47:03+02:00
-lastmod: 2026-04-27T12:47:03+02:00
+lastmod: 2026-05-28T11:16:22+02:00
 draft: false
 weight: 140
 params:

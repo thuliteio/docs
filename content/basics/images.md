@@ -3,7 +3,7 @@ title: "Images"
 description: "Add and use images in your Thulite pages."
 summary: "A short guide to image locations and usage in Thulite."
 date: 2026-05-15T16:27:22+02:00
-lastmod: 2026-05-15T16:27:22+02:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 245
 params:

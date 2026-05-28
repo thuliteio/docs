@@ -3,7 +3,7 @@ title: "Plausible Analytics"
 description: "Plausible Analytics ia an easy to use and privacy-friendly Google Analytics alternative."
 summary: "Plausible Analytics ia an easy to use and privacy-friendly Google Analytics alternative."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+lastmod: 2026-05-28T11:21:22+02:00
 draft: false
 weight: 717
 params:

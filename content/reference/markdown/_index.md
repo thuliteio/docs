@@ -3,7 +3,7 @@ title: "Markdown"
 description: ""
 summary: ""
 date: 2026-05-12T12:43:49+02:00
-lastmod: 2026-05-12T12:43:49+02:00
+lastmod: 2026-05-28T11:23:00+02:00
 draft: false
 weight: 430
 params:

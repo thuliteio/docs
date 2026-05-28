@@ -3,7 +3,7 @@ title: "Parameters"
 description: ""
 summary: ""
 date: 2026-05-11T11:14:33+02:00
-lastmod: 2026-05-11T11:14:33+02:00
+lastmod: 2026-05-28T11:23:00+02:00
 draft: false
 weight: 427
 params:

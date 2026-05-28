@@ -3,7 +3,7 @@ title: "Shortcodes"
 description: "Use Hugo shortcodes in Markdown to add reusable UI patterns and dynamic content."
 summary: "A short guide to writing and using shortcodes in Thulite."
 date: 2026-05-15T16:27:08+02:00
-lastmod: 2026-05-15T16:27:08+02:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 215
 params:

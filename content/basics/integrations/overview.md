@@ -4,7 +4,7 @@ linkTitle: "Overview"
 description: "Official Thulite integrations extend functionality for styling, optimization, and metadata management."
 summary: "Official Thulite integrations extend functionality for styling, optimization, and metadata management."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 410
 toc: true

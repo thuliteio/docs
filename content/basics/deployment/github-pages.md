@@ -3,7 +3,7 @@ title: "Github Pages"
 description: "You can use GitHub Pages to host a Thulite website directly from a repository on GitHub.com."
 summary: "You can use GitHub Pages to host a Thulite website directly from a repository on GitHub.com."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 513
 params:

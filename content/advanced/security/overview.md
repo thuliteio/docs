@@ -4,7 +4,7 @@ linkTitle: "Overview"
 description: "Harden your Thulite site with practical security controls."
 summary: "Configure CSP, response headers, and email obfuscation to reduce common web risks."
 date: 2026-05-18T08:14:51+02:00
-lastmod: 2026-05-18T08:14:51+02:00
+lastmod: 2026-05-28T11:21:22+02:00
 draft: false
 weight: 510
 params:

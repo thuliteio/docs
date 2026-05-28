@@ -3,7 +3,7 @@ title: "Content Security Policy"
 description: "Define and enforce a strict Content Security Policy for Thulite sites."
 summary: "Start strict, allow only required sources, and roll out safely with report-only checks."
 date: 2026-05-18T08:13:01+02:00
-lastmod: 2026-05-18T08:13:01+02:00
+lastmod: 2026-05-28T11:21:22+02:00
 draft: false
 weight: 511
 params:

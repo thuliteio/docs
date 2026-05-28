@@ -4,7 +4,7 @@ linkTitle: "Overview"
 description: "Improve load speed and runtime efficiency in Thulite."
 summary: "Learn how to configure caching and apply high-impact optimization defaults."
 date: 2026-05-18T08:14:59+02:00
-lastmod: 2026-05-18T08:14:59+02:00
+lastmod: 2026-05-28T11:21:22+02:00
 draft: false
 weight: 410
 params:

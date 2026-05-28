@@ -3,7 +3,7 @@ title: "Cloudflare Pages"
 description: "You can deploy your Thulite project on Cloudflare Pages, a JAMstack platform for frontend developers to collaborate and deploy websites."
 summary: "You can deploy your Thulite project on Cloudflare Pages, a JAMstack platform for frontend developers to collaborate and deploy websites."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 512
 params:

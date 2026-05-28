@@ -3,7 +3,7 @@ title: "Scripts"
 description: "Add custom JavaScript to your site."
 summary: "Add custom JavaScript to your site."
 date: 2026-05-15T16:27:22+02:00
-lastmod: 2026-05-15T16:27:22+02:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 240
 params:

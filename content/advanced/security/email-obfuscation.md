@@ -3,7 +3,7 @@ title: "Email Obfuscation"
 description: "Obfuscate email addresses in Thulite with a simple, effective CSS technique."
 summary: "Obfuscate email addresses in Thulite with a simple, effective CSS technique."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+lastmod: 2026-05-28T11:21:22+02:00
 draft: false
 weight: 515
 toc: true

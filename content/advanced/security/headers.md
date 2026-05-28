@@ -3,7 +3,7 @@ title: "Headers"
 description: "Set secure HTTP response headers for your Thulite site."
 summary: "Use a small, high-impact header baseline and validate behavior after each deploy."
 date: 2026-05-18T08:13:33+02:00
-lastmod: 2026-05-18T08:13:33+02:00
+lastmod: 2026-05-28T11:21:22+02:00
 draft: false
 weight: 513
 params:

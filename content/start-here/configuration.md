@@ -3,7 +3,7 @@ title: "Configuration"
 description: "Update settings, parameters, and page frontmatter in your Thulite project."
 summary: "Update settings, parameters, and page frontmatter in your Thulite project."
 date: 2026-04-27T12:46:23+02:00
-lastmod: 2026-04-27T12:46:23+02:00
+lastmod: 2026-05-28T11:16:22+02:00
 draft: false
 weight: 115
 params:
@@ -107,6 +107,7 @@ draft: false
 
 ## Integrations
 
+<!-- markdownlint-disable MD034 -->
 {{< card-grid >}}
 {{< link-card
   title="Thulite SEO"
@@ -128,3 +129,4 @@ draft: false
   class="w-50"
 >}}
 {{< /card-grid >}}
+<!-- markdownlint-enable MD034 -->

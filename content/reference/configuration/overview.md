@@ -4,7 +4,7 @@ linkTitle: "Overview"
 description: "Quick navigation for the main Thulite configuration reference guides."
 summary: "Start here to find structure, settings, parameters, and front matter references."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+lastmod: 2026-05-28T11:23:00+02:00
 draft: false
 weight: 421
 params:

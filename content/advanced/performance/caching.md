@@ -3,7 +3,7 @@ title: "Caching"
 description: "Use build caches and immutable asset caching in Thulite."
 summary: "Configure Hugo caches, ship fingerprinted assets, and validate cache behavior."
 date: 2026-05-18T08:11:14+02:00
-lastmod: 2026-05-18T08:11:14+02:00
+lastmod: 2026-05-28T11:21:22+02:00
 draft: false
 weight: 411
 params:

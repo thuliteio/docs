@@ -3,7 +3,7 @@ title: "Archetypes"
 description: "Use archetypes to define default front matter for new content files."
 summary: "A short guide to creating and using archetypes in Thulite."
 date: 2026-03-25T08:23:03+01:00
-lastmod: 2026-03-25T08:23:03+01:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 220
 toc: true

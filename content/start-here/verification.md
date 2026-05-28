@@ -3,7 +3,7 @@ title: "Verification"
 description: "Validate that your Thulite project builds correctly and produces expected output before deployment."
 summary: "Validate that your Thulite project builds correctly and produces expected output before deployment."
 date: 2026-04-27T12:46:43+02:00
-lastmod: 2026-04-27T12:46:43+02:00
+lastmod: 2026-05-28T11:16:22+02:00
 draft: false
 weight: 125
 params:

@@ -3,7 +3,7 @@ title: "Layouts"
 description: "Use layouts to control how pages and sections are rendered in Thulite."
 summary: "A concise guide to layout files, lookup flow, and common customization points."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 225
 params:

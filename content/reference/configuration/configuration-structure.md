@@ -3,7 +3,7 @@ title: "Configuration Structure"
 description: ""
 summary: ""
 date: 2026-05-27T16:36:35+02:00
-lastmod: 2026-05-27T16:36:35+02:00
+lastmod: 2026-05-28T11:23:00+02:00
 draft: false
 weight: 423
 params:

@@ -3,7 +3,7 @@ title: "Microsoft Azure"
 description: "Azure is a cloud platform from Microsoft. You can deploy your Thulite site with Microsoft Azure's Static Web Apps service."
 summary: "Azure is a cloud platform from Microsoft. You can deploy your Thulite site with Microsoft Azure's Static Web Apps service."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 519
 params:

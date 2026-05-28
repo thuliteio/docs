@@ -3,7 +3,7 @@ title: "Bolt core"
 description: "Foundational integration for the Bolt theme."
 summary: "Foundational integration for the Bolt theme."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-03-24T08:10:51+01:00
+lastmod: 2026-05-28T11:19:41+02:00
 draft: false
 weight: 411
 params:
