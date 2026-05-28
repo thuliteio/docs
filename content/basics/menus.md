@@ -35,7 +35,6 @@ Entries are ordered by `weight` (lower first).
 
 Add a top-level item and a child item in `menus.en.toml`:
 
-
 ```toml {title="config/_default/menus/menus.en.toml"}
 [[main]]
   name = "Documentation"

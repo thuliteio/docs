@@ -49,6 +49,4 @@ Use partials for repeated UI blocks and shared rendering logic. Keep them small 
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Partial caching" description="Use partialCached for expensive partials." href="https://gohugo.io/functions/partials/includecached/" target="_blank" class="w-50" >}}
 {{< /card-grid >}}
 <!-- markdownlint-enable MD034 -->
-<!-- End of guide -->
 <!-- markdownlint-enable MD012 -->
-

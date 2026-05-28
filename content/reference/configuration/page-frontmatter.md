@@ -73,6 +73,7 @@ Whether to show the table of contents on the page. A boolean — default is `tru
 
 ### seo
 
+<!-- markdownlint-disable MD024 -->
 #### title
 
 The page-specific SEO title override. A string — default is `""`.
@@ -80,6 +81,7 @@ The page-specific SEO title override. A string — default is `""`.
 #### description
 
 The page-specific SEO description override. A string — default is `""`.
+<!-- markdownlint-enable MD024 -->
 
 #### canonical
 
