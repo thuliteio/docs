@@ -1,0 +1,43 @@
+// Put your custom (S)CSS variables here
+
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-responsive-font-sizes: true;
+
+// Prefix for :root CSS variables
+$variable-prefix: bs-;
+
+// scss-docs-start font-variables
+// stylelint-disable
+$font-family-sans-serif:
+    "Geist Variable",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    "Noto Sans",
+    "Liberation Sans",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+$font-family-monospace: "Geist Mono Variable", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// stylelint-enable
+$font-family-base: var(--#{$variable-prefix}font-sans-serif);
+$font-family-code: var(--#{$variable-prefix}font-monospace);
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-md: $font-size-base * 1.125;
+$font-size-xl: $font-size-base * 1.375;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-md: $font-size-base * 1.125;
+$font-size-sm: $font-size-base * 0.875;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.6;
+$headings-font-family: $font-family-monospace;
+$headings-font-weight: 300;
+$headings-line-height: 1.25;

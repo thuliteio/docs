@@ -1,41 +1,236 @@
-[build]
-  publish = "dist"
-  functions = "functions"
-
 [build.environment]
-  NODE_VERSION = "20.18.0"
-  NPM_VERSION = "10.8.2"
+  DART_SASS_VERSION = "1.97.3"
+  GO_VERSION = "1.26.0"
+  HUGO_VERSION = "0.156.0"
+  NODE_VERSION = "24.13.1"
+  NPM_VERSION = "11.8.0"
+  TZ = "Europe/Amsterdam"
 
-[context.production]
-  command = "bun run build"
+[build]
+  publish = "public"
+  command = """\
+  git config core.quotepath false && \
+  npm install && \
+  hugo build --gc --minify --baseURL "${URL}"
+  """
 
 [context.deploy-preview]
-  command = "bun run build"
+  command = """\
+  git config core.quotepath false && \
+  npm install && \
+  hugo build --gc --minify --baseURL "$DEPLOY_PRIME_URL"
+  """
 
 [context.branch-deploy]
-  command = "bun run build"
+  command = """\
+  git config core.quotepath false && \
+  npm install && \
+  hugo build --gc --minify --baseURL "$DEPLOY_PRIME_URL"
+  """
 
-[context.next]
-  command = "bun run build"
+[dev]
+  framework = "#custom"
+  command = "bun run dev"
+  targetPort = 1313
+  port = 8888
+  publish = "public"
+  autoLaunch = false
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
-  from = "/"
-  to = "/getting-started/"
+  from = "/basics/commands/"
+  to = "/reference/commands/"
   status = 301
-  force = true
 
 [[redirects]]
-  from = "/install/"
-  to = "/install/auto/"
+  from = "/basics/configuration/"
+  to = "/start-here/configuration/"
   status = 301
-  force = true
 
 [[redirects]]
-  from = "https://docs.gethyas.com/*"
-  to = "https://docs.thulite.io/:splat"
+  from = "/concepts/dependencies/"
+  to = "/start-here/concepts/"
   status = 301
-  force = true
+
+[[redirects]]
+  from = "/concepts/why-thulite/"
+  to = "/start-here/concepts/"
+  status = 301
+
+[[redirects]]
+  from = "/contribute/"
+  to = "/start-here/"
+  status = 301
+
+[[redirects]]
+  from = "/editor-setup/"
+  to = "/start-here/editor-setup/"
+  status = 301
+
+[[redirects]]
+  from = "/getting-started/"
+  to = "/start-here/getting-started/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/analytics/"
+  to = "/advanced/analytics/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/analytics/*"
+  to = "/advanced/analytics/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/archetypes/"
+  to = "/basics/archetypes/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/cms/"
+  to = "/advanced/cms/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/cms/*"
+  to = "/advanced/cms/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/data/"
+  to = "/reference/configuration/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/cloudflare/"
+  to = "/basics/deployment/cloudflare-pages/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/github/"
+  to = "/basics/deployment/github-pages/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/gitlab/"
+  to = "/basics/deployment/gitlab-pages/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/"
+  to = "/basics/deployment/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/*"
+  to = "/basics/deployment/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/email-obfuscation/"
+  to = "/advanced/security/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/fonts/"
+  to = "/basics/fonts/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/images/"
+  to = "/basics/images/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/"
+  to = "/basics/integrations/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/tailwind"
+  to = "/basics/integrations/tailwindcss/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/tailwind/"
+  to = "/basics/integrations/tailwindcss/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/*"
+  to = "/basics/integrations/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/internationalization/"
+  to = "/advanced/internationalization/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/markdown/"
+  to = "/basics/markdown/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/scripts/"
+  to = "/basics/scripts/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/static/"
+  to = "/basics/project-structure/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/styles/"
+  to = "/basics/styles/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/themes/"
+  to = "/basics/templates/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/themes/bolt/"
+  to = "/basics/templates/bolt/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/themes/doks/"
+  to = "/basics/templates/doks/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/upgrade-to/v2/"
+  to = "/start-here/updating/"
+  status = 301
+
+[[redirects]]
+  from = "/install/auto/"
+  to = "/start-here/installation/"
+  status = 301
+
+[[redirects]]
+  from = "/install/manual/"
+  to = "/start-here/installation/"
+  status = 301
+
+[[redirects]]
+  from = "/reference/frontmatter/"
+  to = "/reference/markdown/overview/"
+  status = 301
+
+[[redirects]]
+  from = "/upgrade-thulite/"
+  to = "/start-here/updating/"
+  status = 301
+
+[[redirects]]
+	from = "/*"
+	to = "/404/"
+	status = 404
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
@@ -44,12 +239,11 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    # Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+    # Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self' https://avatars.githubusercontent.com data:; script-src 'self' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk='; style-src 'self'"
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin"
     Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
     Cache-Control= '''
     public,
-    max-age=604800,
-    immutable'''
+    max-age=31536000'''
     Access-Control-Allow-Origin = "*"
