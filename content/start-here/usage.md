@@ -242,5 +242,5 @@ bun run build && bun run preview --host
 
 Once everything looks good in preview, deploy your site.
 
-- Follow the deployment guides in [Deploy overview](/basics/deploy/overview/).
+- Follow the deployment guides in [Deploy overview](/basics/deployment/overview/).
 - Use [Verification](/start-here/verification/) to validate quality and output before production updates.
