@@ -142,7 +142,7 @@ term
 
 ## Emoji
 
-{{< callout icon="outline/info-circle" >}}
+{{< callout icon="info-circle" >}}
 Copy the emoji shortcode from [Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/) by clicking on the emoji.
 {{< /callout >}}
 
@@ -163,7 +163,7 @@ That is so funny! :joy:
 
 ## Unsupported elements
 
-{{< callout icon="outline/info-circle" >}}
+{{< callout icon="info-circle" >}}
 Hugo does not [support](https://www.markdownguide.org/tools/hugo/#hugo-markdown-support) the highlight, subscript, and superscript elements. Use the HTML element itself instead.
 {{< /callout >}}
 
