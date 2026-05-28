@@ -18,7 +18,7 @@ This page helps you find answers to common problems with Thulite.
 
 ## Verify your setup
 
-Use the [Settings](/reference/settings/), [Parameters](/reference/parameters/), and [Page Frontmatter](/reference/page-frontmatter/) reference pages to confirm your configuration is correct.
+Use the [Settings](/reference/configuration/settings/), [Parameters](/reference/configuration/parameters/), and [Page Frontmatter](/reference/configuration/page-frontmatter/) reference pages to confirm your configuration is correct.
 
 ## Consult the documentation
 
