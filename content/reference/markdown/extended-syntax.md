@@ -125,11 +125,12 @@ term
 
 ## Task List
 
+<!-- prettier-ignore-start -->
 ```md
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-      {.list-unstyled}
+{.list-unstyled}
 ```
 
 {{< preview >}}
@@ -137,9 +138,10 @@ term
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-      {.list-unstyled}
+{.list-unstyled}
 
 {{< /preview >}}
+<!-- prettier-ignore-end -->
 
 ## Emoji
 
@@ -147,6 +149,7 @@ term
 Copy the emoji shortcode from [Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/) by clicking on the emoji.
 {{< /callout >}}
 
+<!-- markdownlint-disable MD033 -->
 <div class="expressive-code">
   <figure class="frame not-content">
   <figcaption class="header">
@@ -203,3 +206,5 @@ X<sup>2</sup>
 X<sup>2</sup>
 
 {{< /preview >}}
+
+<!-- markdownlint-enable MD033 -->
