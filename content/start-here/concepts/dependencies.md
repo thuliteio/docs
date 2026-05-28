@@ -60,11 +60,15 @@ You can also manage dependencies with [Hugo Modules](https://gohugo.io/hugo-modu
 
 Hugo also provides [`hugo mod npm pack`](https://gohugo.io/commands/hugo_mod_npm_pack/), which generates a composite `package.json` from `package.hugo.json` files in your project and modules.
 
+<!-- markdownlint-disable MD024 -->
+
 ### Pros
 
 - Aligns with the standard Hugo module workflow.
 
 ### Cons
+
+<!-- markdownlint-enable MD024 -->
 
 - Using Hugo Modules requires you to have [Go](https://go.dev/dl/) installed.
 - Using npm alongside Hugo Modules introduces _two_ dependency systems.

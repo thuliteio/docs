@@ -59,9 +59,12 @@ bunx @tinacms/cli@latest init
 {{< /tab >}}
 {{< /tabs >}}
 
+<!-- markdownlint-disable MD033 -->
+
 - When prompted for a Cloud ID, press <kbd>Enter</kbd> to skip. You can generate one later if you decide to use Tina Cloud.
 - When prompted with "What framework are you using?", choose `Other`.
 - When asked where public assets are stored, press <kbd>Enter</kbd>.
+<!-- markdownlint-enable MD033 -->
 
 After the command finishes, you should have a `.tina` folder in the project root and a generated `hello-world.md` file in `content/posts`.
 

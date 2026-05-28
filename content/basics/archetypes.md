@@ -52,6 +52,10 @@ Use archetypes to keep metadata consistent and reduce repetitive editing.
 
 ## Learn more
 
+<!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Archetypes" description="Create and customize content templates." href="https://gohugo.io/content-management/archetypes/" target="_blank" class="w-50" >}}
 {{< /card-grid >}}
+
+<!-- markdownlint-enable MD034 -->
