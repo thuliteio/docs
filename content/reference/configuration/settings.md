@@ -1,7 +1,7 @@
 ---
 title: "Settings"
-description: ""
-summary: ""
+description: "Reference core Hugo settings used by Thulite, including URLs, outputs, caching, taxonomies, minification, and related-content options."
+summary: "Reference core Hugo settings used by Thulite, including URLs, outputs, caching, taxonomies, minification, and related-content options."
 date: 2026-05-11T11:14:27+02:00
 lastmod: 2026-05-28T11:23:00+02:00
 draft: false

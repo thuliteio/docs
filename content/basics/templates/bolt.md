@@ -1,7 +1,7 @@
 ---
 title: "Bolt"
-description: "Lightweight Thulite blog theme focused on readability and performance."
-summary: "Lightweight Thulite blog theme focused on readability and performance."
+description: "Choose the Bolt theme for a lightweight Thulite blog experience focused on readability, clean design, and high performance."
+summary: "Choose the Bolt theme for a lightweight Thulite blog experience focused on readability, clean design, and high performance."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

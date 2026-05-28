@@ -1,7 +1,7 @@
 ---
 title: "Core"
-description: "Foundational integration providing essential Thulite services."
-summary: "Foundational integration providing essential Thulite services."
+description: "Learn about Thulite core, the foundational integration that provides essential services and interoperability across the framework ecosystem."
+summary: "Learn about Thulite core, the foundational integration that provides essential services and interoperability across the framework ecosystem."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Tina CMS"
-description: "Tina CMS is a Git-backed headless content management system."
-summary: "Tina CMS is a Git-backed headless content management system."
+description: "Set up Tina CMS in a Thulite project, configure collections and scripts, and enable Git-backed editing for local and production workflows."
+summary: "Set up Tina CMS in a Thulite project, configure collections and scripts, and enable Git-backed editing for local and production workflows."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false

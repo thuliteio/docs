@@ -1,7 +1,7 @@
 ---
 title: "Internationalization"
-description: "Set up and manage multilingual content in your Thulite project."
-summary: "Set up and manage multilingual content in your Thulite project."
+description: "Set up multilingual Thulite sites using Hugo language config, translated content paths, and i18n string files for consistent localized experiences."
+summary: "Set up multilingual Thulite sites using Hugo language config, translated content paths, and i18n string files for consistent localized experiences."
 date: 2026-03-25T08:23:03+01:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false

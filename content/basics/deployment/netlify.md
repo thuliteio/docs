@@ -1,7 +1,7 @@
 ---
 title: "Netlify"
-description: "Netlify offers hosting and serverless backend services for web applications and static websites. Any Thulite site can be hosted on Netlify!"
-summary: "Netlify offers hosting and serverless backend services for web applications and static websites. Any Thulite site can be hosted on Netlify!"
+description: "Deploy Thulite to Netlify through the web UI or CLI, configure build and publish settings, and manage runtime versions for reliable builds."
+summary: "Deploy Thulite to Netlify through the web UI or CLI, configure build and publish settings, and manage runtime versions for reliable builds."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

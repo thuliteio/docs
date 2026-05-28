@@ -1,7 +1,7 @@
 ---
 title: "Styles"
-description: "Customize styles using SCSS variables and custom stylesheet imports."
-summary: "A short guide to styling in Thulite with SCSS."
+description: "Customize Thulite styling with SCSS variables and custom stylesheets, then rely on the build pipeline for compiled and optimized CSS output."
+summary: "Customize Thulite styling with SCSS variables and custom stylesheets, then rely on the build pipeline for compiled and optimized CSS output."
 date: 2026-05-15T16:27:22+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

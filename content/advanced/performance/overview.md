@@ -1,8 +1,8 @@
 ---
 title: "Performance Overview"
 linkTitle: "Overview"
-description: "Improve load speed and runtime efficiency in Thulite."
-summary: "Learn how to configure caching and apply high-impact optimization defaults."
+description: "Improve Thulite build and runtime performance with focused guidance on caching strategy, payload reduction, and high-impact optimization steps."
+summary: "Improve Thulite build and runtime performance with focused guidance on caching strategy, payload reduction, and high-impact optimization steps."
 date: 2026-05-18T08:14:59+02:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false

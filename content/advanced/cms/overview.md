@@ -1,8 +1,8 @@
 ---
 title: "CMS Overview"
 linkTitle: "Overview"
-description: "Choose a CMS guide below to connect a headless CMS to your Thulite project."
-summary: "Choose a CMS guide below to connect a headless CMS to your Thulite project."
+description: "Choose a headless CMS for Thulite with quick-start guides for CloudCannon, Decap CMS, and Tina CMS to enable editor-friendly workflows."
+summary: "Choose a headless CMS for Thulite with quick-start guides for CloudCannon, Decap CMS, and Tina CMS to enable editor-friendly workflows."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false

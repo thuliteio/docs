@@ -1,7 +1,7 @@
 ---
 title: "Markdown"
-description: ""
-summary: ""
+description: "Find Markdown reference guides used in Thulite, covering basic and extended syntax supported by Hugo for writing consistent content."
+summary: "Find Markdown reference guides used in Thulite, covering basic and extended syntax supported by Hugo for writing consistent content."
 date: 2026-05-12T12:43:49+02:00
 lastmod: 2026-05-28T11:23:00+02:00
 draft: false

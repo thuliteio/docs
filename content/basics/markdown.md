@@ -1,7 +1,7 @@
 ---
 title: "Markdown"
-description: "Write content quickly with the Markdown syntax used in Thulite pages."
-summary: "A short guide to everyday Markdown in Thulite."
+description: "Write Thulite content with Markdown syntax, frontmatter, code blocks, and media patterns that keep documentation readable and easy to maintain."
+summary: "Write Thulite content with Markdown syntax, frontmatter, code blocks, and media patterns that keep documentation readable and easy to maintain."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
@@ -73,8 +73,8 @@ Markdown pages usually contain:
 ```md
 ---
 title: "About"
-description: "Learn more about our team and what we build."
-summary: "A quick introduction to our mission and values."
+description: "Write Thulite content with Markdown syntax, frontmatter, code blocks, and media patterns that keep documentation readable and easy to maintain."
+summary: "Write Thulite content with Markdown syntax, frontmatter, code blocks, and media patterns that keep documentation readable and easy to maintain."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-03-24T08:10:51+01:00
 draft: false

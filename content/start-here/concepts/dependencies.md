@@ -1,7 +1,7 @@
 ---
 title: "Dependencies"
-description: ""
-summary: ""
+description: "Understand how Thulite manages dependencies with npm and Hugo modules, why this approach was chosen, and the trade-offs versus alternatives."
+summary: "Understand how Thulite manages dependencies with npm and Hugo modules, why this approach was chosen, and the trade-offs versus alternatives."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false

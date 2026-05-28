@@ -1,7 +1,7 @@
 ---
 title: "Commands"
-description: "You can use the `scripts` in `package.json` to create new content and develop, format, build, and preview your project from a terminal window."
-summary: "You can use the `scripts` in `package.json` to create new content and develop, format, build, and preview your project from a terminal window."
+description: "Reference Thulite project scripts for creating content, running development, formatting, building production output, and previewing locally."
+summary: "Reference Thulite project scripts for creating content, running development, formatting, building production output, and previewing locally."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:23:00+02:00
 draft: false

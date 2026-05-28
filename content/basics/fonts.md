@@ -1,7 +1,7 @@
 ---
 title: "Fonts"
-description: "Host fonts locally in Thulite using Fontsource."
-summary: "Use Fontsource with Hugo mounts and SCSS variables."
+description: "Self-host fonts in Thulite with Fontsource, Hugo mounts, and SCSS variables to improve privacy, consistency, and performance across your site."
+summary: "Self-host fonts in Thulite with Fontsource, Hugo mounts, and SCSS variables to improve privacy, consistency, and performance across your site."
 date: 2026-05-15T16:27:22+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

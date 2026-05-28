@@ -1,8 +1,8 @@
 ---
 title: "Integrations Overview"
 linkTitle: "Overview"
-description: "Official Thulite integrations extend functionality for styling, optimization, and metadata management."
-summary: "Official Thulite integrations extend functionality for styling, optimization, and metadata management."
+description: "Review official Thulite integrations for themes, CSS frameworks, images, SVG, and SEO so you can extend projects with supported tooling."
+summary: "Review official Thulite integrations for themes, CSS frameworks, images, SVG, and SEO so you can extend projects with supported tooling."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

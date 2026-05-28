@@ -1,7 +1,7 @@
 ---
 title: "Tailwind CSS"
-description: "Tailwind CSS framework integration for Thulite."
-summary: "Tailwind CSS framework integration for Thulite."
+description: "Use the Tailwind CSS integration for Thulite to enable utility-first styling and rapid interface development in your project."
+summary: "Use the Tailwind CSS integration for Thulite to enable utility-first styling and rapid interface development in your project."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

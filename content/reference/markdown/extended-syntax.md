@@ -1,7 +1,7 @@
 ---
 title: "Extended Syntax"
-description: ""
-summary: ""
+description: "Reference extended Markdown syntax like tables, footnotes, task lists, and fenced code blocks, plus unsupported elements in Hugo Markdown."
+summary: "Reference extended Markdown syntax like tables, footnotes, task lists, and fenced code blocks, plus unsupported elements in Hugo Markdown."
 date: 2026-05-12T12:44:29+02:00
 lastmod: 2026-05-28T11:23:00+02:00
 draft: false

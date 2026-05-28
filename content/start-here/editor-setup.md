@@ -1,7 +1,7 @@
 ---
 title: "Editor Setup"
-description: "Configure your editor and formatting tools for a smoother Thulite workflow."
-summary: "Configure your editor and formatting tools for a smoother Thulite workflow."
+description: "Set up your editor for Thulite with recommended VS Code extensions and formatting commands to keep Markdown, styles, and scripts consistent."
+summary: "Set up your editor for Thulite with recommended VS Code extensions and formatting commands to keep Markdown, styles, and scripts consistent."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false

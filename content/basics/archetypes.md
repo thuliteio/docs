@@ -1,7 +1,7 @@
 ---
 title: "Archetypes"
-description: "Use archetypes to define default front matter for new content files."
-summary: "A short guide to creating and using archetypes in Thulite."
+description: "Define archetypes to standardize frontmatter for new content, reduce repetitive editing, and keep metadata consistent across sections in Thulite."
+summary: "Define archetypes to standardize frontmatter for new content, reduce repetitive editing, and keep metadata consistent across sections in Thulite."
 date: 2026-03-25T08:23:03+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
@@ -40,7 +40,7 @@ Minimal example (`archetypes/blog.md`):
 ```md {title="blog.md"}
 ---
 title: "{{ replace .Name "-" " " | title }}"
-description: ""
+description: "Define archetypes to standardize frontmatter for new content, reduce repetitive editing, and keep metadata consistent across sections in Thulite."
 date: {{ .Date }}
 draft: true
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Images"
-description: "Add and use images in your Thulite pages."
-summary: "A short guide to image locations and usage in Thulite."
+description: "Organize and reference images in Thulite using practical paths, accessible alt text, and asset guidelines that keep pages clear and performant."
+summary: "Organize and reference images in Thulite using practical paths, accessible alt text, and asset guidelines that keep pages clear and performant."
 date: 2026-05-15T16:27:22+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

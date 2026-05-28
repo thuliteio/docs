@@ -1,7 +1,7 @@
 ---
 title: "Project Structure"
-description: "Understand the Thulite project structure and where to place content, templates, and assets."
-summary: "A concise guide to the key directories and files in a Thulite project."
+description: "Understand the Thulite project structure and where to place content, configuration, templates, assets, and static files for smooth workflows."
+summary: "Understand the Thulite project structure and where to place content, configuration, templates, assets, and static files for smooth workflows."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

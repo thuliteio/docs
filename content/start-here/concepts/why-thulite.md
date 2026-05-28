@@ -1,7 +1,7 @@
 ---
 title: "Why Thulite?"
-description: ""
-summary: ""
+description: "Learn why Thulite exists, what principles shape it, and how its architecture, performance, security, and developer focus support modern websites."
+summary: "Learn why Thulite exists, what principles shape it, and how its architecture, performance, security, and developer focus support modern websites."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false

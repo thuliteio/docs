@@ -1,7 +1,7 @@
 ---
 title: "Cloudflare Pages"
-description: "You can deploy your Thulite project on Cloudflare Pages, a JAMstack platform for frontend developers to collaborate and deploy websites."
-summary: "You can deploy your Thulite project on Cloudflare Pages, a JAMstack platform for frontend developers to collaborate and deploy websites."
+description: "Deploy Thulite to Cloudflare Pages using Git integration or Wrangler, with correct build commands, output settings, and optional local preview."
+summary: "Deploy Thulite to Cloudflare Pages using Git integration or Wrangler, with correct build commands, output settings, and optional local preview."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

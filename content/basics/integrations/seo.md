@@ -1,7 +1,7 @@
 ---
 title: "SEO"
-description: "Official SEO integration for Thulite."
-summary: "Official SEO integration for Thulite."
+description: "Use the official SEO integration for Thulite to manage metadata and improve search visibility, sharing previews, and content discoverability."
+summary: "Use the official SEO integration for Thulite to manage metadata and improve search visibility, sharing previews, and content discoverability."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

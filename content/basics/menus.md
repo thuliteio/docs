@@ -1,7 +1,7 @@
 ---
 title: "Menus"
-description: "Configure site navigation menus in Thulite."
-summary: "A short guide to main, social, and footer menus."
+description: "Configure multilingual navigation menus in Thulite with menu files, weights, and page references for clear main, social, and footer navigation."
+summary: "Configure multilingual navigation menus in Thulite with menu files, weights, and page references for clear main, social, and footer navigation."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

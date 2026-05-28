@@ -1,8 +1,8 @@
 ---
 title: "Templates Overview"
 linkTitle: "Overview"
-description: "Compare official Thulite templates and choose the right starting point for your site."
-summary: "Compare official Thulite templates and choose the right starting point for your site."
+description: "Compare official Thulite templates, including starters and themes, to choose a foundation that matches your content model and styling approach."
+summary: "Compare official Thulite templates, including starters and themes, to choose a foundation that matches your content model and styling approach."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

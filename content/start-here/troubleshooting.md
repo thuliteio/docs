@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting"
-description: "Diagnose and fix common issues with your Thulite installation and setup."
-summary: "Diagnose and fix common issues with your Thulite installation and setup."
+description: "Troubleshoot common Thulite issues by validating configuration, checking integration docs, and using GitHub issues and discussions for support."
+summary: "Troubleshoot common Thulite issues by validating configuration, checking integration docs, and using GitHub issues and discussions for support."
 date: 2026-04-27T12:47:03+02:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false

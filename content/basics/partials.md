@@ -1,7 +1,7 @@
 ---
 title: "Partials"
-description: "Use partials to split reusable template code into small, maintainable pieces."
-summary: "A short guide to creating and using partials in Thulite layouts."
+description: "Build reusable partial templates in Thulite layouts to share rendering logic, reduce duplication, and keep template code maintainable."
+summary: "Build reusable partial templates in Thulite layouts to share rendering logic, reduce duplication, and keep template code maintainable."
 date: 2026-05-15T16:27:22+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Basic"
-description: "Minimal Thulite starter for simple sites and quick customization."
-summary: "Minimal Thulite starter for simple sites and quick customization."
+description: "Choose the Basic starter for a minimal Thulite foundation that prioritizes simplicity, speed, and straightforward project customization."
+summary: "Choose the Basic starter for a minimal Thulite foundation that prioritizes simplicity, speed, and straightforward project customization."
 date: 2026-05-18T15:01:27+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

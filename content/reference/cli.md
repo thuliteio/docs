@@ -1,7 +1,7 @@
 ---
 title: "CLI"
-description: "This reference guide describes the create-thulite CLI and all of its options."
-summary: "This reference guide describes the create-thulite CLI and all of its options."
+description: "Reference all create-thulite CLI arguments and options, including templates, interactive mode, overwrite behavior, and usage examples."
+summary: "Reference all create-thulite CLI arguments and options, including templates, interactive mode, overwrite behavior, and usage examples."
 date: 2026-04-28T14:55:21+02:00
 lastmod: 2026-05-28T11:23:00+02:00
 draft: false

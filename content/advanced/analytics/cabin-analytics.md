@@ -1,7 +1,7 @@
 ---
 title: "Cabin Analytics"
-description: "Cabin Analytics is a privacy-first, carbon conscious web analytics service."
-summary: "Cabin Analytics is a privacy-first, carbon conscious web analytics service."
+description: "Add Cabin Analytics to Thulite with a lightweight script integration for privacy-first, low-footprint website measurement and reporting."
+summary: "Add Cabin Analytics to Thulite with a lightweight script integration for privacy-first, low-footprint website measurement and reporting."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false

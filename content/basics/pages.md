@@ -1,7 +1,7 @@
 ---
 title: "Pages"
-description: "Learn how page files in `content/` map to URLs, and how to create regular pages, leaf bundles, and branch bundles."
-summary: "Learn how page files in `content/` map to URLs, and how to create regular pages, leaf bundles, and branch bundles."
+description: "Create and organize Thulite pages with regular files, leaf bundles, and branch bundles while controlling URL structure through content paths."
+summary: "Create and organize Thulite pages with regular files, leaf bundles, and branch bundles while controlling URL structure through content paths."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

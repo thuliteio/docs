@@ -1,7 +1,7 @@
 ---
 title: "Shortcodes"
-description: "Use Hugo shortcodes in Markdown to add reusable UI patterns and dynamic content."
-summary: "A short guide to writing and using shortcodes in Thulite."
+description: "Use and create Hugo shortcodes in Thulite to embed reusable UI patterns in Markdown, keeping content expressive and template logic reusable."
+summary: "Use and create Hugo shortcodes in Thulite to embed reusable UI patterns in Markdown, keeping content expressive and template logic reusable."
 date: 2026-05-15T16:27:08+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

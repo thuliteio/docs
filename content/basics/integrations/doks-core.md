@@ -1,7 +1,7 @@
 ---
 title: "Doks core"
-description: "Foundational integration for the Doks theme."
-summary: "Foundational integration for the Doks theme."
+description: "Use Doks core to power the Doks theme in Thulite, supporting documentation-focused features and consistent theme behavior."
+summary: "Use Doks core to power the Doks theme in Thulite, supporting documentation-focused features and consistent theme behavior."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

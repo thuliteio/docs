@@ -1,7 +1,7 @@
 ---
 title: "Render"
-description: "You can deploy your Thulite project to Render, a service to build websites with free TLS certificates, a global CDN, DDoS protection, private networks, and auto deploy..."
-summary: "You can deploy your Thulite project to Render, a service to build websites with free TLS certificates, a global CDN, DDoS protection, private networks, and auto deploy..."
+description: "Deploy Thulite to Render by connecting a repository, setting build and publish options, and configuring a compatible Node.js version for builds."
+summary: "Deploy Thulite to Render by connecting a repository, setting build and publish options, and configuring a compatible Node.js version for builds."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

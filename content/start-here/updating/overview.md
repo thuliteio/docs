@@ -1,8 +1,8 @@
 ---
 title: "Updating Overview"
 linkTitle: "Overview"
-description: "Learn how to update Thulite, track release changes, and use semantic versioning to plan safe upgrades."
-summary: "Learn how to update Thulite, track release changes, and use semantic versioning to plan safe upgrades."
+description: "Learn how to update Thulite, track release changes, and use semantic versioning to plan safe upgrades across patch, minor, and major releases."
+summary: "Learn how to update Thulite, track release changes, and use semantic versioning to plan safe upgrades across patch, minor, and major releases."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false

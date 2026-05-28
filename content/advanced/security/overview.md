@@ -1,8 +1,8 @@
 ---
 title: "Security Overview"
 linkTitle: "Overview"
-description: "Harden your Thulite site with practical security controls."
-summary: "Configure CSP, response headers, and email obfuscation to reduce common web risks."
+description: "Apply core security protections in Thulite with practical guidance for CSP, secure headers, and anti-scraping techniques for public websites."
+summary: "Apply core security protections in Thulite with practical guidance for CSP, secure headers, and anti-scraping techniques for public websites."
 date: 2026-05-18T08:14:51+02:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false

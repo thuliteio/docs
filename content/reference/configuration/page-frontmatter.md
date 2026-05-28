@@ -1,7 +1,7 @@
 ---
 title: "Page Frontmatter"
-description: ""
-summary: ""
+description: "Reference page frontmatter fields in Thulite content files, including metadata, draft state, ordering, and page-specific SEO options."
+summary: "Reference page frontmatter fields in Thulite content files, including metadata, draft state, ordering, and page-specific SEO options."
 date: 2026-03-25T13:02:07+01:00
 lastmod: 2026-05-28T11:23:00+02:00
 draft: false
@@ -22,8 +22,8 @@ This reference guide describes page frontmatter fields in `./content/*.md` files
 ```md {title="_index.md"}
 ---
 title: "My page"
-description: "Short description for metadata and previews."
-summary: "Short summary shown in lists and cards."
+description: "Reference page frontmatter fields in Thulite content files, including metadata, draft state, ordering, and page-specific SEO options."
+summary: "Reference page frontmatter fields in Thulite content files, including metadata, draft state, ordering, and page-specific SEO options."
 date: 2026-05-28T08:00:00+02:00
 lastmod: 2026-05-28T08:00:00+02:00
 draft: false

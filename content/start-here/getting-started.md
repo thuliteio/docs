@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
-description: "Learn what Thulite is and get oriented with the key next steps."
-summary: "Learn what Thulite is and get oriented with the key next steps."
+description: "Get oriented with Thulite's core goals, required prerequisites, and the next documentation steps to install, configure, use, and maintain your site."
+summary: "Get oriented with Thulite's core goals, required prerequisites, and the next documentation steps to install, configure, use, and maintain your site."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false

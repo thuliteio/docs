@@ -1,7 +1,7 @@
 ---
 title: "Configuration"
-description: "Update settings, parameters, and page frontmatter in your Thulite project."
-summary: "Update settings, parameters, and page frontmatter in your Thulite project."
+description: "Configure Thulite by updating Hugo settings, project parameters, and page frontmatter, then apply integration-specific options when needed."
+summary: "Configure Thulite by updating Hugo settings, project parameters, and page frontmatter, then apply integration-specific options when needed."
 date: 2026-04-27T12:46:23+02:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false

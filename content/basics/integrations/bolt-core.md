@@ -1,7 +1,7 @@
 ---
 title: "Bolt core"
-description: "Foundational integration for the Bolt theme."
-summary: "Foundational integration for the Bolt theme."
+description: "Use the Bolt core integration to power the Bolt theme in Thulite, enabling theme features and smoother customization workflows."
+summary: "Use the Bolt core integration to power the Bolt theme in Thulite, enabling theme features and smoother customization workflows."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false

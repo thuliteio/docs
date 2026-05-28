@@ -1,7 +1,7 @@
 ---
 title: "Scripts"
-description: "Add custom JavaScript to your site."
-summary: "Add custom JavaScript to your site."
+description: "Add custom JavaScript in Thulite using assets/js, DOM-ready patterns, and focused behaviors that improve interactivity without slowing pages."
+summary: "Add custom JavaScript in Thulite using assets/js, DOM-ready patterns, and focused behaviors that improve interactivity without slowing pages."
 date: 2026-05-15T16:27:22+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
