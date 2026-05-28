@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Here's how a Thulite project configuration is organized, and the configuration files you will find in your new project.
 
 ## Example
@@ -23,7 +24,7 @@ A common Thulite project configuration directory might look like this:
 {{< tree >}}
 
 - {folder} config
-  - {folder} _default
+  - {folder} \_default
     - {toml} hugo.toml
     - {toml} markup.toml
     - {toml} menus.toml
@@ -71,9 +72,11 @@ Overrides for your next environment.
 Overrides for your production environment.
 
 <!-- markdownlint-disable MD034 -->
+
 {{< callout context="tip" icon="rocket" >}}
 Set `baseurl` in `hugo.toml` to the absolute URL (protocol, host, path, and trailing slash) of your published site (e.g., https://www.example.org/docs/).
 {{< /callout >}}
+
 <!-- markdownlint-enable MD034 -->
 
 ## `babel.config.js`
@@ -87,7 +90,9 @@ The `postcss.config.js` file is where you configure [PostCSS](https://postcss.or
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Configuration" description="Overview of Hugo configuration concepts and file formats." href="https://gohugo.io/configuration/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 This reference guide describes the main site settings in `config/_default/hugo.toml`
 
 ## Example
@@ -154,7 +155,9 @@ Settings for Hugo related content matching and index weights.
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="All settings" description="Complete list of Hugo configuration settings and defaults." href="https://gohugo.io/configuration/all/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

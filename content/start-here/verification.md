@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 This page helps you verify that Thulite is generating the expected pages, assets, and metadata.
 
 ## Build your site

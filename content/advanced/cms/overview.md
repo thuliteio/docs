@@ -15,6 +15,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Choose a CMS guide below to connect a headless CMS to your Thulite project.
 
 ## CMS Guides

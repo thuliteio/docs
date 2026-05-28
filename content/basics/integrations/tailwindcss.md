@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Tailwind CSS is the official [Tailwind CSS](https://tailwindcss.com/) integration for Thulite, enabling utility-first styling for rapid, responsive UI development.
 
 ## Links

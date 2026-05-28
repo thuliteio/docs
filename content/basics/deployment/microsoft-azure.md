@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Use [Azure](https://azure.microsoft.com/en-us) and its [Static Web Apps](https://azure.microsoft.com/en-us/products/app-service/static/) service to deploy your Thulite site.
 
 {{< callout context="tip" icon="bulb" >}}
@@ -58,7 +59,7 @@ To resolve this, update your project's `package.json` with this snippet:
 {
   "engines": {
     "node": ">=24.13.0"
-  },
+  }
 }
 ```
 
@@ -87,8 +88,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
-          cache: 'npm'
+          node-version: "22"
+          cache: "npm"
       - name: Install dependencies
         run: npm ci
       - name: Build
@@ -112,7 +113,9 @@ jobs:
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Host on Azure Static Web Apps" description="Official Hugo guide for deploying sites on Azure Static Web Apps." href="https://gohugo.io/host-and-deploy/host-on-azure-static-web-apps/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

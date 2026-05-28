@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Use [Vercel](http://vercel.com/) to deploy a Thulite site to its global edge network with minimal setup.
 
 This guide shows how to deploy with the Vercel web UI or Vercel CLI.
@@ -105,7 +106,9 @@ Learn more about [Vercel's project configuration](https://vercel.com/docs/projec
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Host on Vercel" description="Official Hugo guide for deploying sites on Vercel." href="https://gohugo.io/host-and-deploy/host-on-vercel/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

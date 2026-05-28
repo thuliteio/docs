@@ -56,6 +56,7 @@ In browser dev tools and scanners, confirm:
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/mdnwebdocs.svg" title="Strict-Transport-Security header" description="Force HTTPS and prevent protocol downgrade attacks." href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security" target="_blank" >}}
 {{< link-card src="svgs/simple-icons/mdnwebdocs.svg" title="X-Content-Type-Options header" description="Disable MIME sniffing to reduce content-type confusion risks." href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Content-Type-Options" target="_blank" >}}
@@ -69,4 +70,5 @@ In browser dev tools and scanners, confirm:
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/mdnwebdocs.svg" title="Permissions-Policy header" description="Restrict browser features like camera, mic, and geolocation." href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy" target="_blank" class="w-50" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

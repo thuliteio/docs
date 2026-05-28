@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 [Fathom Analytics](https://usefathom.com/) is a Google Analytics alternative that doesn't compromise visitor privacy for data.
 
 ## Prerequisites

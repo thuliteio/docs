@@ -14,18 +14,11 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Bootstrap is a Thulite starter built on [Bootstrap](https://getbootstrap.com/) for responsive, component-based development. It includes preconfigured styles and components so you can ship polished pages faster.
 
 {{< preview >}}
-{{< picture
-  src="images/bootstrap-starter.jpg"
-  process="fill 1350x900"
-  lqip="18x webp q20"
-  decoding="async"
-  fetchpriority="auto"
-  loading="eager"
-  alt="Bootstrap Thulite starter homepage preview"
->}}
+{{< picture src="images/bootstrap-starter.jpg" process="fill 1350x900" lqip="18x webp q20" decoding="async" fetchpriority="auto" loading="eager" alt="Bootstrap Thulite starter homepage preview" >}}
 {{< /preview >}}
 
 ## Links

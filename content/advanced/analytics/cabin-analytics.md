@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 [Cabin Analytics](https://withcabin.com/) is a privacy-first, carbon conscious web analytics service.
 
 ## Prerequisites

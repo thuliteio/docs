@@ -57,6 +57,7 @@ After `npm run build`, check `public/` for fingerprinted assets and validate hea
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Configure file caches" description="Hugo configuration reference for resource and data cache settings." href="https://gohugo.io/configuration/caches/" target="_blank" >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="resources.Fingerprint" description="Generate content-hashed asset filenames for immutable caching." href="https://gohugo.io/functions/resources/fingerprint/" target="_blank" >}}
@@ -65,4 +66,5 @@ After `npm run build`, check `public/` for fingerprinted assets and validate hea
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/mdnwebdocs.svg" title="Cache-Control header" description="MDN reference for cache directives used by browsers and CDNs." href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control" target="_blank" class="w-50" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Bootstrap is the official [Bootstrap](https://getbootstrap.com/) integration for Thulite, enabling rapid, responsive UI development with Bootstrap components.
 
 ## Links

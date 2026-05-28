@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 [CloudCannon](https://cloudcannon.com) is a Git-based content management system that provides a visual editor for your content.
 
 ## Resources

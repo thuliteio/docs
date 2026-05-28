@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Bolt core is the foundational integration for the [Bolt theme](/basics/templates/bolt/), enabling smooth operation and advanced customizations within Thulite.
 
 ## Links

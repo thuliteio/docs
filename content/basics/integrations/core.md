@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Core is the foundational integration for Thulite, providing essential services and enabling seamless interoperability across the ecosystem.
 
 ## Links

@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Thulite is a web framework built for speed, security, and SEO, powered by Hugo and npm. It helps you build production-ready websites with exceptional performance, enterprise security, scalable architecture, and a developer-friendly workflow.
 
 ## Prerequisites
@@ -25,42 +26,18 @@ Thulite is a web framework built for speed, security, and SEO, powered by Hugo a
 ## Quick start
 
 {{< card-grid >}}
-{{< link-card
-  title="Installation"
-  description="Create a Thulite project using a template and optional integrations."
-  href="/start-here/installation/"
->}}
-{{< link-card
-  title="Configuration"
-  description="Update settings, parameters, and page front matter."
-  href="/start-here/configuration/"
->}}
+{{< link-card title="Installation" description="Create a Thulite project using a template and optional integrations." href="/start-here/installation/" >}}
+{{< link-card title="Configuration" description="Update settings, parameters, and page front matter." href="/start-here/configuration/" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card
-  title="Usage"
-  description="Learn how to use your Thulite project."
-  href="/start-here/usage/"
->}}
-{{< link-card
-  title="Verification"
-  description="Validate your Thulite setup and output quality."
-  href="/start-here/verification/"
->}}
+{{< link-card title="Usage" description="Learn how to use your Thulite project." href="/start-here/usage/" >}}
+{{< link-card title="Verification" description="Validate your Thulite setup and output quality." href="/start-here/verification/" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card
-  title="Updating"
-  description="Update Thulite to the latest version."
-  href="/start-here/updating/overview/"
->}}
-{{< link-card
-  title="Troubleshooting"
-  description="Diagnose and fix common issues."
-  href="/start-here/troubleshooting/"
->}}
+{{< link-card title="Updating" description="Update Thulite to the latest version." href="/start-here/updating/overview/" >}}
+{{< link-card title="Troubleshooting" description="Diagnose and fix common issues." href="/start-here/troubleshooting/" >}}
 {{< /card-grid >}}
 
 ## Credits

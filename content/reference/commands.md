@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 You can use the `scripts` in `package.json` to create new content and develop, format, build, and preview your project from a terminal window.
 
 ## `package.json` scripts

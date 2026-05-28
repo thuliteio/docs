@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Pages are content files in the `content/` directory of your Thulite project.
 
 In Hugo (and therefore Thulite), each content file becomes a page. The file path and filename determine the URL, while layouts determine how that page is rendered.
@@ -176,6 +177,7 @@ bun run create _index.md
 Thulite leverages Hugo's [content management](https://gohugo.io/content-management/). Start with these topics:
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Content organization" description="Organize your content in a manner that reflects the rendered website." href="https://gohugo.io/content-management/organization/" target="_blank" >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Page bundles" description="Use page bundles to logically associate one or more resources with content." href="https://gohugo.io/content-management/page-bundles/" target="_blank" >}}
@@ -185,4 +187,5 @@ Thulite leverages Hugo's [content management](https://gohugo.io/content-manageme
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Content formats" description="Create your content using multiple content formats." href="https://gohugo.io/content-management/formats/" target="_blank" >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Front matter" description="Use front matter to add metadata to your content." href="https://gohugo.io/content-management/front-matter/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

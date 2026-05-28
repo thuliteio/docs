@@ -15,6 +15,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 This page explains how to update Thulite, where to check what changed between releases, and how version numbers affect your upgrade path.
 
 ## Quick links

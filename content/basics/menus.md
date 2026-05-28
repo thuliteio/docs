@@ -54,6 +54,7 @@ Use `pageRef` for internal pages and `url` for external links.
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Menus" description="Hugo guide to defining and working with menu entries." href="https://gohugo.io/content-management/menus/" target="_blank" >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Menu localization" description="How to translate menus for multilingual sites." href="https://gohugo.io/content-management/multilingual/#menus" target="_blank" >}}
@@ -62,4 +63,5 @@ Use `pageRef` for internal pages and `url` for external links.
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Menu templates" description="Template reference for rendering menus in layouts." href="https://gohugo.io/templates/menu/" target="_blank" class="w-50">}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

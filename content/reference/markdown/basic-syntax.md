@@ -34,7 +34,9 @@ Refer to the [Basic Syntax](https://markdownguide.offshoot.io/basic-syntax/) ref
 {{< preview >}}
 
 <!-- markdownlint-disable MD025 -->
+
 # H1
+
 <!-- markdownlint-enable MD025 -->
 
 ## H2
@@ -52,6 +54,7 @@ Refer to the [Basic Syntax](https://markdownguide.offshoot.io/basic-syntax/) ref
 {{< preview >}}
 
 <!-- markdownlint-disable MD036 -->
+
 **bold text**
 
 {{< /preview >}}
@@ -69,6 +72,7 @@ _italicized text_
 _italicized text_
 
 {{< /preview >}}
+
 <!-- markdownlint-enable MD036 -->
 
 ## Blockquote

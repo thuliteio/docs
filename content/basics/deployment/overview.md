@@ -15,6 +15,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Choose a hosting platform below to deploy your Thulite site with step-by-step instructions.
 
 ## Deployment Guides

@@ -15,12 +15,15 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Use this section to improve crawlability, metadata quality, and search visibility for production sites.
 
 ## SEO Guides
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/thulite.svg" title="Thulite SEO" description="Complete SEO docs for metadata, structured data, and search visibility." href="https://seo.thulite.io/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

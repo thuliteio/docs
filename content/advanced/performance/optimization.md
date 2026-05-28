@@ -81,6 +81,7 @@ After each change, run a production build and validate:
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="hugo build" description="Command reference for production builds with minification and cleanup flags." href="https://gohugo.io/commands/hugo_build/" target="_blank" >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="resources.Minify" description="Minify CSS, JavaScript, JSON, HTML, and SVG resources in Hugo pipelines." href="https://gohugo.io/functions/resources/minify/" target="_blank" >}}
@@ -90,4 +91,5 @@ After each change, run a production build and validate:
 {{< link-card src="svgs/simple-icons/purgecss.svg" title="PurgeCSS" description="Remove unused CSS selectors from production bundles." href="https://purgecss.com" target="_blank" class="w-50" >}}
 {{< link-card src="svgs/quicklink.svg" title="Quicklink" description="Prefetch in-viewport links during idle time to speed up navigation." href="https://getquick.link" target="_blank" class="w-50" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

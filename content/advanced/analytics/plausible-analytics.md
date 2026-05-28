@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 [Plausible Analytics](https://plausible.io/) ia an easy to use and privacy-friendly Google Analytics alternative.
 
 ## Prerequisites

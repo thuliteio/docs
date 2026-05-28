@@ -86,7 +86,15 @@ Define `@font-face` in `assets/scss/common/_fonts.scss`:
 Apply it in `assets/scss/common/_variables-custom.scss`:
 
 ```scss {title="_variables-custom.scss"}
-$font-family-sans-serif: "Geist Variable", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif:
+  "Geist Variable",
+  system-ui,
+  -apple-system,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
 ```
 
 {{< /step >}}
@@ -97,8 +105,10 @@ This project already follows this pattern with Geist and Geist Mono.
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/fontsource.svg" title="Fontsource" description="Install and self-host open source fonts." href="https://fontsource.org/" target="_blank" >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Hugo Module Mounts" description="Map files from node_modules into your Hugo project." href="https://gohugo.io/configuration/module/#mounts" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

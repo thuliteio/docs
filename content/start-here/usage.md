@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 This guide covers the standard development workflow for a Thulite project.
 
 {{< callout context="note" icon="info-circle" >}}

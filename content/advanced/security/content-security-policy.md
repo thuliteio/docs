@@ -55,7 +55,9 @@ In browser dev tools, confirm:
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/mdnwebdocs.svg" title="Content Security Policy (CSP)" description="MDN guide for CSP directives, rollout strategy, and common pitfalls." href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

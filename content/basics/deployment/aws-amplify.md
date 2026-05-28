@@ -51,7 +51,7 @@ frontend:
   artifacts:
     baseDirectory: public
     files:
-      - '**/*'
+      - "**/*"
 ```
 
 Amplify reads this file during deployment instead of relying on guessed defaults.
@@ -62,11 +62,12 @@ Amplify reads this file during deployment instead of relying on guessed defaults
 - If you need specific Hugo tooling versions, define them in Amplify environment settings or expand `amplify.yml`
 - Each push to the connected branch triggers a new deploy
 
-
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Host on AWS Amplify" description="Official Hugo guide for deploying sites on AWS Amplify." href="https://gohugo.io/host-and-deploy/host-on-aws-amplify/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

@@ -27,16 +27,18 @@ Install the VS Code extension for shortcode snippets and completions: [Hugo Shor
 
 Examples used in this project:
 
-````md
+```md
 {{</* preview */>}}
+
 ### Example output
+
 This block is rendered as a preview.
 {{</* /preview */>}}
 
 {{</* link-card src="svgs/simple-icons/hugo.svg" title="Hugo Docs" href="https://gohugo.io/" */>}}
 
 Contact: {{</* email "hello@example.com" */>}}
-````
+```
 
 ## Create a custom shortcode
 
@@ -50,19 +52,21 @@ Example file: `layouts/_shortcodes/note.html`
 
 Use it in Markdown:
 
-````md
+```md
 {{</* note */>}}
 Use shortcodes when plain Markdown is not enough.
 {{</* /note */>}}
-````
+```
 
 Keep shortcodes focused and reusable. If logic becomes complex, move it to a partial and call that from the shortcode.
 
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Shortcodes" description="Write and use Hugo shortcodes in content files." href="https://gohugo.io/content-management/shortcodes/" target="_blank" >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Shortcode templates" description="Build shortcode templates and pass arguments." href="https://gohugo.io/templates/shortcode/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

@@ -50,13 +50,10 @@ const purgecss = purgeCSSPlugin({
         'page-link',
         'not-content',
         'copy',
-        'btn-copy',
+        'btn-copy'
     ]
 });
 
 export default {
-  plugins: [
-    autoprefixer(),
-    ...(process.env.HUGO_ENVIRONMENT === "production" ? [purgecss] : []),
-  ],
+    plugins: [autoprefixer(), ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : [])]
 };

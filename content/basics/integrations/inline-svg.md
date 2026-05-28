@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Inline SVG is the official SVG integration for Thulite, enabling embedded SVG graphics with dynamic and interactive support.
 
 ## Links

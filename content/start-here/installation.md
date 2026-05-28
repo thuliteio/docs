@@ -125,8 +125,4 @@ You'll now have a new [project directory](/basics/project-structure/) with all t
 
 ## Configure Thulite
 
-{{< link-card
-  title="Configure Thulite"
-  description="Update settings, parameters, and page front matter."
-  href="/start-here/configuration/"
->}}
+{{< link-card title="Configure Thulite" description="Update settings, parameters, and page front matter." href="/start-here/configuration/" >}}

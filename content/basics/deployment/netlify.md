@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 [Netlify](https://netlify.com) provides hosting and serverless backend services for web apps and static sites. You can host any Thulite site on Netlify.
 
 This guide shows how to deploy with the Netlify web UI or Netlify CLI.
@@ -158,7 +159,9 @@ No special configuration is required to use Netlify Functions with Thulite. Add 
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Host on Netlify" description="Official Hugo guide for deploying sites on Netlify." href="https://gohugo.io/host-and-deploy/host-on-netlify/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

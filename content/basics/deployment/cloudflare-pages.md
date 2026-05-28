@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Deploy your Thulite project on [Cloudflare Pages](https://pages.cloudflare.com/), a JAMstack platform for building and shipping frontend sites.
 
 ## Prerequisites
@@ -47,11 +48,11 @@ Use the following build settings:
 - Framework preset: `exit 0`
 - Build command: `npm run build`
 - Build output directory: `public`
-{{< /step >}}
-{{< step >}}
-Click the Save and Deploy button.
-{{< /step >}}
-{{< /steps >}}
+  {{< /step >}}
+  {{< step >}}
+  Click the Save and Deploy button.
+  {{< /step >}}
+  {{< /steps >}}
 
 ## Deploy with Wrangler
 
@@ -159,7 +160,9 @@ If you run into errors, check whether your local `node` version (`node -v`) matc
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Host on Cloudflare" description="Official Hugo guide for deploying sites on Cloudflare Pages." href="https://gohugo.io/host-and-deploy/host-on-cloudflare/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

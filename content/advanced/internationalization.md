@@ -82,7 +82,9 @@ Use Hugo's `i18n` function in templates to render translated strings.
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Multilingual mode" description="Official Hugo guide to configure and manage multilingual sites." href="https://gohugo.io/content-management/multilingual/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

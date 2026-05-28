@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 [Tina CMS](https://tina.io/) is a Git-backed headless content management system.
 
 ## Prerequisites
@@ -103,13 +104,13 @@ export default defineConfig({
   token: null, // Get this from tina.io
   build: {
     outputFolder: "admin",
-    publicFolder: "public",
+    publicFolder: "public"
   },
   media: {
     tina: {
       mediaRoot: "images",
-      publicFolder: "public",
-    },
+      publicFolder: "public"
+    }
   },
   schema: {
     collections: [
@@ -117,31 +118,31 @@ export default defineConfig({
         name: "posts",
         label: "Posts",
         path: "src/content/posts",
-        format: 'mdx',
+        format: "mdx",
         fields: [
           {
             type: "string",
             name: "title",
             label: "Title",
             isTitle: true,
-            required: true,
+            required: true
           },
           {
             type: "datetime",
             name: "posted",
             label: "Date Posted",
-            required: true,
+            required: true
           },
           {
             type: "rich-text",
             name: "body",
             label: "Body",
-            isBody: true,
-          },
-        ],
-      },
-    ],
-  },
+            isBody: true
+          }
+        ]
+      }
+    ]
+  }
 });
 ```
 

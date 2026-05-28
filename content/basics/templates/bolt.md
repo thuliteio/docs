@@ -14,18 +14,11 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Bolt is a minimal, elegant blog theme for Thulite built for fast, distraction-free reading. Its lightweight footprint and clean HTML styling make it a strong fit for writers who value simplicity and performance. It also includes dark/light mode, tag support, reading time estimates, and related posts.
 
 {{< preview >}}
-{{< picture
-  src="images/bolt-theme.jpg"
-  process="fill 1350x900"
-  lqip="18x webp q20"
-  decoding="async"
-  fetchpriority="auto"
-  loading="eager"
-  alt="Bolt Thulite theme homepage preview"
->}}
+{{< picture src="images/bolt-theme.jpg" process="fill 1350x900" lqip="18x webp q20" decoding="async" fetchpriority="auto" loading="eager" alt="Bolt Thulite theme homepage preview" >}}
 {{< /preview >}}
 
 ## Links

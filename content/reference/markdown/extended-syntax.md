@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 A reference to the extended Markdown syntax elements that add features beyond the basic syntax.
 
 {{< callout icon="info-circle" >}}
@@ -128,7 +129,7 @@ term
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-{.list-unstyled}
+      {.list-unstyled}
 ```
 
 {{< preview >}}
@@ -136,7 +137,7 @@ term
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-{.list-unstyled}
+      {.list-unstyled}
 
 {{< /preview >}}
 

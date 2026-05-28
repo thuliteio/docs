@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Images is the official image optimization integration for Thulite, streamlining asset management and enabling responsive image delivery.
 
 ## Links

@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Use [GitHub Pages](https://docs.github.com/en/pages) to host a Thulite site directly from a repository on [GitHub.com](https://github.com/).
 
 {{< callout context="tip" icon="bulb" >}}
@@ -82,8 +83,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
-          cache: 'npm'
+          node-version: "24"
+          cache: "npm"
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
@@ -115,7 +116,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
 ```
 
 {{< /step >}}
@@ -156,7 +156,9 @@ This will deploy your site at your custom domain instead of `user.github.io`. Do
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Host on GitHub Pages" description="Official Hugo guide for deploying sites on GitHub Pages." href="https://gohugo.io/host-and-deploy/host-on-github-pages/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 SEO is the official SEO integration for Thulite, simplifying metadata management for improved search visibility and content discoverability.
 
 ## Links

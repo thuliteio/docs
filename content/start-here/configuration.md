@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 This page covers the main configuration tasks for a Thulite project.
 
 ## Update settings
@@ -96,7 +97,7 @@ Update your [page frontmatter](/reference/configuration/page-frontmatter/) in `.
 
 ```md {title="_index.md"}
 ---
-title : "My Thulite site"
+title: "My Thulite site"
 description: "Congrats on setting up a new Thulite project!"
 lead: "Congrats on setting up a new Thulite project!"
 date: 2026-04-28T17:01:41+02:00
@@ -108,25 +109,14 @@ draft: false
 ## Integrations
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
-{{< link-card
-  title="Thulite SEO"
-  description="Update settings, parameters, and page frontmatter."
-  href="https://seo.thulite.io/docs/start-here/configuration/"
->}}
-{{< link-card
-  title="Thulite Images"
-  description="Update settings and parameters."
-  href="https://images.thulite.io/docs/start-here/configuration/"
->}}
+{{< link-card title="Thulite SEO" description="Update settings, parameters, and page frontmatter." href="https://seo.thulite.io/docs/start-here/configuration/" >}}
+{{< link-card title="Thulite Images" description="Update settings and parameters." href="https://images.thulite.io/docs/start-here/configuration/" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card
-  title="Thulite SVG"
-  description="Update your project's parameters"
-  href="https://svg.thulite.io/docs/start-here/configuration/"
-  class="w-50"
->}}
+{{< link-card title="Thulite SVG" description="Update your project's parameters" href="https://svg.thulite.io/docs/start-here/configuration/" class="w-50" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

@@ -23,6 +23,7 @@ Thulite uses Hugo's Markdown renderer, so standard Markdown works out of the box
 
 ```md
 # H1 heading
+
 ## H2 heading
 
 This is a paragraph with a [link](/start-here/getting-started/).
@@ -33,7 +34,7 @@ This is a paragraph with a [link](/start-here/getting-started/).
 1. Ordered item
 2. Next item
 
-**Bold** and *italic* text.
+**Bold** and _italic_ text.
 
 `inline code`
 
@@ -96,7 +97,6 @@ We build fast, accessible documentation sites with Thulite.
 - Great performance
 
 Read the [Getting Started guide](/start-here/getting-started/) to learn more.
-
 ```
 
 {{< /preview >}}

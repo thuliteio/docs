@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 This reference guide describes the `create-thulite` CLI and all of its options.
 
 ## Usage
@@ -71,21 +72,21 @@ The template to scaffold the project from. A string — must be one of the avail
 
 **Templates with recommended integrations (SEO and Images):**
 
-| Name | Description |
-| --- | --- |
-| `doks` | Doks theme |
-| `bolt` | Bolt theme |
+| Name              | Description          |
+| ----------------- | -------------------- |
+| `doks`            | Doks theme           |
+| `bolt`            | Bolt theme           |
 | `tailwindcss-rec` | Tailwind CSS starter |
-| `bootstrap-rec` | Bootstrap starter |
-| `basic-rec` | Basic starter |
+| `bootstrap-rec`   | Bootstrap starter    |
+| `basic-rec`       | Basic starter        |
 
 **Templates without recommended integrations:**
 
-| Name | Description |
-| --- | --- |
+| Name          | Description          |
+| ------------- | -------------------- |
 | `tailwindcss` | Tailwind CSS starter |
-| `bootstrap` | Bootstrap starter |
-| `basic` | Basic starter |
+| `bootstrap`   | Bootstrap starter    |
+| `basic`       | Basic starter        |
 
 **Examples:**
 

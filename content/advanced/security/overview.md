@@ -15,28 +15,16 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Use this section to apply essential security protections at the framework and hosting layer.
 
 ## Security Guides
 
 {{< card-grid >}}
-{{< link-card
-  title="Content Security Policy"
-  description="Restrict allowed resource sources to reduce XSS and injection risk."
-  href="/advanced/security/content-security-policy/"
->}}
-{{< link-card
-  title="Headers"
-  description="Set secure HTTP headers such as HSTS, nosniff, and permissions policy."
-  href="/advanced/security/headers/"
->}}
+{{< link-card title="Content Security Policy" description="Restrict allowed resource sources to reduce XSS and injection risk." href="/advanced/security/content-security-policy/" >}}
+{{< link-card title="Headers" description="Set secure HTTP headers such as HSTS, nosniff, and permissions policy." href="/advanced/security/headers/" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card
-  title="Email Obfuscation"
-  description="Protect published email addresses from basic scraping bots."
-  href="/advanced/security/email-obfuscation/"
-  class="w-50"
->}}
+{{< link-card title="Email Obfuscation" description="Protect published email addresses from basic scraping bots." href="/advanced/security/email-obfuscation/" class="w-50" >}}
 {{< /card-grid >}}

@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Your project created with `create thulite` comes with a practical default structure.
 This page explains what each top-level directory is for and where to put your files.
 
@@ -40,18 +41,18 @@ Typical starter structure:
 - {folder} assets
   - {folder} scss
     - {folder} common
-      - {brand-sass} _custom.scss
-      - {brand-sass} _variables-custom.scss
+      - {brand-sass} \_custom.scss
+      - {brand-sass} \_variables-custom.scss
     - {brand-sass} app.scss
   - {png} favicon.png
   - {svg} favicon.svg
 - {folder} config
-  - {folder} _default
+  - {folder} \_default
     - {toml} hugo.toml
     - {toml} module.toml
     - {toml} params.toml
 - {folder} content
-  - {markdown} _index.md
+  - {markdown} \_index.md
 - {folder} layouts
   - {html} home.html
 - {folder} static

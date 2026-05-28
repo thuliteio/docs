@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 This page helps you find answers to common problems with Thulite.
 
 ## Verify your setup

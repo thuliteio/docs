@@ -42,11 +42,13 @@ Add a file to `layouts/_partials/`, then include it from `home.html`, `list.html
 Use partials for repeated UI blocks and shared rendering logic. Keep them small and focused.
 
 <!-- markdownlint-disable MD034 -->
+
 ## Learn more
 
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Partials" description="Build reusable template fragments." href="https://gohugo.io/templates/types/#partial" target="_blank" class="w-50" >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Partial caching" description="Use partialCached for expensive partials." href="https://gohugo.io/functions/partials/includecached/" target="_blank" class="w-50" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->
 <!-- markdownlint-enable MD012 -->

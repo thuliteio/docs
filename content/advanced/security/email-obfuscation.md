@@ -15,6 +15,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 This guide shows how to obfuscate email addresses in Thulite using a simple, effective CSS technique.
 
 ## Background
@@ -52,21 +53,7 @@ span.email b {
 Create the shortcode file `layouts/shortcodes/email.html` with the following content:
 
 ```html {title="email.html"}
-{{- /* Set defaults and get args. */}}
-{{- $address := index .Params 0 | default site.Params.defaultEmail }}
-
-{{- /* Get parts. */}}
-{{- $addressParts := split $address "@" }}
-{{- $userName := (index $addressParts 0) }}
-{{- $rootDomain := (index $addressParts 1) }}
-{{- $rootDomainParts := split $rootDomain "." }}
-{{- $domainName := (index $rootDomainParts 0) }}
-{{- $topLevelDomain := (index $rootDomainParts 1) }}
-
-{{- /* Render. */}}
-<span class="email">
-  {{- printf "%s@%s<b>.%s</b>.%s" $userName $domainName $domainName $topLevelDomain | safeHTML -}}
-</span>
+{{- /* Set defaults and get args. */}} {{- $address := index .Params 0 | default site.Params.defaultEmail }} {{- /* Get parts. */}} {{- $addressParts := split $address "@" }} {{- $userName := (index $addressParts 0) }} {{- $rootDomain := (index $addressParts 1) }} {{- $rootDomainParts := split $rootDomain "." }} {{- $domainName := (index $rootDomainParts 0) }} {{- $topLevelDomain := (index $rootDomainParts 1) }} {{- /* Render. */}} <span class="email"> {{- printf "%s@%s<b>.%s</b>.%s" $userName $domainName $domainName $topLevelDomain | safeHTML -}} </span>
 ```
 
 This shortcode uses the provided email address or falls back to `defaultEmail`. It then splits the address into `userName`, `domainName`, and `topLevelDomain` and renders the obfuscated HTML.

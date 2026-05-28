@@ -44,8 +44,10 @@ Use meaningful alt text that describes the image content, not just the filename.
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
-  {{< link-card src="svgs/thulite.svg" title="Thulite Images" description="Optimization and responsive image delivery for Thulite." href="https://images.thulite.io/" target="_blank" class="w-50" >}}
-  {{< link-card src="svgs/thulite.svg" title="Thulite SVG" description="Inline and optimize SVG usage in Thulite." href="https://svg.thulite.io/" target="_blank" class="w-50" >}}
+{{< link-card src="svgs/thulite.svg" title="Thulite Images" description="Optimization and responsive image delivery for Thulite." href="https://images.thulite.io/" target="_blank" class="w-50" >}}
+{{< link-card src="svgs/thulite.svg" title="Thulite SVG" description="Inline and optimize SVG usage in Thulite." href="https://svg.thulite.io/" target="_blank" class="w-50" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

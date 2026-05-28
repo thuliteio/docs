@@ -15,19 +15,12 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Use this section to improve how fast your Thulite site builds, renders, and delivers assets in production.
 
 ## Performance Guides
 
 {{< card-grid >}}
-{{< link-card
-  title="Caching"
-  description="Configure build and runtime caching for faster repeat visits and safer cache busting."
-  href="/advanced/performance/caching/"
->}}
-{{< link-card
-  title="Optimization"
-  description="Reduce payload size and defer non-critical work to improve Core Web Vitals."
-  href="/advanced/performance/optimization/"
->}}
+{{< link-card title="Caching" description="Configure build and runtime caching for faster repeat visits and safer cache busting." href="/advanced/performance/caching/" >}}
+{{< link-card title="Optimization" description="Reduce payload size and defer non-critical work to improve Core Web Vitals." href="/advanced/performance/optimization/" >}}
 {{< /card-grid >}}

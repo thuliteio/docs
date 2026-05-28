@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 This page covers the editor and formatting tools we recommend for Thulite projects.
 
 ## Editor choice

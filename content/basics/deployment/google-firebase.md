@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 Use [Firebase Hosting](https://firebase.google.com/products/hosting), part of [Firebase](https://firebase.google.com/), to deploy a Thulite site.
 
 ## Prerequisites
@@ -99,7 +100,9 @@ firebase deploy
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Host on Firebase" description="Official Hugo guide for deploying sites on Firebase." href="https://gohugo.io/host-and-deploy/host-on-firebase/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->

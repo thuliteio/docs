@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 [Google Analytics](https://marketingplatform.google.com/about/analytics/) is an analytics service that enables you to measure traffic and engagement across your websites and apps.
 
 {{< callout context="note" title="Using Google Analytics GA4 with CSP" icon="info-circle" >}}

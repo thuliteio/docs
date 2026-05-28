@@ -14,6 +14,7 @@ params:
     canonical: "" # custom canonical URL (optional)
     robots: "" # custom robot tags (optional)
 ---
+
 This reference guide describes the main site parameters in `config/_default/params.toml`.
 
 ## Example
@@ -56,7 +57,9 @@ Controls how image render hook issues are handled. A string — `ignore`, `warni
 ### link
 
 <!-- markdownlint-disable MD024 -->
+
 #### errorLevel
+
 <!-- markdownlint-enable MD024 -->
 
 Controls how link render hook issues are handled. A string — `ignore`, `warning`, or `error`.
@@ -68,7 +71,9 @@ Whether broken links are highlighted in rendered content. A boolean — `false` 
 ## Learn more
 
 <!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
 {{< link-card src="svgs/simple-icons/hugo.svg" title="Configure params" description="Official reference for site parameters in Hugo configuration." href="https://gohugo.io/configuration/params/" target="_blank" >}}
 {{< /card-grid >}}
+
 <!-- markdownlint-enable MD034 -->
