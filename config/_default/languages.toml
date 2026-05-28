@@ -1,5 +1,5 @@
 [en]
-  languageName = "English"
+  label = "English"
   contentDir = "content/en"
   weight = 10
   [en.params]
@@ -11,7 +11,7 @@
     alertText = '<a target="_blank" class="alert-link stretched-link fw-normal" href="https://thulite.io/blog/hugo-shortcodes-0-1/">Get Hugo Shortcodes</a><svg xmlns="http://www.w3.org/2000/svg" class="ms-1 mb-1 icon icon-tabler icon-tabler-external-link" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>'
 
 [de]
-  languageName = "German"
+  label = "German"
   contentDir = "content/de"
   weight = 15
   [de.params]
@@ -21,7 +21,7 @@
     alertText = 'Neue Version ist da! <a class="alert-link stretched-link" href="https://getdoks.org/blog/doks-v0.5/">Doks v0.5</a>'
 
 [nl]
-  languageName = "Nederlands"
+  label = "Nederlands"
   contentDir = "content/nl"
   weight = 20
   [nl.params]
