@@ -25,7 +25,7 @@ Update your [settings](/reference/configuration/settings/) in `./config/_default
 title = "Thulite"
 baseurl = "http://localhost/"
 disableAliases = true
-disableHugoGeneratorInject = truehttp://localhost:3000/reference/configuration/settings/
+disableHugoGeneratorInject = true
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 enableGitInfo = false
