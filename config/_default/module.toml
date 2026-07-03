@@ -14,10 +14,6 @@
 
 ## data
 [[mounts]]
-  source = "node_modules/@thulite/doks-core/data"
-  target = "data"
-
-[[mounts]]
   source = "data"
   target = "data"
 
@@ -27,8 +23,11 @@
   target = "layouts"
 
 [[mounts]]
-  files = ['! home.html']
-  source = "node_modules/@thulite/doks-core/layouts"
+  source = "node_modules/@ventizo/atlas-core/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/@thulite/bootstrap/layouts"
   target = "layouts"
 
 [[mounts]]
@@ -49,20 +48,16 @@
 
 ## i18n
 [[mounts]]
-  source = "node_modules/@thulite/doks-core/i18n"
-  target = "i18n"
-
-[[mounts]]
   source = "i18n"
   target = "i18n"
 
 ## archetypes
 [[mounts]]
-  source = "node_modules/@thulite/doks-core/archetypes"
+  source = "archetypes"
   target = "archetypes"
 
 [[mounts]]
-  source = "archetypes"
+  source = "node_modules/@ventizo/atlas-core/archetypes"
   target = "archetypes"
 
 ## assets
@@ -71,7 +66,15 @@
   target = "assets"
 
 [[mounts]]
-  source = "node_modules/@thulite/doks-core/assets"
+  source = "node_modules/@thulite/bootstrap/assets"
+  target = "assets"
+
+[[mounts]]
+  source = "node_modules/@thulite/images/assets"
+  target = "assets"
+
+[[mounts]]
+  source = "node_modules/@ventizo/atlas-core/assets"
   target = "assets"
 
 [[mounts]]
@@ -83,10 +86,6 @@
   target = "assets/svgs/simple-icons"
 
 [[mounts]]
-  source = "node_modules/@thulite/images/assets"
-  target = "assets"
-
-[[mounts]]
   source = "hugo_stats.json"
   target = "assets/watching/hugo_stats.json"
 
@@ -95,10 +94,6 @@
   target = "assets"
 
 ## static
-[[mounts]]
-  source = "node_modules/@thulite/doks-core/static"
-  target = "static"
-
 [[mounts]]
   source = "node_modules/@fontsource-variable/geist-mono"
   target = "static/fonts/geist-mono"

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="snailish-spiral.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.3300781"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-width="2560"
+     inkscape:window-height="1416"
+     inkscape:window-x="2560"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;fill-rule:evenodd;stroke:#1f1f1f;stroke-width:15;stroke-dasharray:none;stroke-opacity:1"
+       id="path1"
+       sodipodi:cx="274.41998"
+       sodipodi:cy="218.0323"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3"
+       sodipodi:radius="167.68629"
+       sodipodi:argument="-16.3694"
+       sodipodi:t0="0"
+       d="m 274.41998,218.0323 c -6.63446,5.16433 -10.23462,-6.39523 -8.58346,-11.02692 4.47457,-12.55159 21.26759,-12.56655 30.6373,-6.14 16.76022,11.4956 15.86161,35.81227 3.69654,50.24768 -17.85272,21.18453 -50.56434,19.28219 -69.85805,1.25308 -25.71548,-24.02997 -22.75794,-65.39135 1.19037,-89.46843 30.13652,-30.29855 80.2544,-26.26257 109.07881,3.63384 34.91023,36.20854 29.78397,95.1378 -6.07729,128.68918 -42.26126,39.53915 -110.03391,33.31592 -148.29956,-8.52075 -44.17921,-48.3021 -36.85491,-124.93851 10.96421,-167.90994 54.33512,-48.826875 139.84905,-40.398813 187.52032,13.40767 53.47995,60.36274 43.94628,154.76394 -15.85113,207.13069 -66.38646,58.13703 -169.68209,47.49643 -226.74108,-18.29458" />
+  </g>
+</svg>

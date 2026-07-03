@@ -1,186 +1,402 @@
-{{ define "sidebar-prefooter" }}
-  <div aria-hidden="true" class="page-wash"></div>
-
-  <section class="section-header">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 col-xl-14 text-center">
-          <h1 class="mt-1">{{ .Title }}</h1>
-        </div>
-        <div class="col-lg-10 text-center">
-          <p class="lead text-muted">{{ .Params.lead | safeHTML }}</p>
-          <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}start-here/getting-started/" role="button">{{ i18n "get_started" }}</a>
-        </div>
-        <div class="col-lg-12">
-          <div class="header-content">
-            {{ .Content }}
-          </div>
+{{ define "main" }}
+<div class="section-lg">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-8">
+        {{ if .Params.notice.show }}
+        <p class="mt-1 mb-4 text-center">
+          <a href="{{ .Params.notice.href }}" class="icon-link inverse-link">
+            {{ .Params.notice.title }}
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+          </a>
+        </p>
+        {{ end }}
+        <h1 class="text-center mb-0">{{ .Title }}</h1>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-lg-10 col-xl-8 col-xxl-5">
+        <p class="text-center">{{ .Summary }}</p>
+        <div class="text-center">
+          <a class="btn btn-thulite mt-4" href="/thulite/start-here/getting-started/" role="button">Get started</a>
+          <!-- <a class="btn btn-outline-thulite mt-4 ms-2" href="/" role="button">View our services</a> -->
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
 <!--
-  <section class="section-logos">
-    <div class="container">
-      <h2 class="fs-5 text-center mt-0">Deploy to any platform</h2>
-      <div class="logo-carousel" aria-label="Deploy providers">
-        <div class="logo-carousel-track">
-          <div class="logo-carousel-group">
-            {{ partial "inline-svg" (dict "src" "svgs/aws.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/cloudflarepages.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/github.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/gitlab.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/firebase.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/microsoft.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/netlify.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/render.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/vercel.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+<div class="section">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-xl-3">
+        <div class="card h-100 border-0 atlas-home-card">
+          <div class="card-body p-4">
+            {{- $opts := dict
+              "page" .
+              "src" "svgs/tabler-icons/book-2.svg"
+              "id" "svg-basics"
+              "class" "integration-icon"
+              "role" "img"
+              "title" "Basics icon"
+              "desc" "Core documentation and guides"
+              "ariaLabelledby" "basics-title"
+              "ariaDescribedby" "basics-desc"
+              "width" "28"
+              "height" "28"
+              "stroke-width" "1.5"
+            }}
+            {{- partial "inline-svg.html" $opts }}
+            <h3 class="h5"><a href="/docs/guides/" class="text-reset text-decoration-none stretched-link">Guides</a></h3>
+            <p class="text-body-secondary fs-6">Learn content, layouts, assets, integrations, and deployment.</p>
           </div>
-          <div class="logo-carousel-group" aria-hidden="true">
-            {{ partial "inline-svg" (dict "src" "svgs/aws.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/cloudflarepages.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/github.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/gitlab.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/firebase.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/microsoft.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/netlify.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/render.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
-            {{ partial "inline-svg" (dict "src" "svgs/simple-icons/vercel.svg" "width" "40" "class" "logo-carousel-item svg-inline svg-inline-custom svg-monochrome text-body-emphasis" ) }}
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <div class="card h-100 border-0 atlas-home-card">
+          <div class="card-body p-4">
+            {{- $opts := dict
+              "page" .
+              "src" "svgs/tabler-icons/file-text.svg"
+              "id" "svg-reference"
+              "class" "integration-icon"
+              "role" "img"
+              "title" "Reference icon"
+              "desc" "Reference and technical details"
+              "ariaLabelledby" "reference-title"
+              "ariaDescribedby" "reference-desc"
+              "width" "28"
+              "height" "28"
+              "stroke-width" "1.5"
+            }}
+            {{- partial "inline-svg.html" $opts }}
+            <h3 class="h5"><a href="/docs/reference/" class="text-reset text-decoration-none stretched-link">Reference</a></h3>
+            <p class="text-body-secondary fs-6">Find commands, settings, and syntax details quickly.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 -->
 
-  <section class="section-main">
-    <div class="container">
-      <h2 class="text-center mt-lg-0">Everything you need</h2>
-      <div class="row justify-content-center g-4">
-        <div class="col-lg-5">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "file-text" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Structured content</h3>
-              <p class="text-muted fs-6">Create and manage content in Markdown with clear workflows.</p>
-            </div>
+<div class="section">
+  <div class="container">
+    <!--
+    <div class="row align-items-end mb-4">
+      <div class="col-lg-8">
+        <h2 class="fs-3 mb-2">Thulite</h2>
+        <p class="text-body-secondary mb-0">Follow a practical path from setup to production hardening.</p>
+      </div>
+    </div>
+    -->
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-3">
+        <div class="card h-100 border-0 atlas-home-card">
+          <div class="card-body p-4">
+            {{- $opts := dict
+              "page" .
+              "src" "svgs/tabler-icons/rocket.svg"
+              "id" "svg-start-here"
+              "class" "integration-icon"
+              "role" "img"
+              "title" "Start here icon"
+              "desc" "Quick start pathway"
+              "ariaLabelledby" "start-here-title"
+              "ariaDescribedby" "start-here-desc"
+              "width" "28"
+              "height" "28"
+              "stroke-width" "1.5"
+            }}
+            {{- partial "inline-svg.html" $opts }}
+            <h3 class="h5"><a href="/thulite/start-here/" class="text-reset text-decoration-none stretched-link">Start Here</a></h3>
+            <p class="text-body-secondary fs-6">Install, configure, and run your first Atlas project.</p>
           </div>
         </div>
-        <div class="col-lg-5">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "seo" "stroke-width" "1.5" "class" "text-muted me-2" ) }}SEO ready</h3>
-              <p class="text-muted fs-6">Ship search-friendly defaults from day one.</p>
-            </div>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <div class="card h-100 border-0 atlas-home-card">
+          <div class="card-body p-4">
+            {{- $opts := dict
+              "page" .
+              "src" "svgs/tabler-icons/book-2.svg"
+              "id" "svg-basics"
+              "class" "integration-icon"
+              "role" "img"
+              "title" "Basics icon"
+              "desc" "Core documentation and guides"
+              "ariaLabelledby" "basics-title"
+              "ariaDescribedby" "basics-desc"
+              "width" "28"
+              "height" "28"
+              "stroke-width" "1.5"
+            }}
+            {{- partial "inline-svg.html" $opts }}
+            <h3 class="h5"><a href="/thulite/basics/" class="text-reset text-decoration-none stretched-link">Basics</a></h3>
+            <p class="text-body-secondary fs-6">Learn content, layouts, assets, integrations, and deployment.</p>
           </div>
         </div>
-        <div class="col-lg-5">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "gauge" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Fast performance</h3>
-              <p class="text-muted fs-6">Keep pages quick with optimized defaults.</p>
-            </div>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <div class="card h-100 border-0 atlas-home-card">
+          <div class="card-body p-4">
+            {{- $opts := dict
+              "page" .
+              "src" "svgs/tabler-icons/settings.svg"
+              "id" "svg-advanced"
+              "class" "integration-icon"
+              "role" "img"
+              "title" "Advanced icon"
+              "desc" "Advanced configuration and optimization"
+              "ariaLabelledby" "advanced-title"
+              "ariaDescribedby" "advanced-desc"
+              "width" "28"
+              "height" "28"
+              "stroke-width" "1.5"
+            }}
+            {{- partial "inline-svg.html" $opts }}
+            <h3 class="h5"> <a href="/thulite/advanced/" class="text-reset text-decoration-none stretched-link">Advanced</a></h3>
+            <p class="text-body-secondary fs-6">Improve performance, security, and production workflows.</p>
           </div>
         </div>
-        <div class="col-lg-5">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "article" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Content sites</h3>
-              <p class="text-muted fs-6">Launch documentation, blogs, and other content-heavy sites.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "shield-check" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Security hardening</h3>
-              <p class="text-muted fs-6">Apply practical protections with built-in guidance for CSP and headers.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "template" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Starter templates</h3>
-              <p class="text-muted fs-6">Start from a purpose-built foundation.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "tool" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Developer friendly</h3>
-              <p class="text-muted fs-6">Work with familiar tools and clear docs.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "folder-plus" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Integrations</h3>
-              <p class="text-muted fs-6">Add SEO, images, and more as needed.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "box" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Easy to use</h3>
-              <p class="text-muted fs-6">Start quickly without extra complexity.</p>
-            </div>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <div class="card h-100 border-0 atlas-home-card">
+          <div class="card-body p-4">
+            {{- $opts := dict
+              "page" .
+              "src" "svgs/tabler-icons/file-text.svg"
+              "id" "svg-reference"
+              "class" "integration-icon"
+              "role" "img"
+              "title" "Reference icon"
+              "desc" "Reference and technical details"
+              "ariaLabelledby" "reference-title"
+              "ariaDescribedby" "reference-desc"
+              "width" "28"
+              "height" "28"
+              "stroke-width" "1.5"
+            }}
+            {{- partial "inline-svg.html" $opts }}
+            <h3 class="h5"><a href="/thulite/reference/" class="text-reset text-decoration-none stretched-link">Reference</a></h3>
+            <p class="text-body-secondary fs-6">Find commands, settings, and syntax details quickly.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-{{ end }}
+  </div>
+</div>
 
-{{ define "sidebar-footer" }}
-  <section class="section-prefooter">
-    <div class="container">
-      <h2 class="text-center mt-lg-0">Open source, MIT licensed</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-7 text-center">
-          <p class="text-muted fs-6">Help keep Thulite sustainable by supporting maintenance, documentation, and long-term development.</p>
-          <a target="_blank" href="https://github.com/sponsors/thuliteio" class="icon-link">Sponsor Thulite{{ partial "inline-svg" (dict "src" "chevron-right" "stroke-width" "1.5" ) }}</a>
+<div class="section">
+  <div class="container">
+    <!--
+    <div class="row align-items-end mb-4">
+      <div class="col-lg-8">
+        <h2 class="fs-3 mb-2">Integrations</h2>
+        <p class="text-body-secondary mb-0">Add focused capabilities for search visibility, media quality, and SVG workflows.</p>
+      </div>
+    </div>
+    -->
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4">
+        <div class="card h-100 border-0 atlas-home-card">
+          <div class="card-body p-4">
+            {{- $opts := dict
+              "page" .
+              "src" "svgs/tabler-icons/world-search.svg"
+              "id" "svg-seo"
+              "class" "integration-icon"
+              "role" "img"
+              "title" "SEO icon"
+              "desc" "Search optimization integration"
+              "ariaLabelledby" "seo-title"
+              "ariaDescribedby" "seo-desc"
+              "width" "28"
+              "height" "28"
+              "stroke-width" "1.5"
+            }}
+            {{- partial "inline-svg.html" $opts }}
+            <h3 class="h5"><a href="/seo/" class="text-reset text-decoration-none stretched-link">SEO</a></h3>
+            <p class="text-body-secondary fs-6">Generate stronger metadata, structured data, and search/social signals.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <div class="card h-100 border-0 atlas-home-card">
+          <div class="card-body p-4">
+            {{- $opts := dict
+              "page" .
+              "src" "svgs/tabler-icons/photo.svg"
+              "id" "svg-images"
+              "class" "integration-icon"
+              "role" "img"
+              "title" "Images icon"
+              "desc" "Image optimization integration"
+              "ariaLabelledby" "images-title"
+              "ariaDescribedby" "images-desc"
+              "width" "28"
+              "height" "28"
+              "stroke-width" "1.5"
+            }}
+            {{- partial "inline-svg.html" $opts }}
+            <h3 class="h5"><a href="/images/" class="text-reset text-decoration-none stretched-link">Images</a></h3>
+            <p class="text-body-secondary fs-6">Optimize rendering, responsive behavior, and content media workflows.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <div class="card h-100 border-0 atlas-home-card">
+          <div class="card-body p-4">
+            {{- $opts := dict
+              "page" .
+              "src" "svgs/tabler-icons/file-type-svg.svg"
+              "id" "svg-vector"
+              "class" "integration-icon"
+              "role" "img"
+              "title" "SVG icon"
+              "desc" "Inline SVG integration"
+              "ariaLabelledby" "svg-title"
+              "ariaDescribedby" "svg-desc"
+              "width" "28"
+              "height" "28"
+              "stroke-width" "1.5"
+            }}
+            {{- partial "inline-svg.html" $opts }}
+            <h3 class="h5"><a href="/svg/" class="text-reset text-decoration-none stretched-link">SVG</a></h3>
+            <p class="text-body-secondary fs-6">Inline and manage SVG assets with shortcode and partial APIs.</p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <section class="section-footer">
-    <div class="container">
-      <h2 class="text-center mt-lg-0">FAQs</h2>
-      <div class="row justify-content-center g-4">
-        <div class="col-lg-8">
-          <details><summary>What is Thulite?</summary><span class="fs-6">Thulite is a web framework for building fast, content-focused websites with a strong focus on performance, SEO, and developer experience.</span></details>
-          <details><summary>What makes Thulite different?</summary><span class="fs-6">Thulite combines performance, SEO, and content workflows into one integrated system—so you don't need to piece together multiple tools.</span></details>
-          <details><summary>Is Thulite suitable for production sites?</summary><span class="fs-6">Yes. Thulite is built for real-world use, with strong performance, security hardening options, and maintainable architecture.</span></details>
-          <details><summary>How does Thulite handle security?</summary><span class="fs-6">Thulite includes security-first defaults plus guidance for CSP and HTTP headers, helping you ship hardened sites aligned with modern web standards.</span></details>
-          <details><summary>Do I need to configure everything myself?</summary><span class="fs-6">No. Thulite comes with sensible defaults, so you can get started quickly without extensive setup.</span></details>
-          <details><summary>Who is Thulite for?</summary><span class="fs-6">Thulite is designed for developers and teams building documentation sites, marketing sites, or content-driven platforms.</span></details>
-          <details><summary>How does Thulite handle content?</summary><span class="fs-6">Content is managed in Markdown, making it easy to write, version, and publish.</span></details>
+<div class="section">
+  <div class="container">
+    <h2 class="fs-3 text-center mb-5 visually-hidden">Resources</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-lg-3">
+        <div class="card h-100 border-0">
+        <div class="card-body text-center p-4">
+          {{- $opts := dict
+            "page" .
+            "src" "svgs/tabler-icons/layout-grid.svg"
+            "id" "svg-showcase"
+            "class" "resources-icon"
+            "role" "img"
+            "title" "Showcase icon"
+            "desc" "Collection of Thulite starter templates"
+            "ariaLabelledby" "showcase-title"
+            "ariaDescribedby" "showcase-desc"
+            "width" "28"
+            "height" "28"
+            "stroke-width" "1.5"
+          }}
+          {{- partial "inline-svg.html" $opts }}
+          <h3 class="h5"><a target="_blank" href="https://thulite.io/showcase/" class="text-reset text-decoration-none stretched-link">Showcase</a></h3>
+          <p class="text-muted fs-6 mb-0">Discover production-ready examples and starter templates for your docs site.</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card h-100 border-0">
+        <div class="card-body text-center p-4">
+          {{- $opts := dict
+            "page" .
+            "src" "svgs/tabler-icons/article.svg"
+            "id" "svg-blog"
+            "class" "resources-icon"
+            "role" "img"
+            "title" "Blog icon"
+            "desc" "Thulite articles and updates"
+            "ariaLabelledby" "blog-title"
+            "ariaDescribedby" "blog-desc"
+            "width" "28"
+            "height" "28"
+            "stroke-width" "1.5"
+          }}
+          {{- partial "inline-svg.html" $opts }}
+          <h3 class="h5"><a target="_blank" href="https://thulite.io/blog/" class="text-reset text-decoration-none stretched-link">Blog</a></h3>
+          <p class="text-muted fs-6 mb-0">Read practical guides, release updates, and implementation deep-dives.</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card h-100 border-0">
+        <div class="card-body text-center p-4">
+          {{- $opts := dict
+            "page" .
+            "src" "svgs/tabler-icons/users-group.svg"
+            "id" "svg-community"
+            "class" "resources-icon"
+            "role" "img"
+            "title" "Community icon"
+            "desc" "Thulite community discussions"
+            "ariaLabelledby" "community-title"
+            "ariaDescribedby" "community-desc"
+            "width" "28"
+            "height" "28"
+            "stroke-width" "1.5"
+          }}
+          {{- partial "inline-svg.html" $opts }}
+          <h3 class="h5"><a target="_blank" href="https://github.com/orgs/thuliteio/discussions" class="text-reset text-decoration-none stretched-link">Community</a></h3>
+          <p class="text-muted fs-6 mb-0">Ask questions, share ideas, and get help in the Thulite Discussions forum.</p>
+        </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!--
-  <section class="section-prefooter">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-13 col-lg-7 text-center">
-          <h2 class="text-center mt-lg-0">Thulite, ready in minutes</h2>
-        </div>
+<!--
+<div class="section">
+  <div class="container">
+    <h2 class="fs-3 mb-5">Recent news</h2>
+    <div class="row g-4">
+      {{ $newsPages := where site.RegularPages "Section" "news" }}
+      {{ range first 3 ($newsPages.ByDate.Reverse) }}
+      <div class="col-6 col-md-4">
+        {{ .Render "item" }}
       </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-5 text-center">
-          <p class="text-muted fs-6">Get your Thulite project up and running in minutes — minimal setup, maximum control.</p>
-          <a href="/start-here/getting-started/" class="icon-link">{{ i18n "get_started" }}{{ partial "inline-svg" (dict "src" "chevron-right" "stroke-width" "1.5" ) }}</a>
+      {{ end }}
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="mt-4 text-center p-4">
+          <a class="btn btn-outline-thulite" href="/news/" role="button">View more</a>
         </div>
       </div>
     </div>
-  </section>
-  -->
+  </div>
+</div>
+-->
 
+<!--
+<div class="section faq">
+  <div class="container">
+    <h2 class="fs-3 text-center mb-4">FAQ</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-lg-7">
+        <details><summary>What is Atlas?</summary><span class="fs-6 text-body-secondary">Atlas is a documentation-focused starter built with Thulite, designed to help teams publish fast, structured, and maintainable docs sites.</span></details>
+        <details><summary>Who should use Atlas?</summary><span class="fs-6 text-body-secondary">Atlas is ideal for product teams, developer relations teams, and maintainers who need a reliable docs experience for users and contributors.</span></details>
+        <details><summary>Can I customize Atlas to match my brand?</summary><span class="fs-6 text-body-secondary">Yes. You can customize layouts, colors, typography, navigation, and content structure while keeping the core documentation workflow intact.</span></details>
+        <details><summary>How do I add and organize documentation content in Atlas?</summary><span class="fs-6 text-body-secondary">Content is written in Markdown and organized by sections in the content directory, making it easy to version, review, and publish with Git.</span></details>
+        <details><summary>Is Atlas ready for production deployment?</summary><span class="fs-6 text-body-secondary">Yes. Atlas is suitable for production and supports modern deployment workflows with strong defaults for performance, SEO, and accessibility.</span></details>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<!--
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        {{ partial "main/newsletter-form" . }}
+      </div>
+    </div>
+  </div>
+</div>
+-->
 {{ end }}

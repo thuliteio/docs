@@ -1,3 +1,3 @@
 # docs
 
-Thulite documentation
+Documentation website for the Thulite web framework
