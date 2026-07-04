@@ -1,7 +1,7 @@
 +++
 title = "Thulite Documentation"
 description = "Documentation for Thulite and its integrations, with guides, reference, and production-ready workflows for fast, secure, SEO-ready websites."
-summary = "Build fast, secure, SEO-ready websites with Thulite and its integrations. Start here for guides, reference, and production-ready workflows."
+summary = "Docs and resources to help you build with Thulite."
 date = 2025-08-29T06:03:20+02:00
 lastmod = 2026-04-10T15:07:55+02:00
 draft = false
