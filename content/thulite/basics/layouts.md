@@ -58,6 +58,7 @@ Start by editing these files, then extract repeated UI into partials.
 ## Learn more
 
 Thulite leverages Hugo's [templates](https://gohugo.io/templates/). Here are some relevant topics:
+{.mb-4}
 
 <!-- markdownlint-disable MD034 -->
 

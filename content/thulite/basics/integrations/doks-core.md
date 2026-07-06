@@ -5,7 +5,7 @@ summary: "Use Doks core to power the Doks theme in Thulite, supporting documenta
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 417
+weight: 274
 params:
   toc: true
   seo:
@@ -15,7 +15,7 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-Doks core is the foundational integration for the [Doks theme](/basics/templates/doks/), enabling efficient documentation experiences and robust theme support.
+Doks core is the foundational integration for the [Doks theme](/thulite/basics/templates/doks/), enabling efficient documentation experiences and robust theme support.
 
 ## Links
 

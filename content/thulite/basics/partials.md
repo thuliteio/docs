@@ -19,7 +19,7 @@ params:
 
 Partials are reusable template fragments you include from layouts.
 
-In this project, partials live in `layouts/_partials/` (for example `header/`, `head/`, `main/`, and `sidebar/`).
+In a Thulite project, partials live in `layouts/_partials/` (for example `header/`, `head/`, `main/`, and `sidebar/`).
 
 ## Use a partial
 

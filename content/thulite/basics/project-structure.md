@@ -85,15 +85,15 @@ Use `app.scss` as your entrypoint. Put custom variables in `common/_variables-cu
 
 - `hugo.toml`: core [Hugo configuration](https://gohugo.io/configuration/all/)
 - `module.toml`: [Hugo mounts](https://gohugo.io/configuration/module/#mounts), including links from `node_modules` to project directories
-- `params.toml`: site-level [Thulite settings](/start-here/configuration/#update-parameters), including theme and integration options
+- `params.toml`: site-level [Thulite settings](/thulite/start-here/configuration/#update-parameters), including theme and integration options
 
 ### `content`
 
-Use `content/` for [pages](/basics/pages/), sections, and page bundles (including page resources).
+Use `content/` for [pages](/thulite/basics/pages/), sections, and page bundles (including page resources).
 
 ### `layouts`
 
-[Layouts](/basics/layouts/) define shared page structure and rendering templates.
+[Layouts](/thulite/basics/layouts/) define shared page structure and rendering templates.
 
 ### `static`
 
@@ -103,7 +103,7 @@ This is ideal for assets like fonts or icons, and special files like `robots.txt
 
 You can place CSS and JavaScript here, but they will not be bundled or optimized.
 
-{{< callout context="tip" icon="bulb" >}}
+{{< callout context="note" icon="bulb" >}}
 
 As a rule, keep your own CSS and JavaScript in `assets/`.
 

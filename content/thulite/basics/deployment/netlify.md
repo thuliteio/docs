@@ -5,7 +5,7 @@ summary: "Deploy Thulite to Netlify through the web UI or CLI, configure build a
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 521
+weight: 287
 params:
   toc: true
   seo:
@@ -65,7 +65,7 @@ To configure default settings, create a `netlify.toml` file with the following c
   """
 ```
 
-{{< callout context="tip" icon="bulb" >}}
+{{< callout context="note" icon="bulb" >}}
 Learn more about [deploying with Git](https://docs.netlify.com/deploy/create-deploys/#deploy-with-git) in the Netlify docs.
 {{< /callout >}}
 
@@ -128,7 +128,7 @@ The CLI adds a deploy key to your repository, so Netlify rebuilds your site auto
 {{< /step >}}
 {{< /steps >}}
 
-{{< callout context="tip" icon="bulb" >}}
+{{< callout context="note" icon="bulb" >}}
 Learn more about the [Netlify CLI](https://docs.netlify.com/deploy/create-deploys/#netlify-cli) in the Netlify docs.
 {{< /callout >}}
 

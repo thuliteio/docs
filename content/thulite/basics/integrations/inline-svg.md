@@ -5,7 +5,7 @@ summary: "Use the official Inline SVG integration for Thulite to embed SVG asset
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 421
+weight: 276
 params:
   toc: true
   seo:
@@ -20,4 +20,4 @@ Inline SVG is the official SVG integration for Thulite, enabling embedded SVG gr
 ## Links
 
 - [View repository](https://github.com/thuliteio/inline-svg)
-- [View documentation](https://svg.thulite.io/)
+- [View documentation](/svg/)

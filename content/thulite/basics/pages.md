@@ -30,7 +30,7 @@ Some common patterns:
 
 ## Create new content
 
-Use the [`create` command](/reference/commands/#create) to scaffold content from your archetypes.
+Use the [`create` command](/thulite/reference/commands/#create) to scaffold content from your archetypes.
 
 {{< callout context="note" icon="info-circle" >}}
 
@@ -175,6 +175,7 @@ bun run create _index.md
 ## Learn more
 
 Thulite leverages Hugo's [content management](https://gohugo.io/content-management/). Start with these topics:
+{.mb-4}
 
 <!-- markdownlint-disable MD034 -->
 

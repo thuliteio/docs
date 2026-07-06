@@ -5,7 +5,7 @@ summary: "Deploy Thulite to Vercel with automatic project detection via UI or CL
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 525
+weight: 289
 params:
   toc: true
   seo:
@@ -42,7 +42,7 @@ Your application is deployed!
 
 After your project is imported and deployed, subsequent branch pushes generate [Preview Deployments](https://vercel.com/docs/deployments/environments#preview-environment-pre-production), and changes to the production branch (commonly "main") trigger a [Production Deployment](https://vercel.com/docs/deployments/environments#production-environment).
 
-{{< callout context="tip" icon="bulb" >}}
+{{< callout context="note" icon="bulb" >}}
 Learn more about Vercel's [Git Integration](https://vercel.com/docs/git).
 {{< /callout >}}
 
@@ -99,7 +99,7 @@ Your application is deployed!
 
 Use `vercel.json` to override Vercel defaults and configure additional settings. For example, you can attach headers to HTTP responses from your deployments.
 
-{{< callout context="tip" icon="bulb" >}}
+{{< callout context="note" icon="bulb" >}}
 Learn more about [Vercel's project configuration](https://vercel.com/docs/project-configuration).
 {{< /callout >}}
 

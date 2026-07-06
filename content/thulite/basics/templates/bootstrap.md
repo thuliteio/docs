@@ -5,7 +5,7 @@ summary: "Choose the Bootstrap starter for Thulite to build responsive pages qui
 date: 2026-05-18T15:01:40+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 325
+weight: 265
 params:
   toc: true
   seo:

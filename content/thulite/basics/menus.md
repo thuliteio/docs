@@ -17,7 +17,7 @@ params:
 
 Define navigation in `config/_default/menus/`.
 
-In this project:
+In a Thulite project:
 
 - `menus.en.toml` defines English menus
 - `menus.nl.toml` defines Dutch menus

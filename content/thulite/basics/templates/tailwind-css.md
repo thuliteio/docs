@@ -5,7 +5,7 @@ summary: "Choose the Tailwind CSS starter for Thulite to build quickly with util
 date: 2026-05-18T15:01:54+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 335
+weight: 269
 params:
   toc: true
   seo:

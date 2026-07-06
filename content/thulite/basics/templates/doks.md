@@ -5,7 +5,7 @@ summary: "Choose the Doks theme for modern Thulite documentation sites with stro
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 330
+weight: 267
 params:
   toc: true
   seo:

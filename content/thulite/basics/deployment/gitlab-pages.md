@@ -5,7 +5,7 @@ summary: "Deploy Thulite to GitLab Pages using a CI pipeline that installs depen
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 515
+weight: 284
 params:
   toc: true
   seo:
@@ -17,7 +17,7 @@ params:
 
 Use [GitLab Pages](https://docs.gitlab.com/user/project/pages/) to host a Thulite site for your [GitLab](https://about.gitlab.com/) projects, groups, or user account.
 
-{{< callout context="tip" icon="bulb" >}}
+{{< callout context="note" icon="bulb" >}}
 Looking for an example? Check out the [GitLab Pages Doks example project](https://gitlab.com/h-enk/doks-gitlab-pages)!
 {{< /callout >}}
 

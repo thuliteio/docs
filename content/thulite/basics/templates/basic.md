@@ -5,7 +5,7 @@ summary: "Choose the Basic starter for a minimal Thulite foundation that priorit
 date: 2026-05-18T15:01:27+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 315
+weight: 261
 params:
   toc: true
   seo:

@@ -5,7 +5,7 @@ summary: "Deploy Thulite to Azure Static Web Apps from GitHub using the VS Code 
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 519
+weight: 286
 params:
   toc: true
   seo:
@@ -17,7 +17,7 @@ params:
 
 Use [Azure](https://azure.microsoft.com/en-us) and its [Static Web Apps](https://azure.microsoft.com/en-us/products/app-service/static/) service to deploy your Thulite site.
 
-{{< callout context="tip" icon="bulb" >}}
+{{< callout context="note" icon="bulb" >}}
 Looking for an example? Check out the [official Microsoft Azure Doks example project](https://github.com/thuliteio/doks-microsoft-azure)!
 {{< /callout >}}
 

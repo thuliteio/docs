@@ -5,7 +5,7 @@ summary: "Host a Thulite site on GitHub Pages with a GitHub Actions workflow tha
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 513
+weight: 283
 params:
   toc: true
   seo:
@@ -17,7 +17,7 @@ params:
 
 Use [GitHub Pages](https://docs.github.com/en/pages) to host a Thulite site directly from a repository on [GitHub.com](https://github.com/).
 
-{{< callout context="tip" icon="bulb" >}}
+{{< callout context="note" icon="bulb" >}}
 Looking for an example? Check out the [official GitHub Pages Doks example project](https://github.com/thuliteio/doks-gh-pages)!
 {{< /callout >}}
 
@@ -143,7 +143,7 @@ Push the changes and wait for the action to complete successfully (about 30 seco
 
 That's it. After about a minute, your site is available at the "Your site is published at" URL. Each push to your Thulite repository triggers an automatic deployment.
 
-{{< callout context="tip" icon="bulb" title="Set up a custom domain" >}}
+{{< callout context="note" icon="bulb" title="Set up a custom domain" >}}
 You can optionally set up a custom domain by adding the following `./public/CNAME` file to your project:
 
 ```txt

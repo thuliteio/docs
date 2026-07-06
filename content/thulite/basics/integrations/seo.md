@@ -5,7 +5,7 @@ summary: "Use the official SEO integration for Thulite to manage metadata and im
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 423
+weight: 277
 params:
   toc: true
   seo:
@@ -20,4 +20,4 @@ SEO is the official SEO integration for Thulite, simplifying metadata management
 ## Links
 
 - [View repository](https://github.com/thuliteio/seo)
-- [View documentation](https://seo.thulite.io/)
+- [View documentation](/seo/)

@@ -5,7 +5,7 @@ summary: "Use the Bolt core integration to power the Bolt theme in Thulite, enab
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 411
+weight: 271
 params:
   toc: true
   seo:
@@ -15,7 +15,7 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-Bolt core is the foundational integration for the [Bolt theme](/basics/templates/bolt/), enabling smooth operation and advanced customizations within Thulite.
+Bolt core is the foundational integration for the [Bolt theme](/thulite/basics/templates/bolt/), enabling smooth operation and advanced customizations within Thulite.
 
 ## Links
 

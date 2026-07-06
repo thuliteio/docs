@@ -5,7 +5,7 @@ summary: "Deploy Thulite to Render by connecting a repository, setting build and
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 523
+weight: 288
 params:
   toc: true
   seo:
