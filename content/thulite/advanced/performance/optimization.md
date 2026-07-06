@@ -5,7 +5,7 @@ summary: "Optimize Thulite output with production builds, lean CSS/JS, deferred 
 date: 2026-05-18T08:11:22+02:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false
-weight: 413
+weight: 313
 params:
   toc: true
   seo:

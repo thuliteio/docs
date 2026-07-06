@@ -5,7 +5,7 @@ summary: "Set up Google Analytics 4 in Thulite by enabling Hugo analytics templa
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false
-weight: 715
+weight: 343
 params:
   toc: true
   seo:

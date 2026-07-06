@@ -5,7 +5,7 @@ summary: "Create and enforce a strict Content Security Policy in Thulite to limi
 date: 2026-05-18T08:13:01+02:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false
-weight: 511
+weight: 321
 params:
   toc: true
   seo:

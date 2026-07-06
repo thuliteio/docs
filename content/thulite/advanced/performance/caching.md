@@ -5,7 +5,7 @@ summary: "Configure Thulite caching for faster builds and repeat visits using Hu
 date: 2026-05-18T08:11:14+02:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false
-weight: 411
+weight: 311
 params:
   toc: true
   seo:

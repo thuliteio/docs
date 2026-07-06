@@ -6,7 +6,7 @@ summary: "Improve Thulite SEO with practical guidance for metadata, crawl signal
 date: 2026-05-18T08:14:40+02:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false
-weight: 610
+weight: 330
 params:
   toc: true
   seo:
@@ -23,7 +23,7 @@ Use this section to improve crawlability, metadata quality, and search visibilit
 <!-- markdownlint-disable MD034 -->
 
 {{< card-grid >}}
-{{< link-card src="svgs/thulite.svg" title="Thulite SEO" description="Complete SEO docs for metadata, structured data, and search visibility." href="https://seo.thulite.io/" target="_blank" >}}
+{{< link-card src="svgs/thulite.svg" title="Thulite SEO" description="Complete SEO docs for metadata, structured data, and search visibility." href="/seo/" >}}
 {{< /card-grid >}}
 
 <!-- markdownlint-enable MD034 -->

@@ -5,7 +5,7 @@ summary: "Integrate Decap CMS with Thulite using Git-backed content editing and 
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false
-weight: 813
+weight: 352
 params:
   toc: true
   seo:

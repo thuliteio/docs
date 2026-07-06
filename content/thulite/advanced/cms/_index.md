@@ -5,7 +5,7 @@ summary: "Explore CMS integration options for Thulite and choose a Git-based wor
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false
-weight: 800
+weight: 350
 
 params:
   toc: true
