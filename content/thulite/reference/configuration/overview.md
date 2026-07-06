@@ -21,11 +21,11 @@ Use this section to find the core configuration references for your Thulite proj
 ## Configuration Guides
 
 {{< card-grid >}}
-{{< link-card title="Configuration Structure" description="How configuration files are organized in a project." href="/reference/configuration/configuration-structure/" >}}
-{{< link-card title="Settings" description="Main Hugo site settings from config/_default/hugo.toml." href="/reference/configuration/settings/" >}}
+{{< link-card title="Configuration Structure" description="How configuration files are organized in a project." href="/thulite/reference/configuration/configuration-structure/" >}}
+{{< link-card title="Settings" description="Main Hugo site settings from config/_default/hugo.toml." href="/thulite/reference/configuration/settings/" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card title="Parameters" description="Site parameter values from config/\_default/params.toml." href="/reference/configuration/parameters/" >}}
-{{< link-card title="Page Frontmatter" description="Page-level metadata fields used in content/*.md files." href="/reference/configuration/page-frontmatter/" >}}
+{{< link-card title="Parameters" description="Site parameter values from config/_default/params.toml." href="/thulite/reference/configuration/parameters/" >}}
+{{< link-card title="Page Frontmatter" description="Page-level metadata fields used in content/*.md files." href="/thulite/reference/configuration/page-frontmatter/" >}}
 {{< /card-grid >}}
