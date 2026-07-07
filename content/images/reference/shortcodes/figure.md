@@ -43,7 +43,7 @@ The `src` argument is required; others are optional.
 
 ### src
 
-A string containing the path to the image. See [Image placement](/docs/basics/image-placement/) for supported locations and syntax.
+A string containing the path to the image. See [Image placement](/images/basics/image-placement/) for supported locations and syntax.
 
 ### width
 
