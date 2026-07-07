@@ -1,36 +1,7 @@
-# [[main]]
-#   name = "Docs"
-#   pageRef = '/docs'
-#   weight = 10
-
 [[main]]
   name = "Thulite"
   pageRef = '/thulite'
   weight = 10
-
-# [[main]]
-#   name = "Thulite"
-#   pageRef = '/thulite'
-#   parent = "Documentation"
-#   weight = 11
-#
-# [[main]]
-#   name = "SEO"
-#   pageRef = '/seo'
-#   parent = "Documentation"
-#   weight = 13
-#
-# [[main]]
-#   name = "Images"
-#   pageRef = '/images'
-#   parent = "Documentation"
-#   weight = 15
-#
-# [[main]]
-#   name = "SVG"
-#   pageRef = '/svg '
-#   parent = "Documentation"
-#   weight = 17
 
 [[main]]
   name = "Integrations"
@@ -70,19 +41,6 @@
     rel = 'external'
     target = '_blank'
 
-# [[main]]
-#   name = "Templates"
-#   pageRef = '/thulite/basics/templates/overview'
-#   parent = "Resources"
-#   weight = 35
-#
-# [[main]]
-#   name = "Integrations"
-#   identifier = "integrations"
-#   pageRef = '/thulite/basics/integrations/overview'
-#   parent = "Resources"
-#   weight = 37
-
 [[main]]
   name = "Blog"
   url = 'https://thulite.io/blog/'
@@ -110,10 +68,10 @@
 
 [[legal]]
   name = "Privacy Policy"
-  pageRef = '/privacy'
+  url = 'https://ventizo.com/privacy/'
   weight = 10
 
 [[legal]]
   name = "Terms of Service"
-  pageRef = '/terms'
+  url = 'https://ventizo.com/terms/'
   weight = 20
