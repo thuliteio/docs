@@ -132,7 +132,7 @@ Check for:
 - Responsive layout behavior on desktop and mobile widths
 - No unexpected console errors or visible rendering issues
 
-If your project includes optional integrations, validate those behaviors as well using the dedicated guides for [Thulite SEO](/seo/start-here/verification), [Thulite Images](/images/start-here/verification/), and [Thulite SVG](/svg/start-here/verification/).
+If your project includes optional integrations, validate those behaviors as well using the dedicated guides for [Thulite SEO](/seo/start-here/verification/), [Thulite Images](/images/start-here/verification/), and [Thulite SVG](/svg/start-here/verification/).
 
 ## Use tools
 
