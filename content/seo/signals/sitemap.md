@@ -21,7 +21,7 @@ A sitemap is a list of pages of a website. Structured listings of a site's pages
 
 Set the default values for [change frequency](https://www.sitemaps.org/protocol.html#changefreqdef) and [priority](https://www.sitemaps.org/protocol.html#priority), and the name of the generated file, in `config/_default/hugo.toml`.
 
-See the [Sitemap reference page](/docs/reference/settings/) for all available values.
+See the [Sitemap reference page](/seo/reference/settings/#sitemap) for all available values.
 
 ```toml {title="hugo.toml"}
 [sitemap]

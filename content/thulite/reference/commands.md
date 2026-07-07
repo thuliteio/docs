@@ -25,7 +25,7 @@ You can add scripts to the `scripts` section for any commands you use frequently
 
 {{< /callout >}}
 
-The following scripts for the most common commands (`create`, `dev`, `format`, `build`, and `preview`) are added for you automatically when you [create a new project](/start-here/installation/#create-a-new-project).
+The following scripts for the most common commands (`create`, `dev`, `format`, `build`, and `preview`) are added for you automatically when you [create a new project](/thulite/start-here/installation/#create-a-new-project).
 
 ```json {title="package.json"}
 {
