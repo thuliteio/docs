@@ -28,7 +28,7 @@ The package automatically enhances SVGs for accessibility:
 
 Example with accessibility features:
 
-```html
+```md
 {{</* inline-svg
   src="check"
   title="Success"

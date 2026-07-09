@@ -22,13 +22,13 @@ For all available arguments, see the [figure partial reference page](/images/ref
 
 ### Required arguments only
 
-```go
+```go-html-template
 {{- partial "figure" (dict "page" . "src" "images/vincent-van-zalinge-IicWDdQUfsQ-unsplash.jpg") }}
 ```
 
 ### All arguments
 
-```go
+```go-html-template
 {{- $opts := dict
   "page" .
   "src" "images/vincent-van-zalinge-IicWDdQUfsQ-unsplash.jpg"

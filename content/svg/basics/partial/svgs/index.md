@@ -20,13 +20,13 @@ This guide explains how to render SVGs with the `inline-svg` partial. For all av
 
 ### Required arguments only
 
-```html
+```go-html-template
 {{- partial "inline-svg" (dict "page" . "src" "svgs/logos/thulite.svg") }}
 ```
 
 ### All arguments
 
-```html
+```go-html-template
 {{- $opts := dict
   "page" .
   "src" "svgs/logos/thulite.svg"

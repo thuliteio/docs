@@ -20,13 +20,13 @@ This guide explains how to render icons with the `inline-svg` partial. For all a
 
 ### Required arguments only
 
-```html
+```go-html-template
 {{- partial "inline-svg" (dict "page" . "src" "check") }}
 ```
 
 ### All arguments
 
-```html
+```go-html-template
 {{- $opts := dict
   "page" .
   "src" "svgs/tabler-icons/check.svg"

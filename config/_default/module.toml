@@ -26,6 +26,10 @@
   source = "node_modules/@ventizo/atlas-core/layouts"
   target = "layouts"
 
+# [[mounts]]
+#   source = "../../ventizo/atlas-core/layouts"
+#   target = "layouts"
+
 [[mounts]]
   source = "node_modules/@thulite/bootstrap/layouts"
   target = "layouts"
@@ -60,6 +64,10 @@
   source = "node_modules/@ventizo/atlas-core/archetypes"
   target = "archetypes"
 
+# [[mounts]]
+#   source = "../../ventizo/atlas-core/archetypes"
+#   target = "archetypes"
+
 ## assets
 [[mounts]]
   source = "node_modules/@thulite/core/assets"
@@ -76,6 +84,10 @@
 [[mounts]]
   source = "node_modules/@ventizo/atlas-core/assets"
   target = "assets"
+
+# [[mounts]]
+#   source = "../../ventizo/atlas-core/assets"
+#   target = "assets"
 
 [[mounts]]
   source = "node_modules/@tabler/icons/icons/outline"

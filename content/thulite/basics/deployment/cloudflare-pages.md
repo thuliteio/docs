@@ -150,7 +150,9 @@ After Wrangler uploads your assets, it provides a preview URL so you can inspect
 Update the preview script to run `wrangler` instead of Thulite's built-in preview command:
 
 ```json title="package.json"
-"preview": "wrangler pages dev ./public"
+{
+  "preview": "wrangler pages dev ./public"
+}
 ```
 
 ## Troubleshooting

@@ -9,7 +9,8 @@ defaultEmail = "support@ventizo.com"
 
 # Add-ons
 [add_ons]
-  plausibleDomain = "ventizo.com" # "example.com" (default)
+  plausibleDomain = "docs.thulite.io" # "" (default)
+  ahrefs = "zDpNjHre6sFUHsOgMF7OIQ" # "" (default)
 
 # Debug
 [render_hooks.image]
