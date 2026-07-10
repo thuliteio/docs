@@ -30,7 +30,7 @@ Refer to the [Extended Syntax](https://markdownguide.offshoot.io/extended-syntax
 | Paragraph | Text        |
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 | Syntax    | Description |
 | --------- | ----------- |
@@ -51,7 +51,7 @@ Refer to the [Extended Syntax](https://markdownguide.offshoot.io/extended-syntax
 ```
 ````
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 ```json
 {
@@ -71,7 +71,7 @@ Here's a sentence with a footnote. [^1]
 [^1]: This is the footnote.
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 Here's a sentence with a footnote. [^1]
 
@@ -85,7 +85,7 @@ Here's a sentence with a footnote. [^1]
 ### My Great Heading{#custom-id}
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 ### My Great Heading{#custom-id}
 
@@ -104,7 +104,7 @@ term
 : definition
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 term
 : definition
@@ -117,7 +117,7 @@ term
 ~~The world is flat.~~
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 ~~The world is flat.~~
 
@@ -133,7 +133,7 @@ term
 {.list-unstyled}
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 - [x] Write the press release
 - [ ] Update the website
@@ -159,7 +159,7 @@ Copy the emoji shortcode from [Emoji Cheat Sheet](https://www.webfx.com/tools/em
   </figure>
 </div>
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 That is so funny! :joy:
 
@@ -177,7 +177,7 @@ Hugo does not [support](https://www.markdownguide.org/tools/hugo/#hugo-markdown-
 I need to highlight these <mark>very important words</mark>.
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 I need to highlight these <mark>very important words</mark>.
 
@@ -189,7 +189,7 @@ I need to highlight these <mark>very important words</mark>.
 H<sub>2</sub>O
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 H<sub>2</sub>O
 
@@ -201,7 +201,7 @@ H<sub>2</sub>O
 X<sup>2</sup>
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 X<sup>2</sup>
 

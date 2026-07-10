@@ -31,7 +31,7 @@ Refer to the [Basic Syntax](https://markdownguide.offshoot.io/basic-syntax/) ref
 ### H3
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 <!-- markdownlint-disable MD025 -->
 
@@ -51,7 +51,7 @@ Refer to the [Basic Syntax](https://markdownguide.offshoot.io/basic-syntax/) ref
 **bold text**
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -67,7 +67,7 @@ _italicized text_
 
 _italicized text_
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 _italicized text_
 
@@ -81,7 +81,7 @@ _italicized text_
 > blockquote
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 > blockquote
 
@@ -95,7 +95,7 @@ _italicized text_
 3. Third item
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 1. First item
 2. Second item
@@ -111,7 +111,7 @@ _italicized text_
 - Third item
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 - First item
 - Second item
@@ -125,7 +125,7 @@ _italicized text_
 `code`
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 `code`
 
@@ -137,7 +137,7 @@ _italicized text_
 ---
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 ---
 
@@ -149,7 +149,7 @@ _italicized text_
 [Markdown Guide](https://www.markdownguide.org)
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 [Markdown Guide](https://www.markdownguide.org)
 
@@ -161,7 +161,7 @@ _italicized text_
 ![A yellow and black bird sitting on top of a body of water](images/vincent-van-zalinge-e5VzJJDODbQ-unsplash.jpg)
 ```
 
-{{< preview >}}
+{{< preview markdown=true >}}
 
 ![A yellow and black bird sitting on top of a body of water](images/vincent-van-zalinge-e5VzJJDODbQ-unsplash.jpg)
 

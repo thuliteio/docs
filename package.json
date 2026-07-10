@@ -16,7 +16,7 @@
     "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "@ventizo/atlas-core": "^0.1.1"
+    "@ventizo/atlas-core": "^0.1.2"
   },
   "overrides": {
     "minimatch": "^10.2.2",
@@ -26,7 +26,7 @@
     "@changesets/changelog-github": "^0.7.0",
     "@changesets/cli": "^2.30.0",
     "pagefind": "^1.5.2",
-    "prettier": "^3.8.2",
+    "prettier": "^3.9.5",
     "vite": "^8.1.4"
   },
   "engines": {

@@ -68,8 +68,6 @@ Markdown pages usually contain:
 
 ### Example
 
-{{< preview >}}
-
 ```md
 ---
 title: "About"
@@ -98,8 +96,6 @@ We build fast, accessible documentation sites with Thulite.
 
 Read the [Getting Started guide](/start-here/getting-started/) to learn more.
 ```
-
-{{< /preview >}}
 
 If you're creating a new page, use the [`create` command](/thulite/reference/commands/#create) so front matter is scaffolded automatically.
 
