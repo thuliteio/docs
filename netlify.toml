@@ -231,6 +231,72 @@
   status = 301
 
 [[redirects]]
+  from = "https://seo.thulite.io/docs/*"
+  to = "https://docs.thulite.io/seo/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://seo.thulite.io/*"
+  to = "https://docs.thulite.io/seo/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://images.thulite.io/docs/*"
+  to = "https://docs.thulite.io/images/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://images.thulite.io/*"
+  to = "https://docs.thulite.io/images/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://svg.thulite.io/docs/*"
+  to = "https://docs.thulite.io/svg/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://svg.thulite.io/*"
+  to = "https://docs.thulite.io/svg/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/start-here/*"
+  to = "/thulite/start-here/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/basics/*"
+  to = "/thulite/basics/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/advanced/*"
+  to = "/thulite/advanced/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reference/*"
+  to = "/thulite/reference/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/"
+  to = "/thulite/"
+  status = 301
+  force = true
+
+[[redirects]]
 	from = "/*"
 	to = "/404/"
 	status = 404
