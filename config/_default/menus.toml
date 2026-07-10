@@ -1,0 +1,77 @@
+[[main]]
+  name = "Thulite"
+  pageRef = '/thulite'
+  weight = 10
+
+[[main]]
+  name = "Integrations"
+  pageRef = '/integrations'
+  weight = 20
+
+[[main]]
+  name = "SEO"
+  pageRef = '/seo'
+  parent = "Integrations"
+  weight = 21
+
+[[main]]
+  name = "Images"
+  pageRef = '/images'
+  parent = "Integrations"
+  weight = 23
+
+[[main]]
+  name = "SVG"
+  pageRef = '/svg'
+  parent = "Integrations"
+  weight = 25
+
+[[main]]
+  name = "Resources"
+  pageRef = '/resources'
+  weight = 30
+
+[[main]]
+  name = "Showcase"
+  url = 'https://thulite.io/showcase/'
+  parent = "Resources"
+  weight = 31
+  post = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>'
+  [[main.params]]
+    rel = 'external'
+    target = '_blank'
+
+[[main]]
+  name = "Blog"
+  url = 'https://thulite.io/blog/'
+  parent = "Resources"
+  weight = 39
+  post = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>'
+  [[main.params]]
+    rel = 'external'
+    target = '_blank'
+
+[[main]]
+  name = "Community"
+  url = 'https://github.com/orgs/thuliteio/discussions'
+  parent = "Resources"
+  weight = 40
+  post = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>'
+  [[main.params]]
+    rel = 'external'
+    target = '_blank'
+
+[[social]]
+  name = "GitHub"
+  url = "https://github.com/thuliteio"
+  weight = 10
+
+[[legal]]
+  name = "Privacy Policy"
+  url = 'https://ventizo.com/privacy/'
+  weight = 10
+
+[[legal]]
+  name = "Terms of Service"
+  url = 'https://ventizo.com/terms/'
+  weight = 20

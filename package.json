@@ -1,48 +1,35 @@
 {
   "name": "docs",
   "version": "0.2.0",
-  "description": "Doks theme",
-  "author": "Thulite",
-  "license": "MIT",
+  "description": "Thulite documentation",
+  "author": "Ventizo",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thuliteio/doks.git"
+    "url": "https://github.com/thuliteio/docs.git"
   },
   "scripts": {
     "create": "hugo new",
     "dev": "hugo server --disableFastRender --noHTTPCache",
-    "lint:md": "npx markdownlint-cli2 \"content/**/*.md\"",
-    "format": "prettier **/** -w -c",
-    "build": "hugo --minify --gc",
-    "preview": "vite preview --outDir public",
-    "changeset": "changeset",
-    "changeset:status": "changeset status --verbose",
-    "changeset:version": "changeset version"
+    "format": "prettier . -w -c",
+    "build": "hugo --minify --gc && npx pagefind --site public",
+    "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "@docsearch/css": "^4.6.3",
-    "@docsearch/js": "^4.6.3",
-    "@fontsource-variable/geist": "^5.2.9",
-    "@fontsource-variable/geist-mono": "^5.2.8",
-    "@tabler/icons": "^3.41.1",
-    "@thulite/doks-core": "^1.9.3",
-    "@thulite/images": "^3.3.4",
-    "@thulite/inline-svg": "^1.2.2",
-    "@thulite/seo": "^2.4.3",
-    "simple-icons": "^16.21.0",
-    "thulite": "^2.6.5"
+    "@ventizo/atlas-core": "^0.1.2"
   },
   "overrides": {
-    "minimatch": "^10.2.4",
+    "minimatch": "^10.2.2",
     "glob": "^13.0.6"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.7.0",
-    "@changesets/cli": "^2.31.0",
-    "prettier": "^3.8.3",
-    "vite": "^8.0.14"
+    "@changesets/cli": "^2.30.0",
+    "pagefind": "^1.5.2",
+    "prettier": "^3.9.5",
+    "vite": "^8.1.4"
   },
   "engines": {
-    "node": ">=24.13.0"
+    "node": ">=24.16.0"
   }
 }

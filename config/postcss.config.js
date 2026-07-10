@@ -9,7 +9,8 @@ const purgecss = purgeCSSPlugin({
     },
     dynamicAttributes: [
         'aria-expanded',
-        'aria-selected',
+        'aria-label',
+        'aria-current',
         'data-bs-popper',
         'data-bs-target',
         'data-bs-theme',
@@ -21,14 +22,19 @@ const purgecss = purgeCSSPlugin({
         'data-toggle-tab', // tabs.js
         'id',
         'size',
-        'type'
+        'type',
     ],
     safelist: [
+        'mark',
         'active',
         'btn-clipboard', // clipboards.js
         'clipboard', // clipboards.js
+        'd-none', // search.js toggles visibility on modal body
         'disabled',
         'hidden',
+        'code-block', // copy-code.js wrapper around pre
+        'code-copy-button', // copy-code.js injected button
+        'is-active', // search.js keyboard navigation
         'modal-backdrop', // search-modal.js
         'selected', // search-modal.js
         'show',
@@ -40,6 +46,7 @@ const purgecss = purgeCSSPlugin({
         'container-fw ',
         'container-lg',
         'container-fluid',
+        'site-header',
         'offcanvas-backdrop',
         'figcaption',
         'dt',
@@ -50,10 +57,11 @@ const purgecss = purgeCSSPlugin({
         'page-link',
         'not-content',
         'copy',
-        'btn-copy'
-    ]
+        'btn-copy',
+        /^search-/, // search.js injects search-* classes at runtime
+    ],
 });
 
 export default {
-    plugins: [autoprefixer(), ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : [])]
+    plugins: [autoprefixer(), ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : [])],
 };

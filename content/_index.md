@@ -1,42 +1,19 @@
----
-title: "Build production-ready websites"
-description: "Discover Thulite for building production-ready websites with a fast setup flow, practical defaults, and a smooth path from scaffold to running site."
-summary: "Discover Thulite for building production-ready websites with a fast setup flow, practical defaults, and a smooth path from scaffold to running site."
-lead: "Thulite websites. Simple setup. Sensible defaults."
-date: 2023-09-07T16:33:54+02:00
-lastmod: 2026-05-28T11:24:05+02:00
-draft: false
-params:
-  toc: true
-  seo:
-    title: "" # custom title (optional)
-    description: "" # custom description (recommended)
-    canonical: "" # custom canonical URL (optional)
-    robots: "" # custom robot tags (optional)
----
++++
+title = "Thulite Documentation"
+description = "Documentation for Thulite and its integrations, with guides, reference, and production-ready workflows for fast, secure, SEO-ready websites."
+summary = "Docs and resources to help you build with Thulite."
+date = 2025-08-29T06:03:20+02:00
+lastmod = 2026-04-10T15:07:55+02:00
+draft = false
 
-```bash
-npm create thulite@latest
+[params.notice]
+show = false
+href = "/news/the-agentic-era-is-rewiring-software-delivery"
+title = "The agentic era is rewiring software delivery"
 
-> npx
-> create-thulite
-
-│
-◇  Project name:
-│  thulite-project
-│
-◇  Select a template:
-│  Doks theme
-│
-◇  Select a variant:
-│  With recommended integrations (SEO and Images)
-│
-◇  Install with npm and start now?
-│  Yes
-│
-◇  Scaffolding project in /home/h-enk/thulite-project...
-│
-◇  Installing dependencies with npm...
-│
-◇  Starting dev server...
-```
+[params.seo]
+title = "" # custom title (optional)
+description = "" # custom description (recommended)
+canonical = "" # custom canonical URL (optional)
+robots = "" # custom robot tags (optional)
++++

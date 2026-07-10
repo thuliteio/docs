@@ -4,34 +4,25 @@ disableAliases = true
 disableHugoGeneratorInject = true
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
-enableGitInfo = true
+enableGitInfo = false
 enableRobotsTXT = true
 locale = "en-US"
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
-# Multilingual
-defaultContentLanguage = "en"
-disableLanguages = ["de", "nl"]
-defaultContentLanguageInSubdir = false
+copyRight = "Copyright (c) 2026 Ventizo"
 
-copyRight = "Copyright (c) 2020-2026 Thulite"
+mainSections = ['docs', 'thulite', 'seo', 'images', 'svg']
 
 [build.buildStats]
   enable = true
 
 [outputs]
-  home = ["html", "rss", "sitemap", "searchIndex", "llms"]
+  home = ["html", "rss", "sitemap-index", "sitemap", "llms"]
   page = ["html", "markdown"]
   section = ["html", "rss", "sitemap"]
   taxonomy = ["html", "rss", "sitemap"]
   term = ["html", "rss", "sitemap"]
-
-[outputFormats.searchIndex]
-  mediaType = "application/json"
-  baseName = "search-index"
-  isPlainText = true
-  notAlternative = true
 
 [outputFormats.markdown]
   baseName = "index"
@@ -45,7 +36,14 @@ copyRight = "Copyright (c) 2020-2026 Thulite"
   isPlainText = true
   mediaType = "text/plain"
 
-# Add output format for section sitemap.xml
+[outputFormats.sitemap-index]
+  mediaType = "application/xml"
+  baseName = "sitemap-index"
+  isHTML = false
+  isPlainText = true
+  noUgly = true
+  rel  = "sitemap"
+
 [outputFormats.sitemap]
   mediaType = "application/xml"
   baseName = "sitemap"
@@ -62,17 +60,15 @@ copyRight = "Copyright (c) 2020-2026 Thulite"
 [caches]
   [caches.getresource]
     dir = ":cacheDir/:project"
-    maxAge = -1 # "30m"
+    maxAge = "30m"
 
 [taxonomies]
-  contributor = "contributors"
   category = "categories"
-  tag = "tags"
+  type = "types"
+  sort = "sorts"
 
 [permalinks]
-  blog = "/blog/:slug/"
-  docs = "/docs/:sections[1:]/:slug/"
-# docs = "/docs/1.0/:sections[1:]/:slug/"
+  blog = "/:title/"
 
 [minify.tdewolff.html]
   keepComments = true # If set to false, build signatures are removed
@@ -82,8 +78,8 @@ copyRight = "Copyright (c) 2020-2026 Thulite"
   pagerSize = 10
 
 [related]
-  threshold = 80
   includeNewer = true
+  threshold = 80
   toLower = false
     [[related.indices]]
       name = "categories"

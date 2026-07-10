@@ -1,4 +1,0 @@
-{
-    // Disable line-length checks; formatting is handled by Prettier.
-    "MD013": false
-}
