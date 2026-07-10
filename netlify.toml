@@ -41,16 +41,194 @@
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
-  from = "/js/pa-giEb4LeQ_HBOeSFnbQ2FG.js"
-  to = "https://plausible.io/js/pa-giEb4LeQ_HBOeSFnbQ2FG.js"
-  status = 200
-  force = true
+  from = "/basics/commands/"
+  to = "/thulite/reference/commands/"
+  status = 301
 
 [[redirects]]
-  from = "/api/event"
-  to = "https://plausible.io/api/event"
-  status = 200
-  force = true
+  from = "/basics/configuration/"
+  to = "/thulite/start-here/configuration/"
+  status = 301
+
+[[redirects]]
+  from = "/concepts/dependencies/"
+  to = "/thulite/start-here/concepts/dependencies/"
+  status = 301
+
+[[redirects]]
+  from = "/concepts/why-thulite/"
+  to = "/thulite/start-here/concepts/why-thulite/"
+  status = 301
+
+[[redirects]]
+  from = "/contribute/"
+  to = "/thulite/start-here/getting-started/"
+  status = 301
+
+[[redirects]]
+  from = "/editor-setup/"
+  to = "/thulite/start-here/editor-setup/"
+  status = 301
+
+[[redirects]]
+  from = "/getting-started/"
+  to = "/thulite/start-here/getting-started/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/analytics/"
+  to = "/thulite/advanced/analytics/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/analytics/*"
+  to = "/thulite/advanced/analytics/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/archetypes/"
+  to = "/thulite/basics/archetypes/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/cms/"
+  to = "/thulite/advanced/cms/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/cms/*"
+  to = "/thulite/advanced/cms/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/data/"
+  to = "/thulite/reference/configuration/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/cloudflare/"
+  to = "/thulite/basics/deployment/cloudflare-pages/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/github/"
+  to = "/thulite/basics/deployment/github-pages/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/gitlab/"
+  to = "/thulite/basics/deployment/gitlab-pages/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/"
+  to = "/thulite/basics/deployment/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/deploy/*"
+  to = "/thulite/basics/deployment/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/email-obfuscation/"
+  to = "/thulite/advanced/security/email-obfuscation/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/fonts/"
+  to = "/thulite/basics/fonts/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/images/"
+  to = "/thulite/basics/images/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/"
+  to = "/thulite/basics/integrations/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/tailwind"
+  to = "/thulite/basics/integrations/tailwindcss/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/tailwind/"
+  to = "/thulite/basics/integrations/tailwindcss/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/integrations/*"
+  to = "/thulite/basics/integrations/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/guides/internationalization/"
+  to = "/thulite/advanced/internationalization/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/markdown/"
+  to = "/thulite/basics/markdown/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/scripts/"
+  to = "/thulite/basics/scripts/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/static/"
+  to = "/thulite/basics/project-structure/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/styles/"
+  to = "/thulite/basics/styles/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/themes/"
+  to = "/thulite/basics/templates/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/themes/bolt/"
+  to = "/thulite/basics/templates/bolt/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/themes/doks/"
+  to = "/thulite/basics/templates/doks/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/upgrade-to/v2/"
+  to = "/thulite/start-here/updating/"
+  status = 301
+
+[[redirects]]
+  from = "/install/auto/"
+  to = "/thulite/start-here/installation/"
+  status = 301
+
+[[redirects]]
+  from = "/install/manual/"
+  to = "/thulite/start-here/installation/"
+  status = 301
+
+[[redirects]]
+  from = "/reference/frontmatter/"
+  to = "/thulite/reference/markdown/overview/"
+  status = 301
+
+[[redirects]]
+  from = "/upgrade-thulite/"
+  to = "/thulite/start-here/updating/"
+  status = 301
 
 [[redirects]]
 	from = "/*"
