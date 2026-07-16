@@ -9,6 +9,9 @@ defaultEmail = "support@ventizo.com"
 
 # Add-ons
 [add_ons]
+  colorMode = "auto" # auto (default), light or dark
+  colorModeToggler = true # true (default) or false — only applies when colorMode = "auto"
+  pagefind = true # true (default) or false
   plausibleDomain = "docs.thulite.io" # "" (default)
   ahrefs = "zDpNjHre6sFUHsOgMF7OIQ" # "" (default)
 
