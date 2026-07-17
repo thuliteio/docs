@@ -1,5 +1,11 @@
 # docs
 
+## 0.3.1
+
+### Patch Changes
+
+- [#15](https://github.com/thuliteio/docs/pull/15) [`2072813`](https://github.com/thuliteio/docs/commit/2072813881536edc2b0696c4f91dae065d989bdf) Thanks [@h-enk](https://github.com/h-enk)! - chore: update @ventizo/atlas-core to version 0.1.4 and adjust 404.md parameters
+
 ## 0.3.0
 
 ### Minor Changes
