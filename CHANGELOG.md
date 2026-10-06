@@ -1,5 +1,11 @@
 # docs
 
+## 0.3.2
+
+### Patch Changes
+
+- [#16](https://github.com/thuliteio/docs/pull/16) [`cd6eb48`](https://github.com/thuliteio/docs/commit/cd6eb480e3004fad356d971f0ceabd983be2de37) Thanks [@h-enk](https://github.com/h-enk)! - chore: update dependencies and add portless configuration
+
 ## 0.3.1
 
 ### Patch Changes
