@@ -1,5 +1,11 @@
 # docs
 
+## 0.3.3
+
+### Patch Changes
+
+- [#17](https://github.com/thuliteio/docs/pull/17) [`23d968a`](https://github.com/thuliteio/docs/commit/23d968ad5f8385f050d38a193c189413ffd17f33) Thanks [@h-enk](https://github.com/h-enk)! - Add Portless configuration and update migration guides for Thulite v2 and v3
+
 ## 0.3.2
 
 ### Patch Changes
