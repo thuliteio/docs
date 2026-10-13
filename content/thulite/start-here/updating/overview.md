@@ -111,6 +111,7 @@ Main docs describe the latest version only. They do not compare historical behav
 Upgrade guides focus on changes that can require code updates, including breaking changes, deprecations, removals, replacements, and updated usage guidance.
 
 - [Upgrade to v2](/thulite/start-here/updating/v2/)
+- [Upgrade to v3](/thulite/start-here/updating/v3/)
 
 ## Semantic versioning
 
